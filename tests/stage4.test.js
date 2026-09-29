@@ -22,7 +22,7 @@ test('saved library resolves named destinations and remains private to each acco
  const savedEvent=data.saves.find(x=>x.entity_type==='event');assert.equal(savedEvent.title,event.title);assert.equal(savedEvent.href,'#event/'+encodeURIComponent(event.id));
  assert.equal(data.saves.find(x=>x.entity_type==='discussion').href,'#discussion/'+id);
  assert.equal((await (await h.req('/api/me/library',b.cookie)).json()).saves.length,0);assert.equal((await h.req('/api/me/library')).status,401);
- const html=await (await h.req('/')).text();assert.match(html,/<nav class="navlinks"[^>]*>[\s\S]*?<a href="#garage">Bike Garage<\/a><\/nav>/);
+ const html=await (await h.req('/')).text();assert.match(html,/<details class="site-menu">[\s\S]*?<a href="\/texas\/clubs">Cycling clubs<\/a>[\s\S]*?<a href="#garage">Bike Garage<\/a>[\s\S]*?<\/details>/);
  }finally{h.env._db.close();}
 });
 test('hidden and missing saved targets show removable unavailable entries without leaking titles',async()=>{
