@@ -1,0 +1,30 @@
+name = "bike-portal-stage4"
+main = "src/worker.js"
+compatibility_date = "2026-09-11"
+
+[build]
+command = "node scripts/build-client.js"
+
+[vars]
+ENVIRONMENT = "production"
+SESSION_TTL_DAYS = "30"
+TURNSTILE_SITE_KEY = "0x4AAAAAAE0tc_pA88hbkzLs"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bike-portal-db"
+database_id = "380c55bf-a8f0-4d3b-bb83-7fdefcf04eb0"
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "bike-portal-media"
+
+[[ratelimits]]
+name = "AUTH_LIMITER"
+namespace_id = "417201"
+simple = { limit = 20, period = 60 }
+
+[[ratelimits]]
+name = "WRITE_LIMITER"
+namespace_id = "417202"
+simple = { limit = 60, period = 60 }

@@ -1,0 +1,77 @@
+// Reviewed presentation overlays. Recovered seed rows remain unchanged.
+const tire='https://www.parktool.com/en-us/blog/repair-help/tire-and-tube-removal-and-installation';
+const wheel='https://www.parktool.com/en-int/blog/repair-help/wheel-removal-and-installation';
+const patch='https://www.parktool.com/en-us/blog/repair-help/inner-tube-repair';
+const abc='https://bikeleague.org/education-video-series-basic-bike-check/';
+const manual='https://media.trekbikes.com/image/upload/v1772741823/TrekBicycleOwnersManual_EN_Rev6_Mar2026.pdf';
+const electra='https://electra.trekbikes.com/us/en_US/pre-ride-checklist/';
+export const reviewedGuides={
+ 'fix-a-flat':{
+  reviewed:'2026-09-18',review_kind:'Reference-based technical review; no hands-on mechanic sign-off',
+  summary:'Replace an inner tube, check the cause of the puncture and confirm the wheel is safe before riding.',
+  scope:'For a conventional clincher tire with an inner tube. This is not a tubeless, tubular, hookless-compatibility or hub-motor wheel procedure. Follow your wheel, brake and axle manuals.',
+  preparation:'Prepare your repair kit: a correctly sized tube with a compatible valve, tire levers, a pump with a gauge and the right axle tool. Work clear of traffic. If wheel removal is unfamiliar, arrange help before starting.',
+  headings:['Make the work area safe','Find the cause','Fit the replacement tube','Check before riding'],
+  body_edits:[['Remove the affected wheel using the correct procedure for your brake and axle system.','Remove the affected wheel using the correct procedure for your brake and axle system. With hydraulic disc brakes, do not pull the brake lever while the wheel is out.'],['Inspect the outside and inside of the tire for glass, wire, thorns, cuts, or other debris.','Inspect the outside and inside of the tire for glass, wire, thorns, cuts, or other debris. Look carefully; do not sweep bare fingers across a suspected sharp object.'],['Inflate gradually and inspect both sides of the tire to make sure the bead is seated evenly before bringing it to riding pressure.','Inflate gradually and inspect both sides of the tire to make sure the bead is seated evenly before bringing it to riding pressure. Stay within the tire and rim makers’ compatible pressure limits. If the bead lifts or the tube protrudes, stop and deflate; do not add pressure.'],['Reinstall the wheel and confirm it is securely retained.','Reinstall the wheel and confirm it is securely retained using the axle maker’s procedure. Reconnect any rim-brake release you opened.']],
+  sections:[['If the replacement goes flat','Reinspect the tire and rim before fitting another tube. Repeated failures can point to remaining debris, damaged rim tape or a pinched tube.'],['Patching is a separate procedure','Use a patch compatible with the tube material and follow its instructions. Pre-glued patches are temporary; a tire boot is not a permanent repair for a damaged casing.'],['Know when to stop','Do not ride with a damaged bead, casing or rim, a wheel that will not secure correctly, or brakes that do not work. This short guide cannot establish whether a damaged component is safe.']],
+  sources:[tire,wheel,patch],related:['pre-ride-bike-safety-check','event-week-bike-prep-checklist']
+ },
+ 'pre-ride-bike-safety-check':{
+  reviewed:'2026-09-18',review_kind:'Reference-based technical review; no hands-on mechanic sign-off',
+  summary:'Check tires, wheel retention, brakes and controls, then make a short controlled test before your ride.',
+  scope:'A basic inspection for a bicycle with two hand-operated brakes. Coaster brakes, adaptive cycles, suspension and e-bike systems require the relevant manufacturer checks too. Inspection is not a repair or a guarantee against hidden damage.',
+  preparation:'Use a well-lit space, a pump with a gauge and your bicycle/component instructions. Identify how both wheels are retained. Never use a generic torque figure or the tire sidewall maximum as a universal riding pressure.',
+  headings:['Inspect tires and wheels','Confirm wheel retention and brakes','Check the drivetrain','Check contact points and supplies'],
+  body_edits:[['Squeeze the front and rear brakes independently and confirm each brake engages firmly before the lever reaches the handlebar.','With both wheels installed, operate each brake separately and confirm that it stops its wheel and that the lever does not bottom against the handlebar.'],['A noisy drivetrain is not always dangerous, but sudden skipping under load is a reason to investigate before a long ride.','Stop and investigate skipping under load or a damaged chain before riding.']],
+  sections:[['Finish with a controlled check ride','If the stationary checks pass, ride slowly in a clear space. Check steering, shifting and each brake gently before joining traffic or a group. If a fault appears, stop and resolve it.'],['Stop rather than improvise','Do not ride with cracks, loose wheel retention, slipping controls or ineffective brakes. If you cannot identify the cause or correct procedure, use a qualified mechanic. Tightening a damaged part harder is not a fix.'],['Keep a useful record','Record your own tire size, load and successful pressure settings in your Garage. A personal note helps repeat a setup; it does not override component limits.']],
+  sources:[abc,manual,wheel],related:['fix-a-flat','event-week-bike-prep-checklist']
+ },
+ 'event-week-bike-prep-checklist':{
+  reviewed:'2026-09-18',review_kind:'Reference-based technical review; timing is an editorial planning framework',
+  summary:'Plan mechanical checks, test repairs and confirm organizer details before a Texas cycling event.',
+  scope:'A preparation schedule, not a service interval, fitness plan or permission to enter an event. Adjust the lead time to allow repairs and a test ride. Equipment instructions and organizer rules control.',
+  preparation:'Keep the current organizer page, route information, bicycle manuals and your normal repair kit together. Note what is confirmed and what still needs an organizer answer; a saved listing is not registration.',
+  headings:['Early in the week: inspect and book repairs','Two or three days before: check your normal setup','The day before: confirm the ride plan','Event morning: repeat the safety check'],
+  body_edits:[['If the event page on this portal shows an organizer update that conflicts with an older saved detail, follow the newest official organizer information.','If current organizer materials disagree, contact the organizer before relying on the disputed time, route or equipment rule.']],
+  sections:[['Supported and self-supported are different','Read the organizer’s support and withdrawal rules. Neutral water does not necessarily mean mechanical support or a ride back. Download the official route and plan how you would leave the course.'],['Confirm the practical details','Verify the edition/date, check-in and wave time, starting entrance, parking, route distance, cutoff, required equipment and weather notices. Do not infer e-bike permission from another event.'],['Pack equipment you have tested','Check that tools fit your axles and valves, and that lights, navigation and any electronic shifting are charged. Use only the battery and charger approved for your e-bike. Avoid last-minute equipment experiments.'],['If the bike fails a check','Do not start while wheel security, braking, steering or structural condition is unresolved. Missing a start is preferable to treating an uncertain repair as tested.']],
+  sources:[abc,manual,electra],related:['pre-ride-bike-safety-check','fix-a-flat']
+ }
+};
+const checked='2026-09-18';
+export const reviewedEvents={
+ 'event_2026_10_17_camp_spinistry_bikepacking_kickoff_weekend':{
+  start_date:'2026-10-17',end_date:'2026-10-18',venue_name:'Thirty-Five and Liberty',address:'4321 I-35',postal_code:'76240',distances_json:'[]',verification_status:'verified',verified_on:checked,
+  source_url:'https://runsignup.com/Race/TX/Gainesville/CampSpinistryBikepackingKickoffWeekend',registration_url:'https://runsignup.com/Race/TX/Gainesville/CampSpinistryBikepackingKickoffWeekend',
+  start_time_note:'Registration categories show 7:00 AM CDT on Saturday. Optional gathering Friday; Sunday return. October 18 end date is derived from that Saturday/Sunday schedule.',
+  notes:'Educational bikepacking weekend, not a guided tour. Saturday routes are approximately 30 or 60 miles; exact mileage is not supplied as a filter value. Riders self-navigate, bring meals and equipment, and should not rely on SAG. Gear-shuttle and camping-kit options differ. Organizer lists registration closing October 10 at 12:00 AM CDT; check before making plans.',
+  reviewed_fields:['Saturday date and derived Sunday end date','staging venue/address','category time','approximate route description','registration deadline','self-support and gear options'],review_sources:['https://runsignup.com/Race/TX/Gainesville/CampSpinistryBikepackingKickoffWeekend'],publication_ready:true,publication_gaps:[],recheck_by:'2026-10-08'
+ },
+ 'event_2026_10_03_2026_texas_gravel_champs':{
+  start_date:'2026-10-03',end_date:'2026-10-03',venue_name:'Lofers Bend Day Use Pavilion',address:'Lofers Bend Park Road',postal_code:'76692',distances_json:'[35,55,80]',verification_status:'verified',verified_on:checked,
+  source_url:'https://runsignup.com/Race/TX/Whitney/TexasGravelChamps2026',registration_url:'https://runsignup.com/Race/TX/Whitney/TexasGravelChamps2026',
+  start_time_note:'Category start times differ: the registration page lists 8:30 AM or 9:00 AM CDT. Check your chosen category; there is no single confirmed start for all riders.',
+  notes:'The 80-mile option is timed; 35 and 55 miles are untimed. This is self-supported: water tables are planned, but no SAG transport or outside on-course assistance is provided. Arrange your own withdrawal transport. E-bikes are permitted without timing; check the category rules before registering.',
+  reviewed_fields:['date','venue','address','distances','category start times','registration link','support rules','e-bike eligibility'],review_sources:['https://runsignup.com/Race/TX/Whitney/TexasGravelChamps2026'],publication_ready:true,publication_gaps:[],recheck_by:'2026-10-02'
+ },
+ 'event_2026_10_03_sloan_everett_pure_country_pedal_memorial_bike_ride':{
+  start_date:'2026-10-03',end_date:'2026-10-03',venue_name:'Breckenridge City Park',address:null,distances_json:'[4.22,7.79,18.73,31.62,59.07]',verification_status:'partially_verified',verified_on:checked,
+  source_url:'https://purecountrypedal.com/',registration_url:'https://www.bikereg.com/purecountrypedal',
+  start_time_note:'FAQ: check-in 7:15 AM; Sloan’s and Top Hand routes 8:00 AM; remaining routes 9:00 AM. Times are shown as organizer-local time.',
+  notes:'The organizer now lists five routes. Its FAQ describes marked routes, rest stops and SAG. Confirm the correct park entrance and your route’s timing before travel. The registration destination is linked by the organizer, but checkout and current inventory were not independently tested.',
+  reviewed_fields:['date','venue','five route distances','check-in and route start times','organizer-linked registration','support'],review_sources:['https://purecountrypedal.com/','https://purecountrypedal.com/faqs/'],publication_ready:false,publication_gaps:['Exact starting entrance/street address not confirmed from the reviewed organizer materials.','E-bike eligibility not confirmed.'],recheck_by:'2026-10-02'
+ },
+ 'event_2026_10_17_missions_tour_de_goliad':{
+  start_date:'2026-10-17',end_date:'2026-10-17',venue_name:'Downtown Goliad',address:null,distances_json:'[10,30,50,65]',verification_status:'partially_verified',verified_on:checked,source_url:'https://www.missionstourdegoliad.com/',
+  start_time_note:'Organizer lists line-up at 7:45 AM and the ride start at 8:00 AM, local time.',
+  notes:'The 2026 homepage confirms the date and four advertised route options. Its linked information PDF is an older 33rd-edition document, so its address, fees and rules were not reused as 2026 facts. Use the current organizer page for registration and confirm the start entrance.',
+  reviewed_fields:['2026 date','downtown start area','advertised route distances','line-up and start times'],review_sources:['https://www.missionstourdegoliad.com/'],publication_ready:false,publication_gaps:['Precise 2026 starting venue/address and current detailed rules need organizer confirmation.'],recheck_by:'2026-10-10'
+ },
+ 'event_2026_10_03_autumn_in_bonham_century_mile_ride':{
+  verified_on:checked,venue_name:'Roy Floyd Community Center (event-day check-in)',verification_status:'verified_with_conflict',distances_json:'[30,40,65,100,47,67]',registration_url:'https://www.bikereg.com/autumn-in-bonham',
+  start_time_note:'Organizer: October 3 check-in 6:30–7:45 AM; opening ceremony 7:45 AM; ride start 8:00 AM.',
+  notes:'Updated from the current organizer page: paved options 30/40/65/100 miles; gravel 47/67 miles. The family option is described as 2.7 miles while its linked label refers to a 5K; its distance is excluded from numeric filters until clarified. Prior 68/48-mile values were superseded. Registration checkout was not tested.',
+  reviewed_fields:['date','check-in venue and schedule','paved/gravel route labels','family-route discrepancy','organizer-linked registration'],review_sources:['https://autumninbonham.com/'],publication_ready:false,publication_gaps:['Family-route description is ambiguous; exact start address needs fresh confirmation.'],recheck_by:'2026-10-02'
+ }
+};
+export const starterEventIds=['event_2026_10_03_2026_texas_gravel_champs','event_2026_10_17_camp_spinistry_bikepacking_kickoff_weekend'];
+export const readyEvent=(event,today)=>event.publication_ready===true&&event.start_date>=today&&event.recheck_by>=today;

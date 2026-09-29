@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-17",
+  "source_tests": {
+    "passed": 10,
+    "failed": 0
+  },
+  "syntax_checks": "passed",
+  "browser_checks": {
+    "passed": 10,
+    "failed": 0,
+    "runtime": "local Node SQLite preview, Edge Chromium"
+  },
+  "deployment_dry_run": "blocked: esbuild parent-directory access denied",
+  "live_readonly_checks": "blocked: network permissions",
+  "deployed": false,
+  "original_files_checked_unchanged": 30,
+  "changed_files": [
+    "README.md",
+    "build-check/README.md",
+    "docs/SECURITY.md",
+    "src/worker.js",
+    "tests/portal.test.js"
+  ],
+  "removed_stale_build_files": [
+    "build-check/worker.js",
+    "build-check/worker.js.map"
+  ],
+  "new_files": [
+    "AGENTS.md",
+    "TEST-DEPLOYMENT.md",
+    "docs/checkpoint.md",
+    "docs/test-evidence/browser-results.json",
+    "docs/test-evidence/desktop.png",
+    "docs/test-evidence/live-check-attempt.json",
+    "docs/test-evidence/mobile.png"
+  ],
+  "bindings_schema_seed_unchanged": true
+}

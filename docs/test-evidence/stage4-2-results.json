@@ -1,0 +1,27 @@
+{
+  "release": "4.2.0",
+  "automated_tests": {
+    "passed": 17,
+    "failed": 0
+  },
+  "browser_environment": "In-app browser, loopback temporary SQLite and R2-shaped in-memory adapter; no production account used",
+  "browser_observed_passes": [
+    "header account identity and zero unread count",
+    "profile edits save and survive reload",
+    "discussion creation",
+    "save/follow/helpful states survive reload",
+    "report submission",
+    "moderator report queue and closing report",
+    "second-account reply",
+    "author header unread count 1 and matching inbox notification",
+    "mark read updates header count to 0",
+    "390px mobile layout with no horizontal overflow"
+  ],
+  "browser_console_warnings_or_errors": [],
+  "avatar_and_garage_delete": "API tests passed; not browser file-picker/deletion-confirmation tests",
+  "dry_run": "blocked: esbuild ancestor filesystem access denial",
+  "deployment_performed": false,
+  "live_acceptance": "pending",
+  "email_delivery": "explicitly deferred by user; no provider",
+  "source_data_and_schema_unchanged": true
+}

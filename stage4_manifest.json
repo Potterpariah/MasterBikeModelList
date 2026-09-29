@@ -1,0 +1,80 @@
+{
+  "project": "Bicycling Portal",
+  "workflow": "Blog Microsite Workflow",
+  "stage": 4,
+  "stage_name": "Persistent Community/Application Layer",
+  "created": "2026-09-11",
+  "stage3_source": "bike_portal_stage3_FINAL.json",
+  "features": [
+    "authentication",
+    "profiles",
+    "bike_garage",
+    "r2_avatars",
+    "texas_events",
+    "event_user_status",
+    "discussions",
+    "comments",
+    "reactions",
+    "follows",
+    "saves",
+    "notifications",
+    "reports",
+    "moderation"
+  ],
+  "bindings": {
+    "D1": "DB",
+    "R2": "MEDIA",
+    "rate_limits": [
+      "AUTH_LIMITER",
+      "WRITE_LIMITER"
+    ]
+  },
+  "status": "deployed_texas_starter_set_validated_owner_and_launch_gates_open",
+  "release": "4.3.2",
+  "homepage_routes": [
+    "/",
+    "/portal.css",
+    "/portal.js",
+    "/api/portal/catalog"
+  ],
+  "homepage_validation": "docs/HOMEPAGE_VALIDATION.md",
+  "remaining_live_checks": "docs/STAGE4_REMAINING_CHECKS.md",
+  "redeploy_instructions": "REDEPLOY.md",
+  "last_confirmed_live_version": "be407246-d41f-47b2-b257-1e3b2f0a2be8",
+  "release_acceptance": "docs/PUBLICATION-SET-RELEASE.md",
+  "model_enrichment": {
+    "file": "data/model-enrichment.json",
+    "families": 25,
+    "scoped_facts": 71,
+    "review_date": "2026-09-18"
+  },
+  "public_routes": [
+    "/events",
+    "/events/:slug",
+    "/guides",
+    "/guides/:slug",
+    "/brands",
+    "/brands/:slug",
+    "/bikes",
+    "/bikes/:slug",
+    "/about",
+    "/editorial",
+    "/community-guidelines",
+    "/data-use",
+    "/robots.txt",
+    "/sitemap.xml",
+    "/texas-rides"
+  ],
+  "indexing": "test_noindex_preserved",
+  "launch_decisions": "docs/LAUNCH-DECISIONS.md",
+  "publication_set": {
+    "route": "/texas-rides",
+    "selected_events": 2,
+    "updated_events": 5,
+    "reviewed_guides": 3,
+    "reviewed_on": "2026-09-18",
+    "guide_review": "reference_based_not_hands_on",
+    "indexing": "test_noindex",
+    "expiry": "request_time_date_and_recheck_deadline"
+  }
+}

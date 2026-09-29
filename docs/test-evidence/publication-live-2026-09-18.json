@@ -1,0 +1,155 @@
+{
+  "checked_at": "2026-09-18T23:21:53.683Z",
+  "release": "4.3.2",
+  "deployment_version": "be407246-d41f-47b2-b257-1e3b2f0a2be8",
+  "base": "https://bike-portal-stage4.m25-f6b.workers.dev",
+  "checks": [
+    {
+      "path": "/texas-rides",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/api/events/event_2026_10_17_camp_spinistry_bikepacking_kickoff_weekend",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/events/2026-10-17-gainesville-camp-spinistry-bikepacking-kickoff-weekend",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/api/events/event_2026_10_03_2026_texas_gravel_champs",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/events/2026-10-03-whitney-2026-texas-gravel-champs",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/api/events/event_2026_10_03_sloan_everett_pure_country_pedal_memorial_bike_ride",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/events/2026-10-03-breckenridge-sloan-everett-pure-country-pedal-memorial-bike-ride",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/api/events/event_2026_10_17_missions_tour_de_goliad",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/events/2026-10-17-goliad-missions-tour-de-goliad",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/api/events/event_2026_10_03_autumn_in_bonham_century_mile_ride",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/events/2026-10-03-bonham-autumn-in-bonham-century-mile-ride",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/guides/fix-a-flat",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/guides/pre-ride-bike-safety-check",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/guides/event-week-bike-prep-checklist",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/api/portal/catalog",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/c-line",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/defy",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/guides",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/events",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/editorial",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/data-use",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/texas-rides/missing",
+      "status": 404,
+      "noindex": true
+    },
+    {
+      "path": "/api/me/library",
+      "status": 401,
+      "noindex": true
+    },
+    {
+      "path": "/api/garage",
+      "status": 401,
+      "noindex": true
+    },
+    {
+      "path": "/portal.js?v=4.3.2",
+      "status": 200,
+      "noindex": true
+    }
+  ],
+  "outcome": "passed",
+  "scope": "Read-only live HTTP; five revised events, two selected events, three reviewed guides, two model conflict pages, noindex, anonymous access and generated client. No account or database mutations."
+}

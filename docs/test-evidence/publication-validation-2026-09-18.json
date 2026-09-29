@@ -1,0 +1,28 @@
+{
+  "release": "4.3.2",
+  "automated_tests": {
+    "passed": 36,
+    "failed": 0
+  },
+  "final_markup_focused_tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "syntax": "passed",
+  "fresh_dry_run": "passed",
+  "bundle_equivalence": "passed",
+  "local_browser": [
+    "three reviewed guides and ordinary navigation",
+    "two-event curated hub",
+    "390px guide and hub layout; viewport restored"
+  ],
+  "live_browser": [
+    "curated hub to Texas Gravel Champs detail",
+    "event detail to event-week guide",
+    "account notification count settled to zero after loading"
+  ],
+  "live_browser_console_errors_warnings": [],
+  "live_http_evidence": "publication-live-2026-09-18.json",
+  "preservation": "Original data, migrations and wrangler.toml matched preserved 4.2.1 archive; no remote migrations/seed imports/account mutations",
+  "limits": "Reference review only; not hands-on mechanic sign-off, legal approval, ownership verification or full Stage 4 acceptance"
+}

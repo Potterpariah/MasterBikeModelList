@@ -1,0 +1,18 @@
+{
+  "browser": "Microsoft Edge (Chromium)",
+  "target": "source preview; temporary local SQLite; not Cloudflare runtime",
+  "passed": 10,
+  "checks": [
+    "Homepage loads with test noindex header",
+    "Search returns browsable results",
+    "Maintenance guide opens with full article",
+    "Search empty state",
+    "Local signup creates a session (development, no real Turnstile)",
+    "Session and garage persist across refresh in local preview",
+    "Logout and login",
+    "Mobile homepage has no horizontal overflow",
+    "Mobile event filter empty state",
+    "Failed catalog request shows useful error"
+  ],
+  "uncaughtErrors": []
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/",
+    "error": "An attempt was made to access a socket in a way forbidden by its access permissions. (bike-portal-stage4.m25-f6b.workers.dev:443)"
+  },
+  {
+    "path": "/api/health",
+    "error": "An attempt was made to access a socket in a way forbidden by its access permissions. (bike-portal-stage4.m25-f6b.workers.dev:443)"
+  },
+  {
+    "path": "/stage4-test",
+    "error": "An attempt was made to access a socket in a way forbidden by its access permissions. (bike-portal-stage4.m25-f6b.workers.dev:443)"
+  }
+]

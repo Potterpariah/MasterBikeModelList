@@ -1,0 +1,773 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-18",
+  "models": [
+    {
+      "model_id": "model_brompton_c_line",
+      "summary": "A folding city-bike family for combining riding with compact storage and public transport.",
+      "scope": "Non-electric C Line: current US buyer guide and individually identified Roller Rack 4-speed / 12-speed product pages",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://us.brompton.com/c-line",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame",
+          "value": "Steel"
+        },
+        {
+          "label": "Current buyer-guide gear options",
+          "value": "4-speed or 12-speed; confirmed on separately named product pages"
+        }
+      ],
+      "caveat": "Named gear options are not a complete history of C Line builds. Detailed 4-speed component fields are internally inconsistent, so fork and hub details are not added. Verify configuration-specific measurements and components with Brompton.",
+      "conflicts": [
+        {
+          "field": "folded_dimensions",
+          "values": [
+            "Family page: 23 × 22.2 × 10.6 inches",
+            "Named Roller Rack products: 25.3 × 23 × 10.6 inches"
+          ],
+          "resolution": null,
+          "note": "A single family-wide folded size has been withdrawn: family and specific-build pages differ. Confirm the exact handlebar, seatpost and rack configuration before relying on storage dimensions."
+        }
+      ],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null,
+        "family_folded_dimensions": null
+      },
+      "publication_status": "editorial_review_pending",
+      "review_sources": [
+        "https://us.brompton.com/bikes/help-me-choose",
+        "https://us.brompton.com/p/1759/c-line-4-speed-with-roller-rack",
+        "https://us.brompton.com/p/1758/c-line-with-roller-rack-12-speed"
+      ],
+      "resolution_note": "Gear-option display resolved by scope: current buyer guidance and named products establish 4-speed and 12-speed options. Mixed family-page copy still mentions 2/6/12 and is not treated as current availability for every generation."
+    },
+    {
+      "model_id": "model_cannondale_synapse",
+      "summary": "An endurance road platform with wider-tire capability and on-bike storage on the checked carbon version.",
+      "scope": "Synapse Carbon platform described on the checked US page",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.cannondale.com/en-us/bikes/c/road/synapse",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame",
+          "value": "Carbon"
+        },
+        {
+          "label": "Maximum measured tire width",
+          "value": "42 mm"
+        },
+        {
+          "label": "Storage",
+          "value": "StashPort internal storage"
+        }
+      ],
+      "caveat": "Carbon-platform details do not establish specifications for older or alloy Synapse models. SmartSense equipment varies by build.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_cannondale_topstone",
+      "summary": "A gravel family for mixed-surface rides; this example documents the alloy Topstone 2.",
+      "scope": "Topstone 2, model code C15861M; year not specified on source",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.cannondale.com/en/bikes/road/gravel/topstone-alloy/topstone-2",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame / fork",
+          "value": "SmartForm C2 aluminum / full carbon"
+        },
+        {
+          "label": "Shifting",
+          "value": "Shimano GRX 400, 10-speed rear cassette"
+        },
+        {
+          "label": "Brakes",
+          "value": "Shimano GRX 400 hydraulic disc"
+        }
+      ],
+      "caveat": "Specifications apply to the stated version. Confirm the exact build, size and market before buying parts or a bicycle.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_cannondale_treadwell",
+      "summary": "A casual fitness and town-bike family, represented here by the Treadwell 3.",
+      "scope": "Treadwell 3 on the checked US product page; year unspecified",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.cannondale.com/en-us/bikes/active/fitness/treadwell/treadwell-3",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame",
+          "value": "Aluminum"
+        },
+        {
+          "label": "Shifting",
+          "value": "microSHIFT, 7-speed"
+        },
+        {
+          "label": "Brakes",
+          "value": "Disc"
+        }
+      ],
+      "caveat": "Specifications apply to the stated version. Confirm the exact build, size and market before buying parts or a bicycle.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_canyon_grail",
+      "summary": "A gravel-racing platform; prioritize its race-oriented setup when comparing it with adventure-focused models.",
+      "scope": "Grail platform on the checked US family page",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.canyon.com/en-us/gravel-bikes/race/grail/",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame",
+          "value": "Carbon"
+        },
+        {
+          "label": "Maximum tire clearance",
+          "value": "42 mm"
+        }
+      ],
+      "caveat": "Clearance and cockpit details are generation-specific. Do not apply these values to earlier Grail frames.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_canyon_grizl",
+      "summary": "An adventure gravel family with luggage-mounting options for longer mixed-surface rides.",
+      "scope": "Grizl CF and AL range on the checked US family page",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame options",
+          "value": "Carbon and aluminum"
+        },
+        {
+          "label": "Maximum tire clearance",
+          "value": "54 mm"
+        },
+        {
+          "label": "Luggage",
+          "value": "Front and rear rack compatibility"
+        }
+      ],
+      "caveat": "Check the generation and approved rack before fitting luggage. These specifications do not apply automatically to older Grizl frames.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_cervelo_caledonia",
+      "summary": "An endurance road family intended for long road rides, with practical provision for fenders.",
+      "scope": "Caledonia, not Caledonia-5, on the checked manufacturer page",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.cervelo.com/en-US/bikes/caledonia",
+      "review_method": "manufacturer_search_index",
+      "facts": [
+        {
+          "label": "Maximum tire clearance",
+          "value": "36 mm"
+        },
+        {
+          "label": "Bottom bracket",
+          "value": "T47a threaded"
+        },
+        {
+          "label": "Weather equipment",
+          "value": "Fender mounts"
+        }
+      ],
+      "caveat": "Manufacturer content was retrieved through search indexing; direct retrieval encountered a redirect loop. Fender installation may reduce usable clearance; confirm the manual for your frame.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_electra_townie_go",
+      "summary": "An electric leisure-bike family with different drive systems across its builds.",
+      "scope": "Townie Go! 5i EQ FAQ; not the entire Townie Go! range",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://electra.trekbikes.com/us/en_US/FAQ/towniego5ieq/",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Motor",
+          "value": "Bosch Active Line Plus"
+        },
+        {
+          "label": "Battery",
+          "value": "Bosch PowerPack 400"
+        },
+        {
+          "label": "Tires",
+          "value": "26 × 2.35 inches"
+        }
+      ],
+      "caveat": "Other Townie Go! versions use different motors and batteries. Confirm the exact 5i EQ generation and local availability.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_giant_defy",
+      "summary": "An endurance road family; the checked 2025 Advanced 1 pairs a composite chassis with electronic shifting.",
+      "scope": "Defy Advanced 1 (2025), US manufacturer specification PDF",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://static.giant-bicycles.com/pdf/giant-defy-advanced-1-en-us-3854.pdf",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame and fork",
+          "value": "Advanced-Grade Composite"
+        },
+        {
+          "label": "Shifting",
+          "value": "Shimano 105 Di2, 12-speed cassette"
+        },
+        {
+          "label": "Brakes",
+          "value": "Shimano 105 hydraulic disc"
+        }
+      ],
+      "caveat": "Resolve the tire-clearance discrepancy with Giant for the exact frame before selecting larger tires.",
+      "conflicts": [
+        {
+          "field": "maximum_tire_clearance_mm",
+          "values": [
+            38,
+            40
+          ],
+          "resolution": null,
+          "note": "Both the US 2025 product page and matching PDF list 38 mm and 40 mm. Manufacturer confirmation is required; neither value is accepted as a resolved maximum."
+        }
+      ],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null,
+        "maximum_tire_clearance_mm": null
+      },
+      "publication_status": "editorial_review_pending",
+      "review_sources": [
+        "https://www.giant-bicycles.com/us/defy-advanced-1-2025",
+        "https://static.giant-bicycles.com/pdf/giant-defy-advanced-1-en-us-3854.pdf"
+      ],
+      "resolution_note": "The exact US 2025 product page repeats the PDF discrepancy: 38 mm in descriptive/Extras text and 40 mm in Max Tire Clearance. Neither source explicitly supersedes the other. Maximum clearance remains unknown pending manufacturer clarification; no larger-tire recommendation is made."
+    },
+    {
+      "model_id": "model_giant_escape",
+      "summary": "A flat-bar fitness and commuting family, represented by a specific 2025 disc-brake build.",
+      "scope": "Escape Disc 4 (2025), US product page",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.giant-bicycles.com/us/escape-disc-4-2025",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame",
+          "value": "ALUXX aluminum"
+        },
+        {
+          "label": "Wheels",
+          "value": "700c"
+        },
+        {
+          "label": "Brakes",
+          "value": "Mechanical disc"
+        }
+      ],
+      "caveat": "Specifications apply to the stated version. Confirm the exact build, size and market before buying parts or a bicycle.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_giant_revolt",
+      "summary": "A gravel family with adjustable rear geometry on the checked Advanced build.",
+      "scope": "Revolt Advanced 3 (2026), US product page",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.giant-bicycles.com/us/revolt-advanced-3",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame and fork",
+          "value": "Composite"
+        },
+        {
+          "label": "Tire clearance by flip-chip position",
+          "value": "45 mm short / 53 mm long"
+        },
+        {
+          "label": "Brakes",
+          "value": "Shimano CUES hydraulic disc"
+        }
+      ],
+      "caveat": "Clearance depends on flip-chip position. Confirm tire measurement, frame generation and the manufacturer setup instructions.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_gt_performer",
+      "summary": "A freestyle BMX family; the checked Pro Performer 20 is a retro-inspired build.",
+      "scope": "Pro Performer 20 product page; not every Performer variant",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://gtbicycles.com/products/pro-performer-20",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame, fork and handlebar",
+          "value": "Chromoly"
+        },
+        {
+          "label": "Wheel size",
+          "value": "20 inches"
+        },
+        {
+          "label": "Brakes",
+          "value": "Front and rear alloy U-brakes"
+        }
+      ],
+      "caveat": "Specifications apply to the stated version. Confirm the exact build, size and market before buying parts or a bicycle.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_marin_four_corners",
+      "summary": "A steel touring and mixed-surface family with mounting points for loaded trips.",
+      "scope": "Four Corners family page",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.marinbikes.com/in/bikes/family/four-corners",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame and fork",
+          "value": "Butted 4130 chromoly steel"
+        },
+        {
+          "label": "Wheel sizing",
+          "value": "XS/S: 650B; M/L/XL: 700C"
+        },
+        {
+          "label": "Mounts",
+          "value": "Rack, fender and lowrider fork mounts"
+        }
+      ],
+      "caveat": "The checked page is the India-market family overview. Model years and regional builds may differ; confirm wheel size on the exact bicycle.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_mongoose_legion",
+      "summary": "A freestyle BMX family spanning different equipment levels; this entry documents the L100.",
+      "scope": "Legion L100, international manufacturer product page",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://int.mongoose.com/products/legion-l100",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame and fork",
+          "value": "4130 chromoly"
+        },
+        {
+          "label": "Tires",
+          "value": "20 × 2.4 inches"
+        },
+        {
+          "label": "Top tube",
+          "value": "21 inches"
+        }
+      ],
+      "caveat": "L100 specifications must not be applied to lower-numbered Legion builds. Check fit and local build details separately.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_rad_power_bikes_radwagon",
+      "summary": "An electric cargo-bike family; the checked RadWagon 5 supports hauling with hydraulic braking.",
+      "scope": "RadWagon 5, US product page",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.radpowerbikes.com/collections/electric-bikes/products/radwagon-electric-cargo-bike",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Payload rating",
+          "value": "375 lb total payload; rider maximum 265 lb"
+        },
+        {
+          "label": "Brakes",
+          "value": "Hydraulic disc"
+        }
+      ],
+      "caveat": "Payload is not the rear-rack limit. Passenger accessories and their separate limits must be checked before carrying anyone. Range and regional assistance limits are not normalized here.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_salsa_cutthroat",
+      "summary": "A drop-bar mountain-bike platform for bikepacking and long off-pavement rides.",
+      "scope": "Cutthroat C Apex S1000 AXS Transmission product page",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.salsacycles.com/products/cutthroat-c-apex-s1000-axs-transmission",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame",
+          "value": "Carbon"
+        },
+        {
+          "label": "Design wheel/tire size",
+          "value": "29 × 2.25 inches"
+        },
+        {
+          "label": "Maximum tire size",
+          "value": "29 × 2.4 inches, subject to component clearance"
+        }
+      ],
+      "caveat": "Some front derailleurs reduce tire clearance. Confirm the exact frame and drivetrain rather than assuming a family-wide limit.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_santa_cruz_hightower",
+      "summary": "A full-suspension trail mountain-bike family with 29-inch wheels on the checked generation.",
+      "scope": "Hightower current family page, 150 mm rear-travel generation",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.santacruzbicycles.com/collections/hightower",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Front travel",
+          "value": "160 mm"
+        },
+        {
+          "label": "Rear travel",
+          "value": "150 mm"
+        },
+        {
+          "label": "Wheel size",
+          "value": "29 inches"
+        }
+      ],
+      "caveat": "Older Hightower generations have different travel and setup requirements.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_specialized_roubaix",
+      "summary": "An endurance road family using front-end compliance technology on the checked SL8 build.",
+      "scope": "Roubaix SL8 Shimano Tiagra, US product page",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.specialized.com/us/en/roubaix-sl8-shimano-tiagra/p/4263270",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Compliance system",
+          "value": "Future Shock 3.0 platform"
+        },
+        {
+          "label": "Manufacturer clearance wording",
+          "value": "Up to 38c / 40 mm"
+        }
+      ],
+      "caveat": "The source uses nominal and measured-style tire terminology together. Confirm actual tire/rim dimensions and the manual before selecting a larger tire.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_specialized_stumpjumper",
+      "summary": "A trail mountain-bike family with several chassis and suspension configurations.",
+      "scope": "Stumpjumper family comparison on checked US page",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.specialized.com/us/en/shop/bikes/mountain-bikes/trail-bikes/stumpjumper?productfamily=Stumpjumper",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Stumpjumper travel category",
+          "value": "150 mm front / 145 mm rear"
+        },
+        {
+          "label": "Stumpjumper EVO travel category",
+          "value": "160 mm front / 145 mm rear"
+        }
+      ],
+      "caveat": "Travel values are the family-page comparison categories, not a specification for every Stumpjumper 15 build. Confirm the exact model and fork.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_specialized_turbo_vado",
+      "summary": "An electric transport family for commuting and everyday trips.",
+      "scope": "Turbo Vado 2 4.0, US product ID 274953",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.specialized.com/us/en/turbo-vado-2-40/p/4274953",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame",
+          "value": "E5 aluminum"
+        },
+        {
+          "label": "Battery",
+          "value": "710 Wh"
+        },
+        {
+          "label": "Fork travel",
+          "value": "80 mm"
+        },
+        {
+          "label": "Brakes",
+          "value": "Shimano hydraulic disc"
+        }
+      ],
+      "caveat": "The source redirects to the Turbo Vado 2 4.0 naming. Equipment and assist limits differ by version and region; do not apply these details to Vado SL.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_surly_disc_trucker",
+      "summary": "A steel touring-bike family with disc brakes and multiple wheel-size versions.",
+      "scope": "Disc Trucker 26-inch Hi-Viz Black product page",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://surlybikes.com/products/disc-trucker-26-hi-viz-black",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame and fork",
+          "value": "4130 chromoly steel"
+        },
+        {
+          "label": "Checked product wheel size",
+          "value": "26 inches"
+        },
+        {
+          "label": "Rear spacing",
+          "value": "12 × 142 mm"
+        }
+      ],
+      "caveat": "The family also has 700c versions. Tire limits differ across current product, family and older documents; confirm the exact frame manual instead of using one family-wide clearance.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_tern_hsd",
+      "summary": "A compact electric cargo platform with provision for a passenger and vertical parking.",
+      "scope": "HSD Gen 2 family page at /bikes/472/hsd",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.ternbicycles.com/us/bikes/472/hsd",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Maximum gross vehicle weight",
+          "value": "180 kg, including bicycle, rider and cargo"
+        },
+        {
+          "label": "Rear rack rating",
+          "value": "80 kg"
+        },
+        {
+          "label": "Motor family",
+          "value": "Bosch Performance Line"
+        }
+      ],
+      "caveat": "Total and rack limits apply together. Passenger transport requires the correct accessories. Gen 1 and Gen 3 are separate platforms; do not transfer these specifications.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_trek_checkpoint",
+      "summary": "A gravel and bikepacking family; the checked ALR generation uses an alloy chassis and larger tire clearance.",
+      "scope": "Checkpoint ALR Gen 3 FAQ and platform",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.trekbikes.com/us/en_US/FAQ/checkpoint-alr-gen3/",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Frame category",
+          "value": "Aluminum"
+        },
+        {
+          "label": "Maximum measured tire width",
+          "value": "50 mm"
+        },
+        {
+          "label": "Geometry",
+          "value": "Gravel Endurance, shared with Gen 3 Checkpoint SL"
+        }
+      ],
+      "caveat": "These facts describe ALR Gen 3. Earlier ALR, carbon SL and racing-oriented models require their own specification checks.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_trek_domane",
+      "summary": "An endurance road family; Gen 5 SL/SLR changes the comfort and storage features used by earlier generations.",
+      "scope": "Domane SL and SLR Gen 5 FAQ",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.trekbikes.com/us/en_US/FAQ/domane-carbon-gen5/",
+      "review_method": "manufacturer_page",
+      "facts": [
+        {
+          "label": "Maximum tire width",
+          "value": "40 mm measured, with 4 mm tire-to-frame clearance"
+        },
+        {
+          "label": "IsoSpeed",
+          "value": "Not present on Gen 5"
+        },
+        {
+          "label": "Internal frame storage",
+          "value": "Not present on Gen 5"
+        },
+        {
+          "label": "Bottom bracket",
+          "value": "T47"
+        }
+      ],
+      "caveat": "Do not transfer Gen 4 IsoSpeed or storage claims to Gen 5. These facts do not describe Domane AL or electric Domane+ versions.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    },
+    {
+      "model_id": "model_trek_verve",
+      "summary": "A recreation-bike family; the referenced Verve 2 Disc documents an older specific build.",
+      "scope": "Verve 2 Disc, product 28003; model year not confirmed",
+      "reviewed_on": "2026-09-18",
+      "source_url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/comfort-recreation-bikes/verve/verve-2-disc/p/28003/",
+      "review_method": "manufacturer_search_index",
+      "facts": [
+        {
+          "label": "Brakes",
+          "value": "Tektro HD-M275 hydraulic disc, 160 mm rotors"
+        },
+        {
+          "label": "Maximum total weight",
+          "value": "300 lb / 136 kg, including bicycle, rider and cargo"
+        }
+      ],
+      "caveat": "Specifications came from the manufacturer search index; the direct page returned limited content. This is not evidence of current stock or specifications for newer Verve generations or electric Verve+.",
+      "conflicts": [],
+      "unknowns": {
+        "current_price": null,
+        "complete_bike_weight": null,
+        "full_size_geometry": null
+      },
+      "publication_status": "editorial_review_pending"
+    }
+  ]
+}

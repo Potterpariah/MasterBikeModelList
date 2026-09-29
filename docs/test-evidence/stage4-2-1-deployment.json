@@ -1,0 +1,40 @@
+{
+  "release": "4.2.1",
+  "verified_at_utc": "2026-09-18T19:33:26.273838+00:00",
+  "cloudflare_version": "9ae154f2-ba5f-4af5-91bb-c746cf09229f",
+  "url": "https://bike-portal-stage4.m25-f6b.workers.dev/",
+  "automated_tests": {
+    "passed": 20,
+    "failed": 0
+  },
+  "dry_run": "passed using esbuild-wasm 0.28.1 with Wrangler 4.131.2",
+  "bundle_verification": "passed: exact browser-source equivalence, valid JS, compiled homepage",
+  "deployment": {
+    "passed": true,
+    "upload_kib": 99.92,
+    "gzip_kib": 28.14,
+    "startup_ms": 1
+  },
+  "bindings_preserved": [
+    "DB",
+    "MEDIA",
+    "AUTH_LIMITER",
+    "WRITE_LIMITER"
+  ],
+  "live_http_passes": [
+    "homepage 200 and Garage link",
+    "health 200",
+    "JS and CSS exact source match",
+    "noindex header on checked routes",
+    "anonymous library 401 with no-store"
+  ],
+  "live_browser_passes": [
+    "top Garage opens existing garage",
+    "Saved and Following show existing discussion title and numbered rows",
+    "title search filters lists",
+    "saved title opens matching discussion"
+  ],
+  "live_user_data_mutations": false,
+  "schema_or_seed_migrations": false,
+  "remaining_gates": "docs/STAGE4_REMAINING_CHECKS.md"
+}

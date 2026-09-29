@@ -1,0 +1,217 @@
+{
+  "checked_at": "2026-09-18T22:00:22.209Z",
+  "release": "4.3.1",
+  "deployment_version": "4f414fec-3600-44c7-bb85-dc8bdad94f79",
+  "base": "https://bike-portal-stage4.m25-f6b.workers.dev",
+  "checks": [
+    {
+      "path": "/api/portal/catalog",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/c-line",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/synapse",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/topstone",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/treadwell",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/grail",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/grizl",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/caledonia",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/townie-go",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/defy",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/escape",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/revolt",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/performer",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/four-corners",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/legion",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/radwagon",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/cutthroat",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/hightower",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/roubaix",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/stumpjumper",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/turbo-vado",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/disc-trucker",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/hsd",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/checkpoint",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/domane",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/verve",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/brands",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/brands/trek",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes?q=trek",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/guides/fix-a-flat",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/events",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/editorial",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/about",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/community-guidelines",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/data-use",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/bikes/not-a-model",
+      "status": 404,
+      "noindex": true
+    },
+    {
+      "path": "/api/me/library",
+      "status": 401,
+      "noindex": true
+    },
+    {
+      "path": "/portal.js?v=4.3.1",
+      "status": 200,
+      "noindex": true
+    }
+  ],
+  "model_count": 25,
+  "model_fact_count": 71,
+  "outcome": "passed",
+  "scope": "Read-only live HTTP checks; no account or database mutations."
+}

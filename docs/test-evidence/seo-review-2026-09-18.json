@@ -1,0 +1,1694 @@
+{
+  "checked_at": "2026-09-18T19:40:50.025Z",
+  "base": "https://bike-portal-stage4.m25-f6b.workers.dev",
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "robots": "noindex, nofollow",
+      "cache": "no-store",
+      "bytes": 11178,
+      "observed_ms": 294,
+      "title": "Bike Portal | Your next ride starts here",
+      "meta": [
+        "<meta charset=\"utf-8\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+        "<meta name=\"theme-color\" content=\"#235d43\">",
+        "<meta name=\"description\" content=\"Find your next Texas cycling event, learn essential bike maintenance, explore bikes and brands, and connect with fellow riders at Bike Portal.\">"
+      ],
+      "canonicals": [],
+      "jsonld": 0,
+      "h1": [
+        "Your next ridestarts here."
+      ],
+      "links": [
+        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23235d43'/%3E%3Ctext x='24' y='34' text-anchor='middle' font-size='33' fill='%23d9ef86'%3EB%3C/text%3E%3C/svg%3E",
+        "/portal.css?v=4.2.1",
+        "#main",
+        "/",
+        "#events",
+        "#guides",
+        "#bikes",
+        "#discussions",
+        "#garage",
+        "#login",
+        "#signup",
+        "#search/gravel",
+        "#guide/fix-a-flat",
+        "#discover",
+        "#events",
+        "#guides",
+        "#discover",
+        "#discussions",
+        "/api/events",
+        "#all-events",
+        "#event/event_2026_09_19_2026_midnight_massacre",
+        "#event/event_2026_09_19_2026_midnight_massacre",
+        "#event/event_2026_09_19_conquer_the_coast",
+        "#event/event_2026_09_19_conquer_the_coast",
+        "#event/event_2026_09_19_cotton_patch_challenge",
+        "#event/event_2026_09_19_cotton_patch_challenge",
+        "#all-guides",
+        "#guide/bicycle-tire-pressure-fundamentals",
+        "#guide/bicycle-tire-pressure-fundamentals",
+        "#guide/fix-a-flat",
+        "#guide/fix-a-flat",
+        "#guide/rear-derailleur-indexing",
+        "#guide/rear-derailleur-indexing",
+        "#discover",
+        "#brand/brand_brompton",
+        "#brand/brand_cannondale",
+        "#brand/brand_canyon",
+        "#brand/brand_giant",
+        "#brand/brand_salsa",
+        "#brand/brand_specialized",
+        "#brand/brand_surly",
+        "#brand/brand_trek",
+        "#new-discussion",
+        "#discussion/9b71d725-04da-4527-9c9b-73aefdb17929",
+        "#discussion/89bb629c-0881-416c-93ec-a21c645021ed",
+        "#discussion/710f3d63-ab6f-4e2c-a680-7597b839deca",
+        "#signup",
+        "#garage",
+        "#notifications",
+        "/stage4-test"
+      ]
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "robots": "noindex, nofollow",
+      "cache": "no-store",
+      "bytes": 1248,
+      "observed_ms": 27
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 404,
+      "content_type": "application/json; charset=utf-8",
+      "robots": "noindex, nofollow",
+      "cache": "no-store",
+      "bytes": 21,
+      "observed_ms": 19
+    },
+    {
+      "path": "/api/portal/catalog",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "robots": "noindex, nofollow",
+      "cache": "no-store",
+      "bytes": 38227,
+      "observed_ms": 124,
+      "counts": {
+        "guides": 16,
+        "brands": 18,
+        "bikes": 25
+      },
+      "guides": [
+        {
+          "title": "BMX Bike Basics: Race, Freestyle and Getting Started",
+          "slug": "bmx-bike-basics",
+          "words": 159,
+          "body": "BMX is not one single use case. BMX racing happens on purpose-built tracks with start gates, rollers, jumps and banked turns, while freestyle bikes are designed around tricks and park, street or ramp riding. A bike that looks like a BMX bike is not automatically ideal for every BMX discipline.\n\nFor racing, start with the local track rather than buying blindly. USA BMX recommends finding a nearby track first and notes that many tracks have loaner bikes and helmets for beginners. That gives a new rider a chance to learn the format and understand sizing and equipment before committing to a bike.\n\nRace bikes prioritize acceleration and track handling, while freestyle bikes generally prioritize strength and trick-specific setup. Fit, wheel size and gearing also vary with rider size and discipline.\n\nThe portal should connect BMX model pages to local-track discussions, setup questions and beginner resources so riders can learn from active participants rather than relying only on product descriptions.",
+          "sources": "[\"https://www.usabmx.com/about/sport\"]"
+        },
+        {
+          "title": "Bicycle Tire Pressure Fundamentals",
+          "slug": "bicycle-tire-pressure-fundamentals",
+          "words": 174,
+          "body": "There is no single correct tire pressure for every rider. Useful pressure depends on tire width and construction, rim dimensions, total rider-and-bike weight, riding surface, weather and whether the system uses tubes or tubeless tires.\n\nStart inside the tire, rim and wheel manufacturers' permitted pressure and compatibility limits. A pressure calculator built for your wheel system can provide a starting point, but it is still a starting point rather than a universal answer. SRAM/Zipp's current guidance, for example, asks for tire width, rim width, rider and bike weight, riding discipline and conditions before producing a recommendation.\n\nToo much pressure can reduce comfort and control on rough surfaces, while too little can create excessive casing movement, rim strikes, burping or pinch-flat risk depending on the system. Make small changes, record front and rear values separately, and test on the surfaces you actually ride.\n\nFor event pages, the portal should never prescribe one PSI to everyone. It should link riders to setup guidance and let them save their own tested pressure notes in the Bike Garage.",
+          "sources": "[\"https://www.sram.com/en/zipp/campaigns/know-your-tire-pressure\", \"https://www.sram.com/en/zipp/learn/how-to-calculate-tire-pressure\"]"
+        },
+        {
+          "title": "Bikepacking Basics: Planning Your First Overnight",
+          "slug": "bikepacking-basics-first-overnight",
+          "words": 186,
+          "body": "Your first bikepacking trip does not need to be an expedition. A short overnight close to home is useful because it lets you test bags, clothing, sleeping gear, food, water, navigation, and bicycle handling without committing to a multi-day route.\n\nChoose the bike for the terrain rather than for a label. The important question is whether the bicycle, tires, gearing, brakes, and carrying system are appropriate for the surfaces and load. REI's bikepacking guidance recommends keeping much of the weight on the bike rather than on your back and distributing cargo so the bicycle remains manageable.\n\nLoaded bikes accelerate, brake, climb, and corner differently. Do at least one local shakedown ride with the actual bags and approximate cargo weight. Check that nothing rubs the tires, interferes with steering, loosens over rough surfaces, or makes it difficult to access water and repair equipment.\n\nFor longer routes, the portal should connect route planning with community knowledge: water availability, resupply, surface conditions, camping rules, seasonal weather, and known mechanical problems. Rider reports are useful context, but current land-manager and route-source information should remain the authority for access and closures.",
+          "sources": "[\"https://www.rei.com/learn/series/intro-to-bikepacking\", \"https://www.rei.com/learn/expert-advice/bikepacking.html\"]"
+        },
+        {
+          "title": "Cargo Bike Buying Guide",
+          "slug": "cargo-bike-buying-guide",
+          "words": 157,
+          "body": "Cargo bikes are designed around carrying more than a normal bicycle. Common layouts include longtails with extended rear racks, more compact mid-tail utility bikes, and front-loading box bikes. The right layout depends on what you carry, how much space you have to store the bike, and how comfortable you are maneuvering a longer or heavier bicycle.\n\nElectric assist can make hills, frequent stops and heavy loads easier, but it also adds cost and weight. Check the complete bike's maximum gross weight and rack limits rather than assuming that a large-looking rack can safely carry any passenger or load.\n\nIf passengers are part of the plan, use the bicycle manufacturer's approved system. Current Tern guidance, for example, emphasizes staying within weight limits and providing purpose-built seating, handholds, foot support, and foot/leg protection.\n\nBefore buying, test the bike loaded if possible. Starting, stopping, low-speed balance, parking, turning radius and storage often matter more in daily use than top speed.",
+          "sources": "[\"https://www.rei.com/learn/expert-advice/how-to-use-a-cargo-bike.html\", \"https://www.ternbicycles.com/us/explore/passengers/tern-passenger-guide\"]"
+        },
+        {
+          "title": "Commuter Bike Setup Checklist",
+          "slug": "commuter-bike-setup-checklist",
+          "words": 205,
+          "body": "A useful commuter setup starts with reliability rather than accessories. Make sure the bike fits well enough for the distance you plan to ride and that the tires, brakes, drivetrain, wheels, steering, and contact points are in sound condition. A bike you already own can often be a perfectly good commuter if it is mechanically ready.\n\nBuild the carrying system around what you actually transport. A backpack is simple and moves between bikes, while a rack with panniers can move weight off your back. Add a lock suited to where and how long the bike will be left unattended. Lights, visibility equipment, fenders, and weather layers become more important when commuting is a routine rather than an occasional ride.\n\nCarry enough repair equipment to solve the failures you are prepared to fix: commonly a spare tube or patch system, pump or inflator, tire levers, and a compact multi-tool. Keep a phone, identification, and whatever navigation or emergency information makes sense for the route.\n\nThe best setup is the one that removes reasons not to ride. Save a standard commuter checklist to your profile, note what is permanently stored at work, and keep the bike's normal tire pressure and repair kit recorded in your Bike Garage.",
+          "sources": "[\"https://www.rei.com/learn/expert-advice/cycling-commuting-checklist.html\", \"https://www.rei.com/learn/expert-advice/commuter-bike-gear.html\"]"
+        },
+        {
+          "title": "E-Bike Basics: Classes, Range, Charging, and Everyday Use",
+          "slug": "ebike-basics-classes-range-charging",
+          "words": 214,
+          "body": "Start by identifying what kind of e-bike you actually have. In the common U.S. three-class framework, Class 1 provides pedal assistance up to 20 mph, Class 2 can provide motor propulsion without pedaling up to 20 mph, and Class 3 provides pedal assistance up to 28 mph. Access rules can differ by state, city, trail, park, event, and land manager, so a class label does not automatically tell you where the bike is allowed.\n\nTreat advertised range as a planning estimate rather than a promise. Actual distance per charge changes with assist level, rider and cargo weight, elevation, wind, temperature, tire choice and pressure, surface, stop-start traffic, and battery condition. For a commute or event, build margin into the plan instead of assuming the maximum marketing range will be available.\n\nFor charging, follow the battery and charger manufacturer's instructions. Bosch, for example, tells riders to use the original compatible charger, charge in a dry area, and avoid routinely draining the battery completely. Its current guidance recommends roughly 30–60% charge for long-term storage and avoiding excessive heat.\n\nBefore taking an e-bike to an organized ride, check the organizer's equipment rules. Some events allow certain pedal-assist classes while others restrict e-bikes entirely. The portal should therefore store event-specific e-bike eligibility separately from a bike's general class.",
+          "sources": "[\"https://www.peopleforbikes.org/electric-bikes/policies-and-laws\", \"https://help.bosch-ebike.com/au/connect/help-center/asset-ast-00046\"]"
+        },
+        {
+          "title": "Event-Week Bike Preparation Checklist",
+          "slug": "event-week-bike-prep-checklist",
+          "words": 216,
+          "body": "Do not save major bicycle changes for the night before an event. Early in event week, inspect tires, wheels, brakes, drivetrain, controls, and fasteners so there is time to repair or replace anything questionable and then test it on a normal ride. If you install a new tire, chain, brake pad, cable, or other critical component, give yourself enough time to verify that the repair works correctly before event morning.\n\nTwo to three days before the ride, clean the bike enough to make inspection easy. Check tire condition and pressure, brake response, shifting, wheel security, and the condition of your usual repair kit. Confirm that the spare tube fits the tire and valve depth, or that your tubeless plug and inflation setup is actually usable with your bike. Charge electronic shifting, lights, computers, and e-bike batteries when applicable.\n\nThe day before the event, avoid unnecessary mechanical experiments. Recheck the event organizer's current route, start time, parking, packet pickup, equipment rules, and weather-related notices. Lay out the equipment you already know works for you.\n\nOn event morning, repeat a short pre-ride safety check: tires, wheel retention, brakes, steering, saddle, drivetrain, and repair supplies. If the event page on this portal shows an organizer update that conflicts with an older saved detail, follow the newest official organizer information.",
+          "sources": "[\"https://www.parktool.com/en-us/blog/repair-help\", \"https://www.parktool.com/en-us/blog/repair-help/tire-and-tube-removal-and-installation\"]"
+        },
+        {
+          "title": "Folding Bike Buying Guide",
+          "slug": "folding-bike-buying-guide",
+          "words": 159,
+          "body": "A folding bike is most useful when storage and transport are part of the ride. Apartment living, office storage, trains, buses, RV travel and mixed-mode commuting can make fold size and carrying convenience as important as normal riding performance.\n\nCompare the folded dimensions, actual carrying weight, folding process, wheel size, gearing and luggage options. A compact fold is not automatically better if the bicycle is awkward to carry or does not suit the distance and terrain you ride.\n\nThink about the full commute. If you need to carry the folded bike up stairs every day, weight matters. If you mainly roll it into an office or store it under a desk, folded footprint may matter more. Brompton's current commuting guidance specifically highlights indoor storage and combining cycling with other transportation as major advantages of folding bikes.\n\nThe portal's folding-bike pages should therefore collect owner reports about real folded size, carrying experience, transit use, luggage and maintenance—not only manufacturer specifications.",
+          "sources": "[\"https://us.brompton.com/stories/guides/folding-bike-buyers-guide\", \"https://us.brompton.com/stories/guides/commuting-guide\"]"
+        },
+        {
+          "title": "How to Choose the Right Type of Bicycle",
+          "slug": "how-to-choose-the-right-bike",
+          "words": 181,
+          "body": "Start with where you will ride most often. Paved-road fitness and event riding point toward road or endurance bikes; mixed pavement and unpaved roads often favor gravel or versatile hybrid designs; technical dirt trails usually call for a mountain bike. Cargo, folding and electric bikes solve different transportation problems rather than fitting neatly into performance categories.\n\nNext decide what the bike must carry and where it must live. A commuter may value rack and fender mounts, an apartment rider may benefit from a folding bike, and a parent or frequent errand rider may need a purpose-built cargo bike. Then consider terrain and gearing, especially if your normal routes include sustained hills.\n\nFit should be treated as a requirement, not an upgrade. Manufacturer sizing charts are a starting point, but two bikes labeled the same size can fit differently. Test-riding or getting fit help is especially valuable when you are between sizes or planning long rides.\n\nThe portal should let users start with a need—commuting, racing, touring, trail riding, hauling, exercise or events—and then compare model families that actually match that use.",
+          "sources": "[\"https://www.rei.com/learn/expert-advice/bicycle.html\", \"https://www.rei.com/learn/expert-advice/bike-fit.html\"]"
+        },
+        {
+          "title": "How to Fix a Flat Tire With an Inner Tube",
+          "slug": "fix-a-flat",
+          "words": 234,
+          "body": "Move to a safe place away from traffic before working on the bike. Remove the affected wheel using the correct procedure for your brake and axle system. Fully deflate the tube, release one tire bead from the rim, and remove the tube. Tire levers can help with tight beads, but avoid sharp improvised tools that can damage the tire or tube.\n\nBefore installing a replacement tube, find the cause of the flat. Inspect the outside and inside of the tire for glass, wire, thorns, cuts, or other debris. Also inspect the rim strip and the inside of the rim for exposed spoke holes or sharp edges. Skipping this inspection can puncture the new tube immediately.\n\nPut a small amount of air into the replacement tube so it holds its shape, insert it into the tire, and make sure the valve sits straight in the rim. Reinstall the tire bead carefully, watching that the tube is not trapped between the tire and rim. Inflate gradually and inspect both sides of the tire to make sure the bead is seated evenly before bringing it to riding pressure.\n\nReinstall the wheel and confirm it is securely retained. Before riding away, spin the wheel and test the brake. If the tire casing, bead, wheel, or axle system is damaged, or you are unsure the wheel is safely installed, do not continue riding until the problem is properly inspected.",
+          "sources": "[\"https://www.parktool.com/en-us/blog/repair-help/tire-and-tube-removal-and-installation\", \"https://www.parktool.com/en-us/blog/repair-help/inner-tube-repair\", \"https://www.parktool.com/en-int/blog/repair-help/wheel-removal-and-installation\"]"
+        },
+        {
+          "title": "Pre-Ride Bicycle Safety Check",
+          "slug": "pre-ride-bike-safety-check",
+          "words": 234,
+          "body": "A pre-ride check should answer one question: is the bicycle ready to be ridden safely today? Start with the tires. Confirm both tires are inflated appropriately for the tire, rim, rider, and riding conditions, then inspect the tread and sidewalls for cuts, embedded debris, or obvious damage. Spin each wheel and look for severe wobble or rubbing.\n\nNext, check wheel retention. Quick-release levers, thru-axles, or axle nuts should be fully secured according to the bicycle or component manufacturer's instructions. Squeeze the front and rear brakes independently and confirm each brake engages firmly before the lever reaches the handlebar. Look at the brake pads and rotors or rims for obvious damage or contamination.\n\nRun through the drivetrain by shifting across several gears while pedaling in a safe test area or work stand. Listen for skipping, grinding, or unusually hesitant shifts. Check that the chain is lubricated appropriately and not visibly damaged. A noisy drivetrain is not always dangerous, but sudden skipping under load is a reason to investigate before a long ride.\n\nFinish with the contact points and controls: handlebars and stem should not rotate unexpectedly, the saddle should be secure, and pedals should feel normal. Carry the repair items appropriate for your setup, such as a spare tube or tubeless repair system, tire levers, inflation, and a basic multi-tool. If anything feels structurally loose, cracked, or unfamiliar, stop and have it inspected before riding.",
+          "sources": "[\"https://www.parktool.com/en-us/blog/repair-help/tire-and-tube-removal-and-installation\", \"https://www.parktool.com/en-int/blog/repair-help/wheel-removal-and-installation\"]"
+        },
+        {
+          "title": "Preparing for Your First Century Ride",
+          "slug": "first-century-ride-preparation",
+          "words": 244,
+          "body": "A century ride is long enough that preparation matters more than one heroic workout. Build riding volume progressively from your current level and include longer rides that let you test your bike fit, pacing, clothing, repair kit, food, and hydration strategy before event day. Your longest training ride does not need to duplicate every mile of the event, but it should give you confidence that your setup and pacing work for sustained riding.\n\nUse training rides to learn what becomes uncomfortable after several hours. Persistent hand numbness, knee pain, saddle problems, or unusual mechanical noise should be addressed before the event rather than accepted as part of long-distance cycling. Major fit or equipment changes are best tested well in advance.\n\nIn event week, reduce the urge to make up for missed training. Prioritize a mechanically sound bike, familiar equipment, sleep, and a plan based on the organizer's route and support information. REI's endurance-cycling guidance similarly emphasizes progressive conditioning and reducing workload before the event rather than trying to gain fitness at the last moment.\n\nOn ride day, start at a pace you expect to maintain rather than the pace of the fastest group leaving the line. Use the event's official rest-stop and route information to plan your day, and carry enough repair capability to handle the failures you know how to fix. If you have health concerns or are starting a new exercise program, get appropriate medical guidance before undertaking a demanding endurance event.",
+          "sources": "[\"https://www.rei.com/learn/expert-advice/cycling-how-to-cross-train.html\"]"
+        },
+        {
+          "title": "Preparing for Your First Gravel Event",
+          "slug": "first-gravel-event-preparation",
+          "words": 200,
+          "body": "Gravel events vary enormously. One may be a fully supported social ride while another expects riders to navigate remote roads with minimal support. Start by reading the organizer's current description carefully: distance, surface, elevation, aid stations, navigation requirements, cutoff times, e-bike rules, and whether the course is marked.\n\nUse training rides to test the bike on surfaces similar to the event. Tire volume, tread, pressure, and puncture protection matter more when pavement gives way to loose gravel, washboard, sharp rock, sand, or low-water crossings. Do not copy another rider's pressure blindly; use a safe starting point for your specific tire, rim, system, rider weight, load, and terrain, then test it before event day.\n\nCarry the repair and navigation equipment the event requires and that you know how to use. A spare tube can still be useful even on a tubeless setup, and remote events may require riders to carry more water, food, inflation capacity, or navigation backup than a supported road ride.\n\nIn event week, verify the newest organizer updates. Gravel routes are especially vulnerable to weather, road work, land-access changes, and last-minute reroutes. The portal's event page should show a last-verified timestamp and separate official facts from community reports.",
+          "sources": "[\"https://www.rei.com/learn/expert-advice/basic-cycling-checklist.html\", \"https://castellgrind.com/rider-bible\", \"https://rattlesnakegravelgrind.bike/\"]"
+        },
+        {
+          "title": "Preparing for Your First Mountain Bike Race",
+          "slug": "first-mountain-bike-race-prep",
+          "words": 186,
+          "body": "Before entering a mountain-bike race, be comfortable riding terrain similar to what the event describes. Cross-country and endurance races can combine singletrack, wider trails, climbs, descents, rocks, tight turns, and sections where passing is limited. USA Cycling emphasizes being comfortable riding near other people as well as practicing cornering, braking, descending, and starts.\n\nPractice the equipment you will actually race with. If you use clipless pedals, practice starting and clipping in under pressure. If you use flat pedals, make sure shoe and pedal grip are familiar. Test tire pressure, suspension settings, bottle or hydration-pack placement, and anything mounted to the bike before race weekend.\n\nMechanical preparation should happen early enough to allow a test ride. Inspect tires, brake pads, drivetrain, wheel retention, suspension, cockpit fasteners, and any known creaks or looseness. Do not make an unnecessary major setup change the night before the race.\n\nFinally, read the event's category, start-wave, course, equipment, timing, and passing rules. Texas events range from beginner-friendly categories to restricted interscholastic competition, so the portal should show eligibility and race format prominently rather than assuming every MTB event works the same way.",
+          "sources": "[\"https://usacycling.org/article/learning-essential-skills-for-your-first-mountain-bike-race\", \"https://www.rei.com/learn/expert-advice/basic-cycling-checklist.html\"]"
+        },
+        {
+          "title": "Rear Derailleur Indexing: A Practical Troubleshooting Guide",
+          "slug": "rear-derailleur-indexing",
+          "words": 214,
+          "body": "Rear-derailleur indexing is the adjustment that aligns each indexed shifter click with a cassette cog. Before adjusting it, make sure the problem is actually indexing. A dirty or damaged cable system, a worn chain or cassette, a bent derailleur hanger, or a damaged derailleur can produce shifting symptoms that a barrel adjuster cannot permanently solve.\n\nFor normal indexing, begin with the derailleur and drivetrain in a condition appropriate for adjustment and follow the component manufacturer's instructions. The barrel adjuster changes the cable-tension relationship between shifter clicks and cog position. Small changes are usually better than large ones. Test one shift at a time, then run through the cassette in both directions.\n\nLimit screws are not the normal fix for routine indexing noise. They exist primarily to limit how far the derailleur can travel at the ends of the cassette. Incorrect limit adjustment can allow the chain to move beyond the intended range, so do not use the limit screws as general-purpose noise adjusters.\n\nIf shifting remains inconsistent in only a few heavily used gears, inspect chain and sprocket wear. If it is hesitant in both directions, cable friction or contamination may be involved. If the bike was recently crashed or the rear derailleur was struck, hanger alignment should be checked before chasing indexing adjustments.",
+          "sources": "[\"https://www.parktool.com/en-int/blog/repair-help/rear-derailleur-adjustment\", \"https://www.parktool.com/en-us/blog/repair-help/rear-derailleur-advanced-troubleshooting\", \"https://www.parktool.com/en-us/blog/repair-help/rear-derailleur-hanger-alignment\"]"
+        },
+        {
+          "title": "What to Bring to a Supported Bicycle Ride",
+          "slug": "what-to-bring-supported-bike-ride",
+          "words": 175,
+          "body": "A supported ride does not mean you should arrive with nothing. Start with the items the organizer explicitly requires, then carry the basics you would want if you had to handle a normal delay or simple mechanical problem between rest stops.\n\nFor many riders that means identification, phone, water capacity, appropriate clothing, sunscreen, and a basic flat-repair setup: a tube or repair system appropriate for the bike, tire levers, inflation, and a small multi-tool. REI's cycling checklists include these as common core repair items, although your exact kit should match your wheels, tires, axles, and skills.\n\nCheck what the organizer actually provides. Some Texas rides advertise SAG vehicles, mechanics, rest stops, food, and hydration; others explicitly expect more self-sufficiency. Also verify packet pickup, start time, parking, route files, weather notices, and any equipment restrictions before leaving home.\n\nA useful portal feature is a reusable event packing list attached to the user's profile. Riders could start with a default list, save bike-specific items, and let individual event pages add organizer-specific requirements without overwriting the personal checklist.",
+          "sources": "[\"https://www.rei.com/learn/expert-advice/basic-cycling-checklist.html\", \"https://www.rei.com/learn/expert-advice/cycling-commuting-checklist.html\"]"
+        }
+      ],
+      "brands": [
+        {
+          "name": "Bianchi",
+          "models": 0
+        },
+        {
+          "name": "Brompton",
+          "models": 1
+        },
+        {
+          "name": "Cannondale",
+          "models": 3
+        },
+        {
+          "name": "Canyon",
+          "models": 2
+        },
+        {
+          "name": "Cervelo",
+          "models": 1
+        },
+        {
+          "name": "Electra",
+          "models": 1
+        },
+        {
+          "name": "Giant",
+          "models": 3
+        },
+        {
+          "name": "GT",
+          "models": 1
+        },
+        {
+          "name": "Marin",
+          "models": 1
+        },
+        {
+          "name": "Mongoose",
+          "models": 1
+        },
+        {
+          "name": "Rad Power Bikes",
+          "models": 1
+        },
+        {
+          "name": "Salsa",
+          "models": 1
+        },
+        {
+          "name": "Santa Cruz",
+          "models": 1
+        },
+        {
+          "name": "Specialized",
+          "models": 3
+        },
+        {
+          "name": "Surly",
+          "models": 1
+        },
+        {
+          "name": "Tern",
+          "models": 1
+        },
+        {
+          "name": "Trek",
+          "models": 3
+        },
+        {
+          "name": "Yeti",
+          "models": 0
+        }
+      ]
+    },
+    {
+      "path": "/api/events",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "robots": "noindex, nofollow",
+      "cache": "no-store",
+      "bytes": 29048,
+      "observed_ms": 51,
+      "response_keys": [
+        "events"
+      ],
+      "events": [
+        {
+          "id": "event_2026_09_12_7th_annual_rollin_pearland_charity_cycling_event_rp7",
+          "slug": "2026-09-12-manvel-7th-annual-rollin-pearland-charity-cycling-event-rp7",
+          "title": "7th Annual Rollin' Pearland Charity Cycling Event (RP7)",
+          "start_date": "2026-09-12",
+          "end_date": "2026-09-12",
+          "city": "Manvel",
+          "state": "TX",
+          "venue_name": "The Grove in Pomona",
+          "source_url": "https://www.jlcycling.org/rollin-pearland",
+          "registration_url": "https://www.bikereg.com/76430",
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "charity ride",
+            "community ride"
+          ],
+          "distances": [
+            10,
+            30,
+            50,
+            70
+          ]
+        },
+        {
+          "id": "event_2026_09_12_rolling_into_fall_bicycle_rally",
+          "slug": "2026-09-12-corinth-rolling-into-fall-bicycle-rally",
+          "title": "Rolling Into Fall Bicycle Rally",
+          "start_date": "2026-09-12",
+          "end_date": "2026-09-12",
+          "city": "Corinth",
+          "state": "TX",
+          "venue_name": "The Agora",
+          "source_url": "https://www.rollingintofall.com/",
+          "registration_url": null,
+          "verification_status": "verified_with_route_conflict",
+          "verified_on": "2026-09-11",
+          "notes": "Date, start location and event identity are verified. Current organizer/registration pages conflict on three route mileages, so route distances must not drive filters until reconciled.",
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "rally",
+            "community ride"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2026_09_12_tour_de_las_misiones",
+          "slug": "2026-09-12-san-antonio-tour-de-las-misiones",
+          "title": "Tour de las Misiones",
+          "start_date": "2026-09-12",
+          "end_date": "2026-09-12",
+          "city": "San Antonio",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.worldheritagefestival.org/EVENT-INFORMATION/BIKE-RIDE-WALK",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "community ride",
+            "heritage ride"
+          ],
+          "distances": [
+            7,
+            14,
+            22
+          ]
+        },
+        {
+          "id": "event_2026_09_13_waco_wild_west_100",
+          "slug": "2026-09-13-waco-waco-wild-west-100",
+          "title": "Waco Wild West 100",
+          "start_date": "2026-09-13",
+          "end_date": "2026-09-13",
+          "city": "Waco",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://wacowildwest100.com/info/",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": null,
+          "notes": "Multiple staggered starts; routes include a family ride and century.",
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "tour",
+            "charity ride"
+          ],
+          "distances": [
+            6,
+            26,
+            43,
+            62,
+            100
+          ]
+        },
+        {
+          "id": "event_2026_09_19_2026_midnight_massacre",
+          "slug": "2026-09-19-gainesville-2026-midnight-massacre",
+          "title": "2026 Midnight Massacre",
+          "start_date": "2026-09-19",
+          "end_date": "2026-09-19",
+          "city": "Gainesville",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://runsignup.com/Race/TX/Gainesville/MidnightMassacre2026",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": null,
+          "notes": null,
+          "disciplines": [
+            "gravel"
+          ],
+          "event_types": [
+            "night ride",
+            "timed ride"
+          ],
+          "distances": [
+            25,
+            50,
+            75
+          ]
+        },
+        {
+          "id": "event_2026_09_19_conquer_the_coast",
+          "slug": "2026-09-19-corpus-christi-conquer-the-coast",
+          "title": "Conquer the Coast",
+          "start_date": "2026-09-19",
+          "end_date": "2026-09-19",
+          "city": "Corpus Christi",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://unitedcorpuschristi.org/conquer-the-coast/",
+          "registration_url": null,
+          "verification_status": "verified_with_conflict",
+          "verified_on": null,
+          "notes": "Do not normalize long-route mileage until organizer materials agree.",
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "tour",
+            "community ride"
+          ],
+          "distances": [
+            10,
+            21
+          ]
+        },
+        {
+          "id": "event_2026_09_19_cotton_patch_challenge",
+          "slug": "2026-09-19-greenville-cotton-patch-challenge",
+          "title": "Cotton Patch Challenge",
+          "start_date": "2026-09-19",
+          "end_date": "2026-09-19",
+          "city": "Greenville",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://cottonpatchchallenge.com/",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "road",
+            "gravel",
+            "recreational"
+          ],
+          "event_types": [
+            "ride",
+            "challenge"
+          ],
+          "distances": [
+            6,
+            12,
+            21,
+            35,
+            46,
+            61,
+            76,
+            100,
+            31,
+            42,
+            57
+          ]
+        },
+        {
+          "id": "event_2026_09_19_fort_davis_cyclefest",
+          "slug": "2026-09-19-fort-davis-fort-davis-cyclefest",
+          "title": "Fort Davis Cyclefest",
+          "start_date": "2026-09-19",
+          "end_date": "2026-09-20",
+          "city": "Fort Davis",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://pbbatx.com/cyclefest",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": null,
+          "notes": null,
+          "disciplines": [
+            "road",
+            "hill climb"
+          ],
+          "event_types": [
+            "tour",
+            "competitive climb"
+          ],
+          "distances": [
+            34,
+            54,
+            76
+          ]
+        },
+        {
+          "id": "event_2026_09_26_tors_race_2_flower_mound",
+          "slug": "2026-09-26-flower-mound-tors-race-2-flower-mound",
+          "title": "TORS Race 2 - Flower Mound",
+          "start_date": "2026-09-26",
+          "end_date": "2026-09-27",
+          "city": "Flower Mound",
+          "state": "TX",
+          "venue_name": "Northshore Trail MADD Shelter",
+          "source_url": "https://www.bikesignup.com/Race/TX/FlowerMound/TORSRace2",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": "Two-day Texas Off-Road Series weekend. Current registration lists Saturday and Sunday racing and category-specific approximate distance guidance.",
+          "disciplines": [
+            "mountain",
+            "gravel"
+          ],
+          "event_types": [
+            "race",
+            "series"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2026_09_27_chile_pepper_challenge",
+          "slug": "2026-09-27-el-paso-chile-pepper-challenge",
+          "title": "Chile Pepper Challenge",
+          "start_date": "2026-09-27",
+          "end_date": "2026-09-27",
+          "city": "El Paso",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.elpasobicycleclub.com/chile-pepper-challenge",
+          "registration_url": null,
+          "verification_status": "verified_with_conflict",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "challenge ride"
+          ],
+          "distances": [
+            5,
+            25,
+            40
+          ]
+        },
+        {
+          "id": "event_2026_10_03_2026_texas_gravel_champs",
+          "slug": "2026-10-03-whitney-2026-texas-gravel-champs",
+          "title": "2026 Texas Gravel Champs",
+          "start_date": "2026-10-03",
+          "end_date": "2026-10-03",
+          "city": "Whitney",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://runsignup.com/Race/TX/Whitney/TexasGravelChamps2026",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": null,
+          "notes": "80-mile championship route; 35 and 55-mile untimed options.",
+          "disciplines": [
+            "gravel"
+          ],
+          "event_types": [
+            "race",
+            "untimed ride"
+          ],
+          "distances": [
+            35,
+            55,
+            80
+          ]
+        },
+        {
+          "id": "event_2026_10_03_autumn_in_bonham_century_mile_ride",
+          "slug": "2026-10-03-bonham-autumn-in-bonham-century-mile-ride",
+          "title": "Autumn in Bonham Century Mile Ride",
+          "start_date": "2026-10-03",
+          "end_date": "2026-10-03",
+          "city": "Bonham",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://autumninbonham.com/",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": "Current organizer page and registration agree on multiple paved and gravel options; registration currently labels the family route as 4 miles.",
+          "disciplines": [
+            "road",
+            "gravel",
+            "recreational"
+          ],
+          "event_types": [
+            "rally",
+            "century ride",
+            "gravel ride"
+          ],
+          "distances": [
+            4,
+            30,
+            40,
+            68,
+            100,
+            48,
+            67
+          ]
+        },
+        {
+          "id": "event_2026_10_03_bike_ms_ride_to_the_river",
+          "slug": "2026-10-03-san-antonio-bike-ms-ride-to-the-river",
+          "title": "Bike MS: Ride to the River",
+          "start_date": "2026-10-03",
+          "end_date": "2026-10-04",
+          "city": "San Antonio",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://events.nationalmssociety.org/",
+          "registration_url": null,
+          "verification_status": "verified_partial",
+          "verified_on": "2026-09-11",
+          "notes": "Date/start-area verified. Route distances should remain blank until confirmed from current organizer route materials.",
+          "disciplines": [
+            "road",
+            "endurance"
+          ],
+          "event_types": [
+            "multi-day ride",
+            "fundraiser"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2026_10_03_bridging_the_gap_ride_7",
+          "slug": "2026-10-03-sugar-land-bridging-the-gap-ride-7",
+          "title": "Bridging the Gap Ride #7",
+          "start_date": "2026-10-03",
+          "end_date": "2026-10-04",
+          "city": "Sugar Land",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.bikesignup.com/Race/Events/TX/SugarLand/BridgingtheGapRide",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": "Registration materials have changed route-mileage wording over time; retain last-verified values and recheck before deployment.",
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "supported ride",
+            "fundraiser"
+          ],
+          "distances": [
+            40,
+            65,
+            100
+          ]
+        },
+        {
+          "id": "event_2026_10_03_sloan_everett_pure_country_pedal_memorial_bike_ride",
+          "slug": "2026-10-03-breckenridge-sloan-everett-pure-country-pedal-memorial-bike-ride",
+          "title": "Sloan Everett Pure Country Pedal Memorial Bike Ride",
+          "start_date": "2026-10-03",
+          "end_date": "2026-10-03",
+          "city": "Breckenridge",
+          "state": "TX",
+          "venue_name": "Breckenridge City Park",
+          "source_url": "https://purecountrypedal.com/",
+          "registration_url": null,
+          "verification_status": "verified_partial_routes",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "charity ride",
+            "community ride"
+          ],
+          "distances": [
+            59,
+            32
+          ]
+        },
+        {
+          "id": "event_2026_10_04_pinkstrong_ride",
+          "slug": "2026-10-04-hutto-pinkstrong-ride",
+          "title": "PinkStrong Ride",
+          "start_date": "2026-10-04",
+          "end_date": "2026-10-04",
+          "city": "Hutto",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.bikesignup.com/Race/PinkStrongRide/Page/Pink-Strong-Ride-FAQ",
+          "registration_url": null,
+          "verification_status": "verified_with_conflict",
+          "verified_on": "2026-09-11",
+          "notes": "Do not use the long-route mileage as an exact filter value until organizer materials agree.",
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "supported ride",
+            "fundraiser"
+          ],
+          "distances": [
+            10,
+            25,
+            35,
+            45
+          ]
+        },
+        {
+          "id": "event_2026_10_10_6th_annual_bike_ride_for_survivors",
+          "slug": "2026-10-10-sugar-land-6th-annual-bike-ride-for-survivors",
+          "title": "6th Annual Bike Ride for Survivors",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-10",
+          "city": "Sugar Land",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.eventbrite.com/e/6th-annual-bike-ride-for-survivors-tickets-registrations",
+          "registration_url": null,
+          "verification_status": "verified_registration",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "fundraiser",
+            "supported ride"
+          ],
+          "distances": [
+            20,
+            40,
+            55
+          ]
+        },
+        {
+          "id": "event_2026_10_10_ray_porter_memorial_6_hour_endurance_race_and_fundraiser",
+          "slug": "2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser",
+          "title": "Ray Porter Memorial 6 Hour Endurance Race & Fundraiser",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-10",
+          "city": "Denton",
+          "state": "TX",
+          "venue_name": "Jeff LaQuey Memorial Trail (Denton MTB Trail)",
+          "source_url": "https://www.bikesignup.com/Race/TX/Denton/RayPorterMemorial",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": "Race runs 4:00 PM-10:00 PM. Course details were still pending on the current registration page.",
+          "disciplines": [
+            "mountain",
+            "e-bike"
+          ],
+          "event_types": [
+            "endurance race",
+            "fundraiser"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2026_10_10_tour_de_fireant",
+          "slug": "2026-10-10-marshall-tour-de-fireant",
+          "title": "Tour de FireAnt",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-10",
+          "city": "Marshall",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://marshalltexas.com/tourdefireant-5k/",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": null,
+          "notes": "Official page lists 30, 45-mile, and 100K routes.",
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "tour",
+            "community ride"
+          ],
+          "distances": [
+            30,
+            45,
+            62.1
+          ]
+        },
+        {
+          "id": "event_2026_10_10_tour_de_madison_bike_ride_2026",
+          "slug": "2026-10-10-madisonville-tour-de-madison-bike-ride-2026",
+          "title": "Tour de Madison Bike Ride 2026",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-10",
+          "city": "Madisonville",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.active.com/madisonville-tx/cycling/tour-de-madison-bike-ride-2026",
+          "registration_url": null,
+          "verification_status": "verified_registration",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "community ride"
+          ],
+          "distances": [
+            10,
+            20,
+            33
+          ]
+        },
+        {
+          "id": "event_2026_10_10_trek_100_texas_2026",
+          "slug": "2026-10-10-glen-rose-trek-100-texas-2026",
+          "title": "Trek 100 Texas 2026",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-10",
+          "city": "Glen Rose",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.trekbikes.com/mx/es_MX/trek100texas/",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": "Trek's current indexed event page confirms Glen Rose and Saturday, October 10, 2026. Route distances remain blank until directly confirmed from current organizer materials.",
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "charity ride",
+            "community ride"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2026_10_17_barrow_volksride",
+          "slug": "2026-10-17-salado-barrow-volksride",
+          "title": "Barrow Volksride",
+          "start_date": "2026-10-17",
+          "end_date": "2026-10-17",
+          "city": "Salado",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://barrowbrewing.com/volksride",
+          "registration_url": null,
+          "verification_status": "verified_with_conflict",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "community ride",
+            "fundraiser"
+          ],
+          "distances": [
+            16,
+            32
+          ]
+        },
+        {
+          "id": "event_2026_10_17_bike_around_the_bay",
+          "slug": "2026-10-17-galveston-bay-area-bike-around-the-bay",
+          "title": "Bike Around the Bay",
+          "start_date": "2026-10-17",
+          "end_date": "2026-10-18",
+          "city": "Galveston Bay Area",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.galvbay.org/bike-around-the-bay",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "road",
+            "endurance"
+          ],
+          "event_types": [
+            "two-day ride",
+            "fundraiser"
+          ],
+          "distances": [
+            175
+          ]
+        },
+        {
+          "id": "event_2026_10_17_bike_around_the_island",
+          "slug": "2026-10-17-galveston-bike-around-the-island",
+          "title": "Bike Around the Island",
+          "start_date": "2026-10-17",
+          "end_date": "2026-10-17",
+          "city": "Galveston",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.galvbay.org/bike-around-the-bay",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "one-day ride",
+            "fundraiser"
+          ],
+          "distances": [
+            20,
+            43
+          ]
+        },
+        {
+          "id": "event_2026_10_17_camp_spinistry_bikepacking_kickoff_weekend",
+          "slug": "2026-10-17-gainesville-camp-spinistry-bikepacking-kickoff-weekend",
+          "title": "Camp Spinistry: Bikepacking Kickoff Weekend",
+          "start_date": "2026-10-17",
+          "end_date": "2026-10-18",
+          "city": "Gainesville",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://runsignup.com/Race/TX/Gainesville/CampSpinistryBikepackingKickoffWeekend",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": null,
+          "notes": "Approximate Saturday route options; weekend includes education and camping.",
+          "disciplines": [
+            "bikepacking",
+            "gravel"
+          ],
+          "event_types": [
+            "education",
+            "self-supported ride"
+          ],
+          "distances": [
+            30,
+            60
+          ]
+        },
+        {
+          "id": "event_2026_10_17_goodnight_s_grind_gravel",
+          "slug": "2026-10-17-clarendon-goodnight-s-grind-gravel",
+          "title": "Goodnight's Grind Gravel",
+          "start_date": "2026-10-17",
+          "end_date": "2026-10-17",
+          "city": "Clarendon",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.bikesignup.com/Race/TX/Clarendon/GoodnightsGrind",
+          "registration_url": null,
+          "verification_status": "verified_partial_routes_tba",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "gravel",
+            "e-bike"
+          ],
+          "event_types": [
+            "race",
+            "gravel challenge"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2026_10_17_marfa_100",
+          "slug": "2026-10-17-marfa-marfa-100",
+          "title": "Marfa 100",
+          "start_date": "2026-10-17",
+          "end_date": "2026-10-17",
+          "city": "Marfa",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.marfa100.com/",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": "Do not infer exact route mileage from the event name alone; store only mileage explicitly published by the organizer when rechecked.",
+          "disciplines": [
+            "road",
+            "endurance"
+          ],
+          "event_types": [
+            "ride",
+            "challenge"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2026_10_17_missions_tour_de_goliad",
+          "slug": "2026-10-17-goliad-missions-tour-de-goliad",
+          "title": "Missions Tour de Goliad",
+          "start_date": "2026-10-17",
+          "end_date": "2026-10-17",
+          "city": "Goliad",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.missionstourdegoliad.com/",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "tour",
+            "community ride"
+          ],
+          "distances": [
+            10,
+            30,
+            50,
+            65
+          ]
+        },
+        {
+          "id": "event_2026_10_17_tors_race_3_warda",
+          "slug": "2026-10-17-warda-tors-race-3-warda",
+          "title": "TORS Race 3 - Warda",
+          "start_date": "2026-10-17",
+          "end_date": "2026-10-18",
+          "city": "Warda",
+          "state": "TX",
+          "venue_name": "Bluff Creek Ranch",
+          "source_url": "https://www.bikesignup.com/Race/TX/Warda/TORSRace3",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "mountain",
+            "gravel"
+          ],
+          "event_types": [
+            "race",
+            "series"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2026_10_24_bikes_and_beers_austin",
+          "slug": "2026-10-24-austin-bikes-and-beers-austin",
+          "title": "Bikes & Beers Austin",
+          "start_date": "2026-10-24",
+          "end_date": "2026-10-24",
+          "city": "Austin",
+          "state": "TX",
+          "venue_name": "Meanwhile Brewing",
+          "source_url": "https://www.bikesignup.com/Race/Events/TX/Austin/BikesandBeersAustin",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": "Open-road recreational ride with post-ride festival; organizer safety materials state roads are not closed.",
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "supported ride",
+            "festival"
+          ],
+          "distances": [
+            15,
+            30,
+            45
+          ]
+        },
+        {
+          "id": "event_2026_10_24_cooler_n_hell_gravel",
+          "slug": "2026-10-24-wichita-falls-cooler-n-hell-gravel",
+          "title": "Cooler'N Hell Gravel",
+          "start_date": "2026-10-24",
+          "end_date": "2026-10-24",
+          "city": "Wichita Falls",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.coolernhellgravel.com/",
+          "registration_url": "https://www.bikereg.com/73356",
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "gravel"
+          ],
+          "event_types": [
+            "race",
+            "casual ride"
+          ],
+          "distances": [
+            27,
+            50,
+            100
+          ]
+        },
+        {
+          "id": "event_2026_10_24_kerrville_mountain_bike_festival_usac_texas_mtb_state_championship",
+          "slug": "2026-10-24-kerrville-kerrville-mountain-bike-festival-usac-texas-mtb-state-championship",
+          "title": "Kerrville Mountain Bike Festival / USAC Texas MTB State Championship",
+          "start_date": "2026-10-24",
+          "end_date": "2026-10-25",
+          "city": "Kerrville",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.bikereg.com/the-kerrville-mountain-bike-festival",
+          "registration_url": null,
+          "verification_status": "verified_registration",
+          "verified_on": "2026-09-11",
+          "notes": "Current registration includes multiple XC championship categories plus supporting festival/race events.",
+          "disciplines": [
+            "mountain"
+          ],
+          "event_types": [
+            "festival",
+            "state championship",
+            "race"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2026_10_24_park_to_port_bike_ride",
+          "slug": "2026-10-24-houston-park-to-port-bike-ride",
+          "title": "Park to Port Bike Ride",
+          "start_date": "2026-10-24",
+          "end_date": "2026-10-24",
+          "city": "Houston",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.bikesignup.com/Race/TX/Houston/ParktoPortBikeRide",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "community ride",
+            "fundraiser"
+          ],
+          "distances": [
+            20
+          ]
+        },
+        {
+          "id": "event_2026_10_24_pedal_palacios",
+          "slug": "2026-10-24-palacios-pedal-palacios",
+          "title": "Pedal Palacios",
+          "start_date": "2026-10-24",
+          "end_date": "2026-10-24",
+          "city": "Palacios",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.zeffy.com/en-US/ticketing/pedal-palacios",
+          "registration_url": null,
+          "verification_status": "verified_registration",
+          "verified_on": "2026-09-11",
+          "notes": "Registration page is hosted for the Palacios Chamber of Commerce and lists SAG support, six rest stops and a post-ride shrimp boil.",
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "community ride",
+            "fundraiser"
+          ],
+          "distances": [
+            12,
+            36,
+            60
+          ]
+        },
+        {
+          "id": "event_2026_10_24_rockstacker_challenge_mountain_bike_race",
+          "slug": "2026-10-24-odessa-rockstacker-challenge-mountain-bike-race",
+          "title": "Rockstacker Challenge Mountain Bike Race",
+          "start_date": "2026-10-24",
+          "end_date": "2026-10-24",
+          "city": "Odessa",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.bikereg.com/77164",
+          "registration_url": null,
+          "verification_status": "verified_registration",
+          "verified_on": "2026-09-11",
+          "notes": "Distances vary by category; includes youth beginner/advanced divisions.",
+          "disciplines": [
+            "mountain"
+          ],
+          "event_types": [
+            "race"
+          ],
+          "distances": [
+            3.5,
+            9,
+            18,
+            27
+          ]
+        },
+        {
+          "id": "event_2026_10_24_tour_de_cure_texas",
+          "slug": "2026-10-24-dallas-tour-de-cure-texas",
+          "title": "Tour de Cure: Texas",
+          "start_date": "2026-10-24",
+          "end_date": "2026-10-24",
+          "city": "Dallas",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://tour.diabetes.org/txtour",
+          "registration_url": null,
+          "verification_status": "verified_partial",
+          "verified_on": "2026-09-11",
+          "notes": "Date/location verified; route distances should be populated only after current organizer route details are confirmed.",
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "fundraiser",
+            "supported ride"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2026_10_24_trick_it_up_bike_ride_2026",
+          "slug": "2026-10-24-farmersville-trick-it-up-bike-ride-2026",
+          "title": "Trick It Up Bike Ride 2026",
+          "start_date": "2026-10-24",
+          "end_date": "2026-10-24",
+          "city": "Farmersville",
+          "state": "TX",
+          "venue_name": "Historic Onion Shed",
+          "source_url": "https://www.bikereg.com/trick-it-up-bikeride",
+          "registration_url": null,
+          "verification_status": "verified_registration",
+          "verified_on": "2026-09-11",
+          "notes": "Current registration links the Farmersville Chamber of Commerce as the event website.",
+          "disciplines": [
+            "road",
+            "gravel",
+            "recreational"
+          ],
+          "event_types": [
+            "community ride"
+          ],
+          "distances": [
+            22,
+            32,
+            42,
+            51,
+            60,
+            50
+          ]
+        },
+        {
+          "id": "event_2026_11_07_pedal_in_the_pines",
+          "slug": "2026-11-07-cleveland-pedal-in-the-pines",
+          "title": "Pedal in the Pines",
+          "start_date": "2026-11-07",
+          "end_date": "2026-11-07",
+          "city": "Cleveland",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.logjamfest.org/pedal-in-the-pines",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": "Formerly Rock-N-Ride; organizer page confirms Nov. 7, 2026, 7:00 AM start, and 28/52-mile route maps.",
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "supported ride",
+            "community festival ride"
+          ],
+          "distances": [
+            28,
+            52
+          ]
+        },
+        {
+          "id": "event_2026_11_07_rideataxia_dallas_2026",
+          "slug": "2026-11-07-lewisville-rideataxia-dallas-2026",
+          "title": "rideATAXIA Dallas 2026",
+          "start_date": "2026-11-07",
+          "end_date": "2026-11-07",
+          "city": "Lewisville",
+          "state": "TX",
+          "venue_name": "Lewisville Railroad Park",
+          "source_url": "https://www.curefa.org/get-involved/fundraising-and-events/rideataxia/",
+          "registration_url": null,
+          "verification_status": "verified_partial_routes",
+          "verified_on": "2026-09-11",
+          "notes": "Organizer confirms the Nov. 7, 2026 Dallas-area event and Lewisville Railroad Park location. Route mileages are intentionally left blank until confirmed from the event-specific current page.",
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "charity ride",
+            "community ride"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2026_11_14_pedaling_for_the_veterans_2026",
+          "slug": "2026-11-14-wallis-pedaling-for-the-veterans-2026",
+          "title": "Pedaling for the Veterans 2026",
+          "start_date": "2026-11-14",
+          "end_date": "2026-11-14",
+          "city": "Wallis",
+          "state": "TX",
+          "venue_name": "Wallis Columbus Hall",
+          "source_url": "https://www.ready2rollcycling.com/pedaling-for-the-veterans/",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": "Organizer confirms Saturday, Nov. 14, 2026. Multiple distance options are advertised, but exact mileages are intentionally left blank until the current registration exposes them directly.",
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "charity ride",
+            "supported ride"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2026_11_21_tors_race_4_sugar_land",
+          "slug": "2026-11-21-sugar-land-tors-race-4-sugar-land",
+          "title": "TORS Race 4 - Sugar Land",
+          "start_date": "2026-11-21",
+          "end_date": "2026-11-22",
+          "city": "Sugar Land",
+          "state": "TX",
+          "venue_name": "Brazos River Park",
+          "source_url": "https://www.bikesignup.com/Race/TX/Sugarland/TORSRace4",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "mountain",
+            "gravel"
+          ],
+          "event_types": [
+            "race",
+            "series"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2026_11_21_turkey_roll_bicycle_rally",
+          "slug": "2026-11-21-denton-turkey-roll-bicycle-rally",
+          "title": "Turkey Roll Bicycle Rally",
+          "start_date": "2026-11-21",
+          "end_date": "2026-11-21",
+          "city": "Denton",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://dentonturkeyroll.com/",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": null,
+          "notes": "35-mile route is a hybrid/gravel option; organizer says routes are subject to change.",
+          "disciplines": [
+            "road",
+            "gravel",
+            "recreational"
+          ],
+          "event_types": [
+            "rally",
+            "fundraiser"
+          ],
+          "distances": [
+            8,
+            21,
+            34,
+            35,
+            48,
+            62
+          ]
+        },
+        {
+          "id": "event_2026_12_05_mission_to_mission_charity_bike_tour",
+          "slug": "2026-12-05-san-antonio-mission-to-mission-charity-bike-tour",
+          "title": "Mission to Mission Charity Bike Tour",
+          "start_date": "2026-12-05",
+          "end_date": "2026-12-05",
+          "city": "San Antonio",
+          "state": "TX",
+          "venue_name": "Mission County Park Pavilion",
+          "source_url": "https://www.m2msa.com/",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "road",
+            "recreational"
+          ],
+          "event_types": [
+            "charity ride",
+            "tour"
+          ],
+          "distances": [
+            17,
+            24,
+            48,
+            62
+          ]
+        },
+        {
+          "id": "event_2026_12_05_tors_race_5_rally_ready",
+          "slug": "2026-12-05-dale-tors-race-5-rally-ready",
+          "title": "TORS Race 5 - Rally Ready",
+          "start_date": "2026-12-05",
+          "end_date": "2026-12-05",
+          "city": "Dale",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://dfwseries.com/upcoming-events/",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": "Texas Off-Road Series Race 5 / series finale. Current series partner calendar lists Dec. 5, 2026 in Dale.",
+          "disciplines": [
+            "mountain"
+          ],
+          "event_types": [
+            "race",
+            "series finale"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2026_12_06_r3_express_gravel_challenge_2026",
+          "slug": "2026-12-06-huntsville-r3-express-gravel-challenge-2026",
+          "title": "R3 Express Gravel Challenge 2026",
+          "start_date": "2026-12-06",
+          "end_date": "2026-12-06",
+          "city": "Huntsville",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.bikereg.com/",
+          "registration_url": null,
+          "verification_status": "verified_with_date_conflict",
+          "verified_on": "2026-09-11",
+          "notes": "Current BikeReg index lists R3 Express - Gravel Challenge in Huntsville on Dec. 6, 2026. A current secondary calendar still lists Nov. 16, 2026. Use the registration-source date, but preserve the conflict and recheck before deployment.",
+          "disciplines": [
+            "gravel"
+          ],
+          "event_types": [
+            "gravel challenge",
+            "race"
+          ],
+          "distances": [
+            28,
+            55
+          ]
+        },
+        {
+          "id": "event_2026_12_12_rudolph_s_revenge",
+          "slug": "2026-12-12-aubrey-rudolph-s-revenge",
+          "title": "Rudolph's Revenge",
+          "start_date": "2026-12-12",
+          "end_date": "2026-12-12",
+          "city": "Aubrey",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://www.bikesignup.com/Race/TX/Aubrey/RudolphsRevenge2021",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": "2026-09-11",
+          "notes": "Endurance MTB event with geared, singlespeed and junior categories.",
+          "disciplines": [
+            "mountain"
+          ],
+          "event_types": [
+            "endurance race"
+          ],
+          "distances": [
+            30,
+            40
+          ]
+        },
+        {
+          "id": "event_2027_01_23_2027_texas_chainring_massacre",
+          "slug": "2027-01-23-gainesville-2027-texas-chainring-massacre",
+          "title": "2027 Texas Chainring Massacre",
+          "start_date": "2027-01-23",
+          "end_date": "2027-01-23",
+          "city": "Gainesville",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://runsignup.com/Race/TX/Gainesville/TexasChainringMassacre2027",
+          "registration_url": null,
+          "verification_status": "verified",
+          "verified_on": null,
+          "notes": "Distances are described by organizer as approximately 35, 50, and 75+ miles.",
+          "disciplines": [
+            "gravel"
+          ],
+          "event_types": [
+            "race",
+            "untimed ride"
+          ],
+          "distances": [
+            35,
+            50,
+            75
+          ]
+        },
+        {
+          "id": "event_2027_02_06_texas_nica_north_troy_race_weekend",
+          "slug": "2027-02-06-troy-texas-nica-north-troy-race-weekend",
+          "title": "Texas NICA North - Troy Race Weekend",
+          "start_date": "2027-02-06",
+          "end_date": "2027-02-07",
+          "city": "Troy",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://texasmtb.org/events-and-race-weekends/",
+          "registration_url": null,
+          "verification_status": "verified_restricted",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "mountain"
+          ],
+          "event_types": [
+            "interscholastic race"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2027_02_06_texas_nica_south_warda_race_weekend",
+          "slug": "2027-02-06-warda-texas-nica-south-warda-race-weekend",
+          "title": "Texas NICA South - Warda Race Weekend",
+          "start_date": "2027-02-06",
+          "end_date": "2027-02-07",
+          "city": "Warda",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://texasmtb.org/events-and-race-weekends/",
+          "registration_url": null,
+          "verification_status": "verified_restricted",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "mountain"
+          ],
+          "event_types": [
+            "interscholastic race"
+          ],
+          "distances": []
+        },
+        {
+          "id": "event_2027_02_20_texas_nica_north_granbury_race_weekend",
+          "slug": "2027-02-20-granbury-texas-nica-north-granbury-race-weekend",
+          "title": "Texas NICA North - Granbury Race Weekend",
+          "start_date": "2027-02-20",
+          "end_date": "2027-02-21",
+          "city": "Granbury",
+          "state": "TX",
+          "venue_name": null,
+          "source_url": "https://texasmtb.org/events-and-race-weekends/",
+          "registration_url": null,
+          "verification_status": "verified_restricted",
+          "verified_on": "2026-09-11",
+          "notes": null,
+          "disciplines": [
+            "mountain"
+          ],
+          "event_types": [
+            "interscholastic race"
+          ],
+          "distances": []
+        }
+      ],
+      "count": 50
+    },
+    {
+      "path": "/portal.js?v=4.2.1",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "robots": "noindex, nofollow",
+      "cache": "public, max-age=300",
+      "bytes": 32669,
+      "observed_ms": 21
+    },
+    {
+      "path": "/portal.css?v=4.2.1",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "robots": "noindex, nofollow",
+      "cache": "public, max-age=300",
+      "bytes": 11789,
+      "observed_ms": 21
+    }
+  ],
+  "robots_txt": "# As a condition of accessing this website, you agree to abide by the following\n# content signals:\n\n# (a)  If a content-signal = yes, you may collect content for the corresponding\n#      use.\n# (b)  If a content-signal = no, you may not collect content for the\n#      corresponding use.\n# (c)  If the website operator does not include a content signal for a\n#      corresponding use, the website operator neither grants nor restricts\n#      permission via content signal with respect to the corresponding use.\n\n# The content signals and their meanings are:\n\n# search:   building a search index and providing search results (e.g., returning\n#           hyperlinks and short excerpts from your website's contents). Search does not\n#           include providing AI-generated search summaries.\n# ai-input: inputting content into one or more AI models (e.g., retrieval\n#           augmented generation, grounding, or other real-time taking of content for\n#           generative AI search answers).\n# ai-train: training or fine-tuning AI models.\n\n# ANY RESTRICTIONS EXPRESSED VIA CONTENT SIGNALS ARE EXPRESS RESERVATIONS OF\n# RIGHTS UNDER ARTICLE 4 OF THE EUROPEAN UNION DIRECTIVE 2019/790 ON COPYRIGHT\n# AND RELATED RIGHTS IN THE DIGITAL SINGLE MARKET.\n",
+  "event_audit": {
+    "count": 72,
+    "missing_venues": 58,
+    "missing_verified_on": 14,
+    "status_counts": {
+      "verified": 38,
+      "verified_with_route_conflict": 1,
+      "verified_with_conflict": 4,
+      "verified_partial": 2,
+      "verified_partial_routes": 3,
+      "verified_registration": 8,
+      "verified_partial_routes_tba": 1,
+      "verified_with_date_conflict": 1,
+      "verified_restricted": 8,
+      "verified_with_naming_mismatch": 1,
+      "primary_source_tentative": 1,
+      "date_verified_venue_tbd": 1,
+      "date_verified_registration_pending": 1,
+      "verified_save_the_date": 2
+    },
+    "future": 68
+  },
+  "browser_observations": {
+    "home_title": "Bike Portal | Your next ride starts here",
+    "guide_url": "/#guide/fix-a-flat",
+    "guide_browser_title": "Bike Portal | Your next ride starts here",
+    "guide_heading": "How to Fix a Flat Tire With an Inner Tube",
+    "guide_presentation": "Dialog with prose, three Park Tool sources and a discussion prompt; no visible author or review date",
+    "home_test_discussions_visible": true
+  }
+}

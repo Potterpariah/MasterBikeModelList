@@ -1,0 +1,25 @@
+{
+  "release": "4.2.1",
+  "automated_tests": {
+    "passed": 20,
+    "failed": 0
+  },
+  "syntax_and_generated_client": "passed",
+  "browser_environment": "Local loopback, disposable fixtures and in-memory SQLite/media only",
+  "browser_observed_passes": [
+    "top Garage navigation opens garage",
+    "saved and followed numbered titles/types/dates/counts",
+    "literal angle brackets rendered safely",
+    "title search and no-match message",
+    "saved link opens correct discussion",
+    "Unsave/Unfollow survive reload",
+    "390px mobile navigation wraps",
+    "long saved titles wrap: page scrollWidth=clientWidth=375, dialog scrollWidth=clientWidth=320"
+  ],
+  "browser_console_warnings_or_errors": [],
+  "dry_run": "blocked by local sandbox filesystem access: Wrangler log directory EPERM and esbuild ancestor directory access denied",
+  "bundle_verification": "pending successful dry-run in user PowerShell",
+  "deployment_performed": false,
+  "latest_confirmed_live_version": "12b81299-0947-4fd4-aeef-3264a8a597ad",
+  "user_reported_live_checks": "Prior 4.2 own-account garage deletion, Save/Follow/Helpful and removal persistence passed; not live acceptance of 4.2.1"
+}
