@@ -64,6 +64,9 @@ test('garage deletion is scoped to its owner',async()=>{
  await h.req('/api/garage/'+id,a.cookie,'DELETE');assert.equal((await (await h.req('/api/garage',a.cookie)).json()).bikes.length,0);
  }finally{h.env._db.close();}
 });
+test('Garage client includes bike-type filtering and a searchable included-model field',async()=>{
+ const h=harness();try{const script=await (await h.req('/portal.js')).text();assert.match(script,/garage-bike-type/);assert.match(script,/garage-model-options/);assert.match(script,/All included bike types/);}finally{h.env._db.close();}
+});
 test('reactions, saves and follows persist idempotently and isolate users',async()=>{
  const h=harness();try{const a=await h.user('actiona'),b=await h.user('actionb'),id=await h.discussion(a);
  for(const endpoint of ['saves','follows'])for(let i=0;i<2;i++)assert.equal((await h.req('/api/'+endpoint,a.cookie,'POST',{entity_type:'discussion',entity_id:id,user_id:b.id})).status,200);
