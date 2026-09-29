@@ -26,6 +26,17 @@ For each candidate, compare date(s), city/venue, organizer, title/edition, statu
 
 Only an approved canonical Bike Portal ID may enable existing save/ride-plan controls. No Texas user save, account record, role, organizer data, message, submission, moderation data, or challenge state may be migrated.
 
+## Completion record — 2026-09-29
+
+The crosswalk now exists in `src/texas-public-features.js` as 11 machine-readable rows and is covered by the Texas catalog test. It is deliberately a **review queue**, not a merge operation:
+
+- 8 same-date/title or naming-variant candidates are `review_required` pending field-by-field comparison.
+- Bike Around the Bay is held for a location discrepancy.
+- Rattlesnake Gravel Grind is held for a date discrepancy.
+- East Texas Showdown is held because no canonical Bike Portal event was identified.
+
+No row writes to D1, appears as a second `/events` calendar entry, changes an existing Bike Portal event, or enables save/ride-plan behavior. This completes the crosswalk artifact without converting candidate similarity into public fact.
+
 ## Required next-stage checks
 
 1. Add focused crosswalk tests for every candidate and conflict hold.
