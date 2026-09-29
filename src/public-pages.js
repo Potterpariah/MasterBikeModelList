@@ -21,6 +21,7 @@ const mapsLink=query=>safeExternal('https://www.google.com/maps/search/?api=1&qu
 const icsText=value=>String(value??'').replace(/([,;\\])/g,'\\$1').replace(/\r?\n/g,'\\n');
 const icsDate=value=>String(value).replaceAll('-','');
 const gpxPoints=route=>{const points=route.distance?.includes('out-and-back')?[...route.geometry,...route.geometry.slice(0,-1).reverse()]:route.geometry;return points.map(([lat,lon])=>`<trkpt lat="${lat}" lon="${lon}"></trkpt>`).join('');};
+const checklistCard=item=>`<section class="checklist" aria-label="${e(item.timing)} ${e(item.title)}"><p class="eyebrow">${e(item.timing)}</p><h2>${e(item.title)}</h2><p>${e(item.intro)}</p><ul>${item.items.map((entry,index)=>`<li><label><input type="checkbox" aria-label="${e(item.title)} item ${index+1}"><span>${e(entry)}</span></label></li>`).join('')}</ul></section>`;
 function frame(request,env,title,description,path,body,schema=[]){
  const crumbs=[{name:'Home',path:'/'},...(path==='/'?[]:[{name:title,path}])];
  schema.push({'@type':'BreadcrumbList',itemListElement:crumbs.map((c,i)=>({'@type':'ListItem',position:i+1,name:c.name,item:siteOrigin(request,env)+c.path}))});
@@ -98,7 +99,7 @@ export async function publicPages(request,env){
   if(!id)return render('Bike maintenance & riding guides','Practical starting points for repairs, preparation and choosing equipment.',`<p><a href="/texas-rides">Start with the reviewed Texas ride set</a></p><div class="grid">${catalog.guides.map(g=>`<article class="card"><h2><a href="${publicPath('guide',g.slug)}">${e(g.title)}</a></h2><p>${e(g.summary)}</p></article>`).join('')}</div>`,true);
   const g=catalog.guides.find(g=>g.slug===id||g.id===id);if(!g)return notFound();
   if(g.slug!==id)return {body:null,status:308,headers:{Location:publicPath('guide',g.slug)}};
-  const extra=guideExtras[g.slug];const body=g.body_markdown.split(/\n\s*\n/).map((p,i)=>`${extra?.headings[i]?`<h2>${i+1}. ${e(extra.headings[i])}</h2>`:''}<p>${e(p)}</p>`).join('');
+  const extra=guideExtras[g.slug];const body=g.body_markdown.split(/\n\s*\n/).map((p,i)=>`${extra?.headings[i]?`<h2>${i+1}. ${e(extra.headings[i])}</h2>`:''}<p>${e(p)}</p>${extra?.checklists?.filter(item=>item.after===i).map(checklistCard).join('')||''}`).join('');
   const additional=extra?.sections.map(([h,p])=>`<section><h2>${e(h)}</h2><p>${e(p)}</p></section>`).join('')||'';
   const related=catalog.guides.filter(x=>x.slug!==g.slug&&(extra?.related.includes(x.slug)||x.cluster===g.cluster)).slice(0,3);
   return render(g.title,g.summary,`<article class="reading"><p class="meta">AI-assisted guide · Editorial update ${g.editorial_updated}${extra?` · Technical references checked ${extra.reviewed}`:''}. <a href="/editorial">Editorial standards</a></p>${extra?`<p class="empty">${e(extra.scope)}</p><h2>Before you start</h2><p>${e(extra.preparation)}</p><p class="meta">${e(extra.review_kind)}</p>`:''}${body}${additional}<h2>Sources & further reading</h2>${sources(arr(g.source_urls_json))}<h2>Continue preparing</h2><ul>${related.map(x=>`<li><a href="${publicPath('guide',x.slug)}">${e(x.title)}</a></li>`).join('')}</ul><p><a href="#garage">Record your setup in Bike Garage</a> · <a href="/events">Find a Texas event</a></p></article>`,Boolean(extra?.reviewed),[{'@type':'Article',headline:g.title,description:g.summary,mainEntityOfPage:siteOrigin(request,env)+path}]);

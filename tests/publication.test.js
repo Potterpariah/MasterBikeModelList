@@ -17,6 +17,7 @@ test('reviewed guides expose scope, preparation, technical additions and linked 
  const env=localEnv();try{const before=env._db.prepare('SELECT * FROM guides').all();
  for(const slug of Object.keys(reviewedGuides)){const r=await request(env,'/guides/'+slug);const h=await r.text();assert.equal(r.status,200);assert.match(h,/Before you start/);assert.match(h,/Reference-based technical review/);assert.match(h,/Technical references checked 2026-09-18/);assert.ok(h.indexOf('Before you start')<h.indexOf('<h2>1.'));}
  const flat=await (await request(env,'/guides/fix-a-flat')).text();assert.match(flat,/do not pull the brake lever while the wheel is out/);assert.match(flat,/Reconnect any rim-brake release/);assert.match(flat,/tire and rim makers/);
+ const eventWeek=await (await request(env,'/guides/event-week-bike-prep-checklist')).text();assert.match(eventWeek,/Equipment checklist — inspect before you pack/);assert.match(eventWeek,/Bike-type maintenance baseline/);assert.match(eventWeek,/Travel and location checklist/);assert.match(eventWeek,/Event-mode checklist/);assert.match(eventWeek,/manufacturer service intervals/);assert.match(eventWeek,/type="checkbox"/);
  assert.deepEqual(env._db.prepare('SELECT * FROM guides').all(),before);
  }finally{env._db.close();}
 });
