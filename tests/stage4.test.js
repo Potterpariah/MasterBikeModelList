@@ -23,6 +23,7 @@ test('saved library resolves named destinations and remains private to each acco
  assert.equal(data.saves.find(x=>x.entity_type==='discussion').href,'#discussion/'+id);
  assert.equal((await (await h.req('/api/me/library',b.cookie)).json()).saves.length,0);assert.equal((await h.req('/api/me/library')).status,401);
  const html=await (await h.req('/')).text();assert.match(html,/<details class="site-menu">[\s\S]*?<a href="\/texas\/clubs">Cycling clubs<\/a>[\s\S]*?<a href="#garage">Bike Garage<\/a>[\s\S]*?<\/details>/);
+ const editorial=await (await h.req('/editorial')).text();assert.match(editorial,/How Bike Portal reviews, updates, and presents cycling information\./);
  }finally{h.env._db.close();}
 });
 test('hidden and missing saved targets show removable unavailable entries without leaking titles',async()=>{
