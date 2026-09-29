@@ -8,7 +8,7 @@ The tracked source contains stable Texas event, city, and trail routes; page-spe
 
 ## Material launch gate
 
-Indexability must remain disabled until a verified canonical HTTPS domain is attached and the site has truthful operator, contact, privacy, terms, retention, and deletion information. A local build, test run, saved Worker version, or `workers.dev` endpoint is not evidence of a public SEO launch.
+Indexability must remain disabled until a verified canonical HTTPS domain is attached and the site has truthful operator, contact, privacy, terms, retention, and deletion information. The owner supplied `m36` and `m36@inzernet.com` for future public identity/contact use, but the domain and matching final policies remain unresolved. A local build, test run, saved Worker version, or `workers.dev` endpoint is not evidence of a public SEO launch.
 
 ## Required release verification
 

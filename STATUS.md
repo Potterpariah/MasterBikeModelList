@@ -13,7 +13,7 @@ The existing integration adds source-attributed Texas pages for events, cities, 
 ## SEO delivery state
 
 - Stable public routes, canonical metadata, internal links, breadcrumbs, structured data, source links, and a gated sitemap are implemented in the tracked source.
-- Indexing remains intentionally disabled until an owner-approved canonical HTTPS non-`workers.dev` domain and truthful public policies are available.
+- Indexing remains intentionally disabled until an owner-approved canonical HTTPS non-`workers.dev` domain and truthful public policies are available. The owner supplied the future public operator identity `m36` and monitored contact channel `m36@inzernet.com` on 2026-09-29; do not present them on public pages until the matching public-policy and launch work is authorized.
 - No local source check proves live Cloudflare behavior, public indexability, search-console ownership, crawling, traffic, or ranking.
 
 ## Current priority
@@ -22,4 +22,4 @@ Preserve the baseline and prepare only owner-authorized public-launch work. Reso
 
 ## Single next outcome
 
-Obtain verified owner decisions for the canonical public domain, public operator identity, monitored contact channel, and deletion/retention behavior; then implement only the agreed policy behavior and validate the actual deployed robots, sitemap, canonical URLs, and indexing directives.
+Choose and register a verified canonical public domain, then obtain final deletion/retention decisions; implement only the agreed policy behavior and validate the actual deployed robots, sitemap, canonical URLs, and indexing directives.
