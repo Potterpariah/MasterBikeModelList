@@ -2,7 +2,7 @@
 
 ## 2026-09-29 — Establish a local Git baseline without a remote
 
-Decision: initialize this integration copy as a standalone local Git repository on `main`, with no remote, push, deployment, or hosting change. Leave the initial commit staged until a local Git author identity is selected.
+Decision: initialize this integration copy as a standalone local Git repository on `main`, with no remote, push, deployment, or hosting change. The initial baseline was committed locally as `7b8bacf` after the user selected the repository-local author identity.
 
 Reason: version control protects the prepared Texas integration while keeping the archived original source and external Cloudflare state unchanged.
 

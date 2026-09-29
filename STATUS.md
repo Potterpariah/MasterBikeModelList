@@ -4,7 +4,9 @@ Updated: 2026-09-29
 
 ## Verified current state
 
-This local repository preserves the Bike Portal Stage 4.1 Texas integration source at `C:\Development\bike-portal-texas-integration`. Its initial baseline is staged on local branch `main` and awaits a user-selected local Git author identity before the first commit. It has no configured remote and has not been deployed, published, or connected to a public domain by this repository setup.
+This local repository preserves the Bike Portal Stage 4.1 Texas integration source at `C:\Development\bike-portal-texas-integration`. Its initial local baseline is commit `7b8bacf` (`Establish Bike Portal SEO baseline`) on branch `main`. It has no configured remote and has not been deployed, published, or connected to a public domain by this repository setup.
+
+Git verification after the baseline commit: `git fsck --full` found no corruption; `git status --short` was clean. The initial commit records 68 tracked files. Git reported only unreachable temporary objects left by pre-commit staging edits; they are outside the committed history and require no corrective action.
 
 The existing integration adds source-attributed Texas pages for events, cities, and trails while retaining the Stage 4 backend, bindings, migrations, and default noindex behavior. The prior checkpoint records local `npm.cmd run check` and `npm.cmd test` success (38/38); those results are historical evidence and were not rerun during Git initialization.
 
