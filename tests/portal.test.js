@@ -31,7 +31,7 @@ test('production signup fails closed when the Turnstile secret is missing',async
 test('homepage renders seeded content and all requested entry points',async()=>{
   const response=await request('/');assert.equal(response.status,200);assert.match(response.headers.get('content-type'),/text\/html/);
   const html=await response.text();for(const text of ['Your next ride','Upcoming Texas events','Popular maintenance guides','Latest discussions','portal-search','#signup','#login','/editorial','Trek'])assert.ok(html.includes(text),text);
-  assert.match(html,/Fix a Flat/i);assert.ok(!html.includes('undefined'));assert.equal(response.headers.get('cache-control'),'no-store');
+  assert.match(html,/Fix a Flat/i);assert.match(html,/<a class="hero-art" href="\/events" aria-label="Browse Texas cycling events">/);assert.ok(!html.includes('undefined'));assert.equal(response.headers.get('cache-control'),'no-store');
 });
 test('HEAD and static assets have correct MIME types, security headers, and valid JavaScript',async()=>{
   const head=await request('/',{method:'HEAD'});assert.equal(head.status,200);assert.equal(await head.text(),'');

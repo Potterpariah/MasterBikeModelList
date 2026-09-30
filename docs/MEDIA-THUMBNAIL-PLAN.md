@@ -28,6 +28,11 @@ image policy also intentionally prevents arbitrary remote image hotlinking.
 No thumbnail should be added solely to fill whitespace. List pages should keep
 their text-first layout when no reviewed image exists.
 
+When an image represents a Bike Portal record, it must be wrapped in a working
+link to that record's page when that page exists. Decorative graphics remain
+non-record imagery; a personal avatar is not linked unless Bike Portal provides
+the matching public profile page.
+
 ## Preferred sourcing order
 
 1. Rights-cleared organizer, club, city, trail manager, or manufacturer media;
