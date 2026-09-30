@@ -199,6 +199,7 @@ export function portalClient() {
   if($('#portal-search'))$('#portal-search').onsubmit=event=>{event.preventDefault();const query=$('#search-input').value.trim();if(!query)return;const hash='#search/'+encodeURIComponent(query);if(location.hash===hash)route();else location.hash=hash;};
   const siteMenu=document.querySelector('.site-menu');
   if(siteMenu){siteMenu.addEventListener('click',event=>{if(event.target.closest('a'))siteMenu.removeAttribute('open');});document.addEventListener('keydown',event=>{if(event.key==='Escape')siteMenu.removeAttribute('open');});}
+  document.querySelectorAll('[data-map-toggle]').forEach(button=>{button.onclick=()=>{const canvas=$('#'+button.dataset.mapToggle),expanded=canvas?.classList.toggle('is-expanded');button.setAttribute('aria-expanded',String(Boolean(expanded)));button.textContent=expanded?'Reduce map':'Expand map';};});
   window.addEventListener('hashchange',route);
   const query=new URLSearchParams(location.search).get('q');if(query && !location.hash && $('#portal-search')){$('#search-input').value=query;history.replaceState(null,'','#search/'+encodeURIComponent(query));}
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)void refreshUser();});
