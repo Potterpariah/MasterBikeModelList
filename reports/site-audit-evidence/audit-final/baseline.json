@@ -1,0 +1,527 @@
+[
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:61899/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/events",
+    "screenshot": "local-1280-_events.png"
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:61899/texas/events?discipline=MTB",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/texas/events?discipline=MTB",
+    "screenshot": "local-1280-_texas_events_discipline=MTB.png"
+  },
+  {
+    "title": "Trek | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/bikes/trek",
+    "screenshot": "local-1280-_bikes_trek.png"
+  },
+  {
+    "title": "Trek fuel-ex | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/bikes/trek/fuel-ex",
+    "screenshot": "local-1280-_bikes_trek_fuel-ex.png"
+  },
+  {
+    "title": "Trek fuel-ex 2023 | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex/2023",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex 2023"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/bikes/trek/fuel-ex/2023",
+    "screenshot": "local-1280-_bikes_trek_fuel-ex_2023.png"
+  },
+  {
+    "title": "Trek fuel-ex-9-8-xt-gen-6 | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex-9-8-xt-gen-6"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "screenshot": "local-1280-_bikes_trek_fuel-ex_2023_fuel-ex-9-8-xt-gen-6.png"
+  },
+  {
+    "title": "Ray Porter Memorial 6 Hour Endurance Race & Fundraiser | Bike Portal",
+    "url": "http://127.0.0.1:61899/events/2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Ray Porter Memorial 6 Hour Endurance Race & Fundraiser"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/events/2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser",
+    "screenshot": "local-1280-_events_2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser.png"
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:61899/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 320,
+    "path": "/events",
+    "screenshot": "local-320-_events.png"
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:61899/texas/events?discipline=MTB",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 320,
+    "path": "/texas/events?discipline=MTB",
+    "screenshot": "local-320-_texas_events_discipline=MTB.png"
+  },
+  {
+    "title": "Trek | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 320,
+    "path": "/bikes/trek",
+    "screenshot": "local-320-_bikes_trek.png"
+  },
+  {
+    "title": "Trek fuel-ex | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 320,
+    "path": "/bikes/trek/fuel-ex",
+    "screenshot": "local-320-_bikes_trek_fuel-ex.png"
+  },
+  {
+    "title": "Trek fuel-ex 2023 | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex/2023",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex 2023"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 320,
+    "path": "/bikes/trek/fuel-ex/2023",
+    "screenshot": "local-320-_bikes_trek_fuel-ex_2023.png"
+  },
+  {
+    "title": "Trek fuel-ex-9-8-xt-gen-6 | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex-9-8-xt-gen-6"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 320,
+    "path": "/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "screenshot": "local-320-_bikes_trek_fuel-ex_2023_fuel-ex-9-8-xt-gen-6.png"
+  },
+  {
+    "title": "Ray Porter Memorial 6 Hour Endurance Race & Fundraiser | Bike Portal",
+    "url": "http://127.0.0.1:61899/events/2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Ray Porter Memorial 6 Hour Endurance Race & Fundraiser"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 320,
+    "path": "/events/2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser",
+    "screenshot": "local-320-_events_2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser.png"
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:61899/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 375,
+    "path": "/events",
+    "screenshot": "local-375-_events.png"
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:61899/texas/events?discipline=MTB",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 375,
+    "path": "/texas/events?discipline=MTB",
+    "screenshot": "local-375-_texas_events_discipline=MTB.png"
+  },
+  {
+    "title": "Trek | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 375,
+    "path": "/bikes/trek",
+    "screenshot": "local-375-_bikes_trek.png"
+  },
+  {
+    "title": "Trek fuel-ex | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 375,
+    "path": "/bikes/trek/fuel-ex",
+    "screenshot": "local-375-_bikes_trek_fuel-ex.png"
+  },
+  {
+    "title": "Trek fuel-ex 2023 | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex/2023",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex 2023"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 375,
+    "path": "/bikes/trek/fuel-ex/2023",
+    "screenshot": "local-375-_bikes_trek_fuel-ex_2023.png"
+  },
+  {
+    "title": "Trek fuel-ex-9-8-xt-gen-6 | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex-9-8-xt-gen-6"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 375,
+    "path": "/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "screenshot": "local-375-_bikes_trek_fuel-ex_2023_fuel-ex-9-8-xt-gen-6.png"
+  },
+  {
+    "title": "Ray Porter Memorial 6 Hour Endurance Race & Fundraiser | Bike Portal",
+    "url": "http://127.0.0.1:61899/events/2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Ray Porter Memorial 6 Hour Endurance Race & Fundraiser"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 375,
+    "path": "/events/2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser",
+    "screenshot": "local-375-_events_2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser.png"
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:61899/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 390,
+    "path": "/events",
+    "screenshot": "local-390-_events.png"
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:61899/texas/events?discipline=MTB",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 390,
+    "path": "/texas/events?discipline=MTB",
+    "screenshot": "local-390-_texas_events_discipline=MTB.png"
+  },
+  {
+    "title": "Trek | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 390,
+    "path": "/bikes/trek",
+    "screenshot": "local-390-_bikes_trek.png"
+  },
+  {
+    "title": "Trek fuel-ex | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 390,
+    "path": "/bikes/trek/fuel-ex",
+    "screenshot": "local-390-_bikes_trek_fuel-ex.png"
+  },
+  {
+    "title": "Trek fuel-ex 2023 | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex/2023",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex 2023"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 390,
+    "path": "/bikes/trek/fuel-ex/2023",
+    "screenshot": "local-390-_bikes_trek_fuel-ex_2023.png"
+  },
+  {
+    "title": "Trek fuel-ex-9-8-xt-gen-6 | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex-9-8-xt-gen-6"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 390,
+    "path": "/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "screenshot": "local-390-_bikes_trek_fuel-ex_2023_fuel-ex-9-8-xt-gen-6.png"
+  },
+  {
+    "title": "Ray Porter Memorial 6 Hour Endurance Race & Fundraiser | Bike Portal",
+    "url": "http://127.0.0.1:61899/events/2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Ray Porter Memorial 6 Hour Endurance Race & Fundraiser"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 390,
+    "path": "/events/2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser",
+    "screenshot": "local-390-_events_2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser.png"
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:61899/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 768,
+    "path": "/events",
+    "screenshot": "local-768-_events.png"
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:61899/texas/events?discipline=MTB",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 768,
+    "path": "/texas/events?discipline=MTB",
+    "screenshot": "local-768-_texas_events_discipline=MTB.png"
+  },
+  {
+    "title": "Trek | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 768,
+    "path": "/bikes/trek",
+    "screenshot": "local-768-_bikes_trek.png"
+  },
+  {
+    "title": "Trek fuel-ex | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 768,
+    "path": "/bikes/trek/fuel-ex",
+    "screenshot": "local-768-_bikes_trek_fuel-ex.png"
+  },
+  {
+    "title": "Trek fuel-ex 2023 | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex/2023",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex 2023"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 768,
+    "path": "/bikes/trek/fuel-ex/2023",
+    "screenshot": "local-768-_bikes_trek_fuel-ex_2023.png"
+  },
+  {
+    "title": "Trek fuel-ex-9-8-xt-gen-6 | Bike Portal",
+    "url": "http://127.0.0.1:61899/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex-9-8-xt-gen-6"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 768,
+    "path": "/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "screenshot": "local-768-_bikes_trek_fuel-ex_2023_fuel-ex-9-8-xt-gen-6.png"
+  },
+  {
+    "title": "Ray Porter Memorial 6 Hour Endurance Race & Fundraiser | Bike Portal",
+    "url": "http://127.0.0.1:61899/events/2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Ray Porter Memorial 6 Hour Endurance Race & Fundraiser"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 768,
+    "path": "/events/2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser",
+    "screenshot": "local-768-_events_2026-10-10-denton-ray-porter-memorial-6-hour-endurance-race-and-fundraiser.png"
+  }
+]

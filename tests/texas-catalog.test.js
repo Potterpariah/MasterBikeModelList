@@ -25,7 +25,7 @@ test('Texas public-only functions expose reviewed clubs, map links, calendar fil
   assert.equal(texasClubs.length,15);assert.equal(texasEventCrosswalk.length,11);assert.ok(texasEventCrosswalk.some(row=>row.status==='hold_date_conflict'));
   const clubs=await request(env,'/texas/clubs');assert.equal(clubs.status,200);const clubsHtml=await clubs.text();assert.match(clubsHtml,/15 reviewed local organizations/);assert.match(clubsHtml,/Austin Ridge Riders/);
   const club=await request(env,'/texas/clubs/austin-ridge-riders');assert.equal(club.status,200);assert.match(await club.text(),/Visit official club site/);
-  const event=await request(env,'/texas/events/park-to-port-bike-ride-2026');const eventHtml=await event.text();assert.match(eventHtml,/Open reviewed location in maps/);assert.match(eventHtml,/Download calendar file/);
+  const event=await request(env,'/texas/events/park-to-port-bike-ride-2026');const eventHtml=await event.text();assert.match(eventHtml,/data-event-location="park-to-port-bike-ride-2026"/);assert.match(eventHtml,/Download calendar file/);
   const ics=await request(env,'/texas/events/park-to-port-bike-ride-2026/calendar.ics');assert.equal(ics.headers.get('content-type'),'text/calendar; charset=utf-8');assert.match(await ics.text(),/BEGIN:VCALENDAR/);
   const gpx=await request(env,'/trails/capitol-peak-mtb-loop/route.gpx');assert.equal(gpx.headers.get('content-type'),'application/gpx+xml; charset=utf-8');assert.match(await gpx.text(),/<gpx /);
   assert.equal((await request(env,'/trails/ann-and-roy-butler-trail/route.gpx')).status,404);

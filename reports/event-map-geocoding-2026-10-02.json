@@ -1,0 +1,778 @@
+{
+  "Baytown to Galveston and return, Baytown, Texas": [],
+  "Community Beer Co, 3110 Commonwealth Dr, Dallas, Dallas, Texas": [
+    {
+      "place_id": 331875088,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 465033141,
+      "lat": "32.8109082",
+      "lon": "-96.8616349",
+      "category": "craft",
+      "type": "brewery",
+      "place_rank": 30,
+      "importance": 0.00007641489280532566,
+      "addresstype": "craft",
+      "name": "Community Beer Co. / Society Spirits & Restaurant",
+      "display_name": "Community Beer Co. / Society Spirits & Restaurant, 3110, Commonwealth Drive, Dallas, Dallas County, Texas, 75247, United States",
+      "boundingbox": [
+        "32.8105732",
+        "32.8111638",
+        "-96.8620280",
+        "-96.8612418"
+      ]
+    }
+  ],
+  "Bayou Parkland, 6532 Almeda Rd, Houston, Texas": [],
+  "Lewisville Railroad Park, 995 E Valley Ridge Blvd, Lewisville, Texas": [],
+  "203 N College Ave, Cleveland, Cleveland, Texas": [
+    {
+      "place_id": 412029096,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 21080988,
+      "lat": "30.3431566",
+      "lon": "-95.0868220",
+      "category": "place",
+      "type": "house",
+      "place_rank": 30,
+      "importance": 0.00000999999999995449,
+      "addresstype": "place",
+      "name": "",
+      "display_name": "203, North College Avenue, Cleveland, Liberty County, Texas, 77327, United States",
+      "boundingbox": [
+        "30.3431066",
+        "30.3432066",
+        "-95.0868720",
+        "-95.0867720"
+      ]
+    }
+  ],
+  "Denton High School, 3001 Bronco Way, Denton, Texas": [
+    {
+      "place_id": 334093337,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 976386314,
+      "lat": "33.2469428",
+      "lon": "-97.1666319",
+      "category": "amenity",
+      "type": "school",
+      "place_rank": 30,
+      "importance": 0.00006243305104138274,
+      "addresstype": "amenity",
+      "name": "Denton High School",
+      "display_name": "Denton High School, 3001, Bronco Way, Denton, Denton County, Texas, 76207, United States",
+      "boundingbox": [
+        "33.2432499",
+        "33.2517784",
+        "-97.1695094",
+        "-97.1605664"
+      ]
+    }
+  ],
+  "4321 I-35, Gainesville, Gainesville, Texas": [
+    {
+      "place_id": 333759908,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 147841822,
+      "lat": "33.6633419",
+      "lon": "-97.1514846",
+      "category": "highway",
+      "type": "motorway",
+      "place_rank": 26,
+      "importance": 0.053391664759288894,
+      "addresstype": "road",
+      "name": "Interstate 35",
+      "display_name": "Interstate 35, Gainesville, Cooke County, Texas, 76240, United States",
+      "boundingbox": [
+        "33.6582852",
+        "33.6688093",
+        "-97.1537020",
+        "-97.1508963"
+      ]
+    },
+    {
+      "place_id": 332740938,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1105691603,
+      "lat": "33.6160465",
+      "lon": "-97.1491385",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.053391664759288894,
+      "addresstype": "road",
+      "name": "South Interstate 35",
+      "display_name": "South Interstate 35, Gainesville, Cooke County, Texas, 76250, United States",
+      "boundingbox": [
+        "33.6140082",
+        "33.6180995",
+        "-97.1495223",
+        "-97.1491287"
+      ]
+    }
+  ],
+  "Turkey, Texas, Turkey, Texas": [
+    {
+      "place_id": 332760900,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 721039690,
+      "lat": "34.3909929",
+      "lon": "-100.8995738",
+      "category": "leisure",
+      "type": "park",
+      "place_rank": 24,
+      "importance": 0.08002470054169525,
+      "addresstype": "park",
+      "name": "Turkey City Park",
+      "display_name": "Turkey City Park, Turkey, Hall County, Texas, United States",
+      "boundingbox": [
+        "34.3900940",
+        "34.3923483",
+        "-100.9011666",
+        "-100.8980955"
+      ]
+    },
+    {
+      "place_id": 332844540,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 721039694,
+      "lat": "34.3939579",
+      "lon": "-100.8978266",
+      "category": "tourism",
+      "type": "hotel",
+      "place_rank": 30,
+      "importance": 0.000024700541695231823,
+      "addresstype": "tourism",
+      "name": "Hotel Turkey",
+      "display_name": "Hotel Turkey, 201, 3rd Street, Turkey, Hall County, Texas, United States",
+      "boundingbox": [
+        "34.3938574",
+        "34.3940292",
+        "-100.8979864",
+        "-100.8976666"
+      ]
+    }
+  ],
+  "Lake Sweetwater Municipal Campground, County Road 264, Sweetwater, Texas": [],
+  "Bullet Grill, Point Blank, Point Blank, Texas": [
+    {
+      "place_id": 304576744,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 11918776987,
+      "lat": "30.7398640",
+      "lon": "-95.2132603",
+      "category": "amenity",
+      "type": "bar",
+      "place_rank": 30,
+      "importance": 0.000053228809033295455,
+      "addresstype": "amenity",
+      "name": "Bullet Grill House",
+      "display_name": "Bullet Grill House, 401, TX 156, Point Blank, San Jacinto County, Texas, 77364, United States",
+      "boundingbox": [
+        "30.7398140",
+        "30.7399140",
+        "-95.2133103",
+        "-95.2132103"
+      ]
+    }
+  ],
+  "Castell General Store, Castell, Castell, Texas": [],
+  "Thirty-Five and Liberty, 4321 I-35, Gainesville, Texas": [],
+  "Pilot Travel Center / Wendy’s, 1201 I-20 West, Weatherford, Texas": [],
+  "Parking behind Denny’s, NW corner of SR-34 and I-35E, Italy, Texas": [],
+  "3800 FM 428, Aubrey, Aubrey, Texas": [
+    {
+      "place_id": 331097956,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 717201120,
+      "lat": "33.3041280",
+      "lon": "-97.0135365",
+      "category": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.0533876607919432,
+      "addresstype": "road",
+      "name": "West Sherman Drive",
+      "display_name": "West Sherman Drive, Aubrey, Denton County, Texas, United States",
+      "boundingbox": [
+        "33.3040740",
+        "33.3053115",
+        "-97.0283160",
+        "-96.9987700"
+      ]
+    }
+  ],
+  "Hillside Village Shopping Center, Cedar Hill, Cedar Hill, Texas": [],
+  "Centennial High School, 201 S Hurst Rd, Burleson, Texas": [
+    {
+      "place_id": 333866320,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 638419678,
+      "lat": "32.5411168",
+      "lon": "-97.2978124",
+      "category": "amenity",
+      "type": "school",
+      "place_rank": 30,
+      "importance": 0.00005603799496447726,
+      "addresstype": "amenity",
+      "name": "Centennial High School",
+      "display_name": "Centennial High School, 201, South Hurst Road, Burleson, Johnson County, Texas, 76028, United States",
+      "boundingbox": [
+        "32.5373027",
+        "32.5451386",
+        "-97.3020294",
+        "-97.2936048"
+      ]
+    },
+    {
+      "place_id": 333920103,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 15987645,
+      "lat": "32.5405197",
+      "lon": "-97.2987316",
+      "category": "building",
+      "type": "school",
+      "place_rank": 30,
+      "importance": 0.00005603799496447726,
+      "addresstype": "building",
+      "name": "Centennial High School",
+      "display_name": "Centennial High School, 201, South Hurst Road, Burleson, Johnson County, Texas, 76028, United States",
+      "boundingbox": [
+        "32.5392059",
+        "32.5418362",
+        "-97.3002178",
+        "-97.2973277"
+      ]
+    }
+  ],
+  "Railroad Park, Lewisville, Texas": [
+    {
+      "place_id": 333486655,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 545927694,
+      "lat": "33.0325186",
+      "lon": "-96.9699085",
+      "category": "leisure",
+      "type": "sports_centre",
+      "place_rank": 30,
+      "importance": 0.00005756237125195724,
+      "addresstype": "leisure",
+      "name": "Toyota of Lewisville Railroad Park",
+      "display_name": "Toyota of Lewisville Railroad Park, A-Train Rail Trail, Lewisville, Denton County, Texas, 75067, United States",
+      "boundingbox": [
+        "33.0272857",
+        "33.0373458",
+        "-96.9739132",
+        "-96.9670668"
+      ]
+    },
+    {
+      "place_id": 329753074,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 344349014,
+      "lat": "33.0306027",
+      "lon": "-96.9731360",
+      "category": "leisure",
+      "type": "dog_park",
+      "place_rank": 30,
+      "importance": 0.00005756237125195724,
+      "addresstype": "leisure",
+      "name": "Lewisville Railroad Dog Park",
+      "display_name": "Lewisville Railroad Dog Park, A-Train Rail Trail, Lewisville, Denton County, Texas, 75067, United States",
+      "boundingbox": [
+        "33.0293996",
+        "33.0318505",
+        "-96.9737985",
+        "-96.9724703"
+      ]
+    }
+  ],
+  "Thirty Five and Liberty, Texas": [],
+  "1201 West Interstate 20, Weatherford, Texas": [
+    {
+      "place_id": 333487208,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 815631876,
+      "lat": "32.7280165",
+      "lon": "-97.7935608",
+      "category": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.05339155031662467,
+      "addresstype": "road",
+      "name": "West Interstate 20",
+      "display_name": "West Interstate 20, Weatherford, Parker County, Texas, 76086, United States",
+      "boundingbox": [
+        "32.7267821",
+        "32.7289668",
+        "-97.7978902",
+        "-97.7891930"
+      ]
+    },
+    {
+      "place_id": 333491949,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 734349862,
+      "lat": "32.7277885",
+      "lon": "-97.8426227",
+      "category": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.05339155031662467,
+      "addresstype": "road",
+      "name": "West Interstate 20",
+      "display_name": "West Interstate 20, Weatherford, Parker County, Texas, United States",
+      "boundingbox": [
+        "32.7277053",
+        "32.7278027",
+        "-97.8446513",
+        "-97.8405964"
+      ]
+    }
+  ],
+  "Dennys, Italy, Texas": [],
+  "Hillside Village, Cedar Hill, Texas": [
+    {
+      "place_id": 333976742,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 709274033,
+      "lat": "32.6019278",
+      "lon": "-96.9423710",
+      "category": "landuse",
+      "type": "retail",
+      "place_rank": 24,
+      "importance": 0.080056138704509,
+      "addresstype": "retail",
+      "name": "Hillside Village",
+      "display_name": "Hillside Village, Cedar Hill, Dallas County, Texas, United States",
+      "boundingbox": [
+        "32.5995162",
+        "32.6042416",
+        "-96.9461381",
+        "-96.9389391"
+      ]
+    },
+    {
+      "place_id": 333900819,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 5207241617,
+      "lat": "32.6024153",
+      "lon": "-96.9421428",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.000056138704508995463,
+      "addresstype": "shop",
+      "name": "Hillside Village",
+      "display_name": "Hillside Village, West Pleasant Run Road, Cedar Hill, Dallas County, Texas, 75104, United States",
+      "boundingbox": [
+        "32.6023653",
+        "32.6024653",
+        "-96.9421928",
+        "-96.9420928"
+      ]
+    }
+  ],
+  "Castell General Store, Texas": [],
+  "Lake Sweetwater, Texas": [
+    {
+      "place_id": 333639708,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 12223026,
+      "lat": "32.4221864",
+      "lon": "-100.3067362",
+      "category": "water",
+      "type": "reservoir",
+      "place_rank": 20,
+      "importance": 0.1333433333333333,
+      "addresstype": "reservoir",
+      "name": "Lake Sweetwater",
+      "display_name": "Lake Sweetwater, Nolan County, Texas, United States",
+      "boundingbox": [
+        "32.4053064",
+        "32.4391268",
+        "-100.3212394",
+        "-100.2975629"
+      ]
+    }
+  ],
+  "Bayou Parkland, Houston, Texas": [
+    {
+      "place_id": 304899764,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 426516540,
+      "lat": "29.7092924",
+      "lon": "-95.3843442",
+      "category": "building",
+      "type": "yes",
+      "place_rank": 30,
+      "importance": 0.00007782024872201141,
+      "addresstype": "building",
+      "name": "Bayou Parkland Pavilion",
+      "display_name": "Bayou Parkland Pavilion, Brays Bayou Greenway, Houston, Harris County, Texas, 77030, United States",
+      "boundingbox": [
+        "29.7089878",
+        "29.7095971",
+        "-95.3845427",
+        "-95.3841456"
+      ]
+    }
+  ],
+  "Gainesville, Cooke County, Texas": [
+    {
+      "place_id": 331926218,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 115370,
+      "lat": "33.6248484",
+      "lon": "-97.1427530",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 16,
+      "importance": 0.5202193274608566,
+      "addresstype": "town",
+      "name": "Gainesville",
+      "display_name": "Gainesville, Cooke County, Texas, United States",
+      "boundingbox": [
+        "33.5778740",
+        "33.7090115",
+        "-97.2116823",
+        "-97.0784404"
+      ]
+    }
+  ],
+  "Baytown, Texas": [
+    {
+      "place_id": 304930934,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 113542,
+      "lat": "29.7355047",
+      "lon": "-94.9774274",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 16,
+      "importance": 0.5358252428318324,
+      "addresstype": "town",
+      "name": "Baytown",
+      "display_name": "Baytown, Harris County, Texas, United States",
+      "boundingbox": [
+        "29.6621310",
+        "29.8292690",
+        "-95.0578092",
+        "-94.8489740"
+      ]
+    }
+  ],
+  "Turkey, Hall County, Texas": [
+    {
+      "place_id": 333557523,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 115354,
+      "lat": "34.3939184",
+      "lon": "-100.8940780",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 16,
+      "importance": 0.45899074793292893,
+      "addresstype": "village",
+      "name": "Turkey",
+      "display_name": "Turkey, Hall County, Texas, United States",
+      "boundingbox": [
+        "34.3849590",
+        "34.4022830",
+        "-100.9015910",
+        "-100.8861090"
+      ]
+    }
+  ],
+  "Italy, Ellis County, Texas": [
+    {
+      "place_id": 334428424,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 114475,
+      "lat": "32.1840381",
+      "lon": "-96.8847194",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 16,
+      "importance": 0.4720950865712112,
+      "addresstype": "village",
+      "name": "Italy",
+      "display_name": "Italy, Ellis County, Texas, 76651, United States",
+      "boundingbox": [
+        "32.1634093",
+        "32.2066985",
+        "-96.9079386",
+        "-96.8616477"
+      ]
+    }
+  ],
+  "Weatherford, Parker County, Texas": [
+    {
+      "place_id": 333539051,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 114429,
+      "lat": "32.7589648",
+      "lon": "-97.7970748",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 16,
+      "importance": 0.52838349915511,
+      "addresstype": "town",
+      "name": "Weatherford",
+      "display_name": "Weatherford, Parker County, Texas, United States",
+      "boundingbox": [
+        "32.7116732",
+        "32.8180838",
+        "-97.8499910",
+        "-97.6600791"
+      ]
+    }
+  ],
+  "Cedar Hill, Texas": [
+    {
+      "place_id": 335218757,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 6406329,
+      "lat": "32.5888072",
+      "lon": "-96.9553675",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 16,
+      "importance": 0.49905193562493105,
+      "addresstype": "town",
+      "name": "Cedar Hill",
+      "display_name": "Cedar Hill, Dallas County, Texas, 75104, United States",
+      "boundingbox": [
+        "32.5363035",
+        "32.6394080",
+        "-97.0212290",
+        "-96.8904341"
+      ]
+    },
+    {
+      "place_id": 315982863,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 356701704,
+      "lat": "29.5071634",
+      "lon": "-98.9134708",
+      "category": "natural",
+      "type": "peak",
+      "place_rank": 18,
+      "importance": 0.16000999999999999,
+      "addresstype": "peak",
+      "name": "Cedar Hill",
+      "display_name": "Cedar Hill, Medina County, Texas, 78056, United States",
+      "boundingbox": [
+        "29.5071134",
+        "29.5072134",
+        "-98.9135208",
+        "-98.9134208"
+      ]
+    }
+  ],
+  "Aubrey, Texas": [
+    {
+      "place_id": 334611836,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 114765,
+      "lat": "33.3142085",
+      "lon": "-96.9756323",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 16,
+      "importance": 0.4737228590799341,
+      "addresstype": "city",
+      "name": "Aubrey",
+      "display_name": "Aubrey, Denton County, Texas, United States",
+      "boundingbox": [
+        "33.2867100",
+        "33.3463390",
+        "-97.0284892",
+        "-96.9367285"
+      ]
+    }
+  ],
+  "Castell, Llano County, Texas": [
+    {
+      "place_id": 316331878,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 151354155,
+      "lat": "30.7011345",
+      "lon": "-98.9569468",
+      "category": "place",
+      "type": "village",
+      "place_rank": 19,
+      "importance": 0.2432038182346074,
+      "addresstype": "village",
+      "name": "Castell",
+      "display_name": "Castell, Llano County, Texas, 76831, United States",
+      "boundingbox": [
+        "30.6811345",
+        "30.7211345",
+        "-98.9769468",
+        "-98.9369468"
+      ]
+    }
+  ],
+  "4321 North Interstate 35, Texas": [
+    {
+      "place_id": 331184986,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 550201906,
+      "lat": "33.6778520",
+      "lon": "-97.1561181",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.00005833142595555073,
+      "addresstype": "shop",
+      "name": "",
+      "display_name": "4321, North Interstate 35, Gainesville, Cooke County, Texas, 76240, United States",
+      "boundingbox": [
+        "33.6773888",
+        "33.6782282",
+        "-97.1575955",
+        "-97.1557482"
+      ]
+    },
+    {
+      "place_id": 420846677,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 13945746842,
+      "lat": "33.6786840",
+      "lon": "-97.1563545",
+      "category": "amenity",
+      "type": "bar",
+      "place_rank": 30,
+      "importance": 0.00005833142595555073,
+      "addresstype": "amenity",
+      "name": "The Bar at Thirty-Five & Liberty",
+      "display_name": "The Bar at Thirty-Five & Liberty, 4321, North Interstate 35, Gainesville, Cooke County, Texas, 76240, United States",
+      "boundingbox": [
+        "33.6786340",
+        "33.6787340",
+        "-97.1564045",
+        "-97.1563045"
+      ]
+    }
+  ],
+  "Pilot Travel Center, Weatherford, Texas": [
+    {
+      "place_id": 333505026,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 320321663,
+      "lat": "32.7268038",
+      "lon": "-97.8257325",
+      "category": "highway",
+      "type": "services",
+      "place_rank": 30,
+      "importance": 0.00005821698329132551,
+      "addresstype": "highway",
+      "name": "Pilot Travel Center",
+      "display_name": "Pilot Travel Center, Browder Lane, Weatherford, Parker County, Texas, 76086, United States",
+      "boundingbox": [
+        "32.7255690",
+        "32.7278712",
+        "-97.8269717",
+        "-97.8237820"
+      ]
+    }
+  ],
+  "Denny's, Italy, Texas": [
+    {
+      "place_id": 334397434,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 904814430,
+      "lat": "32.1972394",
+      "lon": "-96.9006368",
+      "category": "amenity",
+      "type": "restaurant",
+      "place_rank": 30,
+      "importance": 0.000024700541695231823,
+      "addresstype": "amenity",
+      "name": "Denny's",
+      "display_name": "Denny's, 140, L R Campbell Road, Italy, Ellis County, Texas, 76551, United States",
+      "boundingbox": [
+        "32.1971122",
+        "32.1973666",
+        "-96.9007810",
+        "-96.9004926"
+      ]
+    }
+  ],
+  "3800 Farm to Market Road 428, Texas": [
+    {
+      "place_id": 333288998,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1011329335,
+      "lat": "33.3021227",
+      "lon": "-97.0677901",
+      "category": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053395766384374724,
+      "addresstype": "road",
+      "name": "Farm-to-Market Road 428",
+      "display_name": "Farm-to-Market Road 428, Green Valley, Denton, Denton County, Texas, United States",
+      "boundingbox": [
+        "33.2961934",
+        "33.3072215",
+        "-97.0751576",
+        "-97.0600171"
+      ]
+    },
+    {
+      "place_id": 334895460,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1190631854,
+      "lat": "33.2883213",
+      "lon": "-97.0848766",
+      "category": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053395766384374724,
+      "addresstype": "road",
+      "name": "Farm-to-Market Road 428",
+      "display_name": "Farm-to-Market Road 428, Denton, Denton County, Texas, 76207, United States",
+      "boundingbox": [
+        "33.2826700",
+        "33.2939675",
+        "-97.0918510",
+        "-97.0778978"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-15",
+  "version": "f512882e-ab82-44af-9e39-1d6d8511ff7c",
+  "origin": "https://bike-portal-stage4.m25-f6b.workers.dev",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "noindex": "noindex, nofollow",
+      "health": {
+        "ok": true,
+        "stage": 4,
+        "schemaVersion": "1"
+      }
+    },
+    {
+      "path": "/texas/events?region=North",
+      "status": 200,
+      "noindex": "noindex, nofollow",
+      "logo": true,
+      "map": true,
+      "organizer": true
+    },
+    {
+      "path": "/event-map.js",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "path": "/event-map.css",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "path": "/leaflet.js",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "noindex": "noindex, nofollow",
+      "listedUrls": 0
+    },
+    {
+      "path": "/texas/events/camp-spinistry-bikepacking-2026",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "path": "/texas/events/tour-de-cure-texas-2026",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "path": "/texas/events/old-dennis-brevets-2026",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "path": "/texas/events/rideataxia-dallas-2026",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "path": "/texas/events/denton-turkey-roll-2026",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "path": "/texas/events/la-bella-pop-2026",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "path": "/texas/events/rudolphs-revenge-2026",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "path": "/texas/events/texas-chainring-massacre-2027",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "path": "/texas/events/head-for-the-hills-2027",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "path": "/texas/events/burleson-honey-tour-2027",
+      "status": 200,
+      "noindex": "noindex, nofollow"
+    }
+  ]
+}

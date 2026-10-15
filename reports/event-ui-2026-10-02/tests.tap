@@ -1,0 +1,424 @@
+TAP version 13
+# Subtest: canonical catalog keeps provenance, null unknowns, electric fields and a review-only conflict
+ok 1 - canonical catalog keeps provenance, null unknowns, electric fields and a review-only conflict
+  ---
+  duration_ms: 2.7601
+  type: 'test'
+  ...
+# Subtest: hierarchy pages work without changing existing model URLs or indexability
+ok 2 - hierarchy pages work without changing existing model URLs or indexability
+  ---
+  duration_ms: 137.0458
+  type: 'test'
+  ...
+# Subtest: pilot has ten complete records; merging refreshes four without duplicating them
+ok 3 - pilot has ten complete records; merging refreshes four without duplicating them
+  ---
+  duration_ms: 3.7997
+  type: 'test'
+  ...
+# Subtest: pilot pages and links render, disclose discrepancies, and preserve noindex
+ok 4 - pilot pages and links render, disclose discrepancies, and preserve noindex
+  ---
+  duration_ms: 246.4052
+  type: 'test'
+  ...
+# Subtest: measurement collects only allowlisted actions and never stores supplied private fields
+ok 5 - measurement collects only allowlisted actions and never stores supplied private fields
+  ---
+  duration_ms: 8.1666
+  type: 'test'
+  ...
+# Subtest: ongoing multi-day rides remain discoverable; postponed dates are withheld
+ok 6 - ongoing multi-day rides remain discoverable; postponed dates are withheld
+  ---
+  duration_ms: 1.9247
+  type: 'test'
+  ...
+# Subtest: calendar cancellation/completion semantics and date uncertainty
+ok 7 - calendar cancellation/completion semantics and date uncertainty
+  ---
+  duration_ms: 106.6476
+  type: 'test'
+  ...
+# Subtest: curated list map follows filters including empty results
+ok 8 - curated list map follows filters including empty results
+  ---
+  duration_ms: 52.5412
+  type: 'test'
+  ...
+# Subtest: map includes catalog and legacy starts once, excludes cancelled events, and labels approximate locations
+ok 9 - map includes catalog and legacy starts once, excludes cancelled events, and labels approximate locations
+  ---
+  duration_ms: 134.8796
+  type: 'test'
+  ...
+# Subtest: official candidate preserves provenance and does not certify or overwrite last known good
+ok 10 - official candidate preserves provenance and does not certify or overwrite last known good
+  ---
+  duration_ms: 94.4789
+  type: 'test'
+  ...
+# Subtest: completed day is idempotent, including Chicago date rollover
+ok 11 - completed day is idempotent, including Chicago date rollover
+  ---
+  duration_ms: 0.6195
+  type: 'test'
+  ...
+# Subtest: failed source retries boundedly and preserves last known good
+ok 12 - failed source retries boundedly and preserves last known good
+  ---
+  duration_ms: 2.7557
+  type: 'test'
+  ...
+# Subtest: conflicting official dates are quarantined rather than last-write-wins
+ok 13 - conflicting official dates are quarantined rather than last-write-wins
+  ---
+  duration_ms: 2.8998
+  type: 'test'
+  ...
+# Subtest: cancellation is explicit, contradictory postponement notice quarantined
+ok 14 - cancellation is explicit, contradictory postponement notice quarantined
+  ---
+  duration_ms: 3.3119
+  type: 'test'
+  ...
+# Subtest: invalid calendar dates, missing offsets and duplicate identities rejected
+ok 15 - invalid calendar dates, missing offsets and duplicate identities rejected
+  ---
+  duration_ms: 2.8961
+  type: 'test'
+  ...
+# Subtest: non-HTML and oversized sources never replace data
+ok 16 - non-HTML and oversized sources never replace data
+  ---
+  duration_ms: 3.5887
+  type: 'test'
+  ...
+# Subtest: strict timestamps reject normalized invalid clock, offset, mixed range and reverse instant
+ok 17 - strict timestamps reject normalized invalid clock, offset, mixed range and reverse instant
+  ---
+  duration_ms: 5.15
+  type: 'test'
+  ...
+# Subtest: Retry-After honored, long deferral stops and permanent errors are not retried
+ok 18 - Retry-After honored, long deferral stops and permanent errors are not retried
+  ---
+  duration_ms: 7.5935
+  type: 'test'
+  ...
+# Subtest: network errors use bounded exponential backoff
+ok 19 - network errors use bounded exponential backoff
+  ---
+  duration_ms: 1.733
+  type: 'test'
+  ...
+# Subtest: Texas Gravel Champs Oct2 postponement notice quarantines stale scheduled structured data
+ok 20 - Texas Gravel Champs Oct2 postponement notice quarantines stale scheduled structured data
+  ---
+  duration_ms: 1.4999
+  type: 'test'
+  ...
+# Subtest: exclusive runner lock blocks concurrency and successful day retry creates no duplicate report
+ok 21 - exclusive runner lock blocks concurrency and successful day retry creates no duplicate report
+  ---
+  duration_ms: 60.0537
+  type: 'test'
+  ...
+# Subtest: runner releases lock and preserves prior bytes on validation or malformed-state failure
+ok 22 - runner releases lock and preserves prior bytes on validation or malformed-state failure
+  ---
+  duration_ms: 22.3667
+  type: 'test'
+  ...
+# Subtest: failed day can retry while preserving independent last-known-good copy
+ok 23 - failed day can retry while preserving independent last-known-good copy
+  ---
+  duration_ms: 2.9607
+  type: 'test'
+  ...
+# Subtest: next Chicago day refreshes once despite UTC date already rolling over
+ok 24 - next Chicago day refreshes once despite UTC date already rolling over
+  ---
+  duration_ms: 3.5351
+  type: 'test'
+  ...
+# Subtest: UTC timestamps normalize to Chicago calendar dates while date-only stays unchanged
+ok 25 - UTC timestamps normalize to Chicago calendar dates while date-only stays unchanged
+  ---
+  duration_ms: 1.1657
+  type: 'test'
+  ...
+# Subtest: Chicago DST offsets match actual instant including repeated fall hour
+ok 26 - Chicago DST offsets match actual instant including repeated fall hour
+  ---
+  duration_ms: 7.5461
+  type: 'test'
+  ...
+# Subtest: incorrect organizer DST offset quarantines candidate without changing last known good
+ok 27 - incorrect organizer DST offset quarantines candidate without changing last known good
+  ---
+  duration_ms: 3.3002
+  type: 'test'
+  ...
+# Subtest: read-only legacy bicycle parity matrix covers every current model with an explicit safe destination
+ok 28 - read-only legacy bicycle parity matrix covers every current model with an explicit safe destination
+  ---
+  duration_ms: 17.0236
+  type: 'test'
+  ...
+# Subtest: enrichment covers existing identities with scoped sourced facts and explicit unknowns; seed rows remain intact
+ok 29 - enrichment covers existing identities with scoped sourced facts and explicit unknowns; seed rows remain intact
+  ---
+  duration_ms: 75.1046
+  type: 'test'
+  ...
+# Subtest: every model has a standalone page, canonical, brand navigation and source scope without invented offers
+ok 30 - every model has a standalone page, canonical, brand navigation and source scope without invented offers
+  ---
+  duration_ms: 253.0954
+  type: 'test'
+  ...
+# Subtest: model filters, empty state, source conflicts and generation boundaries are visible
+ok 31 - model filters, empty state, source conflicts and generation boundaries are visible
+  ---
+  duration_ms: 36.0062
+  type: 'test'
+  ...
+# Subtest: public content links resolve, including model/guide/event destinations, and malformed sources do not break pages
+ok 32 - public content links resolve, including model/guide/event destinations, and malformed sources do not break pages
+  ---
+  duration_ms: 1105.9144
+  type: 'test'
+  ...
+# Subtest: test deployment excludes homepage, diagnostics, assets, APIs and errors from indexing
+ok 33 - test deployment excludes homepage, diagnostics, assets, APIs and errors from indexing
+  ---
+  duration_ms: 98.7707
+  type: 'test'
+  ...
+# Subtest: production signup fails closed when the Turnstile secret is missing
+ok 34 - production signup fails closed when the Turnstile secret is missing
+  ---
+  duration_ms: 12.8425
+  type: 'test'
+  ...
+# Subtest: homepage renders seeded content and all requested entry points
+ok 35 - homepage renders seeded content and all requested entry points
+  ---
+  duration_ms: 7.5233
+  type: 'test'
+  ...
+# Subtest: HEAD and static assets have correct MIME types, security headers, and valid JavaScript
+ok 36 - HEAD and static assets have correct MIME types, security headers, and valid JavaScript
+  ---
+  duration_ms: 6.7837
+  type: 'test'
+  ...
+# Subtest: catalog reads published articles and the existing Stage 3 brand/model tables
+ok 37 - catalog reads published articles and the existing Stage 3 brand/model tables
+  ---
+  duration_ms: 8.5821
+  type: 'test'
+  ...
+# Subtest: upcoming event filtering uses the Texas date, excludes past/cancelled/non-Texas events, and sorts
+ok 38 - upcoming event filtering uses the Texas date, excludes past/cancelled/non-Texas events, and sorts
+  ---
+  duration_ms: 2.0183
+  type: 'test'
+  ...
+# Subtest: homepage handles unavailable database sections with useful error states
+ok 39 - homepage handles unavailable database sections with useful error states
+  ---
+  duration_ms: 2.4552
+  type: 'test'
+  ...
+# Subtest: homepage safely escapes persisted content and the Turnstile site key
+ok 40 - homepage safely escapes persisted content and the Turnstile site key
+  ---
+  duration_ms: 7.9436
+  type: 'test'
+  ...
+# Subtest: preserved diagnostics, health, events, missing routes, and origin rejection
+ok 41 - preserved diagnostics, health, events, missing routes, and origin rejection
+  ---
+  duration_ms: 4.7188
+  type: 'test'
+  ...
+# Subtest: existing account, session, discussion, comment, garage and event status APIs work together
+ok 42 - existing account, session, discussion, comment, garage and event status APIs work together
+  ---
+  duration_ms: 190.2965
+  type: 'test'
+  ...
+# Subtest: review windows expire deterministically and never select incomplete or past events
+ok 43 - review windows expire deterministically and never select incomplete or past events
+  ---
+  duration_ms: 2.1308
+  type: 'test'
+  ...
+# Subtest: reviewed guides expose scope, preparation, technical additions and linked primary sources
+ok 44 - reviewed guides expose scope, preparation, technical additions and linked primary sources
+  ---
+  duration_ms: 104.8735
+  type: 'test'
+  ...
+# Subtest: event API and HTML use revised distances and disclose missing data without rewriting seed records
+ok 45 - event API and HTML use revised distances and disclose missing data without rewriting seed records
+  ---
+  duration_ms: 32.6742
+  type: 'test'
+  ...
+# Subtest: curated hub and sitemap distinguish reviewed content from unresolved event records
+ok 46 - curated hub and sitemap distinguish reviewed content from unresolved event records
+  ---
+  duration_ms: 30.4792
+  type: 'test'
+  ...
+# Subtest: model conflict review scopes gear options and withholds disputed dimensions and clearance
+ok 47 - model conflict review scopes gear options and withholds disputed dimensions and clearance
+  ---
+  duration_ms: 0.4047
+  type: 'test'
+  ...
+# Subtest: public guides render standalone HTML, unique metadata, sections, sources and safe content
+ok 48 - public guides render standalone HTML, unique metadata, sections, sources and safe content
+  ---
+  duration_ms: 94.9713
+  type: 'test'
+  ...
+# Subtest: public content resolves stable slugs, redirects IDs, and returns real not-found statuses
+ok 49 - public content resolves stable slugs, redirects IDs, and returns real not-found statuses
+  ---
+  duration_ms: 58.6836
+  type: 'test'
+  ...
+# Subtest: event calendar provides a complete event and city chooser plus only precise start markers
+ok 50 - event calendar provides a complete event and city chooser plus only precise start markers
+  ---
+  duration_ms: 44.2379
+  type: 'test'
+  ...
+# Subtest: indexing needs approved origin and explicit opt-in; private and incomplete pages stay excluded
+ok 51 - indexing needs approved origin and explicit opt-in; private and incomplete pages stay excluded
+  ---
+  duration_ms: 62.0694
+  type: 'test'
+  ...
+# Subtest: sitemap lists only approved canonical documents after public opt-in
+ok 52 - sitemap lists only approved canonical documents after public opt-in
+  ---
+  duration_ms: 30.2544
+  type: 'test'
+  ...
+# Subtest: event pages disclose field-level reviews, preserve uncertainty and gate Event markup
+ok 53 - event pages disclose field-level reviews, preserve uncertainty and gate Event markup
+  ---
+  duration_ms: 16.9228
+  type: 'test'
+  ...
+# Subtest: editorial cleanup removes planning language without modifying baseline guide data
+ok 54 - editorial cleanup removes planning language without modifying baseline guide data
+  ---
+  duration_ms: 19.294
+  type: 'test'
+  ...
+# Subtest: home links to public content and excludes known test posts without deleting them
+ok 55 - home links to public content and excludes known test posts without deleting them
+  ---
+  duration_ms: 18.5636
+  type: 'test'
+  ...
+# Subtest: saved library resolves named destinations and remains private to each account
+ok 56 - saved library resolves named destinations and remains private to each account
+  ---
+  duration_ms: 268.1916
+  type: 'test'
+  ...
+# Subtest: hidden and missing saved targets show removable unavailable entries without leaking titles
+ok 57 - hidden and missing saved targets show removable unavailable entries without leaking titles
+  ---
+  duration_ms: 89.3187
+  type: 'test'
+  ...
+# Subtest: saved library resolves legacy supported entity types and reports bounded list totals
+ok 58 - saved library resolves legacy supported entity types and reports bounded list totals
+  ---
+  duration_ms: 114.0972
+  type: 'test'
+  ...
+# Subtest: profile edits persist across sessions and cannot change another user or role
+ok 59 - profile edits persist across sessions and cannot change another user or role
+  ---
+  duration_ms: 227.0337
+  type: 'test'
+  ...
+# Subtest: avatar upload, retrieval and profile persistence; invalid type, spoofed bytes and oversize rejection
+ok 60 - avatar upload, retrieval and profile persistence; invalid type, spoofed bytes and oversize rejection
+  ---
+  duration_ms: 157.9647
+  type: 'test'
+  ...
+# Subtest: garage deletion is scoped to its owner
+ok 61 - garage deletion is scoped to its owner
+  ---
+  duration_ms: 116.1172
+  type: 'test'
+  ...
+# Subtest: Garage client includes bike-type filtering and a searchable included-model field
+ok 62 - Garage client includes bike-type filtering and a searchable included-model field
+  ---
+  duration_ms: 6.7622
+  type: 'test'
+  ...
+# Subtest: reactions, saves and follows persist idempotently and isolate users
+ok 63 - reactions, saves and follows persist idempotently and isolate users
+  ---
+  duration_ms: 108.5562
+  type: 'test'
+  ...
+# Subtest: second-account notifications, no self notifications, read isolation and full unread count
+ok 64 - second-account notifications, no self notifications, read isolation and full unread count
+  ---
+  duration_ms: 102.4132
+  type: 'test'
+  ...
+# Subtest: reports reject missing targets; only moderators resolve; audit trail persists
+ok 65 - reports reject missing targets; only moderators resolve; audit trail persists
+  ---
+  duration_ms: 100.4724
+  type: 'test'
+  ...
+# Subtest: rate limiting rejects exhausted requests, fails closed in production and permits logout
+ok 66 - rate limiting rejects exhausted requests, fails closed in production and permits logout
+  ---
+  duration_ms: 54.2714
+  type: 'test'
+  ...
+# Subtest: Texas Cycling Hub public catalog is preserved as source-attributed, crawlable pages
+ok 67 - Texas Cycling Hub public catalog is preserved as source-attributed, crawlable pages
+  ---
+  duration_ms: 109.2876
+  type: 'test'
+  ...
+# Subtest: Texas public-only functions expose reviewed clubs, map links, calendar files, and bounded GPX
+ok 68 - Texas public-only functions expose reviewed clubs, map links, calendar files, and bounded GPX
+  ---
+  duration_ms: 37.3637
+  type: 'test'
+  ...
+# Subtest: Texas catalog joins the sitemap only after the existing public-origin indexing gate is enabled
+ok 69 - Texas catalog joins the sitemap only after the existing public-origin indexing gate is enabled
+  ---
+  duration_ms: 28.8776
+  type: 'test'
+  ...
+1..69
+# tests 69
+# suites 0
+# pass 69
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3013.7165

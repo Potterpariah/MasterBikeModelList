@@ -1,0 +1,16 @@
+
+ ⛅️ wrangler 4.131.2 (update available 4.147.0)
+───────────────────────────────────────────────
+[custom build] Running: node scripts/build-client.js
+Total Upload: 491.93 KiB / gzip: 136.53 KiB
+Your Worker has access to the following bindings:
+Binding                                                  Resource                  
+env.DB (bike-portal-db)                                  D1 Database               
+env.MEDIA (bike-portal-media)                            R2 Bucket                 
+env.AUTH_LIMITER (20 requests/60s)                       Rate Limit                
+env.WRITE_LIMITER (60 requests/60s)                      Rate Limit                
+env.ENVIRONMENT ("production")                           Environment Variable      
+env.SESSION_TTL_DAYS ("30")                              Environment Variable      
+env.TURNSTILE_SITE_KEY ("0x4AAAAAAE0tc_pA88hbkzLs")      Environment Variable      
+
+--dry-run: exiting now.

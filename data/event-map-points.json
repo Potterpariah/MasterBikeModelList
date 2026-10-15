@@ -1,0 +1,169 @@
+{
+  "bike-around-the-bay-2026": {
+    "lat": 29.7355047,
+    "lng": -94.9774274,
+    "precision": "area",
+    "label": "Approximate listed area; exact start pin unconfirmed",
+    "query": "Baytown, Texas",
+    "matched": "Baytown, Harris County, Texas, United States",
+    "source": "https://www.openstreetmap.org/relation/113542",
+    "checkedAt": "2026-10-02"
+  },
+  "tour-de-cure-texas-2026": {
+    "lat": 32.8109082,
+    "lng": -96.8616349,
+    "precision": "venue",
+    "label": "Published venue; exact departure point not confirmed",
+    "query": "Community Beer Co, 3110 Commonwealth Dr, Dallas, Dallas, Texas",
+    "matched": "Community Beer Co. / Society Spirits & Restaurant, 3110, Commonwealth Drive, Dallas, Dallas County, Texas, 75247, United States",
+    "source": "https://www.openstreetmap.org/way/465033141",
+    "checkedAt": "2026-10-02"
+  },
+  "park-to-port-bike-ride-2026": {
+    "lat": 29.7092924,
+    "lng": -95.3843442,
+    "precision": "venue",
+    "label": "Published venue; exact departure point not confirmed",
+    "query": "Bayou Parkland, Houston, Texas",
+    "matched": "Bayou Parkland Pavilion, Brays Bayou Greenway, Houston, Harris County, Texas, 77030, United States",
+    "source": "https://www.openstreetmap.org/way/426516540",
+    "checkedAt": "2026-10-02"
+  },
+  "rideataxia-dallas-2026": {
+    "lat": 33.0325186,
+    "lng": -96.9699085,
+    "precision": "area",
+    "label": "Named Railroad Park shown; organizer street address points elsewhere. Exact start unconfirmed",
+    "query": "Railroad Park, Lewisville, Texas",
+    "matched": "Toyota of Lewisville Railroad Park, A-Train Rail Trail, Lewisville, Denton County, Texas, 75067, United States",
+    "source": "https://www.openstreetmap.org/way/545927694",
+    "checkedAt": "2026-10-02"
+  },
+  "pedal-in-the-pines-2026": {
+    "lat": 30.3431566,
+    "lng": -95.086822,
+    "precision": "venue",
+    "label": "Published venue; exact departure point not confirmed",
+    "query": "203 N College Ave, Cleveland, Cleveland, Texas",
+    "matched": "203, North College Avenue, Cleveland, Liberty County, Texas, 77327, United States",
+    "source": "https://www.openstreetmap.org/way/21080988",
+    "checkedAt": "2026-10-02"
+  },
+  "denton-turkey-roll-2026": {
+    "lat": 33.2469428,
+    "lng": -97.1666319,
+    "precision": "venue",
+    "label": "Published venue; exact departure point not confirmed",
+    "query": "Denton High School, 3001 Bronco Way, Denton, Texas",
+    "matched": "Denton High School, 3001, Bronco Way, Denton, Denton County, Texas, 76207, United States",
+    "source": "https://www.openstreetmap.org/way/976386314",
+    "checkedAt": "2026-10-02"
+  },
+  "texas-chainring-massacre-2027": {
+    "lat": 33.677852,
+    "lng": -97.1561181,
+    "precision": "venue",
+    "label": "Published venue; exact departure point not confirmed",
+    "query": "4321 North Interstate 35, Texas",
+    "matched": "4321, North Interstate 35, Gainesville, Cooke County, Texas, 76240, United States",
+    "source": "https://www.openstreetmap.org/way/550201906",
+    "checkedAt": "2026-10-02"
+  },
+  "valley-of-tears-gravel-2027": {
+    "lat": 34.3939184,
+    "lng": -100.894078,
+    "precision": "area",
+    "label": "Approximate listed area; exact start pin unconfirmed",
+    "query": "Turkey, Hall County, Texas",
+    "matched": "Turkey, Hall County, Texas, United States",
+    "source": "https://www.openstreetmap.org/relation/115354",
+    "checkedAt": "2026-10-02"
+  },
+  "rattlesnake-gravel-grind-2027": {
+    "lat": 32.4221864,
+    "lng": -100.3067362,
+    "precision": "area",
+    "label": "Approximate listed area; exact start pin unconfirmed",
+    "query": "Lake Sweetwater, Texas",
+    "matched": "Lake Sweetwater, Nolan County, Texas, United States",
+    "source": "https://www.openstreetmap.org/relation/12223026",
+    "checkedAt": "2026-10-02"
+  },
+  "east-texas-showdown-2027": {
+    "lat": 30.739864,
+    "lng": -95.2132603,
+    "precision": "venue",
+    "label": "Published venue; exact departure point not confirmed",
+    "query": "Bullet Grill, Point Blank, Point Blank, Texas",
+    "matched": "Bullet Grill House, 401, TX 156, Point Blank, San Jacinto County, Texas, 77364, United States",
+    "source": "https://www.openstreetmap.org/node/11918776987",
+    "checkedAt": "2026-10-02"
+  },
+  "castell-grind-2027": {
+    "lat": 30.7011345,
+    "lng": -98.9569468,
+    "precision": "area",
+    "label": "Approximate listed area; exact start pin unconfirmed",
+    "query": "Castell, Llano County, Texas",
+    "matched": "Castell, Llano County, Texas, 76831, United States",
+    "source": "https://www.openstreetmap.org/node/151354155",
+    "checkedAt": "2026-10-02"
+  },
+  "camp-spinistry-bikepacking-2026": {
+    "lat": 33.677852,
+    "lng": -97.1561181,
+    "precision": "venue",
+    "label": "Published venue; exact departure point not confirmed",
+    "query": "4321 North Interstate 35, Texas",
+    "matched": "4321, North Interstate 35, Gainesville, Cooke County, Texas, 76240, United States",
+    "source": "https://www.openstreetmap.org/way/550201906",
+    "checkedAt": "2026-10-02"
+  },
+  "old-dennis-brevets-2026": {
+    "lat": 32.727247,
+    "lng": -97.825168,
+    "precision": "venue",
+    "label": "Published venue; exact departure point not confirmed",
+    "source": "https://locations.pilotflyingj.com/us/tx/weatherford/1201-w-i-20",
+    "checkedAt": "2026-10-02"
+  },
+  "la-bella-pop-2026": {
+    "lat": 32.1972394,
+    "lng": -96.9006368,
+    "precision": "venue",
+    "label": "Published venue; exact departure point not confirmed",
+    "query": "Denny's, Italy, Texas",
+    "matched": "Denny's, 140, L R Campbell Road, Italy, Ellis County, Texas, 76551, United States",
+    "source": "https://www.openstreetmap.org/way/904814430",
+    "checkedAt": "2026-10-02"
+  },
+  "rudolphs-revenge-2026": {
+    "lat": 33.3018214,
+    "lng": -96.9863233,
+    "precision": "venue",
+    "label": "Published address; exact departure point not confirmed",
+    "source": "https://runsignup.com/Race/TX/Aubrey/RudolphsRevenge2021",
+    "checkedAt": "2026-09-29",
+    "method": "Reuse previously geocoded matching address from event-start-map.js"
+  },
+  "head-for-the-hills-2027": {
+    "lat": 32.6019278,
+    "lng": -96.942371,
+    "precision": "venue",
+    "label": "Published venue; exact departure point not confirmed",
+    "query": "Hillside Village, Cedar Hill, Texas",
+    "matched": "Hillside Village, Cedar Hill, Dallas County, Texas, United States",
+    "source": "https://www.openstreetmap.org/way/709274033",
+    "checkedAt": "2026-10-02"
+  },
+  "burleson-honey-tour-2027": {
+    "lat": 32.5411168,
+    "lng": -97.2978124,
+    "precision": "venue",
+    "label": "Published venue; exact departure point not confirmed",
+    "query": "Centennial High School, 201 S Hurst Rd, Burleson, Texas",
+    "matched": "Centennial High School, 201, South Hurst Road, Burleson, Johnson County, Texas, 76028, United States",
+    "source": "https://www.openstreetmap.org/way/638419678",
+    "checkedAt": "2026-10-02"
+  }
+}

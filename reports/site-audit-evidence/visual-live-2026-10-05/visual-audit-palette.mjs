@@ -1,0 +1,31 @@
+import {spawn} from 'node:child_process';
+import {mkdir,readFile,writeFile} from 'node:fs/promises';
+const base='https://bike-portal-stage4.m25-f6b.workers.dev',out=new URL('./visual-audit-palette/',import.meta.url);await mkdir(out,{recursive:true});
+const profile=new URL('./chrome-profile-'+Date.now()+'/',out);await mkdir(profile,{recursive:true});
+const chrome=spawn('C:/Program Files/Google/Chrome/Application/chrome.exe',['--headless=new','--disable-gpu','--no-first-run','--no-default-browser-check','--remote-debugging-port=0','--user-data-dir='+decodeURIComponent(profile.pathname).replace(/^\//,''),'about:blank'],{windowsHide:true,stdio:'ignore'});
+let ws,seq=0;const pending=new Map(),results=[],errors=[];const watchdog=setTimeout(()=>{chrome.kill();process.exit(2)},300000).unref();
+const routes=[['events','/events']];
+try{
+ let port;for(let i=0;i<100;i++){try{port=(await readFile(new URL('DevToolsActivePort',profile),'utf8')).split('\n')[0];break}catch{}await new Promise(r=>setTimeout(r,100))}if(!port)throw Error('Chrome unavailable');
+ const tabs=await(await fetch('http://127.0.0.1:'+port+'/json')).json();ws=new WebSocket(tabs.find(x=>x.type==='page'&&x.url==='about:blank').webSocketDebuggerUrl);await new Promise(r=>ws.addEventListener('open',r,{once:true}));ws.addEventListener('message',e=>{const x=JSON.parse(e.data);if(x.id){const p=pending.get(x.id);pending.delete(x.id);x.error?p.reject(x.error):p.resolve(x.result)}else if(x.method==='Runtime.exceptionThrown')errors.push(x.params.exceptionDetails.text)});
+ const cmd=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pending.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}))});
+ const evaluate=async expression=>(await cmd('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true})).result.value;
+ await cmd('Page.enable');await cmd('Network.enable');await cmd('Runtime.enable');
+ async function capture(name,width,state='top'){
+  const layout=await evaluate(`(()=>{const q=s=>document.querySelector(s),box=e=>e?{x:e.getBoundingClientRect().x,y:e.getBoundingClientRect().y,w:e.getBoundingClientRect().width,h:e.getBoundingClientRect().height}:null,style=e=>e?Object.fromEntries(['fontFamily','fontSize','fontWeight','lineHeight','color','backgroundColor','borderRadius','boxShadow'].map(k=>[k,getComputedStyle(e)[k]])):null;return {url:location.href,title:document.title,width:innerWidth,height:innerHeight,scrollY,documentHeight:document.documentElement.scrollHeight,overflow:document.documentElement.scrollWidth>innerWidth,header:box(q('header')),logo:box(q('header .logo')),h1:box(q('h1')),h1Style:style(q('h1')),bodyStyle:style(document.body),lede:box(q('.lede')),help:box(q('.section-help')),firstCard:box(q('.card')),firstGrid:box(q('.grid')),firstControl:box(q('main select,main input')),footer:box(q('footer')),imageCount:document.images.length,images:[...document.images].map(e=>({src:e.currentSrc,loaded:e.complete&&e.naturalWidth>0,box:box(e)})),palette:[...document.querySelectorAll('html,body,.topbar,.public-main,.lede,.meta,.btn,.tag,.footer,.footer a,.section-help,.card')].slice(0,35).map(e=>({tag:e.tagName,classes:e.className,font:getComputedStyle(e).fontSize,color:getComputedStyle(e).color,bg:getComputedStyle(e).backgroundColor})),heroBackground:q('.hero-art')?getComputedStyle(q('.hero-art')).backgroundImage:null,cardStyle:style(q('.card')),formControls:[...document.querySelectorAll('main select,main input,main button')].map(e=>({text:e.name||e.textContent,box:box(e)}))}})()`);
+  const filename=width+'-'+name+'-'+state+'.png';await writeFile(new URL(filename,out),Buffer.from((await cmd('Page.captureScreenshot',{format:'png'})).data,'base64'));results.push({name,state,filename,...layout});
+ }
+ for(const width of [1440]){
+  await cmd('Emulation.setDeviceMetricsOverride',{width,height:1000,deviceScaleFactor:1,mobile:width<500});
+  for(const [name,path] of routes){await cmd('Page.navigate',{url:base+path});await new Promise(r=>setTimeout(r,name==='home'?1400:550));await evaluate('document.fonts.ready');await capture(name,width);
+   if(['home','events','event-detail','curated-detail','model-detail','guide-detail','city-detail','trail-detail'].includes(name)){await evaluate('window.scrollTo(0,800)');await capture(name,width,'body');}
+   if(name==='home'){await evaluate('window.scrollTo(0,document.body.scrollHeight)');await capture(name,width,'footer');await evaluate('window.scrollTo(0,0);document.querySelector(".site-menu summary").click()');await capture(name,width,'menu');}
+   if(name==='events'){await evaluate('window.scrollTo(0,0);document.querySelector(".section-help summary").click()');await capture(name,width,'help-open');}
+   if(name==='events-filter'){await evaluate('document.querySelector("[data-event-location]").click()');await new Promise(r=>setTimeout(r,1500));await capture(name,width,'map');await evaluate('document.querySelector(".leaflet-marker-icon").click()');await new Promise(r=>setTimeout(r,700));await capture(name,width,'map-popup');}
+   if(name==='about'){await evaluate('window.scrollTo(0,document.body.scrollHeight)');await capture(name,width,'footer');}
+  }
+  await cmd('Page.navigate',{url:base+'/#login'});await new Promise(r=>setTimeout(r,700));await capture('account-login',width);
+  console.log('Captured width',width);
+ }
+ await writeFile(new URL('metrics.json',out),JSON.stringify({capturedAt:new Date().toISOString(),version:'b1bb12f9-5056-4c56-aaea-cee4cf90c86b',routes,results,errors},null,2));console.log('VISUAL_CAPTURE_DONE',results.length);await cmd('Browser.close');
+}finally{ws?.close();chrome.kill()}

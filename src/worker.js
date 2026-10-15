@@ -1,3 +1,5 @@
+import {eventMapAsset} from './interactive-event-map.js';
+import {discoveryMetrics} from './discovery-metrics.js';
 import {publicPages} from './public-pages.js';
 import {canIndex} from './seo.js';
 import {editEvent} from './editorial.js';
@@ -16,6 +18,8 @@ export default {
     try {
       const url = new URL(request.url);
       const method = request.method.toUpperCase();
+      const metricResponse=await discoveryMetrics(request,env);
+      if(metricResponse)return metricResponse;
 
       if (!["GET", "HEAD", "OPTIONS"].includes(method)) {
         const origin = request.headers.get("Origin");
@@ -43,7 +47,7 @@ export default {
         return new Response(body, { headers: withHeaders({ "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store", "X-Robots-Tag":canIndex(request,env,true)?"index, follow":"noindex, nofollow" }) });
       }
       if (["GET", "HEAD"].includes(method)) {
-        const asset = portalAsset(url.pathname);
+        const asset = eventMapAsset(url.pathname) || portalAsset(url.pathname);
         if (asset) return new Response(method === "HEAD" ? null : asset.body, { headers: withHeaders({ "Content-Type": asset.type, "Cache-Control": "public, max-age=300" }) });
       }
       if (url.pathname === "/api/portal/catalog" && method === "GET") return json(await readCatalog(env));
@@ -132,7 +136,7 @@ export default {
 function securityHeaders() {
   return {
     "X-Robots-Tag": "noindex, nofollow",
-    "Content-Security-Policy": "default-src 'self'; img-src 'self' data:; connect-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'",
+    "Content-Security-Policy": "default-src 'self'; img-src 'self' data: https://tile.openstreetmap.org; connect-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'",
     "Referrer-Policy": "strict-origin-when-cross-origin",
     "X-Content-Type-Options": "nosniff",
     "X-Frame-Options": "DENY",

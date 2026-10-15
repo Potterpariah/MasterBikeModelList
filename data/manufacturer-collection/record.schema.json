@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Minimal bicycle record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "manufacturer",
+    "brand",
+    "model",
+    "trim",
+    "year",
+    "evidence"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "manufacturer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "brand": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trim": {
+      "type": "string",
+      "minLength": 1
+    },
+    "year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1990,
+      "maximum": 2100
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_url",
+        "market",
+        "checked_on"
+      ],
+      "properties": {
+        "source_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "market": {
+          "const": "US"
+        },
+        "checked_on": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,982 @@
+[
+  {
+    "title": "Texas Cycling Events & Bike Maintenance | Bike Portal",
+    "url": "http://127.0.0.1:59530/",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Your next ridestarts here."
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/",
+    "screenshot": "local-1280-_.png",
+    "help": {
+      "open": true,
+      "caveat": "Browse public information freely; account actions require you to log in.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:59530/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/events",
+    "screenshot": "local-1280-_events.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/texas/events",
+    "screenshot": "local-1280-_texas_events.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Trek fuel-ex-9-8-xt-gen-6 | Bike Portal",
+    "url": "http://127.0.0.1:59530/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex-9-8-xt-gen-6"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "screenshot": "local-1280-_bikes_trek_fuel-ex_2023_fuel-ex-9-8-xt-gen-6.png",
+    "help": {
+      "open": true,
+      "caveat": "A model family is not a confirmed exact-year build or a stock listing.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Bicycle brands & model families | Bike Portal",
+    "url": "http://127.0.0.1:59530/brands",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Bicycle brands & model families"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/brands",
+    "screenshot": "local-1280-_brands.png",
+    "help": {
+      "open": true,
+      "caveat": "A model family is not a confirmed exact-year build or a stock listing.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling routes & trails | Bike Portal",
+    "url": "http://127.0.0.1:59530/trails",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling routes & trails"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/trails",
+    "screenshot": "local-1280-_trails.png",
+    "help": {
+      "open": true,
+      "caveat": "Maps and GPX files are planning references, not a guarantee of a safe or open route.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling clubs | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas/clubs",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling clubs"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/texas/clubs",
+    "screenshot": "local-1280-_texas_clubs.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm meeting places, ride rules and current schedules with the club.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "How to Fix a Flat Tire With an Inner Tube | Bike Portal",
+    "url": "http://127.0.0.1:59530/guides/fix-a-flat",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "How to Fix a Flat Tire With an Inner Tube"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/guides/fix-a-flat",
+    "screenshot": "local-1280-_guides_fix-a-flat.png",
+    "help": {
+      "open": true,
+      "caveat": "These AI-assisted guides are references; check the instructions for your exact equipment.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling guide | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling guide"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/texas",
+    "screenshot": "local-1280-_texas.png",
+    "help": {
+      "open": true,
+      "caveat": "This directory brings together different resources; each has its own source and review scope.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "About Bike Portal | Bike Portal",
+    "url": "http://127.0.0.1:59530/about",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "About Bike Portal"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/about",
+    "screenshot": "local-1280-_about.png",
+    "help": null
+  },
+  {
+    "title": "Texas Cycling Events & Bike Maintenance | Bike Portal",
+    "url": "http://127.0.0.1:59530/",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Your next ridestarts here."
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 320,
+    "path": "/",
+    "screenshot": "local-320-_.png",
+    "help": {
+      "open": true,
+      "caveat": "Browse public information freely; account actions require you to log in.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:59530/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 320,
+    "path": "/events",
+    "screenshot": "local-320-_events.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 320,
+    "path": "/texas/events",
+    "screenshot": "local-320-_texas_events.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Trek fuel-ex-9-8-xt-gen-6 | Bike Portal",
+    "url": "http://127.0.0.1:59530/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex-9-8-xt-gen-6"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 320,
+    "path": "/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "screenshot": "local-320-_bikes_trek_fuel-ex_2023_fuel-ex-9-8-xt-gen-6.png",
+    "help": {
+      "open": true,
+      "caveat": "A model family is not a confirmed exact-year build or a stock listing.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Bicycle brands & model families | Bike Portal",
+    "url": "http://127.0.0.1:59530/brands",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Bicycle brands & model families"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 320,
+    "path": "/brands",
+    "screenshot": "local-320-_brands.png",
+    "help": {
+      "open": true,
+      "caveat": "A model family is not a confirmed exact-year build or a stock listing.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling routes & trails | Bike Portal",
+    "url": "http://127.0.0.1:59530/trails",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling routes & trails"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 320,
+    "path": "/trails",
+    "screenshot": "local-320-_trails.png",
+    "help": {
+      "open": true,
+      "caveat": "Maps and GPX files are planning references, not a guarantee of a safe or open route.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling clubs | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas/clubs",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling clubs"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 320,
+    "path": "/texas/clubs",
+    "screenshot": "local-320-_texas_clubs.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm meeting places, ride rules and current schedules with the club.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "How to Fix a Flat Tire With an Inner Tube | Bike Portal",
+    "url": "http://127.0.0.1:59530/guides/fix-a-flat",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "How to Fix a Flat Tire With an Inner Tube"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 320,
+    "path": "/guides/fix-a-flat",
+    "screenshot": "local-320-_guides_fix-a-flat.png",
+    "help": {
+      "open": true,
+      "caveat": "These AI-assisted guides are references; check the instructions for your exact equipment.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling guide | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling guide"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 320,
+    "path": "/texas",
+    "screenshot": "local-320-_texas.png",
+    "help": {
+      "open": true,
+      "caveat": "This directory brings together different resources; each has its own source and review scope.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "About Bike Portal | Bike Portal",
+    "url": "http://127.0.0.1:59530/about",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "About Bike Portal"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 320,
+    "path": "/about",
+    "screenshot": "local-320-_about.png",
+    "help": null
+  },
+  {
+    "title": "Texas Cycling Events & Bike Maintenance | Bike Portal",
+    "url": "http://127.0.0.1:59530/",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Your next ridestarts here."
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 375,
+    "path": "/",
+    "screenshot": "local-375-_.png",
+    "help": {
+      "open": true,
+      "caveat": "Browse public information freely; account actions require you to log in.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:59530/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 375,
+    "path": "/events",
+    "screenshot": "local-375-_events.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 375,
+    "path": "/texas/events",
+    "screenshot": "local-375-_texas_events.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Trek fuel-ex-9-8-xt-gen-6 | Bike Portal",
+    "url": "http://127.0.0.1:59530/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex-9-8-xt-gen-6"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 375,
+    "path": "/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "screenshot": "local-375-_bikes_trek_fuel-ex_2023_fuel-ex-9-8-xt-gen-6.png",
+    "help": {
+      "open": true,
+      "caveat": "A model family is not a confirmed exact-year build or a stock listing.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Bicycle brands & model families | Bike Portal",
+    "url": "http://127.0.0.1:59530/brands",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Bicycle brands & model families"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 375,
+    "path": "/brands",
+    "screenshot": "local-375-_brands.png",
+    "help": {
+      "open": true,
+      "caveat": "A model family is not a confirmed exact-year build or a stock listing.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling routes & trails | Bike Portal",
+    "url": "http://127.0.0.1:59530/trails",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling routes & trails"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 375,
+    "path": "/trails",
+    "screenshot": "local-375-_trails.png",
+    "help": {
+      "open": true,
+      "caveat": "Maps and GPX files are planning references, not a guarantee of a safe or open route.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling clubs | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas/clubs",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling clubs"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 375,
+    "path": "/texas/clubs",
+    "screenshot": "local-375-_texas_clubs.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm meeting places, ride rules and current schedules with the club.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "How to Fix a Flat Tire With an Inner Tube | Bike Portal",
+    "url": "http://127.0.0.1:59530/guides/fix-a-flat",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "How to Fix a Flat Tire With an Inner Tube"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 375,
+    "path": "/guides/fix-a-flat",
+    "screenshot": "local-375-_guides_fix-a-flat.png",
+    "help": {
+      "open": true,
+      "caveat": "These AI-assisted guides are references; check the instructions for your exact equipment.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling guide | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling guide"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 375,
+    "path": "/texas",
+    "screenshot": "local-375-_texas.png",
+    "help": {
+      "open": true,
+      "caveat": "This directory brings together different resources; each has its own source and review scope.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "About Bike Portal | Bike Portal",
+    "url": "http://127.0.0.1:59530/about",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "About Bike Portal"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 375,
+    "path": "/about",
+    "screenshot": "local-375-_about.png",
+    "help": null
+  },
+  {
+    "title": "Texas Cycling Events & Bike Maintenance | Bike Portal",
+    "url": "http://127.0.0.1:59530/",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Your next ridestarts here."
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 390,
+    "path": "/",
+    "screenshot": "local-390-_.png",
+    "help": {
+      "open": true,
+      "caveat": "Browse public information freely; account actions require you to log in.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:59530/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 390,
+    "path": "/events",
+    "screenshot": "local-390-_events.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 390,
+    "path": "/texas/events",
+    "screenshot": "local-390-_texas_events.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Trek fuel-ex-9-8-xt-gen-6 | Bike Portal",
+    "url": "http://127.0.0.1:59530/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex-9-8-xt-gen-6"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 390,
+    "path": "/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "screenshot": "local-390-_bikes_trek_fuel-ex_2023_fuel-ex-9-8-xt-gen-6.png",
+    "help": {
+      "open": true,
+      "caveat": "A model family is not a confirmed exact-year build or a stock listing.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Bicycle brands & model families | Bike Portal",
+    "url": "http://127.0.0.1:59530/brands",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Bicycle brands & model families"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 390,
+    "path": "/brands",
+    "screenshot": "local-390-_brands.png",
+    "help": {
+      "open": true,
+      "caveat": "A model family is not a confirmed exact-year build or a stock listing.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling routes & trails | Bike Portal",
+    "url": "http://127.0.0.1:59530/trails",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling routes & trails"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 390,
+    "path": "/trails",
+    "screenshot": "local-390-_trails.png",
+    "help": {
+      "open": true,
+      "caveat": "Maps and GPX files are planning references, not a guarantee of a safe or open route.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling clubs | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas/clubs",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling clubs"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 390,
+    "path": "/texas/clubs",
+    "screenshot": "local-390-_texas_clubs.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm meeting places, ride rules and current schedules with the club.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "How to Fix a Flat Tire With an Inner Tube | Bike Portal",
+    "url": "http://127.0.0.1:59530/guides/fix-a-flat",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "How to Fix a Flat Tire With an Inner Tube"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 390,
+    "path": "/guides/fix-a-flat",
+    "screenshot": "local-390-_guides_fix-a-flat.png",
+    "help": {
+      "open": true,
+      "caveat": "These AI-assisted guides are references; check the instructions for your exact equipment.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling guide | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling guide"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 390,
+    "path": "/texas",
+    "screenshot": "local-390-_texas.png",
+    "help": {
+      "open": true,
+      "caveat": "This directory brings together different resources; each has its own source and review scope.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "About Bike Portal | Bike Portal",
+    "url": "http://127.0.0.1:59530/about",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "About Bike Portal"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 390,
+    "path": "/about",
+    "screenshot": "local-390-_about.png",
+    "help": null
+  },
+  {
+    "title": "Texas Cycling Events & Bike Maintenance | Bike Portal",
+    "url": "http://127.0.0.1:59530/",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Your next ridestarts here."
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 768,
+    "path": "/",
+    "screenshot": "local-768-_.png",
+    "help": {
+      "open": true,
+      "caveat": "Browse public information freely; account actions require you to log in.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:59530/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 768,
+    "path": "/events",
+    "screenshot": "local-768-_events.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas/events",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 768,
+    "path": "/texas/events",
+    "screenshot": "local-768-_texas_events.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Trek fuel-ex-9-8-xt-gen-6 | Bike Portal",
+    "url": "http://127.0.0.1:59530/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Trek fuel-ex-9-8-xt-gen-6"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 768,
+    "path": "/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "screenshot": "local-768-_bikes_trek_fuel-ex_2023_fuel-ex-9-8-xt-gen-6.png",
+    "help": {
+      "open": true,
+      "caveat": "A model family is not a confirmed exact-year build or a stock listing.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Bicycle brands & model families | Bike Portal",
+    "url": "http://127.0.0.1:59530/brands",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Bicycle brands & model families"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 768,
+    "path": "/brands",
+    "screenshot": "local-768-_brands.png",
+    "help": {
+      "open": true,
+      "caveat": "A model family is not a confirmed exact-year build or a stock listing.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling routes & trails | Bike Portal",
+    "url": "http://127.0.0.1:59530/trails",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling routes & trails"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 768,
+    "path": "/trails",
+    "screenshot": "local-768-_trails.png",
+    "help": {
+      "open": true,
+      "caveat": "Maps and GPX files are planning references, not a guarantee of a safe or open route.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling clubs | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas/clubs",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling clubs"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 768,
+    "path": "/texas/clubs",
+    "screenshot": "local-768-_texas_clubs.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm meeting places, ride rules and current schedules with the club.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "How to Fix a Flat Tire With an Inner Tube | Bike Portal",
+    "url": "http://127.0.0.1:59530/guides/fix-a-flat",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "How to Fix a Flat Tire With an Inner Tube"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 768,
+    "path": "/guides/fix-a-flat",
+    "screenshot": "local-768-_guides_fix-a-flat.png",
+    "help": {
+      "open": true,
+      "caveat": "These AI-assisted guides are references; check the instructions for your exact equipment.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling guide | Bike Portal",
+    "url": "http://127.0.0.1:59530/texas",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling guide"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 768,
+    "path": "/texas",
+    "screenshot": "local-768-_texas.png",
+    "help": {
+      "open": true,
+      "caveat": "This directory brings together different resources; each has its own source and review scope.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "About Bike Portal | Bike Portal",
+    "url": "http://127.0.0.1:59530/about",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "About Bike Portal"
+    ],
+    "svgMap": false,
+    "realMap": false,
+    "smallControls": [],
+    "width": 768,
+    "path": "/about",
+    "screenshot": "local-768-_about.png",
+    "help": null
+  }
+]

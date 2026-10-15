@@ -1,0 +1,4 @@
+
+> bike-portal-stage4@4.3.2 check
+> node scripts/build-client.js && node --check src/worker.js && node --check src/portal.js && node --check src/portal-client.js && node --check src/portal-styles.js && node --check src/generated/portal-client-source.js && node --check src/saved-library.js && node --check src/seo.js && node --check src/editorial.js && node --check src/public-pages.js && node --check src/model-data.js && node --check src/bike-catalog.js && node --check src/publication-data.js && node --check src/texas-cycling-data.js && node --check src/texas-public-features.js && node --check scripts/import-texas-cycling-data.mjs
+

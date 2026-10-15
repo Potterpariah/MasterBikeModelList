@@ -1,0 +1,79 @@
+{
+  "enabled": false,
+  "frequency": "daily",
+  "timeZone": "America/Chicago",
+  "localTime": null,
+  "activationRequires": "Approved execution host, daily time, reviewed adapters, canonical writer and deployment",
+  "sources": [
+    {
+      "id": "camp-spinistry-bikepacking-2026",
+      "eventSlug": "camp-spinistry-bikepacking-2026",
+      "expectedTitle": "Camp Spinistry: Bikepacking Kickoff Weekend",
+      "url": "https://runsignup.com/Race/TX/Gainesville/CampSpinistryBikepackingKickoffWeekend",
+      "timeZone": "America/Chicago"
+    },
+    {
+      "id": "tour-de-cure-texas-2026",
+      "eventSlug": "tour-de-cure-texas-2026",
+      "expectedTitle": "Tour de Cure: Texas",
+      "url": "https://tour.diabetes.org/txtour",
+      "timeZone": "America/Chicago"
+    },
+    {
+      "id": "old-dennis-brevets-2026",
+      "eventSlug": "old-dennis-brevets-2026",
+      "expectedTitle": "Old Dennis Brevets",
+      "url": "https://lonestarrandon.org/calendar",
+      "timeZone": "America/Chicago"
+    },
+    {
+      "id": "rideataxia-dallas-2026",
+      "eventSlug": "rideataxia-dallas-2026",
+      "expectedTitle": "rideATAXIA Dallas",
+      "url": "https://give.curefa.org/event/rideataxia-dallas-2026/e816543",
+      "timeZone": "America/Chicago"
+    },
+    {
+      "id": "denton-turkey-roll-2026",
+      "eventSlug": "denton-turkey-roll-2026",
+      "expectedTitle": "Denton Turkey Roll Bicycle Rally",
+      "url": "https://dentonturkeyroll.com/",
+      "timeZone": "America/Chicago"
+    },
+    {
+      "id": "la-bella-pop-2026",
+      "eventSlug": "la-bella-pop-2026",
+      "expectedTitle": "La Bella Pop 114k",
+      "url": "https://lonestarrandon.org/calendar",
+      "timeZone": "America/Chicago"
+    },
+    {
+      "id": "rudolphs-revenge-2026",
+      "eventSlug": "rudolphs-revenge-2026",
+      "expectedTitle": "Rudolph\u2019s Revenge",
+      "url": "https://runsignup.com/Race/TX/Aubrey/RudolphsRevenge2021",
+      "timeZone": "America/Chicago"
+    },
+    {
+      "id": "texas-chainring-massacre-2027",
+      "eventSlug": "texas-chainring-massacre-2027",
+      "expectedTitle": "Texas Chainring Massacre",
+      "url": "https://runsignup.com/Race/TX/Gainesville/TexasChainringMassacre2027",
+      "timeZone": "America/Chicago"
+    },
+    {
+      "id": "head-for-the-hills-2027",
+      "eventSlug": "head-for-the-hills-2027",
+      "expectedTitle": "Head for the Hills Bicycle Rally",
+      "url": "https://headforthehills.org/",
+      "timeZone": "America/Chicago"
+    },
+    {
+      "id": "burleson-honey-tour-2027",
+      "eventSlug": "burleson-honey-tour-2027",
+      "expectedTitle": "Burleson Honey Tour",
+      "url": "https://www.burlesonhoneytourbikeride.com/",
+      "timeZone": "America/Chicago"
+    }
+  ]
+}

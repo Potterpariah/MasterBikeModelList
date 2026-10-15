@@ -23,3 +23,8 @@ if(process.argv[2]) {
   console.log('Original backend preservation: passed');
 }
 console.log('Compiled Worker HTML, browser source equivalence, and browser JavaScript syntax: passed');
+
+const {eventMapClientScript}=await import('../src/generated/event-map-client-source.js');
+const mapScript=await (await bundled.fetch(new Request('https://bike.test/event-map.js'),env)).text();
+assert.equal(mapScript,eventMapClientScript);new Script(mapScript);assert.ok(!mapScript.includes('__name('));
+console.log('Compiled interactive-map browser source: passed');

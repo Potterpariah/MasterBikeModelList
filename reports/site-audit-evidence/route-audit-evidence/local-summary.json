@@ -1,0 +1,72 @@
+{
+  "routes": 378,
+  "html": 357,
+  "bad": [],
+  "badLogo": [],
+  "badH1": [],
+  "badNoindex": [],
+  "badMain": [],
+  "assets": [
+    {
+      "path": "/portal.css?v=4.3.6",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/portal.js?v=4.3.6",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/event-map.css?v=20261002-4",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/leaflet.js?v=1.9.4",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/event-map.js?v=20261002-4",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8"
+    }
+  ],
+  "newLocalPaths": [
+    "/bikes/trek",
+    "/bikes/trek/fuel-ex",
+    "/bikes/trek/fuel-ex/2023",
+    "/bikes/trek/fuel-ex/2023/fuel-ex-9-8-xt-gen-6",
+    "/bikes/trek/fuel-exe",
+    "/bikes/trek/fuel-exe/2023",
+    "/bikes/trek/fuel-exe/2023/fuel-exe-9-8",
+    "/texas/events/camp-spinistry-bikepacking-2026",
+    "/texas/events/old-dennis-brevets-2026",
+    "/texas/events/la-bella-pop-2026",
+    "/texas/events/rudolphs-revenge-2026",
+    "/texas/events/head-for-the-hills-2027",
+    "/texas/events/burleson-honey-tour-2027",
+    "/texas/events/bike-around-the-bay-2026/calendar.ics",
+    "/texas/events/camp-spinistry-bikepacking-2026/calendar.ics",
+    "/texas/events/park-to-port-bike-ride-2026/calendar.ics",
+    "/texas/events/tour-de-cure-texas-2026/calendar.ics",
+    "/texas/events/old-dennis-brevets-2026/calendar.ics",
+    "/texas/events/pedal-in-the-pines-2026/calendar.ics",
+    "/texas/events/rideataxia-dallas-2026/calendar.ics",
+    "/texas/events/denton-turkey-roll-2026/calendar.ics",
+    "/texas/events/la-bella-pop-2026/calendar.ics",
+    "/texas/events/rudolphs-revenge-2026/calendar.ics",
+    "/texas/events/texas-chainring-massacre-2027/calendar.ics",
+    "/texas/events/valley-of-tears-gravel-2027/calendar.ics",
+    "/texas/events/rattlesnake-gravel-grind-2027/calendar.ics",
+    "/texas/events/east-texas-showdown-2027/calendar.ics",
+    "/texas/events/castell-grind-2027/calendar.ics",
+    "/texas/events/head-for-the-hills-2027/calendar.ics",
+    "/texas/events/burleson-honey-tour-2027/calendar.ics",
+    "/trails/austin-veloway-loop/route.gpx",
+    "/trails/southern-walnut-creek-trail/route.gpx",
+    "/trails/lake-mineral-wells-trailway/route.gpx",
+    "/trails/capitol-peak-mtb-loop/route.gpx"
+  ]
+}

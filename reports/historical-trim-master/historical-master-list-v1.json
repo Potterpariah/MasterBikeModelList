@@ -1,0 +1,51 @@
+{
+  "title": "Bike Portal Historical Master List",
+  "version": "1.4.0",
+  "released_on": "2026-10-15",
+  "status": "project_canonical_working_baseline",
+  "canonical_file": "brand-model-master.json",
+  "canonical_file_sha256": "a910c63cf81fd3188d5ab1c6b499312659c60267b8e72812753d828ad94bc7ce",
+  "scope": "Historical brand/model reference for designing and testing future ingestion methods. US availability is not an acceptance criterion for this release.",
+  "counts": {
+    "source_brand_name_year_rows": 11120,
+    "brand_model_pairs": 5497,
+    "year_associations": 10472,
+    "source_brands": 29,
+    "year_min": 2002,
+    "year_max": 2014,
+    "official_model_sources": 17,
+    "catalog_links_unverified": 5470,
+    "blank_model_sources": 10,
+    "records_with_photo_urls": 5145,
+    "records_without_photo_urls": 352,
+    "catalog_photo_urls": 9947,
+    "recoverable_confirmed_exclusions": 460,
+    "brand_identity_verifications": 8,
+    "possible_frame_module_flags": 34,
+    "punctuation_collision_groups": 153,
+    "archive_detail_records": 10255,
+    "archive_detail_brands": 29,
+    "archive_records_with_manufacturer_url": 10188,
+    "archive_records_with_catalog_photo_url": 9466,
+    "brand_model_pairs_with_archive_manufacturer_url": 5062,
+    "archive_manufacturer_url_references": 9633
+  },
+  "acceptance": [
+    "The canonical file has no exact normalized brand/model duplicates.",
+    "Every retained original source pair is represented, and confirmed exclusions are recoverable.",
+    "Catalog-reported years remain source-provenanced and are not expanded into inferred ranges.",
+    "Frame/module candidates remain visible and flagged unless source-confirmed for exclusion; all exclusions remain recoverable.",
+    "Model source status distinguishes official model evidence, unverified catalog links and blanks.",
+    "Photo URLs are pinned-source catalog references, with all variants and source provenance retained.",
+    "User-provided BikeBook archive details are matched exactly by normalized brand/model/year; manufacturer URLs and catalog-photo URLs remain source references with archive SHA-256 provenance."
+  ],
+  "non_claims": [
+    "This is the project official working list, not an assertion that every row is manufacturer-official or globally complete.",
+    "This release does not verify legal manufacturer entity, complete-bike status, trim parsing, type, model year, or production coverage for every row.",
+    "This release does not authorize database ingestion, public display, deployment, or reuse beyond the applicable source-license review.",
+    "Photo URLs are not downloaded image assets, an accessibility guarantee, or a license to hotlink, reproduce or publish images.",
+    "The archive did not supply a reliable type, legal manufacturer entity, or distinct trim field, so none are inferred from component descriptions or filenames."
+  ],
+  "source_and_rights": "See source-assessment.json and BIKEBOOK-LICENSE.txt. BikeBook provenance is retained; downstream rights review is required before any production data use.",
+  "validation_command": "node scripts/validate-historical-master-release.mjs"
+}

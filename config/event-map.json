@@ -1,0 +1,6 @@
+{
+  "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+  "maxZoom": 19,
+  "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+  "providerNote": "OpenStreetMap public tiles are best-effort. Viewport requests only; no prefetch or offline downloads. Provider changes require matching CSP review."
+}

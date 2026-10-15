@@ -81,6 +81,8 @@ export function portalClient() {
 
   function updateAccount() {
     $('#account-nav').innerHTML = user ? `<a href="#profile" title="Edit your profile">${esc(user.display_name || user.username)}</a><a href="#notifications" aria-label="Notifications${unreadCount===null?' (count unavailable)':', '+unreadCount+' unread'}">Notifications <span class="notice-count">${unreadCount===null?'…':unreadCount}</span></a><a href="#saved">Saved</a><a class="btn" href="#logout">Log out</a>` : '<a href="#login">Log in</a><a class="btn" href="#signup">Join the ride ↗</a>';
+    const inviteTitle=$('#home-invite-title'),inviteCopy=$('#home-invite-copy'),inviteAction=$('#home-invite-action');
+    if(inviteTitle&&inviteCopy&&inviteAction){if(user){inviteTitle.textContent='Bring another rider along.';inviteCopy.textContent='Share Bike Portal with a friend so they can find rides, build a Garage, and join the conversation.';inviteAction.href='#invite';inviteAction.textContent='Invite a rider ↗';}else{inviteTitle.textContent='More riding. More connection.';inviteCopy.textContent='Build your Bike Garage, save your event plans, and join the conversation.';inviteAction.href='#signup';inviteAction.textContent='Create your free account ↗';}}
   }
   async function refreshUser() {const previous=user?.id;try {user=(await api('/api/me')).user;} catch {user=null;} if(previous!==user?.id)unreadCount=null;updateAccount();if(user)void refreshNotices();}
   function closeDialog() {routeVersion++;if(widget!==null && window.turnstile){window.turnstile.remove(widget);widget=null;}dialog.close();history.replaceState(null,'',location.pathname+location.search);}
@@ -99,6 +101,12 @@ export function portalClient() {
   const field = (name,label,type='text',extra='') => `<label class="field">${label}<input name="${name}" type="${type}" ${extra} required></label>`;
   function authPrompt(version,action) {setBody(heading('Make yourself at home',`Log in or create an account to ${action}.`)+'<div class="actions"><a class="btn" href="#login">Log in</a><a class="btn outline" href="#signup">Create account</a></div>',version);}
   async function requireUser(version,action) {await refreshUser();if(version!==routeVersion)return false;if(!user){authPrompt(version,action);return false;}return true;}
+  async function invite(version) {
+    if(!await requireUser(version,'invite another rider'))return;
+    const url=location.origin+'/?ref=invite';
+    if(!setBody(heading('Invite a rider','Share Bike Portal with someone you ride with.')+`<p>Send this link to a friend. They can explore the public cycling directory and choose whether to create an account.</p><label class="field">Invite link<input id="invite-link" value="${esc(url)}" readonly></label><div class="actions"><button class="btn" id="copy-invite" type="button">Copy invite link</button><a class="btn outline" href="mailto:?subject=${encodeURIComponent('Join me on Bike Portal')}&body=${encodeURIComponent('Find Texas rides, bike guides and community discussions on Bike Portal: '+url)}">Email invite</a></div><p class="status" id="invite-status" role="status"></p>`,version))return;
+    $('#copy-invite').onclick=async()=>{const status=$('#invite-status');try{await navigator.clipboard.writeText(url);status.textContent='Invite link copied.';}catch{const input=$('#invite-link');input.focus();input.select();status.textContent='Select and copy the invite link.';}};
+  }
   function loadTurnstile() {
     if(window.turnstile)return Promise.resolve(window.turnstile);
     if(!turnstilePromise)turnstilePromise=new Promise((resolve,reject)=>{
@@ -171,7 +179,7 @@ export function portalClient() {
   }
   async function route(){
     const raw=location.hash.slice(1);const slash=raw.indexOf('/');const kind=slash<0?raw:raw.slice(0,slash);let id;try{id=decodeURIComponent(slash<0?'':raw.slice(slash+1));}catch{id='';}
-    const routes=new Set(['login','signup','logout','guide','all-guides','event','all-events','discover','brand','discussion','new-discussion','garage','notifications','search','profile','saved','report','moderation']);
+    const routes=new Set(['login','signup','logout','guide','all-guides','event','all-events','discover','brand','discussion','new-discussion','garage','notifications','search','profile','saved','report','moderation','invite']);
     const version=++routeVersion;
     if(widget!==null && window.turnstile){window.turnstile.remove(widget);widget=null;}
     if(!routes.has(kind)){if(dialog.open)dialog.close();return;}
@@ -191,6 +199,7 @@ export function portalClient() {
       if(kind==='search')await search(id,version);
       if(kind==='profile')await profile(version);
       if(kind==='saved')await savedItems(version);
+      if(kind==='invite')await invite(version);
       if(kind==='report')await reportItem(id,version);
       if(kind==='moderation')await moderation(version);
     }catch(error){setBody(heading('Unable to load this view')+`<p class="status" role="status">${esc(error.message || 'Please check your connection and try again.')}</p><button class="btn" id="retry-view">Try again</button>`,version);if(version===routeVersion && $('#retry-view'))$('#retry-view').onclick=route;}

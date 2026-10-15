@@ -1,0 +1,890 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "menu": {
+        "open": true,
+        "overflow": false,
+        "logo": true,
+        "panel": {
+          "x": 18,
+          "y": 125,
+          "width": 284,
+          "height": 585,
+          "top": 125,
+          "right": 302,
+          "bottom": 710,
+          "left": 18
+        }
+      },
+      "map": {
+        "open": true,
+        "rows": [
+          {
+            "lat": 30.2085594,
+            "lng": -97.729776,
+            "slug": "2026-10-24-austin-bikes-and-beers-austin",
+            "title": "Bikes & Beers Austin",
+            "date": "2026-10-24",
+            "venue": "Meanwhile Brewing",
+            "url": "/events/2026-10-24-austin-bikes-and-beers-austin",
+            "precision": "venue",
+            "label": "Published address; exact departure point not confirmed",
+            "source": "https://www.bikesignup.com/Race/Events/TX/Austin/BikesandBeersAustin"
+          }
+        ],
+        "loadedTiles": 6,
+        "attribution": " Leaflet | © OpenStreetMap contributors",
+        "markers": 1,
+        "status": "",
+        "overflow": false,
+        "transform": "translate3d(0px, 0px, 0px)",
+        "zoomChanged": true,
+        "popup": {
+          "text": "Bikes & Beers Austin — 2026-10-24Meanwhile Brewing · Published address; exact departure point not confirmed",
+          "href": "/events/2026-10-24-austin-bikes-and-beers-austin"
+        },
+        "detailWorks": true,
+        "backFilters": true,
+        "escape": true
+      }
+    },
+    {
+      "width": 375,
+      "menu": {
+        "open": true,
+        "overflow": false,
+        "logo": true,
+        "panel": {
+          "x": 18,
+          "y": 125,
+          "width": 339,
+          "height": 585,
+          "top": 125,
+          "right": 357,
+          "bottom": 710,
+          "left": 18
+        }
+      },
+      "map": {
+        "open": true,
+        "rows": [
+          {
+            "lat": 30.2085594,
+            "lng": -97.729776,
+            "slug": "2026-10-24-austin-bikes-and-beers-austin",
+            "title": "Bikes & Beers Austin",
+            "date": "2026-10-24",
+            "venue": "Meanwhile Brewing",
+            "url": "/events/2026-10-24-austin-bikes-and-beers-austin",
+            "precision": "venue",
+            "label": "Published address; exact departure point not confirmed",
+            "source": "https://www.bikesignup.com/Race/Events/TX/Austin/BikesandBeersAustin"
+          }
+        ],
+        "loadedTiles": 6,
+        "attribution": " Leaflet | © OpenStreetMap contributors",
+        "markers": 1,
+        "status": "",
+        "overflow": false,
+        "transform": "translate3d(0px, 0px, 0px)",
+        "zoomChanged": true,
+        "popup": {
+          "text": "Bikes & Beers Austin — 2026-10-24Meanwhile Brewing · Published address; exact departure point not confirmed",
+          "href": "/events/2026-10-24-austin-bikes-and-beers-austin"
+        },
+        "detailWorks": true,
+        "backFilters": true,
+        "escape": true
+      }
+    },
+    {
+      "width": 390,
+      "menu": {
+        "open": true,
+        "overflow": false,
+        "logo": true,
+        "panel": {
+          "x": 18,
+          "y": 125,
+          "width": 354,
+          "height": 585,
+          "top": 125,
+          "right": 372,
+          "bottom": 710,
+          "left": 18
+        }
+      },
+      "map": {
+        "open": true,
+        "rows": [
+          {
+            "lat": 30.2085594,
+            "lng": -97.729776,
+            "slug": "2026-10-24-austin-bikes-and-beers-austin",
+            "title": "Bikes & Beers Austin",
+            "date": "2026-10-24",
+            "venue": "Meanwhile Brewing",
+            "url": "/events/2026-10-24-austin-bikes-and-beers-austin",
+            "precision": "venue",
+            "label": "Published address; exact departure point not confirmed",
+            "source": "https://www.bikesignup.com/Race/Events/TX/Austin/BikesandBeersAustin"
+          }
+        ],
+        "loadedTiles": 6,
+        "attribution": " Leaflet | © OpenStreetMap contributors",
+        "markers": 1,
+        "status": "",
+        "overflow": false,
+        "transform": "translate3d(0px, 0px, 0px)",
+        "zoomChanged": true,
+        "popup": {
+          "text": "Bikes & Beers Austin — 2026-10-24Meanwhile Brewing · Published address; exact departure point not confirmed",
+          "href": "/events/2026-10-24-austin-bikes-and-beers-austin"
+        },
+        "detailWorks": true,
+        "backFilters": true,
+        "escape": true
+      }
+    },
+    {
+      "width": 768,
+      "menu": {
+        "open": true,
+        "overflow": false,
+        "logo": true,
+        "panel": {
+          "x": 24,
+          "y": 91,
+          "width": 705,
+          "height": 630,
+          "top": 91,
+          "right": 729,
+          "bottom": 721,
+          "left": 24
+        }
+      },
+      "map": {
+        "open": true,
+        "rows": [
+          {
+            "lat": 30.2085594,
+            "lng": -97.729776,
+            "slug": "2026-10-24-austin-bikes-and-beers-austin",
+            "title": "Bikes & Beers Austin",
+            "date": "2026-10-24",
+            "venue": "Meanwhile Brewing",
+            "url": "/events/2026-10-24-austin-bikes-and-beers-austin",
+            "precision": "venue",
+            "label": "Published address; exact departure point not confirmed",
+            "source": "https://www.bikesignup.com/Race/Events/TX/Austin/BikesandBeersAustin"
+          }
+        ],
+        "loadedTiles": 12,
+        "attribution": " Leaflet | © OpenStreetMap contributors",
+        "markers": 1,
+        "status": "",
+        "overflow": false,
+        "transform": "translate3d(0px, 0px, 0px)",
+        "zoomChanged": true,
+        "popup": {
+          "text": "Bikes & Beers Austin — 2026-10-24Meanwhile Brewing · Published address; exact departure point not confirmed",
+          "href": "/events/2026-10-24-austin-bikes-and-beers-austin"
+        },
+        "detailWorks": true,
+        "backFilters": true,
+        "escape": true
+      }
+    },
+    {
+      "width": 1280,
+      "menu": {
+        "open": true,
+        "overflow": false,
+        "logo": true,
+        "panel": {
+          "x": 48.5,
+          "y": 91,
+          "width": 1168,
+          "height": 630,
+          "top": 91,
+          "right": 1216.5,
+          "bottom": 721,
+          "left": 48.5
+        }
+      },
+      "map": {
+        "open": true,
+        "rows": [
+          {
+            "lat": 30.2085594,
+            "lng": -97.729776,
+            "slug": "2026-10-24-austin-bikes-and-beers-austin",
+            "title": "Bikes & Beers Austin",
+            "date": "2026-10-24",
+            "venue": "Meanwhile Brewing",
+            "url": "/events/2026-10-24-austin-bikes-and-beers-austin",
+            "precision": "venue",
+            "label": "Published address; exact departure point not confirmed",
+            "source": "https://www.bikesignup.com/Race/Events/TX/Austin/BikesandBeersAustin"
+          }
+        ],
+        "loadedTiles": 12,
+        "attribution": " Leaflet | © OpenStreetMap contributors",
+        "markers": 1,
+        "status": "",
+        "overflow": false,
+        "transform": "translate3d(0px, 0px, 0px)",
+        "zoomChanged": true,
+        "popup": {
+          "text": "Bikes & Beers Austin — 2026-10-24Meanwhile Brewing · Published address; exact departure point not confirmed",
+          "href": "/events/2026-10-24-austin-bikes-and-beers-austin"
+        },
+        "detailWorks": true,
+        "backFilters": true,
+        "escape": true
+      }
+    }
+  ],
+  "tiles": [
+    {
+      "url": "https://tile.openstreetmap.org/6/14/26.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/843.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/843.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/842.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/842.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/14/26.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/14/26.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/843.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/843.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/842.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/842.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/14/26.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/14/26.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/843.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/843.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/842.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/842.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/14/26.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/14/26.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/235/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/232/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/235/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/232/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/235/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/232/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/843.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/843.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/842.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/842.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/466/843.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/466/842.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/469/843.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/469/842.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/466/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/469/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/14/26.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/232/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/235/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/232/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/235/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/232/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/235/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/232/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/14/26.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/233/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/234/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/232/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/235/421.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/232/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/235/420.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/235/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/232/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/10/232/422.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/843.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/843.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/842.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/842.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/467/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/468/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/466/843.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/469/843.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/466/842.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/469/842.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/466/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/469/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/466/844.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/14/26.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/14/26.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/13/25.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/14/25.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/12/25.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/13/26.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/15/25.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/12/26.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/6/15/26.png",
+      "status": 200,
+      "mime": "image/png"
+    }
+  ],
+  "tileFailure": {
+    "status": "Map background unavailable. Event markers and links still work.",
+    "markers": 2
+  },
+  "libraryFailure": {
+    "status": "The interactive map could not load. Use the location link to open your maps service.",
+    "href": "https://www.google.com/maps/search/?api=1&query=3800%20FM%20428%2C%20Aubrey"
+  },
+  "empty": {
+    "status": "No event locations are available for this view.",
+    "markers": 0
+  },
+  "dialogs": [
+    {
+      "hash": "#garage",
+      "open": true,
+      "text": "Make yourself at home\n\nLog in or create an account to manage your Bike Garage.\n\nLog in\nCreate account"
+    },
+    {
+      "hash": "#saved",
+      "open": true,
+      "text": "Make yourself at home\n\nLog in or create an account to see saved items.\n\nLog in\nCreate account"
+    },
+    {
+      "hash": "#notifications",
+      "open": true,
+      "text": "Make yourself at home\n\nLog in or create an account to see your notifications.\n\nLog in\nCreate account"
+    },
+    {
+      "hash": "#new-discussion",
+      "open": true,
+      "text": "Make yourself at home\n\nLog in or create an account to start a conversation.\n\nLog in\nCreate account"
+    },
+    {
+      "hash": "#invite",
+      "open": true,
+      "text": "Make yourself at home\n\nLog in or create an account to invite another rider.\n\nLog in\nCreate account"
+    },
+    {
+      "hash": "#profile",
+      "open": true,
+      "text": "Make yourself at home\n\nLog in or create an account to edit your profile.\n\nLog in\nCreate account"
+    },
+    {
+      "hash": "#moderation",
+      "open": true,
+      "text": "Make yourself at home\n\nLog in or create an account to review reports.\n\nLog in\nCreate account"
+    },
+    {
+      "hash": "#login",
+      "open": true,
+      "text": "Welcome back.\n\nLog in to pick up where you left off.\n\nEmail or username\nPassword\nLog in\n\nNew here? Create an account →"
+    }
+  ]
+}

@@ -1,0 +1,837 @@
+[
+  {
+    "path": "/events?date=2026-10-10",
+    "status": 200,
+    "bytes": 25567
+  },
+  {
+    "path": "/events?date=2026-10-17",
+    "status": 200,
+    "bytes": 27153
+  },
+  {
+    "path": "/events?date=2026-10-24",
+    "status": 200,
+    "bytes": 27619
+  },
+  {
+    "path": "/events?date=2026-11-07",
+    "status": 200,
+    "bytes": 23825
+  },
+  {
+    "path": "/events?date=2026-11-14",
+    "status": 200,
+    "bytes": 23221
+  },
+  {
+    "path": "/events?date=2026-11-21",
+    "status": 200,
+    "bytes": 23623
+  },
+  {
+    "path": "/events?date=2026-12-05",
+    "status": 200,
+    "bytes": 23567
+  },
+  {
+    "path": "/events?date=2026-12-06",
+    "status": 200,
+    "bytes": 23023
+  },
+  {
+    "path": "/events?date=2026-12-12",
+    "status": 200,
+    "bytes": 23078
+  },
+  {
+    "path": "/events?date=2027-01-23",
+    "status": 200,
+    "bytes": 22993
+  },
+  {
+    "path": "/events?date=2027-02-06",
+    "status": 200,
+    "bytes": 23462
+  },
+  {
+    "path": "/events?date=2027-02-20",
+    "status": 200,
+    "bytes": 23477
+  },
+  {
+    "path": "/events?date=2027-03-05",
+    "status": 200,
+    "bytes": 22956
+  },
+  {
+    "path": "/events?date=2027-03-06",
+    "status": 200,
+    "bytes": 23502
+  },
+  {
+    "path": "/events?date=2027-03-18",
+    "status": 200,
+    "bytes": 23004
+  },
+  {
+    "path": "/events?date=2027-03-20",
+    "status": 200,
+    "bytes": 24031
+  },
+  {
+    "path": "/events?date=2027-03-26",
+    "status": 200,
+    "bytes": 23041
+  },
+  {
+    "path": "/events?date=2027-04-03",
+    "status": 200,
+    "bytes": 23078
+  },
+  {
+    "path": "/events?date=2027-04-10",
+    "status": 200,
+    "bytes": 22957
+  },
+  {
+    "path": "/events?date=2027-04-11",
+    "status": 200,
+    "bytes": 23587
+  },
+  {
+    "path": "/events?date=2027-04-24",
+    "status": 200,
+    "bytes": 24181
+  },
+  {
+    "path": "/events?date=2027-05-08",
+    "status": 200,
+    "bytes": 23556
+  },
+  {
+    "path": "/events?date=2027-05-15",
+    "status": 200,
+    "bytes": 22990
+  },
+  {
+    "path": "/events?date=2027-06-26",
+    "status": 200,
+    "bytes": 23020
+  },
+  {
+    "path": "/events?date=2027-07-10",
+    "status": 200,
+    "bytes": 23245
+  },
+  {
+    "path": "/events?date=2027-09-24",
+    "status": 200,
+    "bytes": 23177
+  },
+  {
+    "path": "/events?q=2027+Texas+Chainring+Massacre",
+    "status": 200,
+    "bytes": 22992
+  },
+  {
+    "path": "/events?q=2027+Texas+NICA+State+Championships",
+    "status": 200,
+    "bytes": 23034
+  },
+  {
+    "path": "/events?q=6th+Annual+Bike+Ride+for+Survivors",
+    "status": 200,
+    "bytes": 23088
+  },
+  {
+    "path": "/events?q=Anchor+Club+of+Cuero+Wildflower+Bike+Ride+2027",
+    "status": 200,
+    "bytes": 23077
+  },
+  {
+    "path": "/events?q=Aubrey",
+    "status": 200,
+    "bytes": 23077
+  },
+  {
+    "path": "/events?q=Austin",
+    "status": 200,
+    "bytes": 23194
+  },
+  {
+    "path": "/events?q=Barrow+Volksride",
+    "status": 200,
+    "bytes": 23041
+  },
+  {
+    "path": "/events?q=Bike+Around+the+Bay",
+    "status": 200,
+    "bytes": 23059
+  },
+  {
+    "path": "/events?q=Bike+Around+the+Island",
+    "status": 200,
+    "bytes": 23044
+  },
+  {
+    "path": "/events?q=Bike+MS%3A+ACC+Texas+MS+150+2027",
+    "status": 200,
+    "bytes": 23101
+  },
+  {
+    "path": "/events?q=Bikes+%26+Beers+Austin",
+    "status": 200,
+    "bytes": 23194
+  },
+  {
+    "path": "/events?q=Bosque+Tour+de+Norway+2027",
+    "status": 200,
+    "bytes": 23038
+  },
+  {
+    "path": "/events?q=Calvert",
+    "status": 200,
+    "bytes": 22981
+  },
+  {
+    "path": "/events?q=Camp+Spinistry%3A+Bikepacking+Kickoff+Weekend",
+    "status": 200,
+    "bytes": 23109
+  },
+  {
+    "path": "/events?q=Castell",
+    "status": 200,
+    "bytes": 22956
+  },
+  {
+    "path": "/events?q=Castell+Grind+2027",
+    "status": 200,
+    "bytes": 22956
+  },
+  {
+    "path": "/events?q=Cedar+Hill",
+    "status": 200,
+    "bytes": 22993
+  },
+  {
+    "path": "/events?q=Clarendon",
+    "status": 200,
+    "bytes": 23220
+  },
+  {
+    "path": "/events?q=Cleveland",
+    "status": 200,
+    "bytes": 23225
+  },
+  {
+    "path": "/events?q=Clifton",
+    "status": 200,
+    "bytes": 23038
+  },
+  {
+    "path": "/events?q=College+Station",
+    "status": 200,
+    "bytes": 23101
+  },
+  {
+    "path": "/events?q=Cooler%27N+Hell+Gravel",
+    "status": 200,
+    "bytes": 23142
+  },
+  {
+    "path": "/events?q=Cuero",
+    "status": 200,
+    "bytes": 23077
+  },
+  {
+    "path": "/events?q=Dale",
+    "status": 200,
+    "bytes": 23457
+  },
+  {
+    "path": "/events?q=Dallas",
+    "status": 200,
+    "bytes": 24152
+  },
+  {
+    "path": "/events?q=Dallas+Bike+Ride+2027",
+    "status": 200,
+    "bytes": 22989
+  },
+  {
+    "path": "/events?q=Denton",
+    "status": 200,
+    "bytes": 23894
+  },
+  {
+    "path": "/events?q=Easter+Bike+Tour+2027",
+    "status": 200,
+    "bytes": 23040
+  },
+  {
+    "path": "/events?q=Farmersville",
+    "status": 200,
+    "bytes": 23230
+  },
+  {
+    "path": "/events?q=Fiesta+Wildflower+2027",
+    "status": 200,
+    "bytes": 23007
+  },
+  {
+    "path": "/events?q=Gainesville",
+    "status": 200,
+    "bytes": 23625
+  },
+  {
+    "path": "/events?q=Galveston",
+    "status": 200,
+    "bytes": 23627
+  },
+  {
+    "path": "/events?q=Galveston+Bay+Area",
+    "status": 200,
+    "bytes": 23059
+  },
+  {
+    "path": "/events?q=Glen+Rose",
+    "status": 200,
+    "bytes": 23046
+  },
+  {
+    "path": "/events?q=Goliad",
+    "status": 200,
+    "bytes": 23035
+  },
+  {
+    "path": "/events?q=Goodnight%27s+Grind+Gravel",
+    "status": 200,
+    "bytes": 23220
+  },
+  {
+    "path": "/events?q=Gran+Fondo+Texas+2027",
+    "status": 200,
+    "bytes": 23055
+  },
+  {
+    "path": "/events?q=Granbury",
+    "status": 200,
+    "bytes": 22986
+  },
+  {
+    "path": "/events?q=Head+for+the+Hills+2027",
+    "status": 200,
+    "bytes": 22993
+  },
+  {
+    "path": "/events?q=Henderson",
+    "status": 200,
+    "bytes": 22991
+  },
+  {
+    "path": "/events?q=Houston",
+    "status": 200,
+    "bytes": 23042
+  },
+  {
+    "path": "/events?q=Huntsville",
+    "status": 200,
+    "bytes": 23022
+  },
+  {
+    "path": "/events?q=Kerrville",
+    "status": 200,
+    "bytes": 24226
+  },
+  {
+    "path": "/events?q=Kerrville+Mountain+Bike+Festival+%2F+USAC+Texas+MTB+State+Championship",
+    "status": 200,
+    "bytes": 23147
+  },
+  {
+    "path": "/events?q=Lewisville",
+    "status": 200,
+    "bytes": 23075
+  },
+  {
+    "path": "/events?q=Madisonville",
+    "status": 200,
+    "bytes": 23026
+  },
+  {
+    "path": "/events?q=Marfa",
+    "status": 200,
+    "bytes": 22982
+  },
+  {
+    "path": "/events?q=Marfa+100",
+    "status": 200,
+    "bytes": 22982
+  },
+  {
+    "path": "/events?q=Marshall",
+    "status": 200,
+    "bytes": 23019
+  },
+  {
+    "path": "/events?q=Mission+to+Mission+Charity+Bike+Tour",
+    "status": 200,
+    "bytes": 23075
+  },
+  {
+    "path": "/events?q=Missions+Tour+de+Goliad",
+    "status": 200,
+    "bytes": 23035
+  },
+  {
+    "path": "/events?q=Montgomery",
+    "status": 200,
+    "bytes": 23755
+  },
+  {
+    "path": "/events?q=Muenster",
+    "status": 200,
+    "bytes": 22997
+  },
+  {
+    "path": "/events?q=Muenster+Metric+Century+Bicycle+Rally",
+    "status": 200,
+    "bytes": 22997
+  },
+  {
+    "path": "/events?q=Odessa",
+    "status": 200,
+    "bytes": 23113
+  },
+  {
+    "path": "/events?q=Palacios",
+    "status": 200,
+    "bytes": 23042
+  },
+  {
+    "path": "/events?q=Park+to+Port+Bike+Ride",
+    "status": 200,
+    "bytes": 23042
+  },
+  {
+    "path": "/events?q=Peach+Pedal+Bike+Ride+2027",
+    "status": 200,
+    "bytes": 23244
+  },
+  {
+    "path": "/events?q=Pedal+Palacios",
+    "status": 200,
+    "bytes": 23042
+  },
+  {
+    "path": "/events?q=Pedal+in+the+Pines",
+    "status": 200,
+    "bytes": 23225
+  },
+  {
+    "path": "/events?q=Pedaling+for+the+Veterans+2026",
+    "status": 200,
+    "bytes": 23220
+  },
+  {
+    "path": "/events?q=R3+Express+Gravel+Challenge+2026",
+    "status": 200,
+    "bytes": 23022
+  },
+  {
+    "path": "/events?q=Rattlesnake+Gravel+Grind+%26+XCMTB",
+    "status": 200,
+    "bytes": 23003
+  },
+  {
+    "path": "/events?q=Ray+Porter+Memorial+6+Hour+Endurance+Race+%26+Fundraiser",
+    "status": 200,
+    "bytes": 23291
+  },
+  {
+    "path": "/events?q=Riverside+Ride+2026",
+    "status": 200,
+    "bytes": 23000
+  },
+  {
+    "path": "/events?q=Rockstacker+Challenge+Mountain+Bike+Race",
+    "status": 200,
+    "bytes": 23113
+  },
+  {
+    "path": "/events?q=Rudolph%27s+Revenge",
+    "status": 200,
+    "bytes": 23077
+  },
+  {
+    "path": "/events?q=Salado",
+    "status": 200,
+    "bytes": 23041
+  },
+  {
+    "path": "/events?q=San+Antonio",
+    "status": 200,
+    "bytes": 23606
+  },
+  {
+    "path": "/events?q=Sugar+Land",
+    "status": 200,
+    "bytes": 24151
+  },
+  {
+    "path": "/events?q=Sweetwater",
+    "status": 200,
+    "bytes": 23003
+  },
+  {
+    "path": "/events?q=TORS+Race+3+-+Warda",
+    "status": 200,
+    "bytes": 22994
+  },
+  {
+    "path": "/events?q=TORS+Race+4+-+Sugar+Land",
+    "status": 200,
+    "bytes": 23019
+  },
+  {
+    "path": "/events?q=TORS+Race+5+-+Rally+Ready",
+    "status": 200,
+    "bytes": 22967
+  },
+  {
+    "path": "/events?q=Texas+NICA+North+-+Calvert+Race+Weekend",
+    "status": 200,
+    "bytes": 22981
+  },
+  {
+    "path": "/events?q=Texas+NICA+North+-+Granbury+Race+Weekend",
+    "status": 200,
+    "bytes": 22986
+  },
+  {
+    "path": "/events?q=Texas+NICA+North+-+Henderson+Race+Weekend",
+    "status": 200,
+    "bytes": 22991
+  },
+  {
+    "path": "/events?q=Texas+NICA+North+-+Troy+Race+Weekend",
+    "status": 200,
+    "bytes": 22966
+  },
+  {
+    "path": "/events?q=Texas+NICA+South+-+Dale+Race+Weekend",
+    "status": 200,
+    "bytes": 22966
+  },
+  {
+    "path": "/events?q=Texas+NICA+South+-+Kerrville+Race+Weekend",
+    "status": 200,
+    "bytes": 22991
+  },
+  {
+    "path": "/events?q=Texas+NICA+South+-+Sugar+Land+Race+Weekend",
+    "status": 200,
+    "bytes": 22996
+  },
+  {
+    "path": "/events?q=Texas+NICA+South+-+Warda+Race+Weekend",
+    "status": 200,
+    "bytes": 22971
+  },
+  {
+    "path": "/events?q=Tour+de+Cure%3A+Texas",
+    "status": 200,
+    "bytes": 23040
+  },
+  {
+    "path": "/events?q=Tour+de+FireAnt",
+    "status": 200,
+    "bytes": 23019
+  },
+  {
+    "path": "/events?q=Tour+de+Madison+Bike+Ride+2026",
+    "status": 200,
+    "bytes": 23026
+  },
+  {
+    "path": "/events?q=Tour+of+PossAbilities+2027",
+    "status": 200,
+    "bytes": 23176
+  },
+  {
+    "path": "/events?q=Trek+100+Texas+2026",
+    "status": 200,
+    "bytes": 23046
+  },
+  {
+    "path": "/events?q=Trick+It+Up+Bike+Ride+2026",
+    "status": 200,
+    "bytes": 23230
+  },
+  {
+    "path": "/events?q=Troy",
+    "status": 200,
+    "bytes": 22966
+  },
+  {
+    "path": "/events?q=Turkey",
+    "status": 200,
+    "bytes": 23558
+  },
+  {
+    "path": "/events?q=Turkey+Roll+Bicycle+Rally",
+    "status": 200,
+    "bytes": 23079
+  },
+  {
+    "path": "/events?q=Valley+of+Tears+Gravel",
+    "status": 200,
+    "bytes": 22955
+  },
+  {
+    "path": "/events?q=Victoria",
+    "status": 200,
+    "bytes": 23000
+  },
+  {
+    "path": "/events?q=Wallis",
+    "status": 200,
+    "bytes": 23220
+  },
+  {
+    "path": "/events?q=Warda",
+    "status": 200,
+    "bytes": 23489
+  },
+  {
+    "path": "/events?q=Waxahachie",
+    "status": 200,
+    "bytes": 23019
+  },
+  {
+    "path": "/events?q=Weatherford",
+    "status": 200,
+    "bytes": 23244
+  },
+  {
+    "path": "/events?q=Wheels+of+Fire+Bike+Ride+2027",
+    "status": 200,
+    "bytes": 23019
+  },
+  {
+    "path": "/events?q=Wichita+Falls",
+    "status": 200,
+    "bytes": 23142
+  },
+  {
+    "path": "/events?q=rideATAXIA+Dallas+2026",
+    "status": 200,
+    "bytes": 23075
+  },
+  {
+    "path": "/events?type=bikepacking",
+    "status": 200,
+    "bytes": 23129
+  },
+  {
+    "path": "/events?type=car-free+social+ride",
+    "status": 200,
+    "bytes": 23009
+  },
+  {
+    "path": "/events?type=casual+ride",
+    "status": 200,
+    "bytes": 23162
+  },
+  {
+    "path": "/events?type=challenge",
+    "status": 200,
+    "bytes": 23002
+  },
+  {
+    "path": "/events?type=charity+ride",
+    "status": 200,
+    "bytes": 27055
+  },
+  {
+    "path": "/events?type=community+festival+ride",
+    "status": 200,
+    "bytes": 23245
+  },
+  {
+    "path": "/events?type=community+ride",
+    "status": 200,
+    "bytes": 29098
+  },
+  {
+    "path": "/events?type=e-bike",
+    "status": 200,
+    "bytes": 24055
+  },
+  {
+    "path": "/events?type=education",
+    "status": 200,
+    "bytes": 23129
+  },
+  {
+    "path": "/events?type=endurance",
+    "status": 200,
+    "bytes": 25489
+  },
+  {
+    "path": "/events?type=endurance+race",
+    "status": 200,
+    "bytes": 23912
+  },
+  {
+    "path": "/events?type=festival",
+    "status": 200,
+    "bytes": 24364
+  },
+  {
+    "path": "/events?type=fundraiser",
+    "status": 200,
+    "bytes": 29164
+  },
+  {
+    "path": "/events?type=gran+fondo",
+    "status": 200,
+    "bytes": 23075
+  },
+  {
+    "path": "/events?type=gravel",
+    "status": 200,
+    "bytes": 29505
+  },
+  {
+    "path": "/events?type=gravel+challenge",
+    "status": 200,
+    "bytes": 23786
+  },
+  {
+    "path": "/events?type=gravel+ride",
+    "status": 200,
+    "bytes": 22976
+  },
+  {
+    "path": "/events?type=interscholastic+race",
+    "status": 200,
+    "bytes": 27094
+  },
+  {
+    "path": "/events?type=mountain",
+    "status": 200,
+    "bytes": 31370
+  },
+  {
+    "path": "/events?type=mountain+bike",
+    "status": 200,
+    "bytes": 23023
+  },
+  {
+    "path": "/events?type=multi-day+ride",
+    "status": 200,
+    "bytes": 23121
+  },
+  {
+    "path": "/events?type=multi-day+supported+ride",
+    "status": 200,
+    "bytes": 23196
+  },
+  {
+    "path": "/events?type=multi-day+tour",
+    "status": 200,
+    "bytes": 23060
+  },
+  {
+    "path": "/events?type=one-day+ride",
+    "status": 200,
+    "bytes": 23064
+  },
+  {
+    "path": "/events?type=race",
+    "status": 200,
+    "bytes": 29314
+  },
+  {
+    "path": "/events?type=rally",
+    "status": 200,
+    "bytes": 23620
+  },
+  {
+    "path": "/events?type=recreational",
+    "status": 200,
+    "bytes": 39269
+  },
+  {
+    "path": "/events?type=ride",
+    "status": 200,
+    "bytes": 23002
+  },
+  {
+    "path": "/events?type=road",
+    "status": 200,
+    "bytes": 41562
+  },
+  {
+    "path": "/events?type=self-supported+ride",
+    "status": 200,
+    "bytes": 23129
+  },
+  {
+    "path": "/events?type=series",
+    "status": 200,
+    "bytes": 23557
+  },
+  {
+    "path": "/events?type=series+finale",
+    "status": 200,
+    "bytes": 22987
+  },
+  {
+    "path": "/events?type=state+championship",
+    "status": 200,
+    "bytes": 23725
+  },
+  {
+    "path": "/events?type=supported+ride",
+    "status": 200,
+    "bytes": 27998
+  },
+  {
+    "path": "/events?type=tour",
+    "status": 200,
+    "bytes": 25360
+  },
+  {
+    "path": "/events?type=touring",
+    "status": 200,
+    "bytes": 23060
+  },
+  {
+    "path": "/events?type=two-day+ride",
+    "status": 200,
+    "bytes": 23079
+  },
+  {
+    "path": "/events?type=untimed+ride",
+    "status": 200,
+    "bytes": 23012
+  },
+  {
+    "path": "/portal.css?v=4.3.6",
+    "status": 200,
+    "bytes": 18185
+  },
+  {
+    "path": "/portal.js?v=4.3.6",
+    "status": 200,
+    "bytes": 36791
+  },
+  {
+    "path": "/events?q=no-such-place",
+    "status": 200,
+    "bytes": 22502
+  }
+]

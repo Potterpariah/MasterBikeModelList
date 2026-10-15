@@ -1,0 +1,482 @@
+--- a/src/public-pages.js
++++ b/src/public-pages.js
+@@ -1,3 +1,5 @@
++import {sectionHelp} from './section-help.js';
++import {eventTaxonomy,eventCategoryOptions,matchesEventCategory} from './event-taxonomy.js';
+ import {eventMapMarkup,eventLocationLink} from './interactive-event-map.js';
+ import {mergeDiscoveryEvents,filterDiscoveryEvents} from './discovery-pilot.js';
+ import {metricsMarkup} from './discovery-metrics.js';
+@@ -5,7 +7,7 @@
+ import {readCatalog,siteMenu,siteLogo,texasToday} from './portal.js';
+ import {escapeHTML as e,meta,siteOrigin,canIndex,publicPath,safeExternal,jsonScript,RELEASE} from './seo.js';
+ import {guideExtras,editEvent} from './editorial.js';
+-import {eventStartMap,eventStartPoint} from './event-start-map.js';
++import {eventStartPoint} from './event-start-map.js';
+ import {texasCatalogSnapshot,texasEvents as importedTexasEvents,texasCities,texasTrails,cyclingRoutes,routeHighlights} from './texas-cycling-data.js';
+ import {texasClubs,texasClubCities,clubCitySlug,texasEventMapQueries,texasEventCrosswalk} from './texas-public-features.js';
+ import {bikeCatalog,hierarchyFor} from './bike-catalog.js';
+@@ -27,11 +29,12 @@
+ const routeFor=slug=>cyclingRoutes.find(route=>route.slug===slug);
+ const trailFor=slug=>routeFor(slug)||texasTrails.find(trail=>trail.slug===slug);
+ const mapsLink=query=>safeExternal('https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(query),'Open reviewed location in maps');
+-const eventTypes=event=>[...new Set([...arr(event.event_types_json),...arr(event.disciplines_json)].filter(Boolean))];
++const eventTypes=event=>eventCategoryOptions([event]);
+ const calendarPath=params=>'/events?'+new URLSearchParams(params).toString();
+ const locationMapLink=(event,label='Open start marker in maps')=>{const point=eventStartPoint(event.id);return point?safeExternal(`https://www.google.com/maps/search/?api=1&query=${point[0]},${point[1]}`,label):'';};
+-const eventFinder=(events,{q,type,date})=>{const cities=[...new Set(events.map(event=>event.city).filter(Boolean))].sort((a,b)=>a.localeCompare(b)),types=[...new Set(events.flatMap(event=>eventTypes(event)))].sort((a,b)=>a.localeCompare(b));return `<form method="get" action="/events" class="event-finder"><label class="field">Choose an event or city<select name="q"><option value="">All current Texas events</option><optgroup label="Events">${events.map(event=>`<option value="${e(event.title)}"${q===event.title?' selected':''}>${e(event.title)} — ${e(event.start_date)} · ${e(event.city||'Location to be confirmed')}</option>`).join('')}</optgroup><optgroup label="Cities">${cities.map(city=>`<option value="${e(city)}"${q===city?' selected':''}>${e(city)}, Texas</option>`).join('')}</optgroup></select></label><label class="field">Event type<select name="type"><option value="">All event types</option>${types.map(item=>`<option value="${e(item)}"${type===item?' selected':''}>${e(item)}</option>`).join('')}</select></label><label class="field">Date<input type="date" name="date" value="${e(date)}"></label><button class="btn">Filter events</button></form>`;};
+-const eventTypeLegend=(events,type)=>{const types=[...new Set(events.flatMap(event=>eventTypes(event)))].sort((a,b)=>a.localeCompare(b));return `<nav class="event-type-legend" aria-label="Event type legend"><span>Event types:</span>${types.map(item=>`<a href="${calendarPath({type:item})}"${type===item?' aria-current="page"':''}>${e(item)}</a>`).join('')}</nav>`;};
++const categorySelect=(events,axis,name,label,value)=>`<label class="field">${label}<select name="${name}"><option value="">All ${label.toLowerCase()}s</option>${value&&!eventCategoryOptions(events,axis).includes(value)?`<option value="${e(value)}" selected>${e(value)} (original category)</option>`:''}${eventCategoryOptions(events,axis).map(item=>`<option value="${e(item)}"${value===item?' selected':''}>${e(item)}</option>`).join('')}</select></label>`;
++const eventFinder=(events,{q,type,date,discipline,format,purpose})=>{const cities=[...new Set(events.map(event=>event.city).filter(Boolean))].sort((a,b)=>a.localeCompare(b));return `<form method="get" action="/events" class="event-finder"><label class="field">Choose an event or city<select name="q"><option value="">All current Texas events</option>${q&&!cities.includes(q)&&!events.some(event=>event.title===q)?`<option value="${e(q)}" selected>Search: ${e(q)}</option>`:''}<optgroup label="Events">${events.map(event=>`<option value="${e(event.title)}"${q===event.title?' selected':''}>${e(event.title)} - ${e(event.start_date)}</option>`).join('')}</optgroup><optgroup label="Cities">${cities.map(city=>`<option value="${e(city)}"${q===city?' selected':''}>${e(city)}, Texas</option>`).join('')}</optgroup></select></label>${categorySelect(events,'disciplines','discipline','Discipline',discipline)}${categorySelect(events,'formats','format','Format',format)}${categorySelect(events,'purposes','purpose','Purpose',purpose)}${type?`<input type="hidden" name="type" value="${e(type)}"><p class="meta">Original category filter: ${e(type)}</p>`:''}<label class="field">Date<input type="date" name="date" value="${e(date)}"></label><button class="btn">Filter events</button><a href="/events">Clear filters</a></form>`;};
++const eventTypeLegend=()=>'<p class="meta">Discipline describes the riding; format describes participation. Fundraising and other purposes are separate. Original organizer categories remain on event pages.</p>';
+ const publicEventCard=event=>{const types=eventTypes(event);return `<article class="card event-card"><p class="event-card-types">${types.map(type=>`<a class="tag" href="${calendarPath({type})}">${e(type)}</a>`).join('')||'<span class="tag">Event</span>'}</p><h2><a href="${publicPath('event',event.slug)}">${e(event.title)}</a></h2><p><a href="${calendarPath({date:event.start_date})}">${e(event.start_date)}</a> · ${event.city?`<a href="${calendarPath({q:event.city})}">${e(event.city)}, TX</a>`:'Location to be confirmed'}</p><p>${text(event.venue_name,'Venue not confirmed')}${locationMapLink(event)?` · ${locationMapLink(event)}`:''}</p><p class="meta">${e(event.verification_status.replaceAll('_',' '))}</p></article>`;};
+ const icsText=value=>String(value??'').replace(/([,;\\])/g,'\\$1').replace(/\r?\n/g,'\\n');
+ const icsDate=value=>String(value).replaceAll('-','');
+@@ -40,7 +43,7 @@
+ function frame(request,env,title,description,path,body,schema=[]){
+  const crumbs=[{name:'Home',path:'/'},...(path==='/'?[]:[{name:title,path}])];
+  schema.push({'@type':'BreadcrumbList',itemListElement:crumbs.map((c,i)=>({'@type':'ListItem',position:i+1,name:c.name,item:siteOrigin(request,env)+c.path}))});
+- return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">${meta(request,env,{title:title+' | Bike Portal',description,path,schema})}<link rel="stylesheet" href="/portal.css?v=${RELEASE}"><script src="/portal.js?v=${RELEASE}" defer></script>${metricsMarkup(path,env)}${path.startsWith('/texas/events')?'<link rel="stylesheet" href="/event-map.css?v=20261002-4"><script defer src="/leaflet.js?v=1.9.4"></script><script defer src="/event-map.js?v=20261002-4"></script>':''}</head><body><a class="skip" href="#main">Skip to content</a>${siteMenu()}<header class="topbar"><div class="wrap nav">${siteLogo()}<div class="account" id="account-nav"><a href="#login">Log in</a><a href="#signup">Join the ride</a></div></div></header><main id="main" class="wrap public-main"><nav aria-label="Breadcrumb">${crumbs.map(c=>`<a href="${c.path}">${e(c.name)}</a>`).join(' / ')}</nav><h1>${e(title)}</h1><p class="lede">${e(description)}</p>${body}</main><footer class="footer"><div class="wrap"><span>Bike Portal</span><nav aria-label="Footer"><a href="/about">About</a><a href="/editorial">Editorial standards</a><a href="/community-guidelines">Community guidelines</a><a href="/data-use">Data use</a><a href="/guides">Guides</a></nav></div></footer><dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-head"><span>BIKE PORTAL / EXPLORE</span><button class="close" id="close-dialog" aria-label="Close details">Close ✕</button></div><div class="dialog-body" id="detail-body"></div></dialog><div class="toast" id="toast" role="status" hidden></div><script type="application/json" id="portal-config">${jsonScript({siteKey:env.TURNSTILE_SITE_KEY||'',today:texasToday()})}</script></body></html>`;
++ return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">${meta(request,env,{title:title+' | Bike Portal',description,path,schema})}<link rel="stylesheet" href="/portal.css?v=${RELEASE}"><script src="/portal.js?v=${RELEASE}" defer></script>${metricsMarkup(path,env)}${(path.startsWith('/texas/events')||path==='/events')?'<link rel="stylesheet" href="/event-map.css?v=20261002-4"><script defer src="/leaflet.js?v=1.9.4"></script><script defer src="/event-map.js?v=20261002-4"></script>':''}</head><body><a class="skip" href="#main">Skip to content</a><header class="topbar"><div class="wrap nav">${siteLogo()}${siteMenu()}<div class="account" id="account-nav"><a href="#login">Log in</a><a href="#signup">Join the ride</a></div></div></header><main id="main" class="wrap public-main"><nav aria-label="Breadcrumb">${crumbs.map(c=>`<a href="${c.path}">${e(c.name)}</a>`).join(' / ')}</nav><h1>${e(title)}</h1><p class="lede">${e(description)}</p>${sectionHelp(path)}${body}</main><footer class="footer"><div class="wrap"><span>Bike Portal</span><nav aria-label="Footer"><a href="/about">About</a><a href="/editorial">Editorial standards</a><a href="/community-guidelines">Community guidelines</a><a href="/data-use">Data use</a><a href="/guides">Guides</a><a href="/#using-bike-portal">Account tools explained</a></nav></div></footer><dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-head"><span>BIKE PORTAL / EXPLORE</span><button class="close" id="close-dialog" aria-label="Close details">Close ✕</button></div><div class="dialog-body" id="detail-body"></div></dialog><div class="toast" id="toast" role="status" hidden></div><script type="application/json" id="portal-config">${jsonScript({siteKey:env.TURNSTILE_SITE_KEY||'',today:texasToday()})}</script></body></html>`;
+ }
+ export async function publicPages(request,env){
+  const url=new URL(request.url),path=url.pathname;
+@@ -71,9 +74,9 @@
+  if(path==='/texas/events'){
+   const upcoming=filterDiscoveryEvents(texasEvents,url.searchParams,texasToday());
+   const value=name=>e(url.searchParams.get(name)||'');
+-  const options=(values,name)=>values.sort().map(item=>`<option value="${e(item)}"${url.searchParams.get(name)===item?' selected':''}>${e(item)}</option>`).join('');
+-  const form=`<form method="get" action="/texas/events" class="event-finder"><label class="field">Region<select name="region"><option value="">All Texas regions</option>${options([...new Set(texasEvents.map(x=>x.region))],'region')}</select></label><label class="field">Discipline<select name="discipline"><option value="">All disciplines</option>${options([...new Set(texasEvents.flatMap(x=>(x.discipline||x.rideType).split(' / ')))],'discipline')}</select></label><label class="field">On or after<input type="date" name="from" value="${value('from')}"></label><label class="field">Event or city<input name="q" value="${value('q')}" placeholder="Name, city or county"></label><button class="btn">Filter events</button><a href="/texas/events">Clear filters</a></form>`;
+-  return render('Texas cycling events','Find an upcoming ride by region, discipline, date or city. Check the official organizer before making plans.',`<p><a href="/texas">Texas cycling guide</a> · <a href="/events">Bike Portal event calendar</a> · <a href="/texas/events?region=North">North Texas events</a></p>${eventMapMarkup(upcoming,[],'matching')}${form}<p role="status">${upcoming.length} upcoming event${upcoming.length===1?' matches':'s match'} your filters.</p><div class="grid">${upcoming.map(event=>`<article class="card"><span class="tag">${(event.discipline||event.rideType).split(' / ').map(d=>eventFilter('discipline',d)).join(' / ')} · ${eventFilter('region',event.region,event.region+' Texas')}</span><h2><a href="${texasEventPath(event.slug)}">${e(event.title)}</a></h2><p><a href="${texasEventPath(event.slug)}/calendar.ics">${e(event.rideDate)}${event.rideEndDate?' – '+e(event.rideEndDate):''}</a> · ${eventLocationLink(event,event.city+', TX')}</p><p>${eventLocationLink(event,event.venue)}</p><p>${eventSource(event,event.distance)}</p><p class="meta">${eventSource(event,'Source checked '+event.checkedAt)}</p></article>`).join('')||'<p>No upcoming events match. Try another date or clear filters.</p>'}</div>`,true,[{'@type':'CollectionPage',name:'Texas cycling events'}]);
++  const options=(values,name)=>(url.searchParams.get(name)&&!values.includes(url.searchParams.get(name))?`<option value="${e(url.searchParams.get(name))}" selected>${e(url.searchParams.get(name))} (original category)</option>`:'')+values.sort().map(item=>`<option value="${e(item)}"${url.searchParams.get(name)===item?' selected':''}>${e(item)}</option>`).join('');
++  const form=`<form method="get" action="/texas/events" class="event-finder"><label class="field">Region<select name="region"><option value="">All Texas regions</option>${options([...new Set(texasEvents.map(x=>x.region))],'region')}</select></label><label class="field">Discipline<select name="discipline"><option value="">All disciplines</option>${options(eventCategoryOptions(texasEvents,'disciplines'),'discipline')}</select></label>${categorySelect(texasEvents,'formats','format','Format',url.searchParams.get('format'))}${categorySelect(texasEvents,'purposes','purpose','Purpose',url.searchParams.get('purpose'))}<label class="field">On or after<input type="date" name="from" value="${value('from')}"></label><label class="field">Event or city<input name="q" value="${value('q')}" placeholder="Name, city or county"></label><button class="btn">Filter events</button><a href="/texas/events">Clear filters</a></form>`;
++  return render('Texas cycling events','Find an upcoming ride by region, discipline, date or city. Check the official organizer before making plans.',`<p><a href="/texas">Texas cycling guide</a> · <a href="/events">Bike Portal event calendar</a> · <a href="/texas/events?region=North">North Texas events</a></p>${eventMapMarkup(upcoming,[],'matching')}${form}<p role="status">${upcoming.length} upcoming event${upcoming.length===1?' matches':'s match'} your filters.</p><div class="grid">${upcoming.map(event=>`<article class="card"><span class="tag">${eventTaxonomy(event).disciplines.map(d=>eventFilter('discipline',d)).join(' / ')||'Discipline not confirmed'} · ${eventFilter('region',event.region,event.region+' Texas')}</span><h2><a href="${texasEventPath(event.slug)}">${e(event.title)}</a></h2><p><a href="${texasEventPath(event.slug)}/calendar.ics">${e(event.rideDate)}${event.rideEndDate?' – '+e(event.rideEndDate):''}</a> · ${eventLocationLink(event,event.city+', TX')}</p><p>${eventLocationLink(event,event.venue)}</p><p>${eventSource(event,event.distance)}</p><p class="meta">${eventSource(event,'Source checked '+event.checkedAt)}</p></article>`).join('')||'<p>No upcoming events match. Try another date or clear filters.</p>'}</div>`,true,[{'@type':'CollectionPage',name:'Texas cycling events'}]);
+  }
+  if(path.startsWith('/texas/events/')){
+   const slug=decodeURIComponent(path.slice('/texas/events/'.length));const event=texasEvents.find(item=>item.slug===slug);if(!event||slug.includes('/'))return notFound();
+@@ -124,10 +127,10 @@
+   return render(g.title,g.summary,`<article class="reading"><p class="meta">AI-assisted guide · Editorial update ${g.editorial_updated}${extra?` · Technical references checked ${extra.reviewed}`:''}. <a href="/editorial">Editorial standards</a></p>${extra?`<p class="empty">${e(extra.scope)}</p><h2>Before you start</h2><p>${e(extra.preparation)}</p><p class="meta">${e(extra.review_kind)}</p>`:''}${body}${additional}<h2>Sources & further reading</h2>${sources(arr(g.source_urls_json))}<h2>Continue preparing</h2><ul>${related.map(x=>`<li><a href="${publicPath('guide',x.slug)}">${e(x.title)}</a></li>`).join('')}</ul><p><a href="#garage">Record your setup in Bike Garage</a> · <a href="/events">Find a Texas event</a></p></article>`,Boolean(extra?.reviewed),[{'@type':'Article',headline:g.title,description:g.summary,mainEntityOfPage:siteOrigin(request,env)+path}]);
+  }
+  if(root==='events'){
+-  if(!id){const upcoming=events.filter(x=>x.start_date>=texasToday()&&!/cancel|excluded|unverified/i.test(x.verification_status)),filters={q:(url.searchParams.get('q')||'').trim(),type:(url.searchParams.get('type')||'').trim(),date:(url.searchParams.get('date')||'').trim()},shown=upcoming.filter(x=>(x.title+' '+x.city).toLowerCase().includes(filters.q.toLowerCase())&&(!filters.type||eventTypes(x).includes(filters.type))&&(!filters.date||x.start_date===filters.date));return render('Texas cycling events','Find upcoming rides by date and city. Confirm final details with the organizer.',`<p><a href="/texas/events?region=North">Browse the refreshed North Texas event selection →</a></p><p><a href="/texas-rides">Reviewed rides and preparation guides →</a></p>${eventStartMap(upcoming)}${eventFinder(upcoming,filters)}${eventTypeLegend(upcoming,filters.type)}<div class="grid">${shown.map(publicEventCard).join('')||'<p>No matching upcoming events.</p>'}</div><p><a href="/guides/event-week-bike-prep-checklist">Prepare for event week</a></p>`,true);}
++  if(!id){const upcoming=events.filter(x=>x.id!=='event_2026_10_10_ray_porter_memorial_6_hour_endurance_race_and_fundraiser'&&x.start_date>=texasToday()&&!/cancel|excluded|unverified/i.test(x.verification_status)),filters={q:(url.searchParams.get('q')||'').trim(),type:(url.searchParams.get('type')||'').trim(),date:(url.searchParams.get('date')||'').trim(),discipline:url.searchParams.get('discipline')||'',format:url.searchParams.get('format')||'',purpose:url.searchParams.get('purpose')||''},shown=upcoming.filter(x=>(x.title+' '+x.city).toLowerCase().includes(filters.q.toLowerCase())&&matchesEventCategory(x,filters.type)&&matchesEventCategory(x,filters.discipline,'disciplines')&&matchesEventCategory(x,filters.format,'formats')&&matchesEventCategory(x,filters.purpose,'purposes')&&(!filters.date||x.start_date===filters.date));return render('Texas cycling events','Find upcoming rides by date and city. Confirm final details with the organizer.',`<p><a href="/texas/events?region=North">Browse the refreshed North Texas event selection →</a></p><p><a href="/texas-rides">Reviewed rides and preparation guides →</a></p>${eventFinder(upcoming,filters)}${eventMapMarkup([],shown,'matching')}${eventTypeLegend()}<p role="status">${shown.length} matching upcoming events.</p><div class="grid">${shown.map(publicEventCard).join('')||'<p>No matching upcoming events.</p>'}</div><p><a href="/guides/event-week-bike-prep-checklist">Prepare for event week</a></p>`,true);}
+   const x=events.find(x=>x.slug===id||x.id===id);if(!x)return notFound();if(x.slug!==id)return {body:null,status:308,headers:{Location:publicPath('event',x.slug)}};
+   const schema=eventEligible(x)?[{'@type':'SportsEvent',name:x.title,startDate:x.start_date,endDate:x.end_date||x.start_date,url:siteOrigin(request,env)+path,location:{'@type':'Place',name:x.venue_name,address:{'@type':'PostalAddress',streetAddress:x.address,addressLocality:x.city,addressRegion:x.state,addressCountry:'US',...(x.postal_code?{postalCode:x.postal_code}:{})}}}]:[];
+-  return render(x.title,`${x.start_date} · ${x.city}, ${x.state}. Organizer information and ride preparation.`,`<article class="reading">${x.start_date<texasToday()?'<p class="empty">This edition is in the past. Do not use it as confirmation of a future edition.</p>':''}<p><a href="${calendarPath({q:x.title})}">Browse this event in the calendar</a></p><dl class="facts"><dt>Date</dt><dd><a href="${calendarPath({date:x.start_date})}">${e(x.start_date)}${x.end_date!==x.start_date?' – '+e(x.end_date):''}</a></dd><dt>City</dt><dd>${x.city?`<a href="${calendarPath({q:x.city})}">${e(x.city)}, ${e(x.state)}</a>`:'Not confirmed'}</dd><dt>Venue</dt><dd>${text(x.venue_name)}${locationMapLink(x)?` · ${locationMapLink(x)}`:''}</dd><dt>Address</dt><dd>${text(x.address)}${locationMapLink(x)?` · ${locationMapLink(x)}`:''}</dd><dt>Event type</dt><dd>${eventTypes(x).map(type=>`<a href="${calendarPath({type})}">${e(type)}</a>`).join(' · ')||'Not confirmed'}</dd><dt>Distances</dt><dd>${arr(x.distances_json).length?e(arr(x.distances_json).join(' / '))+' miles':'Exact distances not confirmed; see route notes'}</dd><dt>Verification status</dt><dd>${e(x.verification_status.replaceAll('_',' '))}</dd><dt>Last checked</dt><dd>${text(x.verified_on,'No verification date recorded')}</dd></dl>${x.reviewed_fields?`<p>Fields checked: ${e(x.reviewed_fields.join(', '))}. Other details may be older.</p>`:''}${x.start_time_note?`<p>${e(x.start_time_note)}</p>`:''}${x.notes?`<p class="empty">${e(x.notes)}</p>`:''}${x.publication_gaps?.length?`<h2>Still to confirm</h2><ul>${x.publication_gaps.map(g=>`<li>${e(g)}</li>`).join('')}</ul>`:''}${x.recheck_by?`<p class="meta">Next source check due ${e(x.recheck_by)}${x.recheck_by<texasToday()?' — this review is overdue.':'.'}</p>`:''}<h2>Confirm with the organizer</h2>${sources(x.review_sources||[x.review_source||x.source_url])}<p>${safeExternal(x.source_url,'Official event details')} ${x.registration_url?' · '+safeExternal(x.registration_url,'Registration'):''}</p><p>Prices, eligibility, route permissions and availability can change. Check the organizer before travel or payment.</p><h2>Your ride plans</h2><p><a class="btn" href="#event/${encodeURIComponent(x.id)}">Save, follow or update your ride plan</a></p><h2>Get ready</h2><ul><li><a href="/guides/event-week-bike-prep-checklist">Event-week preparation</a></li><li><a href="/guides/pre-ride-bike-safety-check">Pre-ride safety check</a></li></ul></article>`,eventEligible(x),schema);
++  return render(x.title,`${x.start_date} · ${x.city}, ${x.state}. Organizer information and ride preparation.`,`<article class="reading">${x.id==='event_2026_10_10_ray_porter_memorial_6_hour_endurance_race_and_fundraiser'?'<p class="empty">This edition was reported cancelled in the October 2 organizer review. Archived details below are not a current invitation to attend.</p>':''}${x.start_date<texasToday()?'<p class="empty">This edition is in the past. Do not use it as confirmation of a future edition.</p>':''}<p><a href="${calendarPath({q:x.title})}">Browse this event in the calendar</a></p><dl class="facts"><dt>Date</dt><dd><a href="${calendarPath({date:x.start_date})}">${e(x.start_date)}${x.end_date!==x.start_date?' – '+e(x.end_date):''}</a></dd><dt>City</dt><dd>${x.city?`<a href="${calendarPath({q:x.city})}">${e(x.city)}, ${e(x.state)}</a>`:'Not confirmed'}</dd><dt>Venue</dt><dd>${text(x.venue_name)}${locationMapLink(x)?` · ${locationMapLink(x)}`:''}</dd><dt>Address</dt><dd>${text(x.address)}${locationMapLink(x)?` · ${locationMapLink(x)}`:''}</dd><dt>Categories</dt><dd>${eventTypes(x).map(type=>`<a href="${calendarPath({type})}">${e(type)}</a>`).join(' · ')||'Not confirmed'}</dd><dt>Original organizer categories</dt><dd>${e([...eventTaxonomy(x).raw.disciplines,...eventTaxonomy(x).raw.types].join(' / '))||'Not confirmed'}</dd><dt>Distances</dt><dd>${arr(x.distances_json).length?e(arr(x.distances_json).join(' / '))+' miles':'Exact distances not confirmed; see route notes'}</dd><dt>Recorded source status</dt><dd>${e(x.verification_status.replaceAll('_',' '))}</dd><dt>Last checked</dt><dd>${text(x.verified_on,'No verification date recorded')}</dd></dl>${x.reviewed_fields?`<p>Fields checked: ${e(x.reviewed_fields.join(', '))}. Other details may be older.</p>`:''}${x.start_time_note?`<p>${e(x.start_time_note)}</p>`:''}${x.notes?`<p class="empty">${e(x.notes)}</p>`:''}${x.publication_gaps?.length?`<h2>Still to confirm</h2><ul>${x.publication_gaps.map(g=>`<li>${e(g)}</li>`).join('')}</ul>`:''}${x.recheck_by?`<p class="meta">Next source check due ${e(x.recheck_by)}${x.recheck_by<texasToday()?' — this review is overdue.':'.'}</p>`:''}<h2>Confirm with the organizer</h2>${sources(x.review_sources||[x.review_source||x.source_url])}<p>${safeExternal(x.source_url,'Official event details')} ${x.registration_url?' · '+safeExternal(x.registration_url,'Registration'):''}</p><p>Prices, eligibility, route permissions and availability can change. Check the organizer before travel or payment.</p><h2>Your ride plans</h2><p><a class="btn" href="#event/${encodeURIComponent(x.id)}">Save, follow or update your ride plan</a></p><h2>Get ready</h2><ul><li><a href="/guides/event-week-bike-prep-checklist">Event-week preparation</a></li><li><a href="/guides/pre-ride-bike-safety-check">Pre-ride safety check</a></li></ul></article>`,eventEligible(x),schema);
+  }
+  if(root==='bikes'){
+   const hierarchyParts=path.split('/').slice(2).filter(Boolean);
+--- a/src/interactive-event-map.js
++++ b/src/interactive-event-map.js
+@@ -1,3 +1,4 @@
++import mapConfig from '../config/event-map.json' with {type:'json'};
+ import {eventMapClientScript} from './generated/event-map-client-source.js';
+ import {texasEventCrosswalk} from './texas-public-features.js';
+ import points from '../data/event-map-points.json' with {type:'json'};
+@@ -10,7 +11,7 @@
+  for(const x of legacy){const point=eventStartPoint(x.id);if(!point||x.id==='event_2026_10_10_ray_porter_memorial_6_hour_endurance_race_and_fundraiser'||texasEventCrosswalk.some(c=>c.bikePortalId===x.id&&records.some(r=>r.slug===c.texasSlug))||x.start_date<new Date().toLocaleDateString('en-CA',{timeZone:'America/Chicago'})||/cancel|excluded|unverified/i.test(x.verification_status)||records.some(r=>r.title.toLowerCase().replace(/[^a-z0-9]/g,'')===x.title.toLowerCase().replace(/[^a-z0-9]/g,'')))continue;records.push({lat:point[0],lng:point[1],slug:x.slug,title:x.title,date:x.start_date,venue:x.venue_name,url:'/events/'+encodeURIComponent(x.slug),precision:'venue',label:'Published address; exact departure point not confirmed',source:x.source_url});}
+  return records;
+ }
+-export function eventMapMarkup(events,legacy,scope='all'){return `<p><a class="btn outline" href="#event-location-map" data-event-location="all" aria-haspopup="dialog">Explore ${e(scope)} event locations</a></p><dialog id="event-location-map" aria-labelledby="event-location-title"><div class="dialog-head"><h2 id="event-location-title">Event locations</h2><button type="button" data-close-event-map>Close map ✕</button></div><p id="event-location-note"></p><div id="interactive-event-map" aria-label="Interactive event locations map"></div><p id="event-map-status" role="status"></p><p><button type="button" class="btn outline" data-show-all-events>Show ${e(scope)} events</button></p><p class="meta">Green: published venue/address. Amber: approximate listed area. Confirm the exact departure point with the organizer. Map © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.</p><details><summary>All mapped events and location sources</summary><ul>${mapRecords(events,legacy).map(r=>`<li><a href="${e(r.url)}">${e(r.title)}</a> — ${e(r.label)} · <a href="${e(r.source)}">Location source</a></li>`).join('')}</ul></details></dialog><script type="application/json" id="event-map-records">${jsonScript(mapRecords(events,legacy))}</script>`;}
++export function eventMapMarkup(events,legacy,scope='all'){const records=mapRecords(events,legacy),total=events.length+legacy.length;return `<p class="meta">${records.length} located event${records.length===1?'':'s'}${!events.length||!legacy.length?' of '+total:''}. Events without a reviewed location remain in the list.</p><p><a class="btn outline" href="#event-location-map" data-event-location="all" aria-haspopup="dialog">View map of ${e(scope)} events</a></p><dialog id="event-location-map" aria-labelledby="event-location-title"><div class="dialog-head"><h2 id="event-location-title">Event locations</h2><button type="button" data-close-event-map>Close map ✕</button></div><p id="event-location-note"></p><div id="interactive-event-map" aria-label="Interactive event locations map"></div><p id="event-map-status" role="status"></p><p><button type="button" class="btn outline" data-show-all-events>Show ${e(scope)} events</button></p><p class="meta">Green: published venue/address. Amber: approximate listed area. Confirm the exact departure point with the organizer. Map © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.</p><details><summary>All mapped events and location sources</summary><ul>${mapRecords(events,legacy).map(r=>`<li><a href="${e(r.url)}">${e(r.title)}</a> — ${e(r.label)} · <a href="${e(r.source)}">Location source</a></li>`).join('')}</ul></details></dialog><script type="application/json" id="event-map-records">${jsonScript(records)}</script><script type="application/json" id="event-map-config">${jsonScript(mapConfig)}</script>`;}
+ 
+ const css=`#event-location-map{width:min(760px,94vw);max-height:92vh;padding:20px;border:0;border-radius:18px;overflow:auto}#event-location-map::backdrop{background:#123b2dc9}#event-location-map .dialog-head{padding:0;gap:12px}#event-location-map h2{font-size:1.4rem}#interactive-event-map{height:min(48vh,410px);min-height:260px;width:100%;border-radius:12px;background:#e9eee5}#event-location-map p{margin:12px 0}#event-location-map button{cursor:pointer;min-height:44px;min-width:44px}.event-location-pin{display:grid;place-items:center}.leaflet-bar a{min-width:44px;min-height:44px;line-height:44px}.event-location-pin span{display:grid;place-items:center;border:2px solid white;border-radius:50%;width:30px;height:30px;color:white;font-weight:bold;box-shadow:0 1px 5px #333}.leaflet-popup-content{max-height:180px;overflow:auto}.leaflet-container a{color:#165c42}.leaflet-control-attribution{font-size:10px}.facts dd a,.card a{overflow-wrap:anywhere}.public-main .card p a,.public-main .facts a,.public-main .reading p a{text-decoration:underline;text-underline-offset:3px}.public-main a:hover{text-decoration:underline}`;
+ export function eventMapAsset(path){if(path==='/leaflet.js')return{body:leafletJS,type:'text/javascript; charset=utf-8'};if(path==='/event-map.js')return{body:eventMapClientScript,type:'text/javascript; charset=utf-8'};if(path==='/event-map.css')return{body:leafletCSS+'\n'+css,type:'text/css; charset=utf-8'};return null;}
+--- a/src/event-map-client.js
++++ b/src/event-map-client.js
+@@ -1,6 +1,7 @@
+ export function mapClient(){
+  const dialog=document.getElementById('event-location-map');if(!dialog)return;
+  const rows=JSON.parse(document.getElementById('event-map-records').textContent),note=document.getElementById('event-location-note'),status=document.getElementById('event-map-status');let map,opener;
++ const config=JSON.parse(document.getElementById('event-map-config').textContent);
+  const groups=new Map(),markers=new Map();for(const row of rows){const key=row.lat+','+row.lng;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(row);}
+  function init(){if(map)return true;if(!window.L){status.textContent='The interactive map could not load. Use the location link to open your maps service.';return false;}
+   map=L.map('interactive-event-map',{scrollWheelZoom:true}).setView([31,-99],6);L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).on('tileerror',()=>{status.textContent='Map background unavailable. Event markers and links still work.';}).addTo(map);
+--- a/src/discovery-pilot.js
++++ b/src/discovery-pilot.js
+@@ -1,3 +1,4 @@
++import {matchesEventCategory} from './event-taxonomy.js';
+ import pilot from '../data/discovery-pilot.json' with {type:'json'};
+ export const discoveryPilot=pilot;
+ export function mergeDiscoveryEvents(original){
+@@ -6,5 +7,5 @@
+ }
+ export function filterDiscoveryEvents(events,params,today){
+  const q=(params.get('q')||'').trim().toLowerCase(),region=params.get('region')||'',discipline=params.get('discipline')||'',from=params.get('from')||today;
+- return events.filter(event=>(event.rideEndDate||event.rideDate)>=today&&!['completed','cancelled','postponed','tbd'].includes(event.status)&&(!region||event.region===region)&&(!discipline||(event.discipline||event.rideType).split(' / ').includes(discipline))&&(event.rideEndDate||event.rideDate)>=from&&(!q||[event.title,event.city,event.county].join(' ').toLowerCase().includes(q))).sort((a,b)=>a.rideDate.localeCompare(b.rideDate)||a.title.localeCompare(b.title));
++ return events.filter(event=>(event.rideEndDate||event.rideDate)>=today&&!['completed','cancelled','postponed','tbd'].includes(event.status)&&(!region||event.region===region)&&matchesEventCategory(event,discipline,'disciplines')&&matchesEventCategory(event,params.get('format'),'formats')&&matchesEventCategory(event,params.get('purpose'),'purposes')&&(event.rideEndDate||event.rideDate)>=from&&(!q||[event.title,event.city,event.county].join(' ').toLowerCase().includes(q))).sort((a,b)=>a.rideDate.localeCompare(b.rideDate)||a.title.localeCompare(b.title));
+ }
+--- a/tests/seo.test.js
++++ b/tests/seo.test.js
+@@ -16,8 +16,9 @@
+  assert.equal(await (await req('/events','HEAD')).text(),'');assert.equal((await req('/events/')).status,308);
+  }finally{env._db.close();}
+ });
+-test('event calendar provides a complete event and city chooser plus only precise start markers',async()=>{
+- const {env,req}=fixture();try{const html=await (await req('/events')).text();assert.match(html,/Choose an event or city/);assert.match(html,/<optgroup label="Events">/);assert.match(html,/Autumn in Bonham Century Mile Ride/);assert.match(html,/<optgroup label="Cities">/);assert.match(html,/value="Bonham"/);assert.match(html,/Verified event starts/);assert.match(html,/11 current events with a published precise start address/);assert.match(html,/event-start-map-canvas/);assert.match(html,/Event types:/);assert.match(html,/href="\/events\?date=2026-10-03"/);assert.match(html,/href="\/events\?q=Bonham"/);assert.match(html,/href="\/events\/2026-10-03-bonham-autumn-in-bonham-century-mile-ride"/);assert.ok(!html.includes('2026 Texas Gravel Champs</a></li>'));
++test('event calendar provides a complete chooser and geographic map with reviewed locations',async(t)=>{
++ t.mock.timers.enable({apis:['Date'],now:new Date('2026-10-02T12:00:00Z')});
++ const {env,req}=fixture();try{const html=await (await req('/events')).text();assert.match(html,/Choose an event or city/);assert.match(html,/<optgroup label="Events">/);assert.match(html,/Autumn in Bonham Century Mile Ride/);assert.match(html,/<optgroup label="Cities">/);assert.match(html,/value="Bonham"/);assert.match(html,/event-map-records/);assert.match(html,/leaflet.js/);assert.doesNotMatch(html,/event-start-map-canvas/);assert.match(html,/name="discipline"/);assert.match(html,/name="format"/);assert.match(html,/name="purpose"/);assert.match(html,/href="\/events\?date=2026-10-03"/);assert.match(html,/href="\/events\?q=Bonham"/);assert.match(html,/href="\/events\/2026-10-03-bonham-autumn-in-bonham-century-mile-ride"/);assert.ok(!html.includes('2026 Texas Gravel Champs</a></li>'));
+  const bonham=env._db.prepare("SELECT slug FROM events WHERE id='event_2026_10_03_autumn_in_bonham_century_mile_ride'").get();const detail=await (await req('/events/'+bonham.slug)).text();assert.match(detail,/Browse this event in the calendar/);assert.match(detail,/Open start marker in maps/);assert.match(detail,/query=33\.5786755,-96\.1910103/);
+  const unpinned=env._db.prepare("SELECT slug FROM events WHERE id='event_2026_10_03_bridging_the_gap_ride_7'").get();const unpinnedHtml=await (await req('/events/'+unpinned.slug)).text();assert.ok(!unpinnedHtml.includes('Open start marker in maps'));
+  }finally{env._db.close();}
+--- a/src/generated/event-map-client-source.js
++++ b/src/generated/event-map-client-source.js
+@@ -1 +1 @@
+-export const eventMapClientScript = "(function mapClient(){\r\n const dialog=document.getElementById('event-location-map');if(!dialog)return;\r\n const rows=JSON.parse(document.getElementById('event-map-records').textContent),note=document.getElementById('event-location-note'),status=document.getElementById('event-map-status');let map,opener;\r\n const groups=new Map(),markers=new Map();for(const row of rows){const key=row.lat+','+row.lng;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(row);}\r\n function init(){if(map)return true;if(!window.L){status.textContent='The interactive map could not load. Use the location link to open your maps service.';return false;}\r\n  map=L.map('interactive-event-map',{scrollWheelZoom:true}).setView([31,-99],6);L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors'}).on('tileerror',()=>{status.textContent='Map background unavailable. Event markers and links still work.';}).addTo(map);\r\n  for(const [key,items] of groups){const el=document.createElement('div');for(const r of items){const p=document.createElement('p'),a=document.createElement('a');a.href=r.url;a.textContent=r.title+' — '+r.date;p.append(a,document.createElement('br'),document.createTextNode(r.venue+' · '+r.label));el.append(p);}\r\n   const color=items.every(r=>r.precision==='venue')?'#24694a':'#a55709';const icon=L.divIcon({className:'event-location-pin',html:'<span style=\"background:'+color+'\">'+items.length+'</span>',iconSize:[44,44],iconAnchor:[22,22]});const marker=L.marker([items[0].lat,items[0].lng],{icon,title:items.map(r=>r.title).join('; '),alt:items.map(r=>r.title).join('; ')}).addTo(map).bindPopup(el,{minWidth:200,maxWidth:280});marker.getElement().setAttribute('aria-label',items.map(r=>r.title).join('; '));for(const r of items)markers.set(r.slug,marker);\r\n  }return true;\r\n }\r\n function all(){map.closePopup();if(!rows.length){note.textContent='No event locations are available for this view.';return;}map.fitBounds(rows.map(r=>[r.lat,r.lng]),{padding:[30,30],maxZoom:10});note.textContent=rows.length+' upcoming events. Zoom in or select a marker for details.';}\r\n function close(){dialog.close();opener?.focus();}\r\n document.querySelectorAll('[data-event-location]').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();opener=link;dialog.showModal();if(!init()){const row=rows.find(r=>r.slug===link.dataset.eventLocation);note.replaceChildren(document.createTextNode(row?row.venue+' - '+row.label+' ':''));if(row){const fallback=document.createElement('a');fallback.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(row.venue);fallback.textContent='Open location in maps';note.append(fallback);}return;}map.invalidateSize();const row=rows.find(r=>r.slug===link.dataset.eventLocation);if(row){note.replaceChildren(document.createTextNode(row.venue+' — '+row.label+' · '));const directions=document.createElement('a');directions.href='https://www.google.com/maps/search/?api=1&query='+row.lat+','+row.lng;directions.textContent='Open in maps';note.append(directions);map.setView([row.lat,row.lng],row.precision==='venue'?16:12);markers.get(row.slug).openPopup();}else all();}));\r\n dialog.querySelector('[data-close-event-map]').addEventListener('click',close);dialog.addEventListener('cancel',event=>{event.preventDefault();close();});dialog.querySelector('[data-show-all-events]').addEventListener('click',()=>{if(init())all();});\r\n})();";
++export const eventMapClientScript = "(function mapClient(){\r\n const dialog=document.getElementById('event-location-map');if(!dialog)return;\r\n const rows=JSON.parse(document.getElementById('event-map-records').textContent),note=document.getElementById('event-location-note'),status=document.getElementById('event-map-status');let map,opener;\r\n const config=JSON.parse(document.getElementById('event-map-config').textContent);\r\n const groups=new Map(),markers=new Map();for(const row of rows){const key=row.lat+','+row.lng;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(row);}\r\n function init(){if(map)return true;if(!window.L){status.textContent='The interactive map could not load. Use the location link to open your maps service.';return false;}\r\n  map=L.map('interactive-event-map',{scrollWheelZoom:true}).setView([31,-99],6);L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors'}).on('tileerror',()=>{status.textContent='Map background unavailable. Event markers and links still work.';}).addTo(map);\r\n  for(const [key,items] of groups){const el=document.createElement('div');for(const r of items){const p=document.createElement('p'),a=document.createElement('a');a.href=r.url;a.textContent=r.title+' — '+r.date;p.append(a,document.createElement('br'),document.createTextNode(r.venue+' · '+r.label));el.append(p);}\r\n   const color=items.every(r=>r.precision==='venue')?'#24694a':'#a55709';const icon=L.divIcon({className:'event-location-pin',html:'<span style=\"background:'+color+'\">'+items.length+'</span>',iconSize:[44,44],iconAnchor:[22,22]});const marker=L.marker([items[0].lat,items[0].lng],{icon,title:items.map(r=>r.title).join('; '),alt:items.map(r=>r.title).join('; ')}).addTo(map).bindPopup(el,{minWidth:200,maxWidth:280});marker.getElement().setAttribute('aria-label',items.map(r=>r.title).join('; '));for(const r of items)markers.set(r.slug,marker);\r\n  }return true;\r\n }\r\n function all(){map.closePopup();if(!rows.length){note.textContent='No event locations are available for this view.';return;}map.fitBounds(rows.map(r=>[r.lat,r.lng]),{padding:[30,30],maxZoom:10});note.textContent=rows.length+' upcoming events. Zoom in or select a marker for details.';}\r\n function close(){dialog.close();opener?.focus();}\r\n document.querySelectorAll('[data-event-location]').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();opener=link;dialog.showModal();if(!init()){const row=rows.find(r=>r.slug===link.dataset.eventLocation);note.replaceChildren(document.createTextNode(row?row.venue+' - '+row.label+' ':''));if(row){const fallback=document.createElement('a');fallback.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(row.venue);fallback.textContent='Open location in maps';note.append(fallback);}return;}map.invalidateSize();const row=rows.find(r=>r.slug===link.dataset.eventLocation);if(row){note.replaceChildren(document.createTextNode(row.venue+' — '+row.label+' · '));const directions=document.createElement('a');directions.href='https://www.google.com/maps/search/?api=1&query='+row.lat+','+row.lng;directions.textContent='Open in maps';note.append(directions);map.setView([row.lat,row.lng],row.precision==='venue'?16:12);markers.get(row.slug).openPopup();}else all();}));\r\n dialog.querySelector('[data-close-event-map]').addEventListener('click',close);dialog.addEventListener('cancel',event=>{event.preventDefault();close();});dialog.querySelector('[data-show-all-events]').addEventListener('click',()=>{if(init())all();});\r\n})();";
+--- a/src/portal.js
++++ b/src/portal.js
+@@ -1,3 +1,4 @@
++import {sectionHelp} from './section-help.js';
+ import {enrichModel} from './model-data.js';
+ import {meta,publicPath,RELEASE} from './seo.js';
+ import {editGuide,excludedDiscussionIds} from './editorial.js';
+@@ -11,7 +12,7 @@
+   return `${get('year')}-${get('month')}-${get('day')}`;
+ }
+ export function upcomingTexas(events, today = texasToday()) {
+-  return events.filter(e => ['TX','TEXAS'].includes(String(e.state).toUpperCase()) && /^\d{4}-\d{2}-\d{2}$/.test(e.start_date) && e.start_date >= today && !/cancel|excluded|pending|unverified/i.test(e.verification_status || '')).sort((a,b) => a.start_date.localeCompare(b.start_date) || a.title.localeCompare(b.title));
++  return events.filter(e => e.id!=='event_2026_10_10_ray_porter_memorial_6_hour_endurance_race_and_fundraiser' && ['TX','TEXAS'].includes(String(e.state).toUpperCase()) && /^\d{4}-\d{2}-\d{2}$/.test(e.start_date) && e.start_date >= today && !/cancel|excluded|pending|unverified/i.test(e.verification_status || '')).sort((a,b) => a.start_date.localeCompare(b.start_date) || a.title.localeCompare(b.title));
+ }
+ export async function readCatalog(env) {
+   const [guides, brands, bikes] = await Promise.all([
+@@ -24,7 +25,7 @@
+ const e = escapeHTML;
+ const detail = (kind, id) => publicPath(kind,id);
+ export const siteLogo=()=>`<a class="logo" href="/" aria-label="Bike Portal home"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="13" fill="#235d43"/><g stroke="#d9ef86" stroke-width="2" fill="none"><circle cx="13" cy="30" r="7"/><circle cx="35" cy="30" r="7"/><path d="m13 30 9-15 13 15H13l6-12m10-5h5m-3 0 4 17M18 15h8"/></g></svg>bike portal<span class="sr-only">.</span></a>`;
+-export const siteMenu = () => `<details class="site-menu"><summary aria-label="Open site navigation"><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span class="menu-label">Explore</span></summary><nav class="site-menu-panel" aria-label="Site navigation"><div class="site-menu-heading"><strong>Bike Portal</strong><span>Plan the next ride</span></div><section><h2>Start riding</h2><a href="/">Home</a><a href="/events">Texas events</a><a href="/texas">Texas cycling guide</a><a href="/trails">Routes &amp; trails</a></section><section><h2>Explore local riding</h2><a href="/texas/cities">City guides</a><a href="/texas/clubs">Cycling clubs</a><a href="/texas/events">Source-attributed events</a></section><section><h2>Learn &amp; choose</h2><a href="/guides">Maintenance &amp; riding guides</a><a href="/brands">Bikes &amp; brands</a><a href="/bikes">Bike model finder</a></section><section><h2>Community &amp; account</h2><a href="/#discussions">Community discussions</a><a href="#new-discussion">Start a discussion</a><a href="#garage">Bike Garage</a><a href="#saved">Saved rides &amp; articles</a><a href="#notifications">Notifications</a><a href="#invite">Invite a rider</a><a href="#signup">Create an account or log in</a><a href="#moderation">Moderation</a></section><section class="site-menu-utility"><h2>About Bike Portal</h2><a href="/about">About</a><a href="/editorial">Editorial standards</a><a href="/community-guidelines">Community guidelines</a><a href="/data-use">Data use</a></section></nav></details>`;
++export const siteMenu = () => `<details class="site-menu"><summary aria-label="Site navigation"><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span class="menu-label">Explore</span></summary><nav class="site-menu-panel" aria-label="Site navigation"><div class="site-menu-heading"><strong>Bike Portal</strong><span>Plan the next ride</span></div><section><h2>Start riding</h2><a href="/">Home</a><a href="/events">Texas events</a><a href="/texas">Texas cycling guide</a><a href="/trails">Routes &amp; trails</a></section><section><h2>Explore local riding</h2><a href="/texas/cities">City guides</a><a href="/texas/clubs">Cycling clubs</a><a href="/texas/events">Source-attributed events</a></section><section><h2>Learn &amp; choose</h2><a href="/guides">Maintenance &amp; riding guides</a><a href="/brands">Bikes &amp; brands</a><a href="/bikes">Bike model finder</a></section><section><h2>Community &amp; account</h2><a href="/#discussions">Community discussions</a><a href="#new-discussion">Start a discussion</a><a href="#garage">Bike Garage</a><a href="#saved">Saved rides &amp; articles</a><a href="#notifications">Notifications</a><a href="#invite">Invite a rider</a><a href="#signup">Create an account or log in</a><a href="#moderation">Moderation</a></section><section class="site-menu-utility"><h2>About Bike Portal</h2><a href="/about">About</a><a href="/editorial">Editorial standards</a><a href="/community-guidelines">Community guidelines</a><a href="/data-use">Data use</a></section></nav></details>`;
+ function eventCard(event) {
+   const date = new Date(`${event.start_date}T12:00:00Z`);
+   return `<article class="card event-card"><div class="event-top"><div class="date"><span>${date.toLocaleString('en-US',{month:'short',timeZone:'UTC'}).toUpperCase()}</span><b>${date.getUTCDate()}</b></div><div><span class="tag">${e(event.disciplines?.[0] || 'Cycling')}</span><div class="meta">${e(event.city)}, Texas · ${date.getUTCFullYear()}</div></div></div><h3><a class="title" href="${detail('event',event.slug)}">${e(event.title)}</a></h3><p>${e(event.venue_name || 'See event details for venue information.')}</p><div class="card-bottom"><span>${e(event.distances?.length ? event.distances.join(' / ') + ' mi' : 'Distances in event details')}</span><a class="textlink" href="${detail('event',event.slug)}">View event ↗</a></div></article>`;
+@@ -47,11 +48,11 @@
+   const featuredBrands = ['Trek','Specialized','Giant','Canyon','Cannondale','Salsa','Brompton','Surly'];
+   const brands = catalog?.brands.filter(b => featuredBrands.includes(b.name)) || [];
+   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#235d43">${meta(request,env,{title:"Texas Cycling Events & Bike Maintenance | Bike Portal",description:"Find Texas cycling events, practical bicycle maintenance guides and sourced bike information. Keep your setup notes and connect with other riders."})}<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23235d43'/%3E%3Ctext x='24' y='34' text-anchor='middle' font-size='33' fill='%23d9ef86'%3EB%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="/portal.css?v=${RELEASE}"><script src="/portal.js?v=${RELEASE}" defer></script></head><body>
+-  <a class="skip" href="#main">Skip to content</a>${siteMenu()}<header class="topbar"><div class="wrap nav">${siteLogo()}<div class="account" id="account-nav"><a href="#login">Log in</a><a class="btn" href="#signup">Join the ride ↗</a></div></div></header>
++  <a class="skip" href="#main">Skip to content</a><header class="topbar"><div class="wrap nav">${siteLogo()}${siteMenu()}<div class="account" id="account-nav"><a href="#login">Log in</a><a class="btn" href="#signup">Join the ride ↗</a></div></div></header>
+   <main id="main"><div class="wrap"><section class="hero" aria-labelledby="hero-title"><div class="hero-grid"><div class="hero-copy"><div class="eyebrow">For every bike. For every rider.</div><h1 id="hero-title">Your next ride<br>starts <span>here.</span></h1><p>Find a Texas event. Get to know your bike.<br>Swap stories with people who love the ride.</p><form class="search" id="portal-search" action="/" method="get" role="search"><label class="sr-only" for="search-input">Search Bike Portal</label><input id="search-input" name="q" type="search" maxlength="120" placeholder="Search events, guides, bikes & more…" required><button class="btn" type="submit">Search <span aria-hidden="true">↗</span></button></form><div class="search-hints"><span>Start exploring:</span><a href="#search/gravel">Gravel rides</a><a href="/guides/fix-a-flat">Fix a flat</a><a href="/brands">Find your bike</a></div></div><div class="hero-art" role="img" aria-label="An illustrated bicycle on a winding trail through green Texas hills"><svg viewBox="0 0 430 340" fill="none" aria-hidden="true"><circle cx="330" cy="70" r="36" fill="#f5d48e"/><path d="M0 150Q110 65 245 165T450 130V340H0Z" fill="#b7c6a4"/><path d="M0 228Q145 116 300 209T460 150V340H0Z" fill="#7f9e78"/><path d="M0 290Q210 195 450 265V340H0Z" fill="#466f53"/><path d="M190 340Q380 282 259 264T307 224" stroke="#d8d8af" stroke-width="20"/><g transform="translate(40 110)" stroke="#183d2c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><circle cx="85" cy="105" r="54" fill="#f5f5df"/><circle cx="255" cy="105" r="54" fill="#f5f5df"/><circle cx="85" cy="105" r="43" stroke="#b9c5a7" stroke-width="2"/><circle cx="255" cy="105" r="43" stroke="#b9c5a7" stroke-width="2"/><path d="m85 105 58-91 40 91H85l44-68h99m-15-31 42 99" stroke="#d9ef86"/><path d="M128 14h31m45-15h25l15 17h-16"/><circle cx="183" cy="105" r="9" fill="#183d2c"/><path d="m183 105 15 16h12" stroke-width="5"/></g></svg><span class="art-label">A little preparation. A lot of possibility.</span></div></div></section>
+   <nav class="quicklinks" aria-label="Explore Bike Portal"><a href="/events">Find a Texas event <span>↗</span></a><a href="/guides">Keep your bike rolling <span>↗</span></a><a href="/brands">Discover your next bike <span>↗</span></a><a href="#discussions">Meet fellow riders <span>↗</span></a></nav>
+   <noscript><p class="empty">You can browse the highlights below. Enable JavaScript to search, open details, and use your account. The <a href="/api/events">event data</a> remains available.</p></noscript>
+-  <section class="content" id="events"><div class="section-head"><div><div class="eyebrow">Good miles ahead</div><h2>Upcoming Texas events</h2><p>A reason to get out there, from local rides to race day.</p></div><a class="textlink" href="/events">Explore the calendar →</a></div>${events?.length ? `<div class="grid">${events.slice(0,3).map(eventCard).join('')}</div>` : empty(events ? 'No upcoming Texas events are currently listed. Check back for the next rides.' : 'Events are temporarily unavailable. <a href="/">Refresh to try again</a>.')}<p class="note">Dates from our event directory · Confirm current details with the organizer before you travel or register.</p></section>
++  <section id="using-bike-portal" aria-label="Using Bike Portal">${sectionHelp('/')}</section><section class="content" id="events"><div class="section-head"><div><div class="eyebrow">Good miles ahead</div><h2>Upcoming Texas events</h2><p>A reason to get out there, from local rides to race day.</p></div><a class="textlink" href="/events">Explore the calendar →</a></div>${events?.length ? `<div class="grid">${events.slice(0,3).map(eventCard).join('')}</div>` : empty(events ? 'No upcoming Texas events are currently listed. Check back for the next rides.' : 'Events are temporarily unavailable. <a href="/">Refresh to try again</a>.')}<p class="note">Dates from our event directory · Confirm current details with the organizer before you travel or register.</p></section>
+   <section class="content" id="guides"><div class="section-head"><div><div class="eyebrow">A little know-how goes a long way</div><h2>Popular maintenance guides</h2><p>Curated essentials for everyday riding, selected by topic.</p></div><a class="textlink" href="/guides">Browse all guides →</a></div>${guides.length ? `<div class="grid">${guides.map(guideCard).join('')}</div>` : empty(catalog ? 'Maintenance guides will appear here when published.' : 'Guides are temporarily unavailable. <a href="/">Refresh to try again</a>.')}</section>
+   <section class="content" id="bikes"><div class="discover"><div><div class="eyebrow">Find your kind of ride</div><h2>Different bikes.<br>Endless possibilities.</h2><p>Explore brands and model families for the road, the trail, and everything in between.</p><a class="textlink" href="/brands">Explore bikes & brands →</a></div><div class="brand-list">${brands.length ? brands.map(b => `<a class="brand" href="${detail('brand',b.slug)}">${e(b.name)} ↗</a>`).join('') : '<a class="brand" href="/brands">Browse the bike directory ↗</a>'}</div></div></section>
+   <section class="content" id="discussions"><div class="section-head"><div><div class="eyebrow">Better together</div><h2>Latest discussions</h2><p>Questions, hard-earned advice, and stories from the saddle.</p></div><a class="textlink" href="#new-discussion">Start a conversation →</a></div>${discussions?.length ? `<div class="discussion-list">${discussions.map(d => `<article class="discussion"><div><h3><a href="${detail('discussion',d.id)}">${e(d.title)}</a></h3><div class="meta">${e(d.display_name || d.username)} · Updated ${e(d.updated_at?.slice(0,10))}</div></div><span class="count">${Number(d.comment_count)||0} replies<br>${Number(d.helpful_count)||0} helpful</span></article>`).join('')}</div>` : empty(discussions ? 'Every riding community starts with a hello. <a class="textlink" href="#new-discussion">Be the first to start a conversation →</a>' : 'Discussions are temporarily unavailable. <a href="/">Refresh to try again</a>.')}</section>
+--- a/src/portal-styles.js
++++ b/src/portal-styles.js
+@@ -16,4 +16,15 @@
+ .hero-art{background:linear-gradient(180deg,#173d2b12 0%,#173d2b08 54%,#173d2b42 100%),url("/media/editorial/texas-ride-hero.webp") 29% 50%/cover no-repeat}.hero-art svg{display:none}.hero-art::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#142e221f,transparent 58%);pointer-events:none}.hero-art .art-label{z-index:1}.event-type-legend{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:18px 0}.event-type-legend>span{font-size:.8rem;font-weight:750;color:var(--muted)}.event-type-legend a,.event-card-types .tag{font-size:.72rem;text-decoration:none}.event-type-legend a{border:1px solid #d7e2c7;background:#f2f6e9;color:#385434;border-radius:999px;padding:4px 10px;font-weight:750}.event-type-legend a:hover,.event-type-legend a[aria-current=page]{background:#dceac8;text-decoration:none}.event-card-types{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}.event-card-types .tag:hover{background:#dceac8;text-decoration:none}
+ .site-menu{top:88px}@media(max-width:640px){.site-menu{top:66px}}
+ .public-main .map-toggle{min-height:44px;min-width:44px}@media(max-width:768px){.event-type-legend a,.event-card-types .tag{min-height:44px;display:inline-flex;align-items:center}}
++
++/* Shared editorial layout: header navigation stays attached to the page. */
++:root{--ink:#172622;--muted:#52615a;--paper:#f5f6f4;--line:#d7ded9;font-family:Arial,Helvetica,ui-sans-serif,system-ui,sans-serif}
++body{line-height:1.65}h1,h2,h3{letter-spacing:-.035em;text-wrap:balance}h1{font-size:clamp(2.35rem,5vw,4.6rem);line-height:1.08}p{line-height:1.7}img,svg,video{max-width:100%}.wrap{max-width:1240px}.hero-grid>*{min-width:0}.topbar{padding-left:0;border-top:4px solid var(--green)}.nav{position:relative;gap:24px;min-height:88px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap}.logo{letter-spacing:-.045em;min-height:44px}.logo svg{flex:none}.account{margin-left:auto}.account a{min-height:44px;display:inline-flex;align-items:center}.btn,button.close,.brand,select,.field select{min-height:44px}.btn{border-radius:6px}.btn.outline{border-color:#7b8f82}.skip{z-index:100}.site-menu{position:static;z-index:20;top:auto;left:auto}.site-menu>summary{min-height:44px;padding:10px 14px;border-radius:6px;background:var(--white);color:var(--ink);border:1px solid #7b8f82;box-shadow:none;font-size:.8rem;letter-spacing:.04em}.site-menu>summary:hover{background:#edf2ee}.site-menu[open]>summary{background:var(--green);color:white}.menu-icon i{background:currentColor}.site-menu .menu-label{display:inline}.site-menu-panel{position:absolute;left:36px;right:36px;top:calc(100% - 1px);width:auto;max-height:min(70vh,640px);max-height:min(70dvh,640px);margin:0;padding:24px;border-radius:0 0 10px 10px;box-shadow:0 14px 30px #17262226;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 28px}.site-menu-heading{grid-column:1/-1}.site-menu-panel section{padding:0;border:0;min-width:0}.site-menu-panel a{min-height:44px;display:flex;align-items:center;padding:10px 8px;line-height:1.4;overflow-wrap:anywhere}.site-menu-panel h2{margin-bottom:8px}.site-menu[open]::after{display:none}summary:focus-visible{outline:3px solid #a34e08;outline-offset:4px}.hero{padding:54px 0 36px}.hero-art{border-radius:12px;min-width:0}.hero-copy>p{font-size:1.06rem}.search{width:100%;max-width:100%}.search input{width:0;min-width:0}.search .btn{flex-shrink:0}.art-label{right:16px;left:16px;width:fit-content;max-width:calc(100% - 32px);border-radius:5px}.quicklinks{border-radius:8px}.section-head{border-bottom:1px solid var(--line);padding-bottom:16px}.card{border-radius:8px;padding:24px;box-shadow:0 2px 5px #17262204}.card h3{font-size:1.15rem;line-height:1.3}.guide-card{padding:0}.guide-cover{background:#e6ece7}.guide-card:nth-child(2) .guide-cover,.guide-card:nth-child(3) .guide-cover{background:#e6ece7}.tag{color:#28543b;background:#edf3ee;border-color:#ccdacf}.public-main{padding-top:24px}.public-main>h1{max-width:1000px;line-height:1.12}.public-main .lede{font-size:1.06rem}.public-main nav a{display:inline-block;min-height:44px;padding:9px 0}.reading{font-size:1rem;line-height:1.75}.reading a,.sources a{text-decoration-thickness:1px;text-underline-offset:3px}.event-finder{flex-wrap:wrap;padding:20px;background:white;border:1px solid var(--line);border-radius:8px}.event-finder .field{min-width:150px;margin:0}.event-finder>a{min-height:44px;display:inline-flex;align-items:center}.event-type-legend a,.event-card-types .tag{min-height:44px;display:inline-flex;align-items:center}.footer nav a,.textlink{min-height:44px;display:inline-flex;align-items:center}.footer nav{flex-wrap:wrap;gap:8px 24px}.card-bottom{align-items:center}.textlink{white-space:normal}.close{min-width:44px}.event-map-heading{flex-wrap:wrap}.facts{line-height:1.65}
++@media(max-width:980px){.site-menu-panel{left:24px;right:24px;grid-template-columns:repeat(2,minmax(0,1fr))}.nav{gap:16px}.hero-grid{grid-template-columns:1.15fr 1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
++@media(max-width:640px){.wrap{padding-left:18px;padding-right:18px}.nav{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 12px;padding-top:12px;padding-bottom:12px}.logo{font-size:1.12rem;gap:8px}.logo svg{width:34px;height:34px}.account{grid-column:1/-1;width:auto;margin:0;justify-content:flex-start;gap:8px 16px}.site-menu{justify-self:end}.site-menu>summary{padding:10px;font-size:.72rem;gap:7px}.site-menu-panel{left:18px;right:18px;padding:18px;grid-template-columns:1fr;gap:20px;max-height:65vh;max-height:65dvh}.site-menu-heading{align-items:start;flex-direction:column;gap:4px}.site-menu-panel a{padding:10px 8px}.hero{padding:32px 0}.hero-grid{grid-template-columns:1fr;gap:24px}.hero h1{font-size:clamp(2.2rem,10.5vw,3rem);margin-bottom:20px}.hero-copy>p{font-size:1rem}.hero-art{height:200px}.hero-art svg{width:100%}.search{gap:4px;padding:5px}.search input{font-size:.95rem;padding:8px}.search .btn{padding:12px 10px}.grid,.dialog-body .grid{grid-template-columns:1fr}.card{padding:20px}.guide-card{padding:0}.quicklinks a{padding:16px 12px;line-height:1.5}.public-main>h1{font-size:2.15rem;margin-top:20px}.public-main nav{line-height:1.5}.event-finder{display:flex;flex-direction:column;align-items:stretch;padding:16px;gap:16px}.event-finder .field{width:100%;min-width:0}.event-finder .btn{margin:0}.event-finder>a{justify-content:center}.discussion{align-items:flex-start;flex-wrap:wrap}.discussion .count{text-align:left}.join{padding:26px 22px}.dialog-body{padding:20px}.dialog-head{padding:12px 16px}.card-bottom{flex-wrap:wrap}.textlink{max-width:100%}}
++@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
++
++/* Contextual help keeps essential caveats visible without a hover interaction. */
++.section-help{border-left:3px solid var(--green);background:#edf3ee;padding:14px 18px;margin:20px 0 28px;border-radius:0 6px 6px 0}.section-help-essential{font-size:.92rem;margin:0;color:var(--ink)}.section-help summary,#event-location-map summary{min-height:44px;padding:10px 0;cursor:pointer;font-weight:650}.section-help ul{padding-left:22px;margin:8px 0}.section-help li{margin:8px 0;font-size:.92rem}.section-help summary:focus-visible{outline:3px solid #a34e08;outline-offset:3px}.account{flex-wrap:wrap;min-width:0}.account a{overflow-wrap:anywhere;max-width:100%}
++.public-main>p,.public-main>.section-help{max-width:82ch}
+ `;
+--- /dev/null
++++ b/config/event-map.json
+@@ -0,0 +1,6 @@
++{
++  "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
++  "maxZoom": 19,
++  "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
++  "providerNote": "OpenStreetMap public tiles are best-effort. Viewport requests only; no prefetch or offline downloads. Provider changes require matching CSP review."
++}
+--- /dev/null
++++ b/src/event-taxonomy.js
+@@ -0,0 +1,79 @@
++export const EVENT_TAXONOMY_VERSION='2026-10-05-v2';
++// Presentation-only categories. Original source values and event records are never mutated.
++// Disciplines describe riding; formats describe participation; purposes are independent.
++const groups = {
++ disciplines: {
++  Road: ['road'], Gravel: ['gravel','gravel ride'], 'Mountain bike': ['mountain','mountain bike','mtb'],
++  'Paved trail': ['paved trail']
++ },
++ formats: {
++  Race: ['race','endurance race','interscholastic race'],
++  'General / social ride': ['ride','untimed ride','casual ride','noncompetitive ride','community','community ride','car-free social ride','community festival ride'],
++  Tour: ['tour','touring','multi-day tour'], Bikepacking: ['bikepacking'],
++  Randonneuring: ['randonneuring','brevet','brevets'], 'Gran fondo': ['gran fondo'],
++  Challenge: ['challenge','challenge ride','gravel challenge'],
++  Rally: ['rally'],
++  'Timed ride': ['timed ride'], 'Hill climb': ['hill climb','competitive climb']
++ },
++ purposes: { Fundraising: ['charity','charity ride','fundraiser'], Education: ['education'], Festival: ['festival'] },
++ details: {
++  'Generic ride': ['ride'], 'Untimed ride': ['untimed ride'], 'Casual ride': ['casual ride'],
++  'Noncompetitive ride': ['noncompetitive ride'], 'Community ride': ['community','community ride'],
++  'Car-free social ride': ['car-free social ride'], 'Community festival ride': ['community festival ride'],
++  Recreational: ['recreational'], Endurance: ['endurance','endurance race'], 'E-bike': ['e-bike'],
++  'Supported ride': ['supported ride','multi-day supported ride'], 'Self-supported ride': ['self-supported ride'],
++  'Multi-day': ['multi-day ride','multi-day tour','two-day ride','multi-day supported ride'],
++  'One-day': ['one-day ride'], 'Night ride': ['night ride'], 'Century ride': ['century ride'],
++  'Heritage ride': ['heritage ride'], Series: ['series','series finale'], 'Series finale': ['series finale'],
++  'State championship': ['state championship'], Interscholastic: ['interscholastic race']
++ }
++};
++const key = value => String(value || '').trim().replace(/\s+/g,' ').toLowerCase();
++const unique = values => [...new Set(values)];
++function array(value) {
++ if (Array.isArray(value)) return value.filter(x => typeof x === 'string' && x.trim());
++ if (typeof value !== 'string' || !value.trim()) return [];
++ try { const parsed=JSON.parse(value); return Array.isArray(parsed) ? array(parsed) : [value]; }
++ catch { return [value]; }
++}
++function classify(value) {
++ const result=[];
++ for (const [axis, labels] of Object.entries(groups)) for (const [label, aliases] of Object.entries(labels)) {
++  if (key(label)===key(value) || aliases.includes(key(value))) result.push([axis,label]);
++ }
++ return result;
++}
++export function eventTaxonomy(event) {
++ const raw={
++  disciplines: unique([...array(event.disciplines_json),...array(event.disciplines),...array(event.discipline)]),
++  types: unique([...array(event.event_types_json),...array(event.event_types),...array(event.event_type),...array(event.rideType)])
++ };
++ const result={disciplines:[],formats:[],purposes:[],details:[],unknown:[],raw};
++ for (const original of [...raw.disciplines,...raw.types]) {
++  // Curated records use the exact separator " / "; raw strings above stay intact.
++  for (const token of original.split(' / ')) {
++   const entries=classify(token);
++   if (!entries.length) result.unknown.push(token.trim());
++   for (const [axis,label] of entries) result[axis].push(label);
++  }
++ }
++ for (const axis of ['disciplines','formats','purposes','details','unknown']) result[axis]=unique(result[axis]);
++ return result;
++}
++export function eventCategoryOptions(events,axis='all') {
++ const axes=axis==='all'?['disciplines','formats','purposes']: [axis];
++ return unique(events.flatMap(event=>{const categories=eventTaxonomy(event);return axes.flatMap(name=>categories[name]||[]);})).sort((a,b)=>a.localeCompare(b));
++}
++export function matchesEventCategory(event,value,axis='all') {
++ if (!key(value)) return true;
++ const categories=eventTaxonomy(event),axes=axis==='all'?['disciplines','formats','purposes','details','unknown']:[axis];
++ // Original links stay valid without broadening a narrow raw label to every synonym.
++ const raw=[...categories.raw.disciplines,...categories.raw.types].flatMap(x=>[x,...x.split(' / ')]);
++ if (raw.some(x=>key(x)===key(value))) return true;
++ // Former display-filter URLs retain their narrower meaning after consolidation.
++ const legacyFormats={'noncompetitive ride':['untimed ride','casual ride','noncompetitive ride'],'social / community ride':['community','community ride','car-free social ride','community festival ride']};
++ if ((axis==='all'||axis==='formats')&&legacyFormats[key(value)]) return raw.some(x=>legacyFormats[key(value)].includes(key(x)));
++ if (axes.some(name=>(categories[name]||[]).some(x=>key(x)===key(value)))) return true;
++ // Only true lexical discipline aliases cross-match; format details retain specificity.
++ return classify(value).some(([name,label])=>name==='disciplines' && axes.includes(name) && categories[name].includes(label));
++}
+--- /dev/null
++++ b/src/section-help.js
+@@ -0,0 +1,75 @@
++// Fixed editorial help only: no URL or user-controlled content is interpolated.
++const content={
++ events:['Confirm dates, eligibility and changes with the organizer before travelling.',[
++  'Discipline describes riding terrain or style; format describes the kind of event; purpose can include fundraising. An event can have several labels.',
++  'Road means primarily paved-road riding; Gravel means unpaved-road riding; Mountain bike means off-road trail riding. Check the organizer for actual surfaces and difficulty.',
++  'General / social ride combines generic, casual, untimed and community ride labels. A generic Ride label alone does not confirm pace or competitive status; original labels stay on event pages.',
++  'Randonneuring is long-distance riding with checkpoints; bikepacking involves carrying gear on a ride. Tour, Challenge and Gran fondo do not by themselves establish whether an event is a race.',
++  'Choose filters, then select Filter events. The map shows matching events with known locations; a missing pin does not mean an event is absent. Clear filters to start again.',
++  'An event date is not its registration deadline. Source checked records a past review, not a guarantee that details remain current.',
++  'Pins show venues, not a course or turn-by-turn directions, and can be approximate. Open the organizer link for the confirmed starting point and entry requirements.'
++ ]],
++ curated:['Confirm dates, eligibility and changes with the organizer before travelling.',[
++  'Discipline describes riding terrain or style; format describes the kind of event; purpose can include fundraising. Some source records do not identify every category.',
++  'Road means primarily paved-road riding; Gravel means unpaved-road riding; Mountain bike means off-road trail riding. Check the organizer for actual surfaces and difficulty.',
++  'General / social ride combines generic, casual, untimed and community ride labels. A generic Ride label alone does not confirm pace or competitive status; original labels stay on event pages.',
++  'Randonneuring is long-distance riding with checkpoints; bikepacking involves carrying gear on a ride. Tour, Challenge and Gran fondo do not by themselves establish whether an event is a race.',
++  'Choose filters, then select Filter events. The map shows matching events with known locations. Clear filters to start again; approximate venue pins are not a course or turn-by-turn directions.',
++  'The event start date is not the registration deadline. Source checked records a past review, not a guarantee of current details.',
++  'Calendar downloads use all-day event dates, not a confirmed start time. Check the organizer for times and later changes; a downloaded file does not update itself.'
++ ]],
++ bikes:['A model family is not a confirmed exact-year build or a stock listing.',[
++  'Start with a brand or model family, then check the stated year, market and build before comparing specifications.',
++  'Unknown or missing means the detail has not been established here; it does not mean the feature is absent.',
++  'Source dates apply to the listed facts. Manufacturer specifications can differ across versions; follow the source link for the exact bicycle.',
++  'This directory does not establish current inventory, availability or price.'
++ ]],
++ routes:['Maps and GPX files are planning references, not a guarantee of a safe or open route.',[
++  'City and region labels help locate a route or trail; they do not describe every part of its course.',
++  'Check the stated surface and distance for suitability. Approximate lines, changing conditions and detours can affect navigation.',
++  'Confirm access, closures, weather and permitted bicycle types with the land manager. Follow current signs and carry suitable navigation.',
++  'Do not share a private home address or another rider’s location when discussing routes.'
++ ]],
++ clubs:['Confirm meeting places, ride rules and current schedules with the club.',[
++  'A city label describes the listing’s location; a club may ride beyond that city.',
++  'A listing does not guarantee a suitable pace, no-drop support or acceptance of every bicycle type.',
++  'Use the club’s source link to check the next ride and joining requirements. Avoid posting private meeting addresses or other riders’ personal details.'
++ ]],
++ guides:['These AI-assisted guides are references; check the instructions for your exact equipment.',[
++  'Read the scope and source links before applying a procedure. A source review is not a hands-on mechanic inspection.',
++  'Use the manufacturer’s current instructions, torque values and compatibility requirements for your exact component.',
++  'Stop if a procedure is unclear or the bicycle appears unsafe, and seek qualified help. Do not treat a general guide as a named expert’s assessment.'
++ ]],
++ texas:['This directory brings together different resources; each has its own source and review scope.',[
++  'Events describe dated rides. Routes and trails describe places to ride; clubs describe groups you can contact.',
++  'Reviewed ride selections are a smaller selection, not the complete event calendar.',
++  'Open a detail page for sources, dates and limitations. Check the organizer or land manager before making plans.'
++ ]],
++ home:['Browse public information freely; account actions require you to log in.',[
++  'Use search to explore site content and the event calendar to narrow rides by date, location and category.',
++  'Bike Garage records your bicycles. Your profile and garage are public; avoid sensitive personal information.',
++  'Save bookmarks an item; Follow records your interest. Saved contains saved and followed items. Helpful is feedback on a discussion or comment.',
++  'Notifications show account activity inside the site. Check them while signed in; do not assume email reminders or automatic event-change alerts.'
++ ]],
++ account:['Log in to manage your own account actions; your profile and garage are public.',[
++  'Garage records bicycles; Saved lists saved and followed content. These are different lists.',
++  'Save bookmarks an item and Follow records interest. Helpful is feedback on a discussion or comment.',
++  'Check Notifications for in-site activity. Keep private addresses and sensitive details out of public profile and garage fields.'
++ ]]
++};
++export function sectionHelp(path='/') {
++ const route=String(path).split('?')[0].replace(/\/$/,'')||'/';
++ let section;
++ if (/^\/(?:#)?(?:garage|saved|profile|notifications|login|signup)(?:\/|$)/.test(route)) section='account';
++ else if (route==='/') section='home';
++ else if (/^\/texas\/events(?:\/|$)/.test(route)) section='curated';
++ else if (/^\/events(?:\/|$)/.test(route)) section='events';
++ else if (/^\/(bikes|brands)(?:\/|$)/.test(route)) section='bikes';
++ else if (/^\/(?:texas\/)?clubs(?:\/|$)/.test(route)) section='clubs';
++ else if (/^\/(?:texas\/)?(?:trails|routes)(?:\/|$)/.test(route)) section='routes';
++ else if (/^\/guides(?:\/|$)/.test(route)) section='guides';
++ else if (/^\/(?:texas|texas-rides)(?:\/|$)/.test(route)) section='texas';
++ if (!section) return '';
++ const [caveat,bullets]=content[section];
++ return `<aside class="section-help"><p class="section-help-essential">${caveat}</p><details class="section-help-details"><summary>How to use this section</summary><ul>${bullets.map(text=>`<li>${text}</li>`).join('')}</ul></details></aside>`;
++}
+--- /dev/null
++++ b/tests/event-taxonomy.test.js
+@@ -0,0 +1,64 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import {eventTaxonomy,eventCategoryOptions,matchesEventCategory} from '../src/event-taxonomy.js';
++
++test('legacy aliases deduplicate while preserving raw arrays and independent purposes',()=>{
++ const event={disciplines_json:'["mountain","mountain bike","road","recreational"]',event_types_json:'["charity ride","fundraiser","interscholastic race"]'};
++ const before=JSON.stringify(event), got=eventTaxonomy(event);
++ assert.deepEqual(got.disciplines,['Mountain bike','Road']);
++ assert.deepEqual(got.formats,['Race']);assert.deepEqual(got.purposes,['Fundraising']);
++ assert.deepEqual(got.details,['Recreational','Interscholastic']);
++ assert.deepEqual(got.raw.types,['charity ride','fundraiser','interscholastic race']);
++ assert.equal(JSON.stringify(event),before);
++});
++test('curated mixed surface and purpose never infer road from charity',()=>{
++ assert.deepEqual(eventTaxonomy({rideType:'Charity'}).disciplines,[]);
++ const got=eventTaxonomy({discipline:'Road / Gravel',rideType:'Charity'});
++ assert.deepEqual(got.disciplines,['Road','Gravel']);assert.deepEqual(got.purposes,['Fundraising']);
++ assert.deepEqual(got.raw.disciplines,['Road / Gravel']);
++ assert.deepEqual(eventTaxonomy({discipline:'Randonneuring'}).formats,['Randonneuring']);
++});
++test('unknown labels and malformed source strings remain visible without invented classification',()=>{
++ const got=eventTaxonomy({disciplines:['unusual surface'],event_types_json:'[invalid'});
++ assert.deepEqual(got.unknown,['unusual surface','[invalid']);assert.deepEqual(got.formats,[]);
++ assert.equal(matchesEventCategory({event_types:['unusual format']},'unusual format'),true);
++});
++test('mixed competitive and untimed options retain both; support and duration remain separate',()=>{
++ const got=eventTaxonomy({event_types:['race','untimed ride','multi-day supported ride','fundraiser']});
++ assert.deepEqual(got.formats,['Race','General / social ride']);
++ assert.deepEqual(got.details,['Untimed ride','Supported ride','Multi-day']);assert.deepEqual(got.purposes,['Fundraising']);
++});
++test('filters accept canonical labels and old raw links without expanding narrow race variants',()=>{
++ const event={disciplines:['mountain'],event_types:['race','charity ride']};
++ assert.equal(matchesEventCategory(event,'MTB','disciplines'),true);
++ assert.equal(matchesEventCategory(event,'Mountain bike','disciplines'),true);
++ assert.equal(matchesEventCategory(event,'charity ride'),true);
++ assert.equal(matchesEventCategory(event,'Fundraising','purposes'),true);
++ assert.equal(matchesEventCategory(event,'interscholastic race'),false);
++ assert.equal(matchesEventCategory(event,'Road','disciplines'),false);
++ assert.deepEqual(eventCategoryOptions([event,{disciplines:['mountain bike']}],'disciplines'),['Mountain bike']);
++});
++
++test('overlapping general ride formats consolidate while keeping each source subtype',()=>{
++ const event={event_types:['ride','casual ride','untimed ride','community ride','car-free social ride']};
++ const before=JSON.stringify(event),got=eventTaxonomy(event);
++ assert.deepEqual(got.formats,['General / social ride']);
++ assert.deepEqual(got.raw.types,event.event_types);
++ assert.deepEqual(got.details,['Generic ride','Casual ride','Untimed ride','Community ride','Car-free social ride']);
++ assert.equal(JSON.stringify(event),before);
++});
++test('former display links retain narrow semantics rather than selecting every general ride',()=>{
++ const generic={event_types:['ride']},casual={event_types:['casual ride']},social={event_types:['community ride']};
++ for(const event of [generic,casual,social])assert.equal(matchesEventCategory(event,'General / social ride','formats'),true);
++ assert.equal(matchesEventCategory(generic,'Noncompetitive ride','formats'),false);
++ assert.equal(matchesEventCategory(casual,'Noncompetitive ride','formats'),true);
++ assert.equal(matchesEventCategory(social,'Social / community ride','formats'),true);
++ assert.equal(matchesEventCategory(casual,'Social / community ride','formats'),false);
++ assert.equal(matchesEventCategory(social,'Ride','formats'),false);
++});
++test('named ambiguous formats are not recast as recreational or racing',()=>{
++ for(const type of ['gran fondo','tour','rally','challenge']){
++  const got=eventTaxonomy({event_types:[type]});
++  assert.equal(got.formats.length,1);assert.ok(!got.formats.includes('Race'));assert.ok(!got.formats.includes('General / social ride'));
++ }
++});
+--- /dev/null
++++ b/tests/section-help.test.js
+@@ -0,0 +1,23 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import {sectionHelp} from '../src/section-help.js';
++test('all public content sections have native disclosure and always visible caveat',()=>{
++ for(const path of ['/','/events','/events/example','/texas/events','/texas/events/example','/bikes','/bikes/example','/brands/example','/texas/routes/example','/texas/trails','/texas/clubs','/guides/example','/texas','/texas-rides','/#garage','/#saved']) {
++  const html=sectionHelp(path);assert.match(html,/<details[^>]*><summary>How to use this section<\/summary>/,path);
++  assert.ok(html.indexOf('section-help-essential')<html.indexOf('<details'),path);
++  assert.ok((html.match(/<li>/g)||[]).length>=3,path);assert.doesNotMatch(html,/onclick=|onmouseover=|title=/);
++ }
++});
++test('calendar download claims limited to curated event routes',()=>{
++ assert.match(sectionHelp('/texas/events/example'),/all-day/);assert.doesNotMatch(sectionHelp('/events'),/all-day/);
++ assert.match(sectionHelp('/events'),/registration deadline/);assert.match(sectionHelp('/texas/events'),/does not update itself/);
++});
++test('unknown details and public account scope stated accurately',()=>{
++ assert.match(sectionHelp('/bikes'),/does not mean the feature is absent/);assert.match(sectionHelp('/'),/profile and garage are public/);
++ assert.match(sectionHelp('/texas/trails'),/planning references/);assert.match(sectionHelp('/guides'),/AI-assisted/);
++});
++test('policy pages omitted and untrusted route content never interpolated',()=>{
++ for(const path of ['/privacy','/terms','/about','/editorial','/data-use','/community-guidelines']) assert.equal(sectionHelp(path),'');
++ assert.doesNotMatch(sectionHelp('/events/<script>alert(1)</script>'),/script|alert\(1\)/);
++ assert.equal(sectionHelp('/unrecognized'), '');
++});
+--- /dev/null
++++ b/tests/site-audit.test.js
+@@ -0,0 +1,33 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import worker from '../src/worker.js';
++import {localEnv} from '../scripts/local-db.js';
++const rows=html=>JSON.parse(html.match(/id="event-map-records">([^]*?)<\/script>/)[1]);
++test('legacy event map follows list filters and preserves unlocated entries',async(t)=>{
++ t.mock.timers.enable({apis:['Date'],now:new Date('2026-10-05T12:00:00Z')});
++ const env=localEnv();try{
++  const get=async path=>(await worker.fetch(new Request('http://localhost'+path),env)).text();
++  const austin=await get('/events?q=Austin');assert.equal(rows(austin).length,1);assert.match(rows(austin)[0].title,/Bikes & Beers Austin/);assert.match(austin,/leaflet.js/);assert.doesNotMatch(austin,/event-start-map-canvas/);
++  const empty=await get('/events?q=no-such-place');assert.equal(rows(empty).length,0);assert.match(empty,/0 matching upcoming events/);
++  const all=await get('/events');assert.match(all,/Events without a reviewed location remain in the list/);assert.doesNotMatch(all,/Ray Porter Memorial/);
++  const slug=env._db.prepare("SELECT slug FROM events WHERE id='event_2026_10_10_ray_porter_memorial_6_hour_endurance_race_and_fundraiser'").get().slug;const detail=await get('/events/'+slug);assert.match(detail,/reported cancelled/);
++ }finally{env._db.close();}
++});
++test('separate category filters keep canonical and original links usable without mixing fundraising into disciplines',async()=>{
++ const env=localEnv();try{
++  const get=async path=>(await worker.fetch(new Request('http://localhost'+path),env)).text();
++  const legacy=await get('/texas/events?discipline=MTB'),canonical=await get('/texas/events?discipline=Mountain%20bike');assert.deepEqual(rows(legacy),rows(canonical));assert.match(legacy,/<option value="MTB" selected>/);
++  const html=await get('/events?type=mountain');assert.match(html,/Original category filter: mountain/);assert.match(html,/name="format"/);assert.match(html,/name="purpose"/);
++  const discipline=html.match(/<select name="discipline">([^]*?)<\/select>/)[1];assert.doesNotMatch(discipline,/Fundraising|charity|multi-day|fundraiser/);
++ }finally{env._db.close();}
++});
++
++test('consolidated form preserves former format filters and explains unknown competition status',async()=>{
++ const env=localEnv();try{
++  const get=async value=>(await worker.fetch(new Request('http://localhost/events?'+new URLSearchParams({format:value})),env)).text();
++  const broad=await get('General / social ride');assert.match(broad,/<option value="General \/ social ride" selected>/);assert.match(broad,/does not confirm pace or competitive status/);
++  for(const value of ['Noncompetitive ride','Social / community ride']){
++   const html=await get(value);assert.ok(html.includes('<option value="'+value+'" selected>'));assert.ok(!html.includes('0 matching upcoming events'));
++  }
++ }finally{env._db.close();}
++});

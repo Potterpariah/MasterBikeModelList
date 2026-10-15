@@ -1,8 +1,10 @@
 # Bike Portal — Stage 4.3.2
 
+Current worktree identity, source reconciliation and next outcome: [STATUS.md](STATUS.md). Release and acceptance statements below are historical evidence; they do not authorize continuation or deployment.
+
 The Texas starter set is deployed at `/texas-rides`: two reviewed October events and three technically reviewed guides. Five event records were refreshed; model conflicts are resolved by scope where supported and otherwise remain explicit unknowns. Current Cloudflare version: `be407246-d41f-47b2-b257-1e3b2f0a2be8` (September 18, 2026).
 
-36 automated tests and 29 read-only live HTTP checks passed, plus focused desktop/mobile browser and bundle checks. See [release scope/evidence](docs/PUBLICATION-SET-RELEASE.md), [launch decisions](docs/LAUNCH-DECISIONS.md), [checkpoint](docs/checkpoint.md) and [redeployment](REDEPLOY.md). Test noindex stays enabled; no migrations or seed imports are needed. Operator/contact, policy implementation, owned domain, email delivery and broader live Stage 4 gates remain open.
+36 automated tests and 29 read-only live HTTP checks passed, plus focused desktop/mobile browser and bundle checks. See [release scope/evidence](docs/PUBLICATION-SET-RELEASE.md), [launch decisions](docs/LAUNCH-DECISIONS.md), [current state](STATUS.md) and [redeployment](REDEPLOY.md). Test noindex stays enabled; no migrations or seed imports are needed. Operator/contact, policy implementation, owned domain, email delivery and broader live Stage 4 gates remain open.
 
 The sections below preserve the earlier homepage/setup reference.
 

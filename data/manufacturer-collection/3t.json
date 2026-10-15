@@ -1,0 +1,1933 @@
+{
+  "schema_version": 1,
+  "manufacturer": "3T",
+  "coverage": {
+    "status": "supported_pass_with_gaps",
+    "next_manufacturer": "Allied",
+    "advance_allowed": true,
+    "supported_pass_handoff": {
+      "checked_on": "2026-10-05",
+      "finding": "Current official US inventory reconciled and relevant discovered launch/build leads reviewed against original US catalogs where accessible. 131 minimal-field records retained. Advance to Allied with explicit unresolved evidence gaps; not exhaustive historical completion or all records for every historical year.",
+      "unresolved_gaps": ["Original 2018 Exploro/Strada leaflets unavailable", "PRO Rival Plus, Classified G42 and Desert Sage Levante historical US offers unverified", "Haute Route PRO/TEAM editions documented for France packages, US offer unverified", "Contradictory historical Racemax WPNT GRX 1X12 versus 2X12 source unavailable", "Expired April/May 2020 Strada offer details unavailable", "Historical Primo versus later WPNT generation equivalence unknown", "All 131 model years unknown"],
+      "review_scope": "News indexes triaged through final migrated page; relevant named launch, sale, team/custom and ambiguous leads reconciled. Travel/event/technical articles were not exhaustively read. Index pagination and source migration are not a historical catalog census.",
+      "reopen_condition": "New accessible official US catalog or distributor evidence resolves a gap or establishes a missing complete-bike identity. Do not repeat failed retrievals without changed evidence."
+    },
+    "current_inventory_refresh": {
+      "checked_on": "2026-10-05",
+      "source_url": "https://us.3t.bike/collections/all",
+      "method": "Live official US-USD WebMCP browse_store title-ascending pages 1-6, sequential, product titles manually reviewed; temporary browser closed",
+      "store_products_reviewed": 167,
+      "complete_bike_entries_including_extra_wheelset_bundle": 56,
+      "complete_bike_entries_excluding_extra_wheelset_bundle": 55,
+      "distinct_bike_titles_excluding_extra_wheelset_bundle": 54,
+      "finding": "Reviewed titles match the previously reconciled 54-title current range; no new candidate identity identified. Repeated Primo Rival retained once. Fenders kit, wedge cover, 420mm frame listing, framesets, components, apparel and extra-wheelset bundle not independent bike records.",
+      "limits": "Fresh live title review, not exhaustive history or model-year confirmation. Prior October 2 snapshot/fingerprint preserved as historical evidence, not recomputed by this refresh."
+    },
+    "coverage_audit": {
+      "checked_on": "2026-10-05",
+      "saved_record_count": 131,
+      "saved_model_label_count": 26,
+      "saved_type_count": 3,
+      "records_with_unknown_year": 131,
+      "records_with_non_us_evidence_label": 0,
+      "limits": "Counts and US labels are file checks, not new independent verification of every source. Record schema and normalized keys do not establish exhaustive history or semantic alias equivalence. Current storefront snapshot is dated October 2, not refreshed by this audit.",
+      "remaining_work": [
+        "Refresh current official US title set against saved snapshot before closing supported current coverage.",
+        "Review remaining relevant indexed team/customer leads; do not equate every travel or technical article with a missing factory trim.",
+        "Document unavailable early leaflets/catalogs without repeating identical failed retrievals.",
+        "Resolve or retain explicit US-evidence gaps for PRO Rival Plus, G42, Levante, Atalanta Boost and contradictory WPNT GRX.",
+        "Keep historical Primo versus later WPNT naming-equivalence uncertainty distinct from independently supported saved identities."
+      ]
+    },
+    "live_inventory_review": {
+      "checked_on": "2026-10-02",
+      "source_url": "https://us.3t.bike/collections/all",
+      "method": "Official storefront WebMCP browse_store, collection all, title-ascending, pages 1-6; manual review of titles and product URLs",
+      "store_products_reviewed": 167,
+      "complete_bike_product_entries": 56,
+      "distinct_bike_titles_excluding_extra_wheelset_bundle": 54,
+      "saved_current_record_count": 54,
+      "saved_records_outside_current_inventory": 77,
+      "normalized_title_set_check": "PASS: manually reviewed current titles and saved current subset produce 54 normalized keys and identical FNV-1a comparison fingerprint 032f395f. Normalize NFKC, case, whitespace, multiplication sign and title separator. Fingerprint is a consistency check, not a security hash.",
+      "limitations": "One repeated Primo Rival title retained once. Counts exclude framesets, components and the extra-wheelset bundle. This is a current storefront inventory snapshot, not proof of historical completeness, model years, or physical OEM factory identity."
+    },
+    "notes": [
+      "First-party US product and historical announcement build names. Model years remain null unless explicitly identified; publication dates are not model years.",
+      "Framesets and placeholder products excluded.",
+      "Primo² Rival has two source products with identical required identifiers. One identity record retained; both URLs preserved below. Product differences need identity review.",
+      "Historical completeness and special editions remain unresolved; October 5 supported-pass handoff permits Allied while retaining explicit gaps, not a claim of exhaustive history.",
+      "Earlier web-reader all-products snapshots varied from 152 to 164 products and sometimes showed CA-CAD. Superseded for current title coverage by the live official-store US review documented above: 167 products and 54 distinct bicycle identities. This does not prove historical completeness or stable future inventory.",
+      "Historical BMW Exploro source explicitly names a US launch partner. Strada PRO source names US launch partners. Other retained historical special editions explicitly offer USD purchase or value on the US site; precise model years remain unknown."
+    ],
+    "excluded_source_findings": [
+      {
+        "name": "Earliest index Aqua Blue sponsorship / team assembly",
+        "source_url": "https://us.3t.bike/blogs/news/supply-team-aqua-blue",
+        "related_source_urls": ["https://us.3t.bike/blogs/news/sram-joins-3t-2018-aqua-blue-sport-team-bike-unveiled", "https://us.3t.bike/blogs/news?page=12"],
+        "reason": "Final live migrated index read in browser, 12 entries spanning September 2016-January 2018. Outstanding sponsorship and team-unveiling bodies describe Aqua Blue Strada frame paint and Force 1 assembly, not an additional named US factory retail offering. London reveal and race-season 2018 do not establish a US retail trim or model year. Giveaway already reviewed; remaining index titles are travel/rider or tire-clearance leads, not named factory launches. Index triage is not proof of exhaustive historical catalogs or every linked article review. Temporary tab closed."
+      },
+      {
+        "name": "2018 Q+M and Panaracer/Stan's team bikes",
+        "source_url": "https://us.3t.bike/blogs/news/meet-the-3t-qm-team",
+        "related_source_urls": ["https://us.3t.bike/blogs/news/meet-the-panaracer-stans-notubes-p-b-bicycle-x-change-3t-gravel-team"],
+        "reason": "Reviewed official team introductions. Michigan Q+M article describes riders' Exploro/Strada builds; Panaracer article describes US racing on custom-design Exploro FM. Neither establishes a separate named factory retail trim. US team presence is not sufficient evidence for another catalog configuration; no team names, custom finishes or roster years added."
+      },
+      {
+        "name": "Page-10 Diamond / Future bike essays / Innsbruck demo",
+        "source_url": "https://us.3t.bike/blogs/news/get-creative-suspended-glitter",
+        "related_source_urls": ["https://us.3t.bike/blogs/news/the-road-bike-of-the-future-1-2", "https://us.3t.bike/blogs/news/the-bike-of-the-future-2-2", "https://us.3t.bike/blogs/news/test-3t-bikes-at-the-worlds-in-innsbruck"],
+        "reason": "Reviewed four outstanding page-10 leads. Diamond in the Rough is an individually commissioned Fat Creations paint/assembly project, not a factory edition. Future-bike essays discuss known Exploro design and expressly same-spec Green/Black TEAM Force paint; V2 mention does not name an additional US retail trim. Innsbruck advertises Austrian demo rides of existing Strada/Exploro without new named configurations or US retail evidence. No custom paint, wheel swaps, demo builds or dates added as identities."
+      },
+      {
+        "name": "Page-9 history, cages, ambassador and race leads",
+        "source_url": "https://us.3t.bike/blogs/news/be-first",
+        "related_source_urls": ["https://us.3t.bike/blogs/news/left-front-right", "https://us.3t.bike/blogs/news/preparing-for-from-zero-to-mount-everest-1", "https://us.3t.bike/blogs/news/mattia-de-marchi-wins-ultracycling-dolomitica-2019", "https://us.3t.bike/blogs/news/trip-of-the-month-escape-from-austria"],
+        "reason": "Reviewed five outstanding potentially ambiguous page-9 leads. BE FIRST is a company/component chronology referencing known Exploro, Strada and Due introductions, not named additional US complete builds. Left Front Right introduces bottle cages only. Everest and Dolomitica describe ambassador/racer activity, not extra US retail trims. Escape from Austria explicitly identifies a Vienna shop's personal ambassador build. No component names, event/date years, colors or shop-built configurations added as factory bike identities."
+      },
+      {
+        "name": "2019 Strada Mountain Champion / World Championships / Hottubes",
+        "source_url": "https://us.3t.bike/blogs/news/strada-mountain-champion",
+        "related_source_urls": ["https://us.3t.bike/blogs/news/strada-medals-at-world-championships", "https://us.3t.bike/blogs/news/hottubes-for-the-win"],
+        "reason": "Reviewed all three remaining page-8 technical/champion/team leads. Mountain Champion proposes owner drivetrain modifications to existing Strada PRO/TEAM and AXS bikes, not a named new factory trim. World Championships describes sponsored Strada PRO 1x11 race use; Hottubes describes US team sponsorship/racing, not a separate retail factory offering. US race presence alone does not establish another complete-bike trim. No race titles, modification combinations or event years added as bike identities."
+      },
+      {
+        "name": "Cole Coatings Workshop Strada",
+        "source_url": "https://us.3t.bike/blogs/news/get-creative-cole-coatings-workshop",
+        "reason": "Direct official browser article verifies London workshop's individually commissioned RTP Strada paint project. Body explicitly contrasts client-selected finish with factory finish; no named additional factory US complete-bike trim or model year. Earlier reader's unrelated current text superseded. Temporary tab closed."
+      },
+      {
+        "name": "Orca Pod and reviewed 2018 Get Creative projects",
+        "source_url": "https://us.3t.bike/blogs/news/get-creative-orca-pod",
+        "related_source_urls": ["https://us.3t.bike/blogs/news/get-creative-australian-gold", "https://us.3t.bike/blogs/news/get-creative-rolling-dreamers", "https://us.3t.bike/blogs/news/get-creative-ard-kessels-at-kogel", "https://us.3t.bike/blogs/news/get-creative-ross-piper", "https://us.3t.bike/blogs/news/get-creative-tour-de-france-on-limited-edition", "https://us.3t.bike/blogs/news/get-creative-velovas-paint-co-part-1-2", "https://us.3t.bike/blogs/news/get-creative-larry-warbasses-exploro-part-1-2"],
+        "reason": "Direct official Orca Pod browser body confirms a personally commissioned RTP Exploro frame before assembly; temporary tab closed. Other reviewed official bodies identify one-of-one Australian owner paint, Rolling Dreamers visual-identity paint, Kogel show bike, artist-painted RTP, Flecha Tour paint project, Velovas RTP and Warbasse custom RTP. None establishes an additional named factory US retail trim. Limited Edition in an article title alone does not prove retail offering. No custom-paint/component identities added."
+      },
+      {
+        "name": "2019 Gold in the Dark / Orange / Divide / Barca / Spray It",
+        "source_url": "https://us.3t.bike/blogs/news/get-creative-gold-in-the-dark",
+        "related_source_urls": ["https://us.3t.bike/blogs/news/get-creative-orange", "https://us.3t.bike/blogs/news/get-creative-my-bike-for-the-divide", "https://us.3t.bike/blogs/news/get-creative-visca-el-barca", "https://us.3t.bike/blogs/news/get-creative-spray-it"],
+        "reason": "Official bodies explicitly identify RTP custom painting, shop owner's individually painted Strada, artist's personal Exploro, Barcelona client's one-off design and repainting a used LTD. No additional named factory complete-bike trim established. Custom paint names and rebuilt equipment not new canonical records."
+      },
+      {
+        "name": "2018 Exploro Flatmount / Strada paint / Festive500 prize",
+        "source_url": "https://us.3t.bike/blogs/news/new-exploro-model",
+        "related_source_urls": ["https://us.3t.bike/blogs/news/strada-paint-options-explained", "https://us.3t.bike/blogs/news/yes-give-away-3t-exploro-bike"],
+        "reason": "March 2018 announcement introduces TEAM/LTD framesets and suggests retailer assembly, not named factory complete builds. January paint article offers stock frames, team-replica frames and RTP, not extra complete-bike trims. December 2017 giveaway names Exploro TEAM with wheel/tire descriptions but no drivetrain trim or explicit US retail offer. Contest edition/date is not bicycle model year. No unsupported complete-bike identities inferred."
+      },
+      {
+        "name": "April 2019 Exploro Force AXS demo / July 2018 Strada Due launch",
+        "source_url": "https://us.3t.bike/blogs/news/introducing-new-sram-etap-models",
+        "related_source_urls": ["https://us.3t.bike/blogs/news/introducing-the-strada-due"],
+        "reason": "April Force launch explicitly says no factory Exploro Force eTap AXS offered at that time; pictured SRAM demo and proposed retailer frameset assembly are not another factory trim. July Due launch offers TEAM frameset and race-team use, not a named retail complete-bike build; later verified Due complete bikes remain saved separately. No launch-year inference."
+      },
+      {
+        "name": "2019 Get Creative customer-paint builds",
+        "source_url": "https://us.3t.bike/blogs/news/get-creative-regroup-giraffacorn",
+        "related_source_urls": ["https://us.3t.bike/blogs/news/get-creative-isaacs-rejuvenated-exploro", "https://us.3t.bike/blogs/news/get-creative-black-knight", "https://us.3t.bike/blogs/news/get-creative-razzle-dazzle", "https://us.3t.bike/blogs/news/get-creative-contenders-baby-blue", "https://us.3t.bike/blogs/news/get-creative-io-sono-etrusco"],
+        "reason": "Reviewed all six official article bodies. Giraffacorn is a repainted demo bike; Isaac personally repaints and rebuilds his used Exploro; Black Knight and Razzle Dazzle are customer custom paint; Contender Baby Blue is owner-selected paint (owner suggests a future limited edition, not an existing factory offer); Io Sono Etrusco describes painted frame before deciding components. US retailers/riders in some stories establish local custom work, not extra named 3T factory complete-bike trims. No paint-based identities, inferred years or custom-component trims added."
+      },
+      {
+        "name": "Strada Mountain Champion / Hottubes championship stories",
+        "source_url": "https://us.3t.bike/blogs/news/strada-mountain-champion",
+        "related_source_urls": ["https://us.3t.bike/blogs/news/strada-medals-at-world-championships", "https://us.3t.bike/blogs/news/hottubes-for-the-win"],
+        "reason": "Reviewed official 2019 bodies. Mountain Champion is gearing-modification advice for existing Stradas, not a new bicycle model/trim. Championship and Hottubes stories establish team use, including US racing, but no additional named retail configuration. Strada Pro/Force references concern existing platforms. Do not convert suggested component swaps, athlete nationality, race season or team sponsorship into factory US trim/model-year records."
+      },
+      {
+        "name": "Expired 2020 Strada and Bergamo fundraising offers",
+        "source_url": "https://us.3t.bike/blogs/news/road-bike-action-special-offer",
+        "related_source_urls": ["https://us.3t.bike/blogs/news/special-offer-strada-carbon-wheels", "https://us.3t.bike/blogs/news/3t-elite-zwift-special-offer"],
+        "reason": "Reviewed original official migrated article bodies. May Strada discount and April special-offer bodies now say only expired; surviving March fundraising recap mentions Elite and Discus wheel offers without named complete-bicycle trims. Current recommendation cards are not historical offer content. No additional bike/year inferred from article titles, sale bundles or erased offer details. Historical configuration details remain unavailable in these current bodies."
+      },
+      {
+        "name": "Cody Mann Exploro LTD dream build",
+        "source_url": "https://us.3t.bike/blogs/news/dream-builds-3t-ambassador-cody-manns-exploro-ltd",
+        "reason": "Official May 2020 story explicitly describes an ambassador's personally selected frame/components assembled by his mechanic friend. Colorado riding establishes rider location, not a named factory US retail configuration. Do not create an LTD GRX Di2 2X trim from this custom build or infer a model year."
+      },
+      {
+        "name": "Strada THM Project bike",
+        "source_url": "https://us.3t.bike/blogs/news/strada-thm-project-bike",
+        "reason": "Official September 2019 article offers a limited frame kit and custom SRAM/Shimano assembly options, not a verified named US factory complete-bike offer. Named launch retailers are outside the US. Suggested-build global link now redirects to modern Strada WPNT, not the historical offer. THM components and Concept3 paint do not establish an additional bicycle identity. US availability remains unverified; no record or model year inferred."
+      },
+        {
+          "name": "Aqua Blue Sport Strada / Larry Warbasse champion paint",
+          "source_url": "https://us.3t.bike/blogs/news/sram-joins-3t-2018-aqua-blue-sport-team-bike-unveiled",
+          "reason": "Official November 2017 announcement describes a SRAM Force1 team-supply bicycle unveiled in London, not a named US retail offer. Companion official training-camp article describes mechanics building team bikes and custom painting ready-to-paint frames. Rider US nationality/champion status and 2018 team season do not establish US-market trim or model year. No additional record added."
+        },
+        {
+          "name": "Racemax Italia XXX / RTP / Rosso / Verde / Blu",
+          "source_url": "https://web.archive.org/web/20230404224940/https://3tmadeinitaly.bike/",
+          "reason": "Linked official Italia microsite describes these as carbon-finish/painting options. Its five complete-bike drivetrain offerings match already retained Racemax ITALIA records. No color/finish-based or component-only records added. Archived US bike-index lookup requested near 2024 actually returns capture 20230328154801, not evidence of a 2024 catalog."
+        },
+      {
+        "name": "Exploro PRO Rival Cherry",
+        "source_url": "https://us.3t.bike/blogs/news/exploro-pro-rival",
+        "reason": "Official November 2021 announcement describes Cherry as refreshed color. Not a separate color-based identity; reused PRO Rival build naming remains in historical review."
+      },
+      {
+        "name": "Atalanta Exploro Special Edition",
+        "source_url": "https://us.3t.bike/blogs/news/atalanta-exploro-special-edition",
+          "reason": "Announcement alone establishes only euro prices and Bergamo distribution. Later resolved for RaceMax Ekar complete bike by official US catalog capture 20220124064330 with explicit USD assembled-bike offer; added once. Boost/GRX US offering remains unverified."
+      },
+      {
+        "name": "Racemax Founders Edition",
+        "source_url": "https://us.3t.bike/blogs/news/frame-building-is-coming-home",
+        "reason": "Official June 2021 USD offer covers the limited frame with fork and seatpost, not a specified complete bicycle. No complete-bike record added."
+      },
+      {
+        "name": "Strada Haute Route Special Edition",
+        "source_url": "https://us.3t.bike/blogs/news/3t-strada-official-bike-of-the-haute-route",
+        "reason": "Official June 2018 announcement offers PRO/TEAM bicycle packages tied to French events in euros. North American event references do not establish a US-market bicycle offering. Not verified as a US record."
+      }
+    ],
+    "pending_sources": [
+      "https://company.3t.bike/wp-content/uploads/2018/08/3T-Exploro-leaflet.pdf",
+      "https://company.3t.bike/wp-content/uploads/2018/08/3T-Strada-leaflet.pdf",
+      "https://us.3t.bike/blogs/news?page=11",
+      "https://us.3t.bike/blogs/news?page=12",
+      "https://us.3t.bike/blogs/news?page=10",
+      "https://us.3t.bike/blogs/news?page=9",
+      "https://us.3t.bike/blogs/news?page=8",
+      "https://us.3t.bike/blogs/news?page=7",
+      "https://us.3t.bike/blogs/news/new-exploro-pro-rival",
+      "https://us.3t.bike/products/racemax-wpnt-grx-1x12"
+    ],
+    "identity_review": [
+      {
+        "names": ["Strada PRO Haute Route Special Edition", "Strada TEAM Haute Route Special Edition"],
+        "source_url": "https://us.3t.bike/blogs/news/3t-strada-official-bike-of-the-haute-route",
+        "issue": "Official June 2018 body names two complete-bike packages, but explicitly ties offers to France events with euro pricing. North America is mentioned only as event-series geography, not these bike offers. Migrated US header does not establish historical US availability. Preserve genuine complete-bike discovery leads here, not confirmed US records; no event/publication year inferred as model year."
+      },
+      {
+        "names": ["May 2020 Strada discount offer", "April 2020 Special Offer"],
+        "source_url": "https://us.3t.bike/blogs/news/road-bike-action-special-offer",
+        "related_source_urls": ["https://us.3t.bike/blogs/news/special-offer-strada-carbon-wheels"],
+        "issue": "Reviewed both remaining sale leads from news page 7. Current official bodies have replaced original offer details with expired-offer notices and identify no recoverable factory model/trim or historical US transaction terms. Slug carbon-wheels is not sufficient build evidence. No new records or model years inferred. Historical offer content remains unavailable in these bodies, not proof that no other trim existed."
+      },
+      {
+        "names": ["EXPLORO RACEMAX BOOST DROPBAR", "EXPLORO BOOST RACE GRX DROPBAR", "EXPLORO RACEMAX BOOST FLATBAR", "EXPLORO BOOST MAX GRX FLATBAR"],
+        "source_url": "https://web.archive.org/web/20220507181646/https://us.3t.bike/en/236-boost-dropbar",
+        "related_source_urls": ["https://web.archive.org/web/20230328151806/https://us.3t.bike/en/236-boost-dropbar", "https://web.archive.org/web/20230328155103/https://us.3t.bike/en/237-boost-flatbar"],
+        "issue": "Resolved as earlier headings for retained RACE GRX DROPBAR and MAX GRX FLATBAR, respectively. Direct original US archive bodies agree on RaceMax BOOST frame, X35 system, GRX RX-812 mechanical 11-speed, GRX 40T crank and Discus 45|40 wheels; each corresponding cockpit also matches. Later price change is not another trim. No extra record or inferred model year; retain all heading aliases here. Temporary research tab closed."
+      },
+      {
+        "names": ["Exploro Racemax Boost ULTRALIGHT", "Racemax Boost ITALIA SUPERLIGHT"],
+        "source_url": "https://web.archive.org/web/20220507181646/https://us.3t.bike/en/236-boost-dropbar",
+        "issue": "Original US catalog separately names ULTRALIGHT with USD complete-bike offer and assembled delivery. Frame is Exploro RaceMax - BOOST, not ITALIA. Retain Racemax Boost / ULTRALIGHT separately from later verified ITALIA SUPERLIGHT. Equipment confirms factory build but is not additional stored fields; archive capture date is not model year."
+      },
+      {
+        "names": ["3T for Atalanta Exploro Boost flatbar"],
+        "source_url": "https://web.archive.org/web/20220507181646/https://us.3t.bike/en/236-boost-dropbar",
+        "issue": "Resolved US offering: original US catalog names Atalanta Boost flatbar with USD offer, assembled delivery and GRX configuration. Actual May 7 capture, not requested April date. Save Electric gravel / Exploro / FOR ATALANTA BOOST FLATBAR once; delivery date not model year. Dropbar page has flatbar selector, not evidence of Atalanta dropbar variant. Earlier US gap superseded. Ultralight heading in same catalog remains for comparison against retained later Boost range."
+      },
+      {
+        "names": ["Racemax WPNT GRX 1X12 archive gap", "Official Archive navigation"],
+        "source_url": "https://us.3t.bike/products/racemax-wpnt-grx-1x12",
+        "issue": "Focused Wayback lookup requested 20250601 reports exact URL unarchived. Live 404 plus archive absence leaves former contradictory 1X/2X content unresolved, not evidence market absence or equivalence. Do not repeat this exact archive query. Official product navigation ARCHIVE leads to /pages/black-friday, a current sale page, not historical manuals/catalog archive: names existing Primo WPNT Apex and Racemax Integrale WPNT GRX Di2 offerings, excludes Primo frameset, extra-wheelset bundles and apparel. No new identity inferred from discount or Archive label."
+      },
+      {
+        "names": ["Source queue reconciliation", "Racemax WPNT GRX 1X12"],
+        "source_url": "https://us.3t.bike/products/racemax-wpnt-grx-1x12",
+        "issue": "Fresh direct check returns 404; former 1X order-title/Di2 2X body conflict unresolved, no speculative record. Original archive/source correction still needed. Removed completed Primo announcement and obsolete all-products page-9 task. Older combined Strada conflict note is superseded by resolved Force and Red individual-product findings above, not a remaining task. Evidence preserved."
+      },
+      {
+        "names": ["Strada ITALIA RED XPLR AXS 1X13 PM ZIPP 353 NSW", "Strada ITALIA RED XPLR AXS 1X13 TORNO ZIPP 353 NSW", "Strada ITALIA RED XPLR AXS 1X13 ZIPP 353 NSW"],
+        "source_url": "https://web.archive.org/web/20250123025047/https://us.3t.bike/products/strada-italia-red-xplr-axs-1x13-353-nsw",
+        "issue": "Resolved: original official product title omits crank suffix; Crankset body explicitly says chosen while placing order, Torno or SRAM Red E1 AXS Power Meter. PM/Torno expanded snapshot names map to one retained Red/Zipp identity, not two extra factory titles. Actual returned January 23 capture documented, not requested February date. Archive shows CAD; existing official December launch USD body establishes US offering independently. Part 2 launch describes tested Torno but does not erase Power Meter option verified here. Preserve option labels as aliases, no specifications/year collected. Temporary tab closed."
+      },
+      {
+        "names": ["Strada ITALIA FORCE E1 XPLR AXS 1X13 SHARQ 42", "Strada ITALIA FORCE XPLR AXS 1X13 SHARQ 42", "Strada ITALIA FORCE XPLR AXS 1X13 SHARQ 57", "Strada ITALIA FORCE 1X13 XPLR SHARQ"],
+        "source_url": "https://us.3t.bike/products/strada-italia-force-1x13-xplr-sharq",
+        "issue": "Current official USD product directly resolves Force naming at required-field scope: title FORCE 1X13 XPLR SHARQ, body explicitly names E1 and says Sharq 42 or 57 chosen while ordering. Same product/platform, selectable wheels, not three additional trims. Retain existing canonical FORCE 1X13 XPLR SHARQ; preserve expanded names as aliases. Collection confirms six already saved ITALIA/ITALIA_X complete-bike titles plus two excluded framesets. Red PM/Torno old-title distinction still needs source evidence; this Force result does not resolve it. No model year inferred."
+      },
+      {
+        "names": ["Post-launch US TEAM Ekar catalog", "Desert Sage Levante edition"],
+        "source_url": "https://web.archive.org/web/20220603164947/https://us.3t.bike/en/217-exploro-proteam",
+        "issue": "Focused June 2022 lookup resolves actual June 3 capture, after May Levante announcement. Official US catalog lists six already retained build headings: PRO Rival, TEAM Rival AXS 1X, TEAM Ekar 1X13, TEAM Rival AXS 2X, TEAM Force/Eagle eTAP, PRO GRX 2X. TEAM Ekar body names Fulcrum wheels, not Levante; no separate Levante heading in this capture. USD complete-bike offers corroborate base builds. This catalog does not verify US Levante edition and its absence does not prove never sold. No optional-wheel trim inferred; browser tab closed."
+      },
+      {
+        "names": ["Exploro TEAM Desert Sage Ekar Levante edition"],
+        "source_url": "https://us.3t.bike/blogs/news/limited-edition-exploro-desert-sage-with-carbon-levante-wheels",
+        "issue": "Official May 2022 body names a produced limited complete-bike edition, not merely a customer wheel upgrade, but only euro/VAT offer and generic delivery/dealer availability. No explicit US territory/distributor evidence in body; migrated US storefront header alone insufficient. Base TEAM EKAR 1X13 already saved. Do not infer US Levante-edition trim or model year; preserve named edition as unresolved lead, not component-only entry or automatic alias."
+      },
+      {
+        "names": ["Historical Primo Apex XPLR AXS", "Primo WPNT APEX XPLR AXS 1X12 700c CARBON"],
+        "source_url": "https://us.3t.bike/blogs/news/the-primo-welcomes-the-apex-xplr",
+        "issue": "Historical official body explicitly names Primo, Apex XPLR AXS and 1X wireless setup with US-dollar Americas offer. Save historical Primo APEX XPLR AXS 1X under source's model/build wording; no inferred speed/wheel detail or model year. Later named WPNT CARBON model/title remains separate pending generation equivalence, not silently merged merely because both use Apex. Previous uncertainty about equivalence must not suppress the independently supported historical identity. Existing October 2023 US archive is corroboration; exact selector archive failure does not negate offer."
+      },
+      {
+        "names": ["Cole Coatings historical reader gap resolved"],
+        "source_url": "https://us.3t.bike/blogs/news/get-creative-cole-coatings-workshop",
+        "issue": "Direct visible article body checked; custom RTP paint exclusion saved. Earlier queue notes marking this article unreviewed are historical and superseded. No new canonical bicycle."
+      },
+      {
+        "names": ["Orca Pod reader gap resolved", "Cole Coatings Workshop reader gap"],
+        "source_url": "https://us.3t.bike/blogs/news/get-creative-orca-pod",
+        "issue": "Orca Pod historical body directly verified in browser; earlier unrelated reader output superseded, custom-frame exclusion saved. Cole Coatings Workshop reader similarly returns unrelated current marketing instead of article body; do not classify from title alone. Direct official source remains https://us.3t.bike/blogs/news/get-creative-cole-coatings-workshop for next focused check."
+      },
+      {
+        "names": ["Early official 2018 leaflet retrieval", "Orca Pod source"],
+        "source_url": "https://company.3t.bike/wp-content/uploads/2018/08/3T-Strada-leaflet.pdf",
+        "issue": "Both queued leaflets timed out on repeated page-reader attempt; bounded direct public Strada PDF retrieval also ended with host connection failure, not a live process. No full-document facts inferred from snippets. Do not repeat identical fetches without alternate reader/source change. Orca Pod reader response showed unrelated current marketing text rather than historical custom-build body; remains unreviewed, no exclusion/addition asserted."
+      },
+      {
+        "names": ["Exploro TEAM Force Green", "Exploro TEAM Force Black"],
+        "source_url": "https://us.3t.bike/blogs/news/the-bike-of-the-future-2-2",
+        "issue": "Official December 2018 body expressly says Black repeat production has same specification as Green TEAM Force. Both map to retained TEAM FORCE, no paint-based duplicate. Focused early official source search also surfaced two 2018 leaflets; direct full-PDF fetch timed out. Search snippets are leads only, not complete catalog review or additional US build/year evidence; exact URLs queued."
+      },
+      {
+        "names": ["Strada TEAM Ekar Grey/Gold", "Exploro RaceMax GRX 1X11 650b", "Exploro RaceMax Rival AXS 2X 700c", "Exploro RaceMax Enough Frameset"],
+        "source_url": "https://us.3t.bike/blogs/news/3t-showroom-and-display-bike-sale",
+        "issue": "Official August 2022 USD sale confirms already retained Strada TEAM EKAR 1X13, Exploro MAX GRX 1X and RACE RIVAL AXS 2X identities at required-field scope; generic RaceMax wording does not override explicit historical RACE/MAX catalog headings. Ekar Shamal wheels and paint not extra records. Enough is expressly frameset, excluded. Rival 2X heading conflicts with adjacent image label TEAM Rival 1x; use heading plus earlier original catalog, not image label as new trim. Publication/current-year wording not explicit model year."
+      },
+      {
+        "names": ["Earliest migrated archive pages 11/12"],
+        "source_url": "https://us.3t.bike/blogs/news?page=12",
+        "issue": "Reached final migrated index, with earliest listed article September 2016. Page boundaries overlap/shift across reader snapshots; pagination is not a stable historical catalog. Page 11 Strada PRO launch rechecked against retained PRO FORCE 1 with official US launch partners. Flatmount/paint/prize exclusions saved separately. Remaining customer/team stories and original earlier catalogs may supply leads; reaching final index does not prove exhaustive 2016 launch coverage or all article review."
+      },
+      {
+        "names": ["2019 SRAM launches / 2018 Exploro TEAM Force"],
+        "source_url": "https://us.3t.bike/blogs/news/new-sram-red-12-sp-models",
+        "related_source_urls": ["https://us.3t.bike/blogs/news/introducing-new-sram-etap-models", "https://us.3t.bike/blogs/news/new-exploro-team-force", "https://us.3t.bike/blogs/news/introducing-the-exploro-speed"],
+        "issue": "Rechecked Red launch: named Strada TEAM Red 1X12, Exploro LTD Red 2X12 and Due Red 2X12 are retained; body explicitly lists US launch retailers. April Force Strada/Due builds also already retained. January Speed launch describes TEAM/LTD and optional Torno, reconciled by retained original US catalog headings, not inferred upgrade records. October 2018 TEAM Force launch matches existing TEAM FORCE; Racing Green is paint, not another trim. Archive pages 9/10 triaged, not all linked articles checked."
+      },
+      {
+        "names": ["NEOS 3T OPTION A", "NEOS 3T OPTION B", "Strada Team Stealth"],
+        "source_url": "https://us.3t.bike/blogs/news/introducing-neos-3t",
+        "issue": "Official offer explicitly provides US shipping and two complete-bicycle builds bundled with storage furniture. Save missing Strada TEAM FORCE 1X11 mechanical identity; electronic Force 1X12 AXS is already retained FORCE ETAP AXS 1X12, so preserve TEAM/Stealth offer wording here rather than duplicate. Stealth here describes black/yellow paint; NEOS identifies furniture collaboration, not new bike manufacturer/model. Components used only to distinguish named builds, not collected specification fields. May order/July delivery dates are not model years."
+      },
+      {
+        "names": ["Strada Due Ultegra Di2 launch"],
+        "source_url": "https://us.3t.bike/blogs/news/new-strada-due-ultegra-di2",
+        "issue": "Rechecked official announcement; matches retained Strada Due TEAM ULTEGRA Di2 configuration. Limited 2019 production statement is not explicit US model-year evidence. No duplicate or inferred year."
+      },
+      {
+        "names": ["Exploro TEAM FORCE/EAGLE ETAP", "Exploro TEAM FORCE/EAGLE ETAP TORNO"],
+        "source_url": "https://us.3t.bike/blogs/news/the-most-capable-exploro-is-here",
+        "issue": "Resolved distinct factory titles: original official US capture 20191114190555/en/218-exploro-speed simultaneously lists TEAM FORCE/EAGLE eTAP and TEAM FORCE/EAGLE eTAP Torno as separate complete-bike headings. First has SRAM Force crank; second expressly Special Edition with Torno. The omission is not merely alias wording. Retain both existing identities, without collecting specifications or inferring years. July launch describes the Torno limited build, not all Force/Eagle bikes. Direct page-reader failed; visible browser catalog verified and temporary tab closed."
+      },
+      {
+        "names": ["News archive page 8 historical build leads"],
+        "source_url": "https://us.3t.bike/blogs/news?page=8",
+        "issue": "Index triaged December-July 2019. Rechecked New entry point for Exploro: USD PRO Rival offer already saved. Rechecked Most capable Exploro: Force/Eagle Torno represented, but paired catalog alias needs comparison above. PRO GRX and THM previously reconciled. Champion/team and ready-to-paint stories remain discovery leads, not automatic factory US trims. Index triage is not full linked-article review."
+      },
+      {
+        "names": ["News archive page 7 historical build leads"],
+        "source_url": "https://us.3t.bike/blogs/news?page=7",
+        "issue": "Index triaged June 2020 through December 2019. Rechecked PRO 105 2X11: same already retained PRO SHIMANO 105 identity. Rechecked Frank Schleck Custom: explicitly offered USD complete bike, already retained special edition, not an additional custom trim. Cody Mann LTD is personal assembly, separately excluded. Speed, BMW, Concept3 and PRO Rival are already represented or in existing review. Sale/special-offer articles and earlier archive pages still require focused review; index remains pending rather than claiming every linked article checked."
+      },
+      {
+        "names": ["Exploro PRO GRX", "Exploro PRO GRX mechanical 1X"],
+        "source_url": "https://us.3t.bike/blogs/news/introducing-the-exploro-pro-grx",
+        "issue": "Reviewed official September 2019 announcement: general GRX groupset availability in mechanical/Di2 and 1X/2X is not four factory bicycle trims. The article selects one mechanical 1X PRO GRX build, already retained with separate original official US catalog evidence. Grey/blue is paint, not another identity. References to the global 2020 road range do not establish US model years or additional US offerings. No record added."
+      },
+      {
+        "names": ["Primo Apex XPLR AXS historical selector"],
+        "source_url": "https://us.3t.bike/blogs/news/the-primo-welcomes-the-apex-xplr",
+        "issue": "Announcement's original US selector /en/217-exploro-primo?highlight=primo-apex-xplr-axs-1x12-700c now redirects to modern Primo collection. Focused Wayback lookup requested at 20240601 reports this exact selector unarchived. Do not repeat that lookup or interpret archive absence as market absence. Existing October 2023 US catalog establishes historical Apex; equivalence with later WPNT CARBON identity remains unresolved. No duplicate or inferred year added."
+      },
+      {
+        "names": ["Racemax Italia EVO", "Racemax Italia RED XPLR AXS 1X13 ZIPP 303 XPLR SW"],
+        "source_url": "https://us.3t.bike/blogs/news/evo-special-edition-the-racemax-italia-is-now-udh-ready/",
+        "issue": "Historical US offer resolved by original official US product capture 20250212224619. Page displays CA/CAD, but its expanded product TAX & Duties section explicitly includes US and Canada orders, establishing US availability independently of domain/currency alone. Save named Racemax ITALIA RED XPLR AXS 1X13 ZIPP 303 XPLR SW once; EVO is expressly a colourway and Project X another finish. Torno/Power Meter are selectable crank choices under this one named historical title, not inferred extra trims. Do not merge into current Racemax squared ITALIA_X without generation/name equivalence evidence. Years remain null. The two related older GRX Di2 2X12 and Force XPLR 1X12 named complete bikes were separately verified and saved from captures 20250123045545 and 20250213001007 with the same explicit US product terms. UDH compatibility, serial cutoffs and other specifications are not collected fields."
+      },
+      {
+        "names": ["EXTREMA ITALIA RIVAL GX EAGLE AXS", "EXTREMA ITALIA TORNO RIVAL GX EAGLE AXS DROPPER POST", "EXTREMA ITALIA TORNO FORCE D2 XX SL EAGLE AXS DROPPER POST 1961", "EXTREMA ITALIA TORNO FORCE D2 XX SL EAGLE AXS DROPPER POST PROJECT X"],
+        "source_url": "https://web.archive.org/web/20240229154400/https://us.3t.bike/en/243-extrema-italia",
+        "issue": "Original official US catalog verifies four complete-bike headings with explicit USD offers and assembled-bike delivery, plus one excluded frameset. Save three build identities: base Rival, named Torno Rival dropper, and named Torno Force D2 XX SL dropper. Force D2 1961 and Project X listings have matching named platform/drivetrain/Torno/dropper/wheel build; descriptions identify paint/finish differences, so keep both labels here with one finish-neutral identity. D2 is not merged with later retained E1 without equivalence evidence. Mercurio/Terra colors and sizes are not records. Capture/publication dates and promised summer 2024 crank delivery do not establish model year. Migrated launch global links alone were insufficient US proof."
+      },
+      {
+        "names": ["Racemax G42 Launch Edition", "Racemax RIVAL AXS 1X12 CLASSIFIED G42"],
+        "source_url": "https://us.3t.bike/blogs/news/classified-g42-launch-edition-gravel-adventures-on-another-level",
+        "issue": "Official announcement links a named Racemax bicycle configuration, not only the G42 wheelset. Linked original global selector is https://www.3t.bike/en/223-exploro-racemax?highlight=racemax-rival-axs-1x12classified-g42; now redirects to inaccessible modern collection. Focused original US archive lookup near November 2023 resolves to actual May 29, 2023 capture https://web.archive.org/web/20230529215043/https://us.3t.bike/en/223-exploro-racemax, with only Force 1X12, Rival 2X12 and Force 2X12 complete-bike headings, before this launch. No US G42 offer established; do not treat early capture absence as proof it never existed. Focused official US search yielded no additional source. Remains pending; no year inferred or bicycle/component-only record added."
+      },
+      {
+        "names": ["Racemax Boost Italia 1961", "Racemax Boost ITALIA RIVAL XPLR AXS 1X12 DISCUS 45/40"],
+        "source_url": "https://us.3t.bike/blogs/news/legacy-resurrected-introducing-3ts-racemax-boost-italia-1961",
+        "issue": "Resolved as finish-edition naming at required-field scope: official body explicitly describes mint/coral paint and vintage logo on the already retained Rival XPLR/Discus 45/40 named platform/build. Preserve 1961 here as finish alias, not a separate canonical bicycle or model year. This does not claim identical all-spec equipment or independently prove historical US distribution. No additional record."
+      },
+      {
+        "names": ["Strada ITALIA RIVAL AXS 2X12 CARBON WHEELS","Strada ITALIA ULTEGRA Di2 2X12 3T DISCUS WHEELS","Strada ITALIA FORCE D2 2X12 3T DISCUS WHEELS","Strada ITALIA FORCE D2 2X12 3T DISCUS WHEELS PROJECT X","Strada ITALIA RED E1 AXS 2X12 ZIPP 353 NSW PROJECT X"],
+        "source_url": "https://web.archive.org/web/20240519131255/https://us.3t.bike/en/246-strada-italia",
+        "issue": "Resolved five distinct named complete-bike offers in original official US catalog, with explicit US-dollar offers and assembly/unboxing evidence. Retained exact catalog trim headings under Strada ITALIA; no date-based model year. Force D2 Project X is a separately named factory configuration with Carbon Ti hub description, not just a selectable color; retain this named build, without collecting equipment specifications. Project X alone is not a new model, nor assumed equivalent to later ITALIA_X. Frameset excluded."
+      },
+        {
+          "names": ["Racemax RIVAL AXS 2X12 700C", "Racemax EKAR 1X13 700C", "Racemax EKAR 1X13 650B", "Racemax FORCE AXS 1X 700C", "Racemax EAGLE AXS 1X 650B", "Racemax FORCE AXS 2X 700C"],
+          "source_url": "https://web.archive.org/web/20220817060639/https://us.3t.bike/en/223-exploro-racemax",
+          "issue": "Resolved at required-field scope. Shared product IDs confirm RACE Ekar -> Racemax Ekar 700C (749) and RACE Force 2X -> Racemax Force 2X 700C (722). Official build-body comparisons confirm same named RaceMax platform and Rival AXS 2X12/700C, Ekar 1X13/650B, Eagle AXS 1X/650B identities for retained RACE Rival, MAX Ekar and MAX Eagle; preserve later names as aliases, not equipment-based duplicates. Earlier cart IDs unavailable for these three, so no claim of identical storefront IDs or all physical specs. Named Racemax FORCE AXS 1X 700C (949) without TORNO is separately saved from earlier TORNO trim. Racemax FRAME excluded; model years unknown."
+        },
+        {
+          "names": ["NEW STRADA RIVAL XPLR 1X12", "NEW STRADA RIVAL AXS 2X12", "NEW STRADA FORCE AXS 2X12"],
+          "source_url": "https://web.archive.org/web/20230325061119/https://us.3t.bike/en/219-new-strada",
+          "issue": "Official US New Strada catalog offers three distinct named complete-bike builds. Saved under canonical Strada model with exact drivetrain trim labels; New retained here as catalog-generation wording, not another manufacturer/model-year or alias duplicate. Earlier Strada Due records remain separate named model identities. Capture date does not establish year."
+        },
+        {
+          "names": ["Exploro Primo Rival 1x11", "Exploro Primo Ekar 1x13", "Exploro Primo Rival AXS XPLR 1x12", "Primo Apex XPLR AXS"],
+          "source_url": "https://web.archive.org/web/20231023161414/https://us.3t.bike/en/217-exploro-primo",
+          "issue": "Three rename aliases resolved at required-field scope using US captures 20220320140135 and 20231023161414 plus official formerly-Exploro statement. Rival 1x11 shares product 921 with PRO Rival; Ekar 1x13 shares 751 with TEAM Ekar. Rival AXS uses different IDs (920 versus 1088), but both official configuration bodies name Exploro TEAM frame and Rival AXS XPLR 1x12; preserve later Primo wording as alias of TEAM RIVAL AXS 1X rather than duplicate based on catalog-ID/equipment changes. This is required-field normalization, not identical physical-specification claim. Public identifiers read without cart operation. Historical Apex versus later WPNT CARBON remains unresolved. No model year inferred."
+        },
+        {
+          "names": ["Exploro Speed TEAM FORCE", "Exploro TEAM SPEED FORCE1"],
+          "source_url": "https://web.archive.org/web/20191114190555/https://us.3t.bike/en/218-exploro-speed",
+          "issue": "Resolved as distinct named factory configurations in the same official US catalog capture 20200618124749: TEAM SPEED FORCE1 and SPEED TEAM FORCE each have their own configuration heading and USD complete-bike offer. Retain both exact catalog trims, not word-order aliases. Earlier sequential-capture alias decision superseded. Older Speed TEAM FORCE wording maps to the newly retained SPEED TEAM FORCE, without another duplicate. Equipment differences are not collected; no model year inferred. Optional Torno upgrade prose alone is not another bicycle."
+        },
+      {
+        "names": ["Strada Due TEAM STEALTH Ultegra Di2", "Strada Due TEAM ULTEGRA Di2", "Strada Due TEAM STEALTH Red AXS eTap", "Strada Due TEAM RED AXS 2X12"],
+        "source_url": "https://web.archive.org/web/20191113174115/https://us.3t.bike/en/220-strada-due",
+        "issue": "Archived official US catalog verifies Ultegra build, added once. STEALTH is the finish designation, retained here rather than a color-based duplicate. Red and Force builds correspond to existing drivetrain identities; frame-only configurations excluded."
+      },
+      {
+        "names": ["Racemax WPNT GRX 1X12", "Racemax WPNT GRX Di2 2X12"],
+        "source_url": "https://us.3t.bike/products/racemax-wpnt-grx-1x12",
+        "issue": "Official US product page retrieved 2026-10-02 has GRX 1X12 heading/order title and USD offering but contradictory GRX Di2 2X12 spec heading/drivetrain. Not present in reconciled live inventory. Historical/current exact identity and possible reused product URL need resolution before adding; do not infer two records from contradictory sections."
+      },
+      {
+        "names": ["Racemax ITALIA 60th ANNIVERSARY EKAR"],
+        "source_url": "https://us.3t.bike/blogs/news/3ts-60-year-anniversary",
+          "issue": "Resolved by dedicated official anniversary archive capture 20220121061934: complete-bike section identifies Racemax Italia with Ekar, and ordering section explicitly offers personalized bike-inclusive Dreambox to USA buyers with delivery/duties terms. Retained named 60TH ANNIVERSARY DREAMBOX EKAR 1X13 edition once, not a standalone color option. Package accessories/prices/specifications are not collected. Announcement/capture dates do not establish model year."
+      },
+      {
+        "names": ["Exploro TEAM RIVAL AXS XPLR", "Exploro TEAM FORCE/EAGLE", "Exploro MAX FORCE/EAGLE", "Exploro TEAM EKAR", "Exploro RACE EKAR", "Exploro MAX EKAR"],
+        "source_url": "https://us.3t.bike/blogs/news/sram-xplr-axs-1x-exploro-launch",
+          "issue": "Resolved against retained official US catalogs: TEAM RIVAL AXS XPLR is saved TEAM RIVAL AXS 1X (capture 20220320140135 explicitly describes Rival AXS XPLR 1x12); TEAM FORCE/EAGLE corresponds to saved TEAM FORCE/EAGLE ETAP; MAX FORCE/EAGLE corresponds to saved MAX EAGLE AXS 1X (capture 20211129122041 identifies Force AXS controls with Eagle XX1 AXS). TEAM/RACE/MAX Ekar are saved under their explicit EKAR 1X13 catalog headings. Preserve announcement shorthand here without duplicate records. Optional component upgrades and publication/capture dates do not establish additional identities or model years."
+      },
+      {
+        "names": ["Exploro RACE GRX", "Exploro MAX GRX", "Exploro TEAM SPEED"],
+        "source_url": "https://us.3t.bike/blogs/news/new-racemax-is-here",
+          "issue": "Resolved exact US GRX configurations through official captures 20201126122231 (RACE GRX 1X/2X) and 20201130050418 (MAX GRX 1X/2X); saved once. TEAM SPEED Force1 is supported by capture 20201112021414 and reconciled with older Speed TEAM FORCE wording in its separate alias entry. Do not duplicate announcement shorthand, merge into modern Racemax identities, or infer years from publication dates."
+      },
+      {
+        "names": ["Exploro PRO 105 2X11"],
+        "source_url": "https://us.3t.bike/blogs/news/new-exploro-105-with-2x11-drivetrain",
+          "issue": "Resolved US complete-bike offering by official catalog capture 20201112021414; retained as Exploro PRO SHIMANO 105. Announcement's 2X11 describes that drivetrain rather than another canonical bike identity. Do not duplicate or assign publication year as model year."
+      },
+      {
+        "names": ["Strada CONCEPT 3 LIMITED EDITION RED AXS ETAP TORNO"],
+        "source_url": "https://us.3t.bike/blogs/news/strada-concept-3-limited-edition",
+        "issue": "Resolved US offering from official catalog capture 20201021022744: Strada Concept3 Red eTap / Chris King is a named assembled bicycle with USD offering, distinct from Schleck edition. Added under that catalog trim; do not duplicate expanded announcement description."
+      },
+      {"names":["Racemax WPNT RIVAL XPLR AXS 1X13 DISCUS 40|30 - WITH EXTRA DISCUS PLUS I28 LTD WHEELSET"],"source_url":"https://us.3t.bike/products/racemax-wpnt-rival-xplr-axs-1x13-discus-40-30-with-extra-discus-plus-i28-ltd-wheelset","issue":"Live official-store listing is a bike plus additional wheelset bundle, not established as another bicycle trim. Base Rival trim retained; bundle not added as another identity."},
+      {"names":["Strada ITALIA FORCE 1X13 XPLR SHARQ","Strada ITALIA FORCE E1 XPLR AXS 1X13 FULCRUM SHARQ 42"],"source_url":"https://us.3t.bike/products/strada-italia-force-1x13-xplr-sharq","issue":"Current official US page confirms E1 build and selectable Sharq 42/57 within the existing named SHARQ trim. Do not multiply a current trim into optional wheel configurations; older standalone product identity still needs reconciliation."},
+      {"names":["Primo² WPNT 10th ANNIVERSARY"],"source_url":"https://us.3t.bike/collections/primo-2-wpnt","issue":"Resolved by live official-store WebMCP browse_store and search_catalog on 2026-10-02: 10th Anniversary is a Colour option on existing GRX, Rival (-1 product) and Ultegra builds, not a separate named trim. No color field or duplicate record added; publication date is not a model year."},
+      {"names":["Exploro PRO Rival","Exploro PRO Rival Plus"],"source_url":"https://us.3t.bike/blogs/news/new-exploro-pro-rival","issue":"Official April 2020 announcement distinguishes PRO RIVAL PLUS from new PRO RIVAL. Linked global product is inaccessible. Official US capture 20200618124749 lists PRO RIVAL and PRO GRX but no RIVAL PLUS heading. Earlier Rival US evidence does not prove later renamed PLUS US offering. Retain PRO RIVAL once; PLUS remains pending explicit US offer evidence."},
+      {"names":["Primo APEX XPLR AXS","Primo WPNT APEX XPLR AXS 1x12 700c CARBON"],"source_url":"https://us.3t.bike/blogs/news/the-primo-welcomes-the-apex-xplr","supporting_source_url":"https://us.3t.bike/blogs/news/introducing-3t-primo-wpnt","issue":"Historical US Apex presence supported by October 2023 explicit America offer. October 2024 WPNT introduction defines WPNT as hand-painted-in-Italy refresh of Primo, with Apex AXS and new 40/30 carbon wheels. Five colors are not five identities; paint naming alone is not a new platform. Exact old Apex versus retained WPNT CARBON equivalence remains unresolved: do not infer earlier carbon trim from newer offer or silently merge. Original US selector now redirects without complete-bike builds. No added record or publication-derived model year."},
+      {"names":["Strada ITALIA FORCE E1 XPLR AXS 1X13 FULCRUM SHARQ 42","Strada ITALIA FORCE XPLR AXS 1X13 FULCRUM SHARQ 42","Strada ITALIA FORCE XPLR AXS 1X13 FULCRUM SHARQ 57","Strada ITALIA RED XPLR AXS 1X13 PM ZIPP 353 NSW","Strada ITALIA RED XPLR AXS 1X13 TORNO ZIPP 353 NSW"],"source_url":"https://us.3t.bike/collections/all?page=9","issue":"Older listing snapshot conflicts with current abbreviated platform titles; verify individual products and aliases before adding."},
+      {"names":["Primo² WPNT RIVAL XPLR AXS 1X13 DISCUS 40|30","Primo² WPNT RIVAL XPLR AXS 1X13 DISCUS 40|30 10th ANNIVERSARY"],"source_url":"https://us.3t.bike/collections/primo-2-wpnt","issue":"Live browser and official-store WebMCP collection agree on current title RIVAL XPLR AXS 1X13 at both retained URLs; Anniversary is a Colour option at the -1 URL. Search-only expanded titles are not additional current canonical trims. Retain the existing single required-field identity and both source URLs."}
+    ],
+    "same_identity_source_urls": [
+      "https://us.3t.bike/products/primo-2-wpnt-rival-xplr-axs-1x13",
+      "https://us.3t.bike/products/primo-2-wpnt-rival-xplr-axs-1x13-1"
+    ]
+  },
+  "records": [
+    {"type":"Electric gravel","manufacturer":"3T","brand":"3T","model":"Racemax Boost","trim":"ULTRALIGHT","year":null,"evidence":{"source_url":"https://web.archive.org/web/20220507181646/https://us.3t.bike/en/236-boost-dropbar","market":"US","checked_on":"2026-10-05"}},
+    {"type":"Electric gravel","manufacturer":"3T","brand":"3T","model":"Exploro","trim":"FOR ATALANTA BOOST FLATBAR","year":null,"evidence":{"source_url":"https://web.archive.org/web/20220507181646/https://us.3t.bike/en/236-boost-dropbar","market":"US","checked_on":"2026-10-05"}},
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Primo",
+      "trim": "APEX XPLR AXS 1X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/blogs/news/the-primo-welcomes-the-apex-xplr",
+        "market": "US",
+        "checked_on": "2026-10-05"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada",
+      "trim": "TEAM FORCE 1X11",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/blogs/news/introducing-neos-3t",
+        "market": "US",
+        "checked_on": "2026-10-05"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax ITALIA",
+      "trim": "RED XPLR AXS 1X13 ZIPP 303 XPLR SW",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20250212224619/https://us.3t.bike/products/racemax-italia-red-xplr-axs-1x13-zipp-303-xplr-sw-evo",
+        "market": "US",
+        "checked_on": "2026-10-05"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax ITALIA",
+      "trim": "GRX Di2 2X12 DISCUS 45/40 CTi",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20250123045545/https://us.3t.bike/products/racemax-italia-grx-di2-2x12-discus-45-40-cti",
+        "market": "US",
+        "checked_on": "2026-10-05"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax ITALIA",
+      "trim": "FORCE XPLR AXS 1X12 DISCUS 45/40 CTi",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20250213001007/https://us.3t.bike/products/racemax-italia-force-xplr-axs-1x12-discus-45-40-cti",
+        "market": "US",
+        "checked_on": "2026-10-05"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Extrema ITALIA",
+      "trim": "RIVAL GX EAGLE AXS",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20240229154400/https://us.3t.bike/en/243-extrema-italia",
+        "market": "US",
+        "checked_on": "2026-10-05"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Extrema ITALIA",
+      "trim": "TORNO RIVAL GX EAGLE AXS DROPPER POST",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20240229154400/https://us.3t.bike/en/243-extrema-italia",
+        "market": "US",
+        "checked_on": "2026-10-05"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Extrema ITALIA",
+      "trim": "TORNO FORCE D2 XX SL EAGLE AXS DROPPER POST",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20240229154400/https://us.3t.bike/en/243-extrema-italia",
+        "market": "US",
+        "checked_on": "2026-10-05"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada ITALIA",
+      "trim": "RIVAL AXS 2X12 CARBON WHEELS",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20240519131255/https://us.3t.bike/en/246-strada-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada ITALIA",
+      "trim": "ULTEGRA Di2 2X12 3T DISCUS WHEELS",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20240519131255/https://us.3t.bike/en/246-strada-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada ITALIA",
+      "trim": "FORCE D2 2X12 3T DISCUS WHEELS",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20240519131255/https://us.3t.bike/en/246-strada-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada ITALIA",
+      "trim": "FORCE D2 2X12 3T DISCUS WHEELS PROJECT X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20240519131255/https://us.3t.bike/en/246-strada-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada ITALIA",
+      "trim": "RED E1 AXS 2X12 ZIPP 353 NSW PROJECT X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20240519131255/https://us.3t.bike/en/246-strada-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax",
+      "trim": "FORCE AXS 1X 700C",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20220817060639/https://us.3t.bike/en/223-exploro-racemax",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax ITALIA",
+      "trim": "RED AXS 1X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20220817060639/https://us.3t.bike/en/223-exploro-racemax",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax ITALIA",
+      "trim": "FORCE AXS 2X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20220817060639/https://us.3t.bike/en/223-exploro-racemax",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax ITALIA",
+      "trim": "RIVAL AXS 2X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20220817060639/https://us.3t.bike/en/223-exploro-racemax",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax ITALIA",
+      "trim": "EKAR 1X13",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20220817060639/https://us.3t.bike/en/223-exploro-racemax",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax ITALIA",
+      "trim": "RIVAL XPLR 1X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20220817060639/https://us.3t.bike/en/223-exploro-racemax",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra",
+      "trim": "EAGLE",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20230325061118/https://us.3t.bike/en/240-exploro-ultra",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra",
+      "trim": "EKAR 650B",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20230325061118/https://us.3t.bike/en/240-exploro-ultra",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax Boost",
+      "trim": "FORCE AXS 1X12 700C",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20230328151806/https://us.3t.bike/en/236-boost-dropbar",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax Boost",
+      "trim": "RACE GRX DROPBAR",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20230328151806/https://us.3t.bike/en/236-boost-dropbar",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax Boost",
+      "trim": "MAX GRX FLATBAR",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20230328155103/https://us.3t.bike/en/237-boost-flatbar",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax Boost",
+      "trim": "X BALLY FLATBAR",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20230328155103/https://us.3t.bike/en/237-boost-flatbar",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada",
+      "trim": "RIVAL XPLR 1X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20230325061119/https://us.3t.bike/en/219-new-strada",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada",
+      "trim": "RIVAL AXS 2X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20230325061119/https://us.3t.bike/en/219-new-strada",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada",
+      "trim": "FORCE AXS 2X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20230325061119/https://us.3t.bike/en/219-new-strada",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax ITALIA",
+      "trim": "60TH ANNIVERSARY DREAMBOX EKAR 1X13",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20220121061934/https://60thanniversary.3t.bike/",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "SPEED TEAM FORCE",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20200618124749/https://us.3t.bike/en/217-exploro-proteamltd",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "TEAM FORCE",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20191114190555/https://us.3t.bike/en/218-exploro-speed",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "TEAM FORCE/EAGLE ETAP TORNO",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20191114190555/https://us.3t.bike/en/218-exploro-speed",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "RACE RIVAL AXS 2X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20220124064330/https://us.3t.bike/en/223-exploro-race",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "FOR ATALANTA RACEMAX EKAR 1X13",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20220124064330/https://us.3t.bike/en/223-exploro-race",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "MAX EKAR 1X13",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20211129122041/https://us.3t.bike/en/224-exploro-max",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "TEAM RIVAL AXS 1X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20220320140135/https://us.3t.bike/en/217-exploro-proteam",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "TEAM EKAR 1X13",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20220320140135/https://us.3t.bike/en/217-exploro-proteam",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "TEAM RIVAL AXS 2X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20220320140135/https://us.3t.bike/en/217-exploro-proteam",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada Due",
+      "trim": "TEAM ULTEGRA Di2",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20191113174115/https://us.3t.bike/en/220-strada-due",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada",
+      "trim": "TEAM EKAR 1X13",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201021022744/https://us.3t.bike/en/219-strada",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada",
+      "trim": "CONCEPT3 RED ETAP / CHRIS KING",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201021022744/https://us.3t.bike/en/219-strada",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "MAX GRX 1X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201130050418/https://us.3t.bike/en/224-exploro-max",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "MAX GRX 2X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201130050418/https://us.3t.bike/en/224-exploro-max",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "MAX EAGLE AXS 1X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201130050418/https://us.3t.bike/en/224-exploro-max",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "RACE GRX 1X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201126122231/https://us.3t.bike/en/223-exploro-race",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "RACE GRX 2X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201126122231/https://us.3t.bike/en/223-exploro-race",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "RACE EKAR 1X13",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201126122231/https://us.3t.bike/en/223-exploro-race",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "RACE FORCE AXS 2X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201126122231/https://us.3t.bike/en/223-exploro-race",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "RACE FORCE AXS 1X TORNO",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201126122231/https://us.3t.bike/en/223-exploro-race",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "PRO SHIMANO 105",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201112021414/https://us.3t.bike/en/217-exploro-proteamltd",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "PRO GRX 2X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201112021414/https://us.3t.bike/en/217-exploro-proteamltd",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "VELOCIO // TEAM RIVAL",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201112021414/https://us.3t.bike/en/217-exploro-proteamltd",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "TEAM SPEED FORCE1",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201112021414/https://us.3t.bike/en/217-exploro-proteamltd",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "PRO GRX",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201112021414/https://us.3t.bike/en/217-exploro-proteamltd",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "TEAM FORCE/EAGLE ETAP",
+      "year": null,
+      "evidence": {
+        "source_url": "https://web.archive.org/web/20201112021414/https://us.3t.bike/en/217-exploro-proteamltd",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {"type":"Gravel","manufacturer":"3T","brand":"3T","model":"Racemax WPNT","trim":"GRX Di2 2X12 DISCUS 40|30","year":null,"evidence":{"source_url":"https://us.3t.bike/products/racemax-wpnt-grx-di2-2x12-discus-40-30","market":"US","checked_on":"2026-10-02"}},
+    {"type":"Gravel","manufacturer":"3T","brand":"3T","model":"Racemax WPNT","trim":"RIVAL XPLR AXS 1X13 DISCUS 40|30","year":null,"evidence":{"source_url":"https://us.3t.bike/products/racemax-wpnt-rival-axs-1x13discus-40-30","market":"US","checked_on":"2026-10-02"}},
+    {"type":"Gravel","manufacturer":"3T","brand":"3T","model":"Exploro","trim":"PRO RIVAL","year":null,"evidence":{"source_url":"https://us.3t.bike/blogs/news/new-entry-point-for-exploro","market":"US","checked_on":"2026-10-02"}},
+    {"type":"Road","manufacturer":"3T","brand":"3T","model":"Strada ITALIA","trim":"RED XPLR AXS 1X13 DISCUS 45|32","year":null,"evidence":{"source_url":"https://us.3t.bike/blogs/news/strada-italia-red-xplr-axs-1x13","market":"US","checked_on":"2026-10-02"}},
+    {"type":"Road","manufacturer":"3T","brand":"3T","model":"Strada","trim":"PRO FORCE 1","year":null,"evidence":{"source_url":"https://us.3t.bike/blogs/news/expanding-the-strada-line-up","market":"US","checked_on":"2026-10-02"}},
+    {"type":"Road","manufacturer":"3T","brand":"3T","model":"Strada","trim":"FRÄNK SCHLECK SPECIAL EDITION RED ETAP TORNO","year":null,"evidence":{"source_url":"https://us.3t.bike/blogs/news/from-cervelo-to-3t-strada-frank-schleck-custom","market":"US","checked_on":"2026-10-02"}},
+    {"type":"Gravel","manufacturer":"3T","brand":"3T","model":"Exploro","trim":"ARLECCHINO FORCE/EAGLE AXS TORNO","year":null,"evidence":{"source_url":"https://us.3t.bike/blogs/news/were-back-to-work-win-an-exploro-arlecchino","market":"US","checked_on":"2026-10-02"}},
+    {"type":"Electric gravel","manufacturer":"3T","brand":"3T","model":"eRacemax ITALIA","trim":"RED XPLR AXS 1X13 DB DISCUS 45|40","year":null,"evidence":{"source_url":"https://us.3t.bike/products/eracemax-italia-red-xplr-axs-1x13-db-discus-45-40","market":"US","checked_on":"2026-10-02"}},
+    {"type":"Electric gravel","manufacturer":"3T","brand":"3T","model":"eRacemax ITALIA","trim":"RIVAL XPLR AXS 1X13 DB DISCUS 45|40","year":null,"evidence":{"source_url":"https://us.3t.bike/products/eracemax-italia-rival-xplr-axs-1x13-db-discus-45-40","market":"US","checked_on":"2026-10-02"}},
+    {"type":"Gravel","manufacturer":"3T","brand":"3T","model":"Extrema ITALIA","trim":"FORCE E1/XX SL EAGLE TRANSMISSION AXS 1X12 DISCUS 45|40","year":null,"evidence":{"source_url":"https://us.3t.bike/collections/all?page=3","market":"US","checked_on":"2026-10-02"}},
+    {"type":"Gravel","manufacturer":"3T","brand":"3T","model":"Extrema ITALIA","trim":"RED XPLR AXS TORNO 1X13 DISCUS 45|40","year":null,"evidence":{"source_url":"https://us.3t.bike/collections/all?page=3","market":"US","checked_on":"2026-10-02"}},
+    {"type":"Gravel","manufacturer":"3T","brand":"3T","model":"Extrema ITALIA","trim":"RED XPLR PM AXS 1X13 DISCUS 45|40","year":null,"evidence":{"source_url":"https://us.3t.bike/collections/all?page=3","market":"US","checked_on":"2026-10-02"}},
+    {"type":"Gravel","manufacturer":"3T","brand":"3T","model":"Racemax² ITALIA","trim":"GRX Di2 2X12 DISCUS 45|40","year":null,"evidence":{"source_url":"https://us.3t.bike/collections/all?page=6","market":"US","checked_on":"2026-10-02"}},
+    {"type":"Gravel","manufacturer":"3T","brand":"3T","model":"Exploro","trim":"FOR BMW GRX","year":null,"evidence":{"source_url":"https://us.3t.bike/blogs/news/3t-for-bmw-exploro","market":"US","checked_on":"2026-10-02"}},
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada",
+      "trim": "X AUTOMOBILI LAMBORGHINI",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/products/strada-x-automobili-lamborghini",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax",
+      "trim": "X AUTOMOBILI LAMBORGHINI",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/products/racemax-x-automobili-lamborghini",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax Boost",
+      "trim": "FLATBAR X AUTOMOBILI LAMBORGHINI",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/products/racemax-boost-italia-x-automobili-lamborghini-flatbar",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax Boost ITALIA",
+      "trim": "RIVAL XPLR AXS 1X12 DISCUS 45/40",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections?page=3",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax Boost ITALIA",
+      "trim": "SUPERLIGHT RED AXS 1X12 DISCUS 45/40",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections?page=3",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra",
+      "trim": "GRX 1X12 650b",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections?page=4",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra",
+      "trim": "GRX 1X12 700c",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections?page=4",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra² ITALIA",
+      "trim": "RIVAL/GX AXS 1X12 DISCUS 45|40 DT Swiss F 132 ONE",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections?page=4",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra Boost",
+      "trim": "RIVAL XPLR AXS 1X12 DB 700c",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections?page=4",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra Boost",
+      "trim": "APEX EAGLE 1X12 DB 700c",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections?page=4",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra Boost",
+      "trim": "FORCE D1 AXS 1X12 FB DISCUS PLUS I28",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections?page=4",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra Boost",
+      "trim": "EAGLE AXS 1X12 FB 650b",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections?page=4",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax² ITALIA_X",
+      "trim": "FORCE XPLR 1X13 TORNO DISCUS 45|40 LTD",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/racemax-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax² ITALIA_X",
+      "trim": "RED XPLR TORNO 1X13 ZIPP 303 XPLR SW",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/racemax-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax² ITALIA_X",
+      "trim": "RED XPLR PM 1X13 ZIPP 303 XPLR SW",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/racemax-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax² ITALIA_X",
+      "trim": "SUPER RECORD 1X13 BORA X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/racemax-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax² ITALIA",
+      "trim": "RIVAL XPLR 1X13 DISCUS 40|30",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/racemax-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax² ITALIA",
+      "trim": "FORCE XPLR 1X13 DISCUS 45|40",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/racemax-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax² ITALIA",
+      "trim": "RECORD X 1X13 DISCUS 45|40",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/racemax-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Extrema ITALIA_X",
+      "trim": "GRX Di2 1X12 DISCUS 45|40",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/extrema-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Extrema ITALIA_X",
+      "trim": "RIVAL E1/GX EAGLE TRANSMISSION AXS 1X12 DISCUS 45|40",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/extrema-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Extrema ITALIA_X",
+      "trim": "FORCE XPLR 1X13 DISCUS 45|40",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/extrema-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Extrema ITALIA",
+      "trim": "GRX Di2 1X12 DISCUS 45|40",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/extrema-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Extrema ITALIA",
+      "trim": "RIVAL E1/GX EAGLE TRANSMISSION AXS 1X12 DISCUS 45|40",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/extrema-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Extrema ITALIA",
+      "trim": "FORCE XPLR 1X13 DISCUS 45|40",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/extrema-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax INTEGRALE WPNT",
+      "trim": "GRX Di2 2X12 700c",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/racemax-wpnt",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax INTEGRALE",
+      "trim": "GRX Di2 2X12 700c",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/racemax-wpnt",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra² ITALIA",
+      "trim": "GRX 1X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/ultra-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra² ITALIA",
+      "trim": "GRX Di2 1X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/ultra-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra² ITALIA",
+      "trim": "GRX 1X12 DT Swiss F 132 ONE",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/ultra-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra² ITALIA",
+      "trim": "GRX Di2 1X12 DT Swiss F 132 ONE",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/ultra-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra² ITALIA",
+      "trim": "GRX Di2 1X12 DISCUS 45|40",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/ultra-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra² ITALIA",
+      "trim": "RIVAL/GX AXS 1X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/ultra-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra² ITALIA",
+      "trim": "GRX Di2 1X12 DISCUS 45|40 DT Swiss F 132 ONE",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/ultra-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra² ITALIA",
+      "trim": "RIVAL/GX AXS 1X12 DT Swiss F 132 ONE",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/ultra-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra² ITALIA",
+      "trim": "RIVAL/GX AXS 1X12 DISCUS 45|40",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/ultra-2-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Primo² WPNT",
+      "trim": "GRX 1X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/primo-2-wpnt",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Primo² WPNT",
+      "trim": "RIVAL XPLR AXS 1X13",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/primo-2-wpnt",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Primo² WPNT",
+      "trim": "Ultegra Di2 2X12 Discus 40|30",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/primo-2-wpnt",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Primo WPNT",
+      "trim": "APEX XPLR AXS 1X12 700c CARBON",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/primo-2-wpnt",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada ITALIA_X",
+      "trim": "ULTEGRA Di2 2X12 SHARQ",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/strada-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada ITALIA_X",
+      "trim": "FORCE 1X13 XPLR SHARQ",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/strada-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada ITALIA_X",
+      "trim": "DURA-ACE PM Di2 2X12 SHARQ",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/strada-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada ITALIA",
+      "trim": "ULTEGRA Di2 2X12 SHARQ",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/strada-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada ITALIA",
+      "trim": "FORCE 1X13 XPLR SHARQ",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/strada-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada ITALIA",
+      "trim": "DURA-ACE PM Di2 2X12 SHARQ",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/strada-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada WPNT",
+      "trim": "ULTEGRA Di2 2X12 DISCUS 40|30",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/strada-2",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada",
+      "trim": "105 Di2 2X12 CARBON",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/strada-2",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "eExtrema ITALIA",
+      "trim": "RIVAL XPLR AXS 1X13 DB DISCUS 45|40",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/eextrema-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "eExtrema ITALIA",
+      "trim": "RED XPLR AXS 1X13 DB DISCUS 45|40",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/eextrema-italia",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "eUltra",
+      "trim": "RIVAL XPLR AXS 1X12 FB DISCUS I28",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/eultra-wpnt",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Electric gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "eUltra",
+      "trim": "GRX 1X12 DB 700C",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/collections/eultra-wpnt",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada",
+      "trim": "TEAM RED AXS 1X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/blogs/news/new-sram-red-12-sp-models",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Exploro",
+      "trim": "LTD RED AXS 2X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/blogs/news/new-sram-red-12-sp-models",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada Due",
+      "trim": "TEAM RED AXS 2X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/blogs/news/new-sram-red-12-sp-models",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Racemax",
+      "trim": "APEX XPLR AXS 1X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/blogs/news/unveiling-the-apex-line",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Gravel",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Ultra",
+      "trim": "APEX XPLR AXS 1X",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/blogs/news/unveiling-the-apex-line",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada",
+      "trim": "FORCE ETAP AXS 1X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/blogs/news/introducing-new-sram-etap-models",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada Due",
+      "trim": "FORCE ETAP AXS 2X12",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/blogs/news/introducing-new-sram-etap-models",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "type": "Road",
+      "manufacturer": "3T",
+      "brand": "3T",
+      "model": "Strada ITALIA",
+      "trim": "RED XPLR AXS 1X13 ZIPP 353 NSW",
+      "year": null,
+      "evidence": {
+        "source_url": "https://us.3t.bike/blogs/news/strada-italia-red-xplr-axs-1x13",
+        "market": "US",
+        "checked_on": "2026-10-02"
+      }
+    }
+  ]
+}

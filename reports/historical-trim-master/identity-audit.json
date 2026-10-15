@@ -1,0 +1,2318 @@
+{
+  "checked_on": "2026-10-15",
+  "scope": "Entire saved historical master, non-destructive identity screening",
+  "records": 5497,
+  "exact_normalized_duplicate_groups": 0,
+  "punctuation_only_collision_groups": 153,
+  "flagged_records": 62,
+  "name_frame_module_flags": 0,
+  "catalog_frame_clue_flags": 34,
+  "possible_frame_module_entries": 34,
+  "component_flags": 0,
+  "edition_flags": 29,
+  "exact_duplicates": [],
+  "punctuation_review": [
+    [
+      {
+        "brand": "Cannondale",
+        "model": "Super Six 3 Ultegra"
+      },
+      {
+        "brand": "Cannondale",
+        "model": "Supersix 3 Ultegra"
+      }
+    ],
+    [
+      {
+        "brand": "Cannondale",
+        "model": "Super Six 4 Rival"
+      },
+      {
+        "brand": "Cannondale",
+        "model": "Supersix 4 Rival"
+      }
+    ],
+    [
+      {
+        "brand": "Cannondale",
+        "model": "Super Six 5 105"
+      },
+      {
+        "brand": "Cannondale",
+        "model": "Supersix 5 105"
+      }
+    ],
+    [
+      {
+        "brand": "Cannondale",
+        "model": "Super Six Evo Black Inc."
+      },
+      {
+        "brand": "Cannondale",
+        "model": "Supersix Evo Black Inc."
+      }
+    ],
+    [
+      {
+        "brand": "Cannondale",
+        "model": "Super Six Evo Hi Mod Dura Ace Di2"
+      },
+      {
+        "brand": "Cannondale",
+        "model": "Supersix Evo Hi Mod Dura Ace Di2"
+      }
+    ],
+    [
+      {
+        "brand": "Cannondale",
+        "model": "Super Six Evo Hi Mod Team"
+      },
+      {
+        "brand": "Cannondale",
+        "model": "Supersix Evo Hi Mod Team"
+      }
+    ],
+    [
+      {
+        "brand": "Cannondale",
+        "model": "Super Six Evo Red"
+      },
+      {
+        "brand": "Cannondale",
+        "model": "Supersix Evo Red"
+      }
+    ],
+    [
+      {
+        "brand": "Cannondale",
+        "model": "Super Six Evo Ultegra Di2"
+      },
+      {
+        "brand": "Cannondale",
+        "model": "Supersix Evo Ultegra Di2"
+      }
+    ],
+    [
+      {
+        "brand": "Cannondale",
+        "model": "Super Six Evo Women's Ultegra Di2"
+      },
+      {
+        "brand": "Cannondale",
+        "model": "Supersix Evo Women's Ultegra Di2"
+      }
+    ],
+    [
+      {
+        "brand": "Cannondale",
+        "model": "Super Six Women's 3 Ultegra"
+      },
+      {
+        "brand": "Cannondale",
+        "model": "Supersix Women's 3 Ultegra"
+      }
+    ],
+    [
+      {
+        "brand": "Cannondale",
+        "model": "Super Six Women's 5 105"
+      },
+      {
+        "brand": "Cannondale",
+        "model": "Supersix Women's 5 105"
+      }
+    ],
+    [
+      {
+        "brand": "Cannondale",
+        "model": "Trail Sl 29 Er 4"
+      },
+      {
+        "brand": "Cannondale",
+        "model": "Trail Sl 29'er 4"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Absolute 2.0"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Absolute 20"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Crosstown 3.0 (Step Through)"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Crosstown 3.0 Step Through"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Crosstown 4.0 (Step Through)"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Crosstown 4.0 Step Through"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Del Rey (Step Through)"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Del Rey Step Through"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Dynamite 2.0"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Dynamite 20"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Fazer 16"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Fazer 16\""
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Fazer 20"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Fazer 20\""
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Mt Fuji Pro"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Mt. Fuji Pro"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Nevada 4.0 (Step Through)"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Nevada 4.0 Step Through"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Odessa 1.0 (Step Through)"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Odessa 1.0 Step Through"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Odessa 2.0 (Step Through)"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Odessa 2.0 Step Through"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Sanibel (24\")"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Sanibel 24"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Sanibel 24 G"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Sanibel 24\" G"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Sanibel Dx (Step Through)"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Sanibel Dx Step Through"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Sanibel Lx (Step Through)"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Sanibel Lx Step Through"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Saratoga 3.0 (Step Through)"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Saratoga 3.0 Step Through"
+      }
+    ],
+    [
+      {
+        "brand": "Fuji",
+        "model": "Saratoga 4.0 (Step Through)"
+      },
+      {
+        "brand": "Fuji",
+        "model": "Saratoga 4.0 Step Through"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Advance Disc"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Advance_Disc"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Big Sur Disc"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Big Sur_Disc"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Big Sur GS"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Big Sur_GS"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Cake 1 DLX"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Cake 1_DLX"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Cake 2 DLX"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Cake 2_DLX"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Cake 2 GS"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Cake 2_GS"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Cake 3 DLX"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Cake 3_DLX"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Hoo Koo E Koo Disc"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Hoo Koo E Koo_Disc"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Marlin Disc"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Marlin_Disc"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Mt Tam 29"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Mt Tam_29"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Sugar 4+"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Sugar4+"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Sugar2"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Sugar2+"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Supercaliber 29"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Supercaliber_29"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Tassajara Disc"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Tassajara_Disc"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Tassajara GS"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Tassajara_GS"
+      }
+    ],
+    [
+      {
+        "brand": "Gary Fisher",
+        "model": "Wahoo Disc"
+      },
+      {
+        "brand": "Gary Fisher",
+        "model": "Wahoo_Disc"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "12\" LI'L PUDD'N"
+      },
+      {
+        "brand": "Giant",
+        "model": "12\" LIL PUDD'N"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "16\" ANIMATOR (Black)"
+      },
+      {
+        "brand": "Giant",
+        "model": "16\" ANIMATOR BLACK"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "16\" PUDD'N (Pink)"
+      },
+      {
+        "brand": "Giant",
+        "model": "16\" PUDD'N PINK"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "16\" PUDD'N (Purple)"
+      },
+      {
+        "brand": "Giant",
+        "model": "16\" PUDD'N PURPLE"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "20\" Taffy (Pink)"
+      },
+      {
+        "brand": "Giant",
+        "model": "20\" Taffy Pink"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "20\" Taffy (Purple)"
+      },
+      {
+        "brand": "Giant",
+        "model": "20\" Taffy Purple"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "Areva 24"
+      },
+      {
+        "brand": "Giant",
+        "model": "Areva 24\""
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "Gloss (White)"
+      },
+      {
+        "brand": "Giant",
+        "model": "Gloss White"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "Jr Animator"
+      },
+      {
+        "brand": "Giant",
+        "model": "Jr. Animator"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "L'il Pudd'n"
+      },
+      {
+        "brand": "Giant",
+        "model": "Lil Pudd'n"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "LI'L GIANT TRICYCLE"
+      },
+      {
+        "brand": "Giant",
+        "model": "Lil Giant Tricycle"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "Modem (Black)"
+      },
+      {
+        "brand": "Giant",
+        "model": "Modem Black"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "RED LI'L GIANT TRICYCLE"
+      },
+      {
+        "brand": "Giant",
+        "model": "Red Lil Giant Tricycle"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "Simple Single (Black)"
+      },
+      {
+        "brand": "Giant",
+        "model": "Simple Single Black"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "Simple Single w (White)"
+      },
+      {
+        "brand": "Giant",
+        "model": "Simple Single w White"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "Tran Send DX"
+      },
+      {
+        "brand": "Giant",
+        "model": "Transend DX"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "Tran Send DX w"
+      },
+      {
+        "brand": "Giant",
+        "model": "Transend DX w"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "Tran Send EX"
+      },
+      {
+        "brand": "Giant",
+        "model": "Transend EX"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "Tran Send EX w"
+      },
+      {
+        "brand": "Giant",
+        "model": "Transend EX w"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "Tran Send LX"
+      },
+      {
+        "brand": "Giant",
+        "model": "Transend LX"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "Trance X 1 W"
+      },
+      {
+        "brand": "Giant",
+        "model": "Trance X1 W"
+      }
+    ],
+    [
+      {
+        "brand": "Giant",
+        "model": "Trance X 2 W"
+      },
+      {
+        "brand": "Giant",
+        "model": "Trance X2 W"
+      }
+    ],
+    [
+      {
+        "brand": "KHS",
+        "model": "ULTRA SPORT 1.0"
+      },
+      {
+        "brand": "KHS",
+        "model": "ULTRASPORT 1.0"
+      }
+    ],
+    [
+      {
+        "brand": "KHS",
+        "model": "ULTRA SPORT 2.0"
+      },
+      {
+        "brand": "KHS",
+        "model": "ULTRASPORT 2.0"
+      }
+    ],
+    [
+      {
+        "brand": "KHS",
+        "model": "ULTRA SPORT 3.0"
+      },
+      {
+        "brand": "KHS",
+        "model": "ULTRASPORT 3.0"
+      }
+    ],
+    [
+      {
+        "brand": "KHS",
+        "model": "ULTRA SPORT 4.0"
+      },
+      {
+        "brand": "KHS",
+        "model": "ULTRASPORT 4.0"
+      }
+    ],
+    [
+      {
+        "brand": "Schwinn",
+        "model": "Coffee 3 Spd"
+      },
+      {
+        "brand": "Schwinn",
+        "model": "Coffee 3spd"
+      }
+    ],
+    [
+      {
+        "brand": "Schwinn",
+        "model": "Cream 3 Spd"
+      },
+      {
+        "brand": "Schwinn",
+        "model": "Cream 3spd"
+      }
+    ],
+    [
+      {
+        "brand": "Schwinn",
+        "model": "Frontier Women S"
+      },
+      {
+        "brand": "Schwinn",
+        "model": "Frontier Womens"
+      }
+    ],
+    [
+      {
+        "brand": "Schwinn",
+        "model": "Le Tour"
+      },
+      {
+        "brand": "Schwinn",
+        "model": "Letour"
+      }
+    ],
+    [
+      {
+        "brand": "Schwinn",
+        "model": "Le Tour Gs"
+      },
+      {
+        "brand": "Schwinn",
+        "model": "Letour Gs"
+      }
+    ],
+    [
+      {
+        "brand": "Schwinn",
+        "model": "Le Tour Gsx"
+      },
+      {
+        "brand": "Schwinn",
+        "model": "Letour Gsx"
+      }
+    ],
+    [
+      {
+        "brand": "Schwinn",
+        "model": "Ss X"
+      },
+      {
+        "brand": "Schwinn",
+        "model": "Ssx"
+      }
+    ],
+    [
+      {
+        "brand": "SE Bikes",
+        "model": "16\" Lil Ripper"
+      },
+      {
+        "brand": "SE Bikes",
+        "model": "16\" Lil' Ripper"
+      }
+    ],
+    [
+      {
+        "brand": "SE Bikes",
+        "model": "Bronco 16"
+      },
+      {
+        "brand": "SE Bikes",
+        "model": "Bronco 16\""
+      }
+    ],
+    [
+      {
+        "brand": "SE Bikes",
+        "model": "Hood-Rich"
+      },
+      {
+        "brand": "SE Bikes",
+        "model": "Hoodrich"
+      }
+    ],
+    [
+      {
+        "brand": "SE Bikes",
+        "model": "Ripper Jr"
+      },
+      {
+        "brand": "SE Bikes",
+        "model": "Ripper Jr."
+      }
+    ],
+    [
+      {
+        "brand": "SE Bikes",
+        "model": "Wildman 18"
+      },
+      {
+        "brand": "SE Bikes",
+        "model": "Wildman 18\""
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "415 FS-X"
+      },
+      {
+        "brand": "Specialized",
+        "model": "415 FSX"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Ariel Step Through"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Ariel Step-Through"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Big Hit SPEC"
+      },
+      {
+        "brand": "Specialized",
+        "model": "BigHit SPEC"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Crossroads Elite Low Entry"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Crossroads Elite Low-Entry"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Crossroads Elite Step Through"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Crossroads Elite Step-Through"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Crossroads Sport Low Entry"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Crossroads Sport Low-Entry"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Crossroads Sport Step Through"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Crossroads Sport Step-Through"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Crossroads Sport Women's"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Crossroads Sport Womens"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Crossroads Step Through"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Crossroads Step-Through"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Enduro SL Expert"
+      },
+      {
+        "brand": "Specialized",
+        "model": "EnduroSL Expert"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Enduro SL Pro Carbon"
+      },
+      {
+        "brand": "Specialized",
+        "model": "EnduroSL Pro Carbon"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Epic Women's"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Epic Womens"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Expedition Low Entry"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Expedition Low-Entry"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Expedition Sport Low Entry"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Expedition Sport Low-Entry"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Expedition Sport Women's"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Expedition Sport Womens"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "FSR XC"
+      },
+      {
+        "brand": "Specialized",
+        "model": "FSRxc"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "FSR XC Comp"
+      },
+      {
+        "brand": "Specialized",
+        "model": "FSRxc Comp"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "FSR XC Pro"
+      },
+      {
+        "brand": "Specialized",
+        "model": "FSRxc Pro"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "FSR XC Women's"
+      },
+      {
+        "brand": "Specialized",
+        "model": "FSRxc Women's"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Fuse 16"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Fuse 16\""
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hardrock Sport Women's"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hardrock Sport Womens"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 12 Boys"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 12\" Boys"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 12 Girls"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 12\" Girls"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 16 Boys"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 16\" Boys"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 16 Girls"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 16 Girls\""
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 16\" Girls"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 20 6-speed Boys"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 20\" 6-Speed Boys"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 20 6-speed Girls"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 20\" 6-Speed Girls"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 24 21-speed Boys"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 24\" 21-Speed Boys"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 24 21-speed Girls"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 24\" 21-Speed Girls"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 24 7-speed Boys"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 24\" 7-Speed Boys"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 24 7-speed Girls"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock 24\" 7-Speed Girls"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hotrock A1 FS 24 Boys"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock A1 FS 24\" Boys"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hotrock A1 FS 24 Girls"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock A1 FS 24\" Girls"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hotrock A1 FS Girls"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock A1-FS Girls"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Hotrock A1 FSR"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Hotrock A1-FSR"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "S-Works Tarmac SL3 Dura Ace"
+      },
+      {
+        "brand": "Specialized",
+        "model": "S-Works Tarmac SL3 Dura-Ace"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Stumpjumper Women's"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Stumpjumper Womens"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Tarmac Pro SL Compact Dura Ace"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Tarmac Pro SL Compact Dura-Ace"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Tarmac Pro SL Dura Ace"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Tarmac Pro SL Dura-Ace"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Vita Multi Sport"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Vita Multi-Sport"
+      }
+    ],
+    [
+      {
+        "brand": "Specialized",
+        "model": "Vita Step Through"
+      },
+      {
+        "brand": "Specialized",
+        "model": "Vita Step-Through"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "4300 (Disc)"
+      },
+      {
+        "brand": "Trek",
+        "model": "4300 Disc"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "4500 (Disc)"
+      },
+      {
+        "brand": "Trek",
+        "model": "4500 Disc"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "7200"
+      },
+      {
+        "brand": "Trek",
+        "model": "7200+"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "7200 WSD"
+      },
+      {
+        "brand": "Trek",
+        "model": "7200+ WSD"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "Drift 20"
+      },
+      {
+        "brand": "Trek",
+        "model": "Drift 20\""
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "Kids FX Boy's"
+      },
+      {
+        "brand": "Trek",
+        "model": "Kids' FX Boy's"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "Kids FX Girl's"
+      },
+      {
+        "brand": "Trek",
+        "model": "Kids' FX Girl's"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "L100 BLX"
+      },
+      {
+        "brand": "Trek",
+        "model": "L100+ BLX"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "L100 Lowstep BLX"
+      },
+      {
+        "brand": "Trek",
+        "model": "L100+ Lowstep BLX"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "L300 BLX"
+      },
+      {
+        "brand": "Trek",
+        "model": "L300+ BLX"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "L300 Lowstep BLX"
+      },
+      {
+        "brand": "Trek",
+        "model": "L300+ Lowstep BLX"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "L500"
+      },
+      {
+        "brand": "Trek",
+        "model": "L500+"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "L700"
+      },
+      {
+        "brand": "Trek",
+        "model": "L700+"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "Marlin Single Speed"
+      },
+      {
+        "brand": "Trek",
+        "model": "Marlin Singlespeed"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "T400"
+      },
+      {
+        "brand": "Trek",
+        "model": "T400+"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "T500"
+      },
+      {
+        "brand": "Trek",
+        "model": "T500+"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "T500 SL"
+      },
+      {
+        "brand": "Trek",
+        "model": "T500 SL+"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "T500SL BLX"
+      },
+      {
+        "brand": "Trek",
+        "model": "T500SL+ BLX"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "T500SL Midstep BLX"
+      },
+      {
+        "brand": "Trek",
+        "model": "T500SL+ Midstep BLX"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "T700"
+      },
+      {
+        "brand": "Trek",
+        "model": "T700+"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "T700 BLX"
+      },
+      {
+        "brand": "Trek",
+        "model": "T700+ BLX"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "T700 Midstep BLX"
+      },
+      {
+        "brand": "Trek",
+        "model": "T700+ Midstep BLX"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "T80"
+      },
+      {
+        "brand": "Trek",
+        "model": "T80+"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "Top Fuel 9.8"
+      },
+      {
+        "brand": "Trek",
+        "model": "Top Fuel 98"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "Transport"
+      },
+      {
+        "brand": "Trek",
+        "model": "Transport+"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "Valencia"
+      },
+      {
+        "brand": "Trek",
+        "model": "Valencia+"
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "Wasabi 20"
+      },
+      {
+        "brand": "Trek",
+        "model": "Wasabi 20\""
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "Wasabi 24"
+      },
+      {
+        "brand": "Trek",
+        "model": "Wasabi 24\""
+      }
+    ],
+    [
+      {
+        "brand": "Trek",
+        "model": "X500"
+      },
+      {
+        "brand": "Trek",
+        "model": "X500+"
+      }
+    ]
+  ],
+  "flags": [
+    {
+      "brand": "All City",
+      "model": "Airwolf",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/all_city/2013/airwolf.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Bianchi",
+      "model": "Methanol 29 SL",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/bianchi/2013/methanol_29_sl.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Bianchi",
+      "model": "San Jose",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/bianchi/2012/san_jose.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        },
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/bianchi/2013/san_jose.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Cannondale",
+      "model": "Super Six Hi Mod Team Replica",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Altamira Ltd",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Altamira Ltd Team Edition",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Altamira Team Net App Replica",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Altamira Team Replica",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "D6 Pro",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/fuji/2010/d6_pro.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Obey Limited Edition Track Bike",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Roubaix Acr 1.0",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/fuji/2010/roubaix_acr_1_0.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Roubaix Ltd",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Sl1 Comp Fuji/Servetto",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/fuji/2010/sl1_comp_fuji_servetto.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Sl1 Comp Shimano",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/fuji/2010/sl1_comp_shimano.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Sl1 Comp Sram",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/fuji/2010/sl1_comp_sram.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Sl1 Rc Fuji/Servetto",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/fuji/2010/sl1_rc_fuji_servetto.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Sl1 Rc Shimano",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/fuji/2010/sl1_rc_shimano.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Sl1 Rc Sram",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/fuji/2010/sl1_rc_sram.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Slm 29 Ltd",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Slm Ltd",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only",
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/fuji/2010/slm_ltd.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Sst 1.0",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/fuji/2010/sst_1_0.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Sst Ltd 105",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Sst Ltd Team Replica",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Sst Ltd Ultegra",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Supreme Ltd Team Edition",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Fuji",
+      "model": "Team Pro (Euro)",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/fuji/2010/team_pro_euro.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "Anthem X",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2010/anthem_x.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "Anthem X Advanced SL",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2010/anthem_x_advanced_sl.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "Defy Advanced",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2009/defy_advanced.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        },
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2010/defy_advanced.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "Faith",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2010/faith.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "Glory",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2010/glory.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "Omnium",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2009/omnium.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "Reign X",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2007/reign_x.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        },
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2008/reign_x.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        },
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2009/reign_x.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "STP",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2009/stp.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        },
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2010/stp.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "TCR Advanced",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2007/tcr_advanced.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        },
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2008/tcr_advanced.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        },
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2009/tcr_advanced.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        },
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2010/tcr_advanced.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "TCR Advanced SL",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2009/tcr_advanced_sl.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        },
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2010/tcr_advanced_sl.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "TCR Advanced SL (ISP)",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2009/tcr_advanced_sl_isp.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        },
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2010/tcr_advanced_sl_isp.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "TCR ADVANCED SL LIMITED",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "TCR Composite",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2007/tcr_composite.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        },
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2008/tcr_composite.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "TCX",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2010/tcx.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "Trance",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2007/trance.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "Trance X",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2008/trance_x.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        },
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2009/trance_x.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "Trinity Advanced SL",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2010/trinity_advanced_sl.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "Trinity Alliance",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2007/trinity_alliance.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        },
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2008/trinity_alliance.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        },
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2009/trinity_alliance.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "Trinity C",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2007/trinity_c.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Giant",
+      "model": "XTC Advanced SL",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/giant/2009/xtc_advanced_sl.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Schwinn",
+      "model": "Mesa Ltd",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Schwinn",
+      "model": "Peloton Ltd",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "SE Bikes",
+      "model": "DC Limited Edition 24\" Quad Looptail",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "SE Bikes",
+      "model": "PK Ripper Elite XXL",
+      "reasons": [
+        "Catalog URL/photo suggests frame/module; source review required, not confirmed frame-only"
+      ],
+      "catalog_evidence": [
+        {
+          "catalog_source_url": "https://github.com/bikeindex/bikebook/blob/cdad71a96c1cf6e77a0306b3276c31704381f55f/bike_data/se/2014/pk_ripper_elite_xxl.json",
+          "reason": "Catalog-linked URL or photo filename suggests frame/module; not proof of frame-only sales"
+        }
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Specialized",
+      "model": "Crosstrail Limited",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Specialized",
+      "model": "Expedition Limited",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Specialized",
+      "model": "Rockhopper LTD 29er",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Specialized",
+      "model": "Ruby Comp Compact Ltd",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Specialized",
+      "model": "S-Works Demo 8 Carbon Team Replica",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Specialized",
+      "model": "S-Works Tarmac SL3 LTD",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Specialized",
+      "model": "Sirrus Limited",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Specialized",
+      "model": "Sirrus Limited SL4",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Specialized",
+      "model": "Sirrus LTD",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Specialized",
+      "model": "Vita Limited",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Trek",
+      "model": "CrossRip LTD",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    },
+    {
+      "brand": "Trek",
+      "model": "Limited Edition Livestrong 6",
+      "reasons": [
+        "Named edition/custom label; distinguish offered factory build from paint or user build"
+      ],
+      "action": "retain reference; do not promote without review"
+    }
+  ],
+  "limits": [
+    "Name screening is not source verification",
+    "Catalog URL/photo clues are not source confirmation",
+    "No fuzzy mergers or deletions",
+    "Brands not manufacturer legal entities",
+    "Years are not complete production ranges",
+    "Distinct similarly named builds preserved",
+    "No claim all false leads detected"
+  ]
+}

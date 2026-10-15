@@ -18,6 +18,8 @@ const startPoints={
  event_2027_07_10_peach_pedal_bike_ride_2027:[32.7261884,-97.8079572]
 };
 
+export const eventStartPoint=eventId=>startPoints[eventId]||null;
+
 export function eventStartMap(events){
  const mapped=events.filter(event=>startPoints[event.id]).map(event=>({...event,lat:startPoints[event.id][0],lng:startPoints[event.id][1]}));
  if(!mapped.length)return '';

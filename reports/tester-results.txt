@@ -1,0 +1,39 @@
+Three independent Bike Portal tester results
+
+Start: http://localhost:8788/texas/events?region=North&measurement=off
+Local to this computer only. Open separately for each tester.
+
+Task: Find an upcoming North Texas cycling event suited to your date, surface and distance preferences. Identify the date and start location, explain any caveat, and open the official organizer.
+
+Tester 1 (anonymous):
+Date/device:
+Preferred date/surface/distance:
+Event selected:
+Found suitable event independently (yes/no):
+Correct date and location (yes/no):
+Organizer page opened (yes/no):
+Elapsed seconds:
+Help needed/friction:
+Corrections/retest outcome:
+
+Tester 2 (anonymous):
+Date/device:
+Preferred date/surface/distance:
+Event selected:
+Found suitable event independently (yes/no):
+Correct date and location (yes/no):
+Organizer page opened (yes/no):
+Elapsed seconds:
+Help needed/friction:
+Corrections/retest outcome:
+
+Tester 3 (anonymous):
+Date/device:
+Preferred date/surface/distance:
+Event selected:
+Found suitable event independently (yes/no):
+Correct date and location (yes/no):
+Organizer page opened (yes/no):
+Elapsed seconds:
+Help needed/friction:
+Corrections/retest outcome:

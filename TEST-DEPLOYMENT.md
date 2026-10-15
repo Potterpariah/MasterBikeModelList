@@ -4,7 +4,7 @@
 
 # Bike Portal test-deployment handoff — September 17, 2026
 
-**Subsequent status:** The user deployed version `f384cd62-6b0c-4701-b6ff-3724aef0570f` successfully and confirmed homepage, search/content, health and diagnostics passed. See `docs/checkpoint.md` for current acceptance status. The preparation/deployment instructions below are retained as history; proceed with account and persistence testing, not another deployment.
+**Subsequent status:** The user deployed version `f384cd62-6b0c-4701-b6ff-3724aef0570f` successfully and confirmed homepage, search/content, health and diagnostics passed. See [STATUS.md](STATUS.md) for current state and the next outcome. The preparation/deployment instructions below are retained as history; neither these historical instructions nor their old next actions authorize new testing or deployment.
 
 The source package is prepared and locally tested. Publishing is still gated on a successful Wrangler dry run on your computer. This environment could not complete that step because Wrangler/esbuild was denied access while resolving the project path. This is not a successful bundle validation. No deployment occurred.
 

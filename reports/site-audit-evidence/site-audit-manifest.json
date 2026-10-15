@@ -1,0 +1,86 @@
+[
+  {
+    "path": "src/public-pages.js",
+    "new": false,
+    "beforeSha256": "522a1010765866104b1f48099b697e89fe5fa2c2bd0d69c8939defca4fec1c61",
+    "afterSha256": "eee43842c4a2bcb74a088a50bbc0d25584b923d047404662ae901aa5481bbdb6"
+  },
+  {
+    "path": "src/interactive-event-map.js",
+    "new": false,
+    "beforeSha256": "f36897a2ea0a2746a6a7db1bacd02c613485f95e2338b9c5573618a7b1be24a1",
+    "afterSha256": "1baef854bcd9033a76f0a17d14b8939959c6774bd0ac9ff6ddd1efddf0cbe4b1"
+  },
+  {
+    "path": "src/event-map-client.js",
+    "new": false,
+    "beforeSha256": "31ab14dca0050a5669eff71ec7db4a1a075996373f69c96d50d08b5437ccd9ac",
+    "afterSha256": "78a326247e3f042900d050f67febb070d97bafb715d038f91d781261eb4d8af7"
+  },
+  {
+    "path": "src/discovery-pilot.js",
+    "new": false,
+    "beforeSha256": "0c537dac8ae9b36783d0dfb2956ff7dfe77834f615420f83fae24dddd1957f7b",
+    "afterSha256": "f2ec7336d0b46551891f3d948e7486cccb90ec55143b71d4c55b1ceab27ccf18"
+  },
+  {
+    "path": "tests/seo.test.js",
+    "new": false,
+    "beforeSha256": "a8062024e199e8df66388ec450276ac5cbf4f8c488b62d9660857e870262cd6b",
+    "afterSha256": "e8b7a763f22bd8efe940261b0de822dcc75cc5c3a06a214114b3cd501bfc2140"
+  },
+  {
+    "path": "src/generated/event-map-client-source.js",
+    "new": false,
+    "beforeSha256": "ee341176ca3b2a8dd525931acf87fa06399557f0bab4533beca80040287e60ed",
+    "afterSha256": "8f7686c57bcc880ad5ca8a6400c9f5e97e0201236b269754be50711000601419"
+  },
+  {
+    "path": "src/portal.js",
+    "new": false,
+    "beforeSha256": "a31a56c6931236389bce67fbbd8716d302dc10c5bb48a4b47b349945b42acbf5",
+    "afterSha256": "67501050e7b5d530cfad8d68bba194753742f22b6fd554fb5b353d3de2466bb7"
+  },
+  {
+    "path": "src/portal-styles.js",
+    "new": false,
+    "beforeSha256": "7e128e51533effc82b78dc9799d2669d1453753445864386b4a585829f29cb84",
+    "afterSha256": "e441d25680c2be336c129ad84b27c0fc44996ee8c33b1f6242b6d3549f71c07a"
+  },
+  {
+    "path": "config/event-map.json",
+    "new": true,
+    "beforeSha256": null,
+    "afterSha256": "57d1a0a3582e973d1875f85e1bf1e30fdf2050d2120d959490b457a31d6ee9e1"
+  },
+  {
+    "path": "src/event-taxonomy.js",
+    "new": true,
+    "beforeSha256": null,
+    "afterSha256": "1211ebf13a8db3ee863b6eb0a568a38fa99f5deaf4fd3e30b4c28498f29a88ce"
+  },
+  {
+    "path": "src/section-help.js",
+    "new": true,
+    "beforeSha256": null,
+    "afterSha256": "7ec7f1f7809506cc28399f28fcd1cd9552fff9403f53dbe92c49e37d286421a8"
+  },
+  {
+    "path": "tests/event-taxonomy.test.js",
+    "new": true,
+    "beforeSha256": null,
+    "afterSha256": "cc135a59e8d19957ace74186a96f45924eb519cdfe283f6f096efdac67dc607a"
+  },
+  {
+    "path": "tests/section-help.test.js",
+    "new": true,
+    "beforeSha256": null,
+    "afterSha256": "858cd401312faa5fd98927310f42e30633a418ef618d6cb294aa55cd63b7604e"
+  },
+  {
+    "path": "tests/site-audit.test.js",
+    "new": true,
+    "beforeSha256": null,
+    "afterSha256": "de346dece40e5802da7821787a405cb58f30b00eea76846c04a7b368a911f9c9"
+  }
+]

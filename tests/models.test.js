@@ -23,8 +23,8 @@ test('every model has a standalone page, canonical, brand navigation and source 
 });
 test('model filters, empty state, source conflicts and generation boundaries are visible',async()=>{
  const env=localEnv();try{
- const h=await (await req(env,'/bikes?q=trek')).text();assert.match(h,/3 model families/);assert.match(h,/href="\/bikes\/domane"/);assert.ok(!h.includes('href="/bikes/grail"'));
- assert.match(await (await req(env,'/bikes?q=zzznomatch')).text(),/No matching models/);
+ const h=await (await req(env,'/bikes?q=trek')).text();assert.match(h,/Matching models \(1047\)/);assert.match(h,/Trek/);assert.ok(!h.includes('href="/bikes/domane"'));
+ assert.match(await (await req(env,'/bikes?q=zzznomatch')).text(),/No historical models match/);
  for(const slug of ['c-line','defy'])assert.match(await (await req(env,'/bikes/'+slug)).text(),/Unresolved source differences/);
  const domane=await (await req(env,'/bikes/domane')).text();assert.match(domane,/Gen 5/);assert.match(domane,/Not present on Gen 5/);assert.match(domane,/40 mm measured/);
  assert.match(await (await req(env,'/brands/trek')).text(),/href="\/bikes\/domane"/);

@@ -1,0 +1,337 @@
+[
+  {
+    "width": 1280,
+    "path": "/texas/events?region=North&discipline=MTB",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/texas/events?region=North&discipline=MTB",
+    "body": "Skip to content\nEXPLORE\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind an upcoming ride by region, discipline, date or city. Check the ",
+    "cards": 1,
+    "mapRows": 1,
+    "overflow": false,
+    "status": [
+      "",
+      "1 upcoming event matches your filters.",
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0,
+    "dialog": {
+      "open": true,
+      "note": "1 upcoming events. Zoom in or select a marker for details.",
+      "status": "Map background unavailable. Event markers and links still work.",
+      "markers": 1
+    },
+    "escapeClosed": true,
+    "focusRestored": true,
+    "detailLinkWorks": true,
+    "backPreservesFilters": true
+  },
+  {
+    "width": 1280,
+    "path": "/texas/events?q=no-such-place",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/texas/events?q=no-such-place",
+    "body": "Skip to content\nEXPLORE\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind an upcoming ride by region, discipline, date or city. Check the ",
+    "cards": 0,
+    "mapRows": 0,
+    "overflow": false,
+    "status": [
+      "",
+      "0 upcoming events match your filters.",
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0,
+    "dialog": {
+      "open": true,
+      "note": "No event locations are available for this view.",
+      "status": "Map background unavailable. Event markers and links still work.",
+      "markers": 0
+    },
+    "escapeClosed": true,
+    "focusRestored": true
+  },
+  {
+    "width": 1280,
+    "path": "/events",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/events",
+    "body": "Skip to content\nEXPLORE\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind upcoming rides by date and city. Confirm final details with the ",
+    "cards": 62,
+    "mapRows": null,
+    "overflow": false,
+    "status": [
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0
+  },
+  {
+    "width": 320,
+    "path": "/texas/events?region=North&discipline=MTB",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/texas/events?region=North&discipline=MTB",
+    "body": "Skip to content\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind an upcoming ride by region, discipline, date or city. Check the official",
+    "cards": 1,
+    "mapRows": 1,
+    "overflow": false,
+    "status": [
+      "",
+      "1 upcoming event matches your filters.",
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0,
+    "dialog": {
+      "open": true,
+      "note": "1 upcoming events. Zoom in or select a marker for details.",
+      "status": "Map background unavailable. Event markers and links still work.",
+      "markers": 1
+    },
+    "escapeClosed": true,
+    "focusRestored": true,
+    "detailLinkWorks": true,
+    "backPreservesFilters": true
+  },
+  {
+    "width": 320,
+    "path": "/texas/events?q=no-such-place",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/texas/events?q=no-such-place",
+    "body": "Skip to content\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind an upcoming ride by region, discipline, date or city. Check the official",
+    "cards": 0,
+    "mapRows": 0,
+    "overflow": false,
+    "status": [
+      "",
+      "0 upcoming events match your filters.",
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0,
+    "dialog": {
+      "open": true,
+      "note": "No event locations are available for this view.",
+      "status": "Map background unavailable. Event markers and links still work.",
+      "markers": 0
+    },
+    "escapeClosed": true,
+    "focusRestored": true
+  },
+  {
+    "width": 320,
+    "path": "/events",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/events",
+    "body": "Skip to content\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind upcoming rides by date and city. Confirm final details with the organize",
+    "cards": 62,
+    "mapRows": null,
+    "overflow": false,
+    "status": [
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0
+  },
+  {
+    "width": 375,
+    "path": "/texas/events?region=North&discipline=MTB",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/texas/events?region=North&discipline=MTB",
+    "body": "Skip to content\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind an upcoming ride by region, discipline, date or city. Check the official",
+    "cards": 1,
+    "mapRows": 1,
+    "overflow": false,
+    "status": [
+      "",
+      "1 upcoming event matches your filters.",
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0,
+    "dialog": {
+      "open": true,
+      "note": "1 upcoming events. Zoom in or select a marker for details.",
+      "status": "Map background unavailable. Event markers and links still work.",
+      "markers": 1
+    },
+    "escapeClosed": true,
+    "focusRestored": true,
+    "detailLinkWorks": true,
+    "backPreservesFilters": true
+  },
+  {
+    "width": 375,
+    "path": "/texas/events?q=no-such-place",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/texas/events?q=no-such-place",
+    "body": "Skip to content\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind an upcoming ride by region, discipline, date or city. Check the official",
+    "cards": 0,
+    "mapRows": 0,
+    "overflow": false,
+    "status": [
+      "",
+      "0 upcoming events match your filters.",
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0,
+    "dialog": {
+      "open": true,
+      "note": "No event locations are available for this view.",
+      "status": "Map background unavailable. Event markers and links still work.",
+      "markers": 0
+    },
+    "escapeClosed": true,
+    "focusRestored": true
+  },
+  {
+    "width": 375,
+    "path": "/events",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/events",
+    "body": "Skip to content\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind upcoming rides by date and city. Confirm final details with the organize",
+    "cards": 62,
+    "mapRows": null,
+    "overflow": false,
+    "status": [
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0
+  },
+  {
+    "width": 390,
+    "path": "/texas/events?region=North&discipline=MTB",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/texas/events?region=North&discipline=MTB",
+    "body": "Skip to content\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind an upcoming ride by region, discipline, date or city. Check the official",
+    "cards": 1,
+    "mapRows": 1,
+    "overflow": false,
+    "status": [
+      "",
+      "1 upcoming event matches your filters.",
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0,
+    "dialog": {
+      "open": true,
+      "note": "1 upcoming events. Zoom in or select a marker for details.",
+      "status": "Map background unavailable. Event markers and links still work.",
+      "markers": 1
+    },
+    "escapeClosed": true,
+    "focusRestored": true,
+    "detailLinkWorks": true,
+    "backPreservesFilters": true
+  },
+  {
+    "width": 390,
+    "path": "/texas/events?q=no-such-place",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/texas/events?q=no-such-place",
+    "body": "Skip to content\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind an upcoming ride by region, discipline, date or city. Check the official",
+    "cards": 0,
+    "mapRows": 0,
+    "overflow": false,
+    "status": [
+      "",
+      "0 upcoming events match your filters.",
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0,
+    "dialog": {
+      "open": true,
+      "note": "No event locations are available for this view.",
+      "status": "Map background unavailable. Event markers and links still work.",
+      "markers": 0
+    },
+    "escapeClosed": true,
+    "focusRestored": true
+  },
+  {
+    "width": 390,
+    "path": "/events",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/events",
+    "body": "Skip to content\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind upcoming rides by date and city. Confirm final details with the organize",
+    "cards": 62,
+    "mapRows": null,
+    "overflow": false,
+    "status": [
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0
+  },
+  {
+    "width": 768,
+    "path": "/texas/events?region=North&discipline=MTB",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/texas/events?region=North&discipline=MTB",
+    "body": "Skip to content\nEXPLORE\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind an upcoming ride by region, discipline, date or city. Check the ",
+    "cards": 1,
+    "mapRows": 1,
+    "overflow": false,
+    "status": [
+      "",
+      "1 upcoming event matches your filters.",
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0,
+    "dialog": {
+      "open": true,
+      "note": "1 upcoming events. Zoom in or select a marker for details.",
+      "status": "Map background unavailable. Event markers and links still work.",
+      "markers": 1
+    },
+    "escapeClosed": true,
+    "focusRestored": true,
+    "detailLinkWorks": true,
+    "backPreservesFilters": true
+  },
+  {
+    "width": 768,
+    "path": "/texas/events?q=no-such-place",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/texas/events?q=no-such-place",
+    "body": "Skip to content\nEXPLORE\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind an upcoming ride by region, discipline, date or city. Check the ",
+    "cards": 0,
+    "mapRows": 0,
+    "overflow": false,
+    "status": [
+      "",
+      "0 upcoming events match your filters.",
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0,
+    "dialog": {
+      "open": true,
+      "note": "No event locations are available for this view.",
+      "status": "Map background unavailable. Event markers and links still work.",
+      "markers": 0
+    },
+    "escapeClosed": true,
+    "focusRestored": true
+  },
+  {
+    "width": 768,
+    "path": "/events",
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:50554/events",
+    "body": "Skip to content\nEXPLORE\nbike portal\n.\nLog in\nJoin the ride ↗\nHome / Texas cycling events\nTexas cycling events\n\nFind upcoming rides by date and city. Confirm final details with the ",
+    "cards": 62,
+    "mapRows": null,
+    "overflow": false,
+    "status": [
+      ""
+    ],
+    "smallControls": [],
+    "monthControls": 0
+  }
+]

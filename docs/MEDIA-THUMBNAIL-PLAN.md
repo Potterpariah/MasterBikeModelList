@@ -46,6 +46,13 @@ For exact models, events, clubs, and routes, option 1 is the normal standard.
 Generic provider images are not appropriate substitutes for entity-specific
 media.
 
+## Stored alternate editorial image
+
+The reviewed Texas Cycling Hub hero is retained under the Bike Portal R2 key
+`editorial/texas-ride-hero.webp` for a future, separately approved editorial
+placement. It is not the active homepage hero; the active hero is Bike Portal's
+original decorative bicycle illustration, linked to the events page.
+
 ## Required record before publishing
 
 Each published image needs an entity type and ID, role (`hero`, `thumbnail`, or

@@ -1,9 +1,17 @@
-# Bike Portal continuation
+# Bike Portal (Texas catalog integration)
 
-Continue the existing Stage 4.1 portal. Read `STATUS.md`, `DECISIONS.md`, `README.md`, `TEST-DEPLOYMENT.md`, and `docs/checkpoint.md` first. Preserve the backend, existing bindings and Stage 3 data. Build the client before bundling. Never rerun remote schema or seed migrations for this homepage update. Keep test deployments noindex. Local tests use temporary SQLite; they do not certify Cloudflare D1/R2 or real Turnstile. Record live acceptance separately. Do not infer source-data freshness from successful software tests.
+Type: application with marketing/SEO site. Host: Cloudflare (existing bindings; D1, R2, Turnstile).
+Optional features in use: none.
 
-## SEO and release records
+## Boundaries
+- Continue the existing Stage 4.1 portal. Preserve the backend, existing bindings, and Stage 3 data. Build the client before bundling.
+- Do not run remote schema or seed migrations unless the current request asks for one.
+- Test deployments stay noindex. Keep the default noindex until an owner-supplied canonical HTTPS domain, operator identity, contact channel, policies, and the required implementation are verified.
+- Local tests use temporary SQLite and do not certify Cloudflare D1/R2 or real Turnstile. Record live acceptance separately. Do not infer source-data freshness from passing software tests.
 
-`STATUS.md` is the current operational record and `DECISIONS.md` is the durable decision log. Keep unresolved or conflicting public facts in `reports/factual-exceptions.md`, record material technical-SEO findings in `reports/seo-assessment.md`, and maintain one executable next action in `docs/gpt-ready-prompts/current-stage-or-next-gate.md`.
+## Records
+- STATUS.md: current state and the one next outcome. DECISIONS.md: material choices.
+- Unresolved or conflicting public facts: reports/factual-exceptions.md. Material technical-SEO findings: reports/seo-assessment.md.
 
-Do not enable indexing, change a canonical domain, publish, deploy, run migrations, or make an external write without separate authorization. Preserve the default noindex behavior until an owner-supplied canonical HTTPS domain, operator identity, contact channel, policies, and the required implementation are verified.
+## Docs
+Read when relevant: TEST-DEPLOYMENT.md (preparing a test deployment), README.md (setup).

@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:60161/events?format=General%20%2F%20social%20ride",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/events?format=General%20%2F%20social%20ride",
+    "screenshot": "local-1280-_events_format=General_20_2F_20social_20ride.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:60161/events?format=Noncompetitive%20ride",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/events?format=Noncompetitive%20ride",
+    "screenshot": "local-1280-_events_format=Noncompetitive_20ride.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:60161/events?format=Social%20%2F%20community%20ride",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 1280,
+    "path": "/events?format=Social%20%2F%20community%20ride",
+    "screenshot": "local-1280-_events_format=Social_20_2F_20community_20ride.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:60161/events?format=General%20%2F%20social%20ride",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 320,
+    "path": "/events?format=General%20%2F%20social%20ride",
+    "screenshot": "local-320-_events_format=General_20_2F_20social_20ride.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:60161/events?format=Noncompetitive%20ride",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 320,
+    "path": "/events?format=Noncompetitive%20ride",
+    "screenshot": "local-320-_events_format=Noncompetitive_20ride.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  },
+  {
+    "title": "Texas cycling events | Bike Portal",
+    "url": "http://127.0.0.1:60161/events?format=Social%20%2F%20community%20ride",
+    "overflow": false,
+    "logo": true,
+    "h1": [
+      "Texas cycling events"
+    ],
+    "svgMap": false,
+    "realMap": true,
+    "smallControls": [],
+    "width": 320,
+    "path": "/events?format=Social%20%2F%20community%20ride",
+    "screenshot": "local-320-_events_format=Social_20_2F_20community_20ride.png",
+    "help": {
+      "open": true,
+      "caveat": "Confirm dates, eligibility and changes with the organizer before travelling.",
+      "focus": "SUMMARY"
+    }
+  }
+]

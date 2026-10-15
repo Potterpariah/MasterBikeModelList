@@ -16,8 +16,11 @@ test('public content resolves stable slugs, redirects IDs, and returns real not-
  assert.equal(await (await req('/events','HEAD')).text(),'');assert.equal((await req('/events/')).status,308);
  }finally{env._db.close();}
 });
-test('event calendar provides a complete event and city chooser plus only precise start markers',async()=>{
- const {env,req}=fixture();try{const html=await (await req('/events')).text();assert.match(html,/Choose an event or city/);assert.match(html,/<optgroup label="Events">/);assert.match(html,/Autumn in Bonham Century Mile Ride/);assert.match(html,/<optgroup label="Cities">/);assert.match(html,/value="Bonham"/);assert.match(html,/Verified event starts/);assert.match(html,/11 current events with a published precise start address/);assert.match(html,/event-start-map-canvas/);assert.match(html,/href="\/events\/2026-10-03-bonham-autumn-in-bonham-century-mile-ride"/);assert.ok(!html.includes('2026 Texas Gravel Champs</a></li>'));
+test('event calendar provides a complete chooser and geographic map with reviewed locations',async(t)=>{
+ t.mock.timers.enable({apis:['Date'],now:new Date('2026-10-02T12:00:00Z')});
+ const {env,req}=fixture();try{const html=await (await req('/events')).text();assert.match(html,/Choose an event or city/);assert.match(html,/<optgroup label="Events">/);assert.match(html,/Autumn in Bonham Century Mile Ride/);assert.match(html,/<optgroup label="Cities">/);assert.match(html,/value="Bonham"/);assert.match(html,/event-map-records/);assert.match(html,/leaflet.js/);assert.doesNotMatch(html,/event-start-map-canvas/);assert.match(html,/name="discipline"/);assert.match(html,/name="format"/);assert.match(html,/name="purpose"/);assert.match(html,/href="\/events\?date=2026-10-03"/);assert.match(html,/href="\/events\?q=Bonham"/);assert.match(html,/href="\/events\/2026-10-03-bonham-autumn-in-bonham-century-mile-ride"/);assert.ok(!html.includes('2026 Texas Gravel Champs</a></li>'));
+ const bonham=env._db.prepare("SELECT slug FROM events WHERE id='event_2026_10_03_autumn_in_bonham_century_mile_ride'").get();const detail=await (await req('/events/'+bonham.slug)).text();assert.match(detail,/Browse this event in the calendar/);assert.match(detail,/Open start marker in maps/);assert.match(detail,/query=33\.5786755,-96\.1910103/);
+ const unpinned=env._db.prepare("SELECT slug FROM events WHERE id='event_2026_10_03_bridging_the_gap_ride_7'").get();const unpinnedHtml=await (await req('/events/'+unpinned.slug)).text();assert.ok(!unpinnedHtml.includes('Open start marker in maps'));
  }finally{env._db.close();}
 });
 test('indexing needs approved origin and explicit opt-in; private and incomplete pages stay excluded',async()=>{

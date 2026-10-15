@@ -1,0 +1,160 @@
+{
+  "checkedAt": "2026-10-02",
+  "site": "Bike Portal",
+  "region": "North",
+  "initialRecords": 10,
+  "refreshedExistingRecords": 4,
+  "newRecords": 6,
+  "liveVersionObserved": "db976d98-7696-435a-a7e7-3f5d2c1598a5",
+  "liveHealth": 200,
+  "liveRobots": "noindex, nofollow",
+  "deploymentChanged": false,
+  "sourceEvidence": [
+    {
+      "slug": "camp-spinistry-bikepacking-2026",
+      "date": "2026-10-17",
+      "location": "Thirty-Five and Liberty, 4321 I-35",
+      "discipline": "Bikepacking",
+      "sources": [
+        "https://runsignup.com/Race/TX/Gainesville/CampSpinistryBikepackingKickoffWeekend",
+        "https://spinistry.rsupartner.com/upcoming-races"
+      ],
+      "checkedAt": "2026-10-02",
+      "caveat": "The listing dates the start October 17; the description includes an optional Friday gathering and Sunday return. Confirm full arrival/departure plans and registration availability."
+    },
+    {
+      "slug": "tour-de-cure-texas-2026",
+      "date": "2026-10-24",
+      "location": "Community Beer Co, 3110 Commonwealth Dr, Dallas",
+      "discipline": "Road",
+      "sources": [
+        "https://tour.diabetes.org/txtour",
+        "https://tour.diabetes.org/pages/1832?eventID=746"
+      ],
+      "checkedAt": "2026-10-02",
+      "caveat": "Official details list the family route as both 10 and 12 miles. Routes are permit-pending and subject to change. Confirm the family distance and start time with the organizer."
+    },
+    {
+      "slug": "old-dennis-brevets-2026",
+      "date": "2026-10-31",
+      "location": "Pilot Travel Center / Wendy’s, 1201 I-20 West",
+      "discipline": "Randonneuring",
+      "sources": [
+        "https://lonestarrandon.org/calendar"
+      ],
+      "checkedAt": "2026-10-02",
+      "caveat": "Start time is not published in the reviewed calendar. Confirm it before travel. Official cue sheets are supplied at the start; online copies are unofficial."
+    },
+    {
+      "slug": "rideataxia-dallas-2026",
+      "date": "2026-11-07",
+      "location": "Lewisville Railroad Park, 995 E Valley Ridge Blvd",
+      "discipline": "Paved trail",
+      "sources": [
+        "https://give.curefa.org/event/rideataxia-dallas-2026/e816543",
+        "https://www.curefa.org/events/"
+      ],
+      "checkedAt": "2026-10-02",
+      "caveat": "The 15-mile route includes road and railroad crossings. Under-16 riders on that route need an adult. Routes may change."
+    },
+    {
+      "slug": "denton-turkey-roll-2026",
+      "date": "2026-11-21",
+      "location": "Denton High School, 3001 Bronco Way",
+      "discipline": "Road / Gravel",
+      "sources": [
+        "https://dentonturkeyroll.com/"
+      ],
+      "checkedAt": "2026-10-02",
+      "caveat": "Route lengths may change. Choose a bicycle suitable for the selected surface; helmets are required."
+    },
+    {
+      "slug": "la-bella-pop-2026",
+      "date": "2026-12-05",
+      "location": "Parking behind Denny’s, NW corner of SR-34 and I-35E",
+      "discipline": "Randonneuring",
+      "sources": [
+        "https://lonestarrandon.org/calendar"
+      ],
+      "checkedAt": "2026-10-02",
+      "caveat": "Start time is not published in the reviewed calendar. Confirm time and membership requirements with the organizer before travel."
+    },
+    {
+      "slug": "rudolphs-revenge-2026",
+      "date": "2026-12-12",
+      "location": "3800 FM 428, Aubrey",
+      "discipline": "MTB",
+      "sources": [
+        "https://runsignup.com/Race/TX/Aubrey/RudolphsRevenge2021"
+      ],
+      "checkedAt": "2026-10-02",
+      "caveat": "The page header and categories show December 12, 2026; description still says 2025. Confirm the edition and final details before booking. The URL also contains a historical year."
+    },
+    {
+      "slug": "texas-chainring-massacre-2027",
+      "date": "2027-01-23",
+      "location": "4321 I-35, Gainesville",
+      "discipline": "Gravel",
+      "sources": [
+        "https://runsignup.com/Race/TX/Gainesville/TexasChainringMassacre2027",
+        "https://spinistry.rsupartner.com/upcoming-races"
+      ],
+      "checkedAt": "2026-10-02",
+      "caveat": "Distances are approximate. Self-supported on public roads; no SAG. The page retains an old 2025 membership-discount deadline; confirm current discounts directly."
+    },
+    {
+      "slug": "head-for-the-hills-2027",
+      "date": "2027-05-08",
+      "location": "Hillside Village Shopping Center, Cedar Hill",
+      "discipline": "Road",
+      "sources": [
+        "https://headforthehills.org/",
+        "https://headforthehills.org/?page_id=1616",
+        "https://runsignup.com/Race/TX/CedarHill/HeadForTheHillsBikeRally"
+      ],
+      "checkedAt": "2026-10-02",
+      "caveat": "The home page retains a May 12 shirt deadline after the ride date; do not rely on that deadline. Confirm final routes before travel."
+    },
+    {
+      "slug": "burleson-honey-tour-2027",
+      "date": "2027-05-29",
+      "location": "Centennial High School, 201 S Hurst Rd",
+      "discipline": "Road",
+      "sources": [
+        "https://www.burlesonhoneytourbikeride.com/",
+        "https://www.burlesonhoneytourbikeride.com/Race/BurlesonHoneyTour/Page-1",
+        "https://www.burlesonhoneytourbikeride.com/Race/BurlesonHoneyTour/Page-4"
+      ],
+      "checkedAt": "2026-10-02",
+      "caveat": "Official pages disagree between 20 and 22 miles for one route and mention a 46-mile reroute. Distances are approximate; confirm the final route choices with the organizer."
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Ray Porter Memorial",
+      "reason": "Official registration description announces cancellation, despite a future date header and stale calendars.",
+      "url": "https://runsignup.com/Race/TX/Mckinney/RayPorterMemorial"
+    }
+  ],
+  "corrections": [
+    {
+      "slug": "rideataxia-dallas-2026",
+      "field": "description / check-in",
+      "before": "9:30 AM opening",
+      "after": "8:30 AM check-in; 9:30 AM 15-mile start; 10:30 AM shorter routes"
+    },
+    {
+      "scope": "calendar downloads",
+      "before": "All-day DTSTART and DTEND used the same date for single-day events",
+      "after": "DTEND is the following date (exclusive end)"
+    }
+  ],
+  "humanTestersCompleted": 0,
+  "measurement": "Three browser-generated local test actions observed. Remote persistence/export not enabled or verified.",
+  "productionMetrics": null,
+  "gscMetrics": null,
+  "firstBatchHandsOnMinutes": null,
+  "repeatHandsOnMinutes": null,
+  "efficiencyComparison": "Unavailable: no human hands-on timer recorded for initial work. Do not infer from agent runtime.",
+  "next": "Three independent human tests, then source recheck and concrete release approval; domain/GSC and live measurement still outstanding."
+}
